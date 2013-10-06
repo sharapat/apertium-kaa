@@ -13,9 +13,11 @@ Multichar_Symbols
 %{I%}
 %{N%}
 %{G%}
+%{D%}
 
 %{s%}
 %{n%}
+%{'%}
 
 %>
 %  
@@ -44,7 +46,7 @@ LEXICON CASES-OBL
 
 %<gen%>:%>%{N%}%{I%}n%' CLIT ;
 %<acc%>:%>%{N%}%{I%} CLIT ;
-%<dat%>:%>%{G%}%{A%} CLIT ;
+%<dat%>:%>%{G%}%{'%}%{A%} CLIT ;
 %<loc%>:%>%{D%}%{A%} CLIT-COP ;
 %<abl%>:%>%{D%}%{A%}n CLIT-COP ;
 
@@ -62,10 +64,22 @@ CASES-ETC ;
 %<px1pl%>:%>%{I%}m%{I%}z CASES-ETC ;
 %<px2pl%>:%>%{I%}n%'d%{A%}r CASES-ETC ;
 
+LEXICON ATTR-SUBST
+
+%<attr%>: # ;
+%<subst%>: CASES ;
+%<subst%>%<pl%>:%>l%{A%}r CASES ;
+
+LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
+
+%<px%>:%>%{N%}iki%{n%} CASES ;
+%<loc%>:%>%{D%}%{A%}%{G%}%{'%}%{I%} ATTR-SUBST ; 
+%<sim%>:%>%{D%}%{A%}y CLIT ; ! COMMON-CLITICS ;        
+
 LEXICON CASES-ETC
 
 CASES ;
-!GENPOSS-ETC ;
+GENPOSS-ETC ;
 
 LEXICON N-INFL-COMMON
 
@@ -91,6 +105,26 @@ LEXICON NP-TOP
 
 %<np%>%<top%>: NP-COMMON ;
 %<np%>%<top%>%<attr%>: # ;
+
+LEXICON NP-ANT-F
+
+%<np%>%<ant%>%<f%>: NP-COMMON ;
+%<np%>%<ant%>%<f%>%<attr%>: # ;
+
+
+LEXICON NP-ANT-M
+
+%<np%>%<ant%>%<m%>: NP-COMMON ;
+%<np%>%<ant%>%<m%>%<attr%>: # ;
+
+LEXICON NP-COG-OV
+
+%<np%>%<cog%>%<m%>: NP-COMMON ;
+%<np%>%<cog%>%<m%>%<attr%>: # ;
+
+%<np%>%<cog%>%<f%>:a NP-COMMON ;
+%<np%>%<cog%>%<f%>%<attr%>:a # ;
+
 
 LEXICON NP-AL
 
@@ -135,6 +169,11 @@ LEXICON POST
 
 %<post%>: # ;
 
+LEXICON CS
+
+%<cnjsub%>: # ;
+
+
 LEXICON CC
 
 %<cnjcoo%>: # ;
@@ -146,12 +185,29 @@ LEXICON Conjunctions
 
 ja'ne:ja'ne CC ; ! ""
 ha'm:ha'm CC ; ! ""
+eger:eger CS ; ! ""
 
 LEXICON Postpositions
 
 qadar:qadar POST ; ! ""
 
 LEXICON Nouns 
+
+arqa:arqa N1 ; ! ""
+art:art N1 ; ! ""
+ast:ast N1 ; ! ""
+jan:jan N1 ; ! ""
+u%'st:u%'st N1 ; ! ""
+tus:tus N1 ; ! ""
+ara:ara N1 ; ! ""
+qas:qas N1 ; ! ""
+
+
+awqat:awqat N1 ; ! ""
+kitap:kitap N1 ; ! ""
+medrese:medrese N1 ; ! ""
+til:til N1 ; ! ""
+mektep:mektep N1 ; ! ""
 
 ensiklopediya:ensiklopediya N1 ; ! ""
 maqala:maqala N1 ; ! ""
@@ -174,6 +230,9 @@ kriminologiya:kriminologiya N1 ; ! ""
 komissiya:komissiya N1 ; ! ""
 ximiya:ximiya N1 ; ! ""
 territoriya:territoriya N1 ; ! ""
+astronomiya:astronomiya N1 ; ! ""
+matematika:matematika N1 ; ! ""
+
 
 arxitektor:arxitektor N1 ; ! ""
 kompozitor:kompozitor N1 ; ! ""
@@ -184,6 +243,29 @@ faktor:faktor N1 ; ! ""
 redaktor:redaktor N1 ; ! ""
 direktor:direktor N1 ; ! ""
 sektor:sektor N1 ; ! ""
+aktyor:aktyor N1 ; ! ""
+muzika:muzıka N1 ; ! "" ! Dir/LR ! Use/Sub
+muzika:muzika N1 ; ! ""
+muzıkant:muzıkant N1 ; ! ""
+rejissyor:rejissyor N1 ; ! ""
+dramaturg:dramaturg N1 ; ! ""
+kolxoz:kolxoz N1 ; ! ""
+spektakl:spektakl N1 ; ! ""
+repetitsiya:repetitsiya N1 ; ! ""
+avtor:avtor N1 ; ! ""
+opera:opera N1 ; ! ""
+kompyuter:kompyuter N1 ; ! ""
+kontinent:kontinent N1 ; ! ""
+
+qazaq:qazaq N1 ; ! ""
+tatar:tatar N1 ; ! ""
+o%'zbek:o%'zbek N1 ; ! ""
+rus:rus N1 ; ! ""
+qaraqalpaq:qaraqalpaq N1 ; ! ""
+arab:arab N1 ; ! ""
+
+iyul:iyul N1 ; ! ""
+oktyabr:oktyabr N1 ; ! ""
 
 
 
@@ -193,14 +275,71 @@ Qaraqalpaqstan:Qaraqalpaqstan NP-TOP ; ! ""
 Rossiya:Rossiya NP-TOP ; ! ""
 Samarqand:Samarqand NP-TOP ; ! ""
 Qazaqstan:Qazaqstan NP-TOP ; ! ""
+O%'zbekstan:O%'zbekstan NP-TOP ; ! ""
+O%'zbekstan:O%'zbekistan NP-TOP ; ! "" ! Dir/LR ! Use/Sub
 No%'kis:No%'kis NP-TOP ; ! ""
 Shotlandiya:Shotlandiya NP-TOP ; ! ""
+Germaniya:Germaniya NP-TOP ; ! ""
+Evropa:Evropa NP-TOP ; ! ""
+Tu%'rkistan:Tu%'rkistan NP-TOP ; ! ""
+Makedoniya:Makedoniya NP-TOP ; ! ""
+Ulli% Britanya:Ulli% Britanya NP-TOP ; ! ""
+Britanya:Britanya NP-TOP ; ! ""
+London:London NP-TOP ; ! ""
+Ukraina:Ukraina NP-TOP ; ! ""
+Sankt% Peterburg:Sankt% Peterburg NP-TOP ; ! ""
+Parij:Parij NP-TOP ; ! ""
+Aziya:Aziya NP-TOP ; ! ""
+Amerika:Amerika NP-TOP ; ! ""
+Afrika:Afrika NP-TOP ; ! ""
+Tashkent:Tashkent NP-TOP ; ! ""
+İstanbul:İstanbul NP-TOP ; ! ""
+Tu%'rkiya:Tu%'rkiya NP-TOP ; ! ""
+İspaniya:İspaniya NP-TOP ; ! ""
+İrlandiya:İrlandiya NP-TOP ; ! ""
+İtalya:İtalya NP-TOP ; ! ""
+İsrail:İsrail NP-TOP ; ! ""
+Yerusalim:Yerusalim NP-TOP ; ! ""
+Hindstan:Hindstan NP-TOP ; ! ""
+Anglya:Anglya NP-TOP ; ! ""
+İsrail:İsrail NP-TOP ; ! ""
+Yerusalim:Yerusalim NP-TOP ; ! ""
+Hindstan:Hindstan NP-TOP ; ! ""
+Anglya:Anglya NP-TOP ; ! ""
+Finlyandiya:Finlyandiya NP-TOP ; ! ""
+Frantsiya:Frantsiya NP-TOP ; ! ""
+Zimbabve:Zimbabve NP-TOP ; ! ""
+
+Xristofor:Xristofor NP-ANT-M ; ! ""
+Yosif:Yosif NP-ANT-M ; ! ""
+Aleksandr:Aleksandr NP-ANT-M ; ! ""
+A%'bdiraman:A%'bdiraman NP-ANT-M ; ! ""
+Nikolay:Nikolay NP-ANT-M ; ! ""
+Qasim:Qasim NP-ANT-M ; ! ""
+Raphael:Raphael NP-ANT-M ; ! ""
+Karl:Karl NP-ANT-M ; ! ""
+John:John NP-ANT-M ; ! ""
+Charles:Charles NP-ANT-M ; ! ""
+
+Veronica:Veronica NP-ANT-F ; ! ""
+Nadejda:Nadejda NP-ANT-F ; ! ""
+
+O%'tepov:O%'tepov NP-COG-OV ; ! ""
+Trofimov:Trofimov NP-COG-OV ; ! ""
+Yashımov:Yashımov NP-COG-OV ; ! ""
+Begimov:Begimov NP-COG-OV ; ! ""
+Muwsaev:Muwsaev NP-COG-OV ; ! ""
+Divaev:Divaev NP-COG-OV ; ! ""
+
 
 Wikipedia:Wikipedia NP-AL ; ! ""
+Pedtexnikum:Pedtexnikum NP-AL ; ! ""
+GlaxoSmithKline:GlaxoSmithKline NP-AL ; ! ""
 
 LEXICON Adjectives
 
 biologiyalıq:biologiyalıq A4 ; ! ""
+ekonomikalıq:ekonomikalıq A4 ; ! ""
 
 LEXICON Adverbs
 
@@ -236,4 +375,11 @@ LEXICON Punctuation
 %)%<rpar%>:%) # ;
 %\%<sent%>:%\ # ;
 %/%<sent%>:%/ # ;
+
+! Temporary numeral lexicon
+<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
+
+LEXICON DIGITLEX
+
+%<num%>: # ; 
 
