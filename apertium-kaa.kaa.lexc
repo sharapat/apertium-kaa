@@ -306,9 +306,19 @@ frantsuz:frantsuz N1 ; ! ""
 qaraqalpaq:qaraqalpaq N1 ; ! ""
 arab:arab N1 ; ! ""
 
-iyul:iyul N1 ; ! ""
-oktyabr:oktyabr N1 ; ! ""
 
+yanvar:yanvar N1 ; ! ""
+fevral:fevral N1 ; ! ""
+mart:mart N1 ; ! ""
+aprel:aprel N1 ; ! ""
+may:may N1 ; ! ""
+iyun:iyun N1 ; ! ""
+iyul:iyul N1 ; ! ""
+avgust:avgust N1 ; ! ""
+sentyabr:sentyabr N1 ; ! ""
+oktyabr:oktyabr N1 ; ! ""
+noyabr:noyabr N1 ; ! ""
+dekabr:dekabr N1 ; ! ""
 
 
 LEXICON ProperNouns
@@ -355,6 +365,7 @@ Zimbabve:Zimbabve NP-TOP ; ! ""
 Ta%'jikistan:Ta%'jikistan NP-TOP ; ! ""
 Pakistan:Pakistan NP-TOP ; ! ""
 İndiya:İndiya NP-TOP ; ! ""
+Tu%'rkmenistan:Tu%'rkmenistan NP-TOP ; ! ""
 
 Xristofor:Xristofor NP-ANT-M ; ! ""
 Yosif:Yosif NP-ANT-M ; ! ""
@@ -366,6 +377,7 @@ Raphael:Raphael NP-ANT-M ; ! ""
 Karl:Karl NP-ANT-M ; ! ""
 John:John NP-ANT-M ; ! ""
 Charles:Charles NP-ANT-M ; ! ""
+Wilhelm:Wilhelm NP-ANT-M ; ! ""
 
 Veronica:Veronica NP-ANT-F ; ! ""
 Nadejda:Nadejda NP-ANT-F ; ! ""
@@ -391,8 +403,11 @@ u%'lken:ulken A1 ; ! "" ! Dir/LR ! Use/Sub
 bar:bar A3 ; ! ""
 joq:joq A3 ; ! ""
 
+ma%'mleketlik:ma%'mleketlik A3 ; ! ""
+
 biologiyalıq:biologiyalıq A4 ; ! ""
 ekonomikalıq:ekonomikalıq A4 ; ! ""
+etnikalıq:etnikalıq A4 ; ! ""
 
 LEXICON Adverbs
 
