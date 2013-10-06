@@ -119,10 +119,12 @@ til:til N1 ; ! ""
 kategoriya:kategoriya N1 ; ! ""
 partiya:partiya N1 ; ! ""
 teatr:teatr N1 ; ! ""
+federatsiya:federatsiya N1 ; ! ""
 
 LEXICON ProperNouns
 
 Qaraqalpaqstan:Qaraqalpaqstan NP-TOP ; ! ""
+Rossiya:Rossiya NP-TOP ; ! ""
 Samarqand:Samarqand NP-TOP ; ! ""
 
 Wikipedia:Wikipedia NP-AL ; ! ""
