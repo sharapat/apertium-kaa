@@ -30,6 +30,9 @@ LEXICON Root
 
 Conjunctions ; 
 Postpositions ;
+Pronouns ;
+Determiners ;
+Numerals ;
 Nouns ;
 ProperNouns ;
 Adjectives ;
@@ -176,11 +179,9 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 %<ifi_evid%>:%>%{I%}p  # ; !V-PERS-IFI_EVID ;
 !%<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
 
-
 LEXICON V-COMMON
 
 V-FINITE-REGULAR_NEGATIVE ;
-
 
 LEXICON V-DER
 
@@ -197,6 +198,49 @@ LEXICON V-TV
 %<v%>%<tv%>: V-DER ;
 %<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON ;
 
+LEXICON PRON-PERS-MEN
+
+%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>: # ;
+
+LEXICON PRON-PERS-SEN
+
+%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>: # ;
+
+LEXICON PRON-PERS-OL
+
+%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>: # ;
+
+LEXICON PRON-PERS-BIZ
+
+%<prn%>%<pers%>%<p1%>%<pl%>%<nom%>: # ;
+
+LEXICON PRON-PERS-SIZ
+
+%<prn%>%<pers%>%<p2%>%<pl%>%<nom%>: # ;
+
+LEXICON PRON-PERS-OLAR
+
+%<prn%>%<pers%>%<p3%>%<pl%>%<nom%>: # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:%>g%'a # ;
+
+
+
+LEXICON NUM-COMMON
+
+%<num%>: # ;
+%<num%>%<subst%>: SUBST ;
+
+LEXICON NUM
+
+NUM-COMMON ;
+! FIXME: base form, <det> reading
+%<num%>%<ord%>:%>%{I%}nsh%{I%} # ;             
+%<num%>%<ord%>:%>%{I%}nsh%{I%} N-INFL-COMMON ;
+
+LEXICON DET-REF
+
+%<det%>%<ref%>: # ;
+
 LEXICON POST
 
 %<post%>: # ;
@@ -204,7 +248,6 @@ LEXICON POST
 LEXICON CS
 
 %<cnjsub%>: # ;
-
 
 LEXICON CC
 
@@ -217,11 +260,49 @@ LEXICON Conjunctions
 
 ja'ne:ja'ne CC ; ! ""
 ha'm:ha'm CC ; ! ""
+biraq:biraq CC ; ! "but"
+
 eger:eger CS ; ! ""
+
+
 
 LEXICON Postpositions
 
 qadar:qadar POST ; ! ""
+deyin:deyin POST ; ! "until, up to, as far as" + DAT
+keyin:keyin POST ; ! "after, afterwards, later" + ABL
+basqa:basqa POST ; ! "besides, except" + ABL     
+qabat:qabat POST ;
+qaray:qaray POST ; ! "toward" + DAT
+qarsı:qarsı POST ; ! "anti-, against, contra-" + DAT
+
+LEXICON Pronouns 
+
+men:men PRON-PERS-MEN ;
+sen:sen PRON-PERS-SEN ;
+ol:ol PRON-PERS-OL ;
+biz:biz PRON-PERS-BIZ ;
+siz:siz PRON-PERS-SIZ ;
+olar:olar PRON-PERS-OLAR ;
+
+LEXICON Determiners
+
+o%'z:o%'z DET-REF ; 
+
+LEXICON Numerals
+
+bir:bir NUM ; ! "one"
+eki:eki NUM ; ! "two"
+u'sh:u'sh NUM ; ! "three"
+to'rt:to'rt NUM ; ! "four"
+bes:bes NUM ; ! "five"
+altı:altı NUM ; ! "six"
+jeti:jeti NUM ; ! "seven"
+segiz:segiz NUM ; ! "eight"
+tog'ıs:tog'ıs  NUM ; ! "nine"
+on:on NUM ; ! "ten"
+
+ju'z:ju'z NUM ; ! "hundred"
 
 LEXICON Nouns 
 
@@ -235,6 +316,7 @@ ara:ara N1 ; ! ""
 qas:qas N1 ; ! ""
 
 
+ha%'reket:ha%'reket N1 ; ! ""
 awqat:awqat N1 ; ! ""
 kitap:kitap N1 ; ! ""
 medrese:medrese N1 ; ! ""
@@ -245,6 +327,7 @@ adam:adam N1 ; ! ""
 jıl:jıl N1 ; ! ""
 jıl:jil N1 ; ! "" ! Der/LR ! Use/Sub
 xabar:xabar N1 ; ! ""
+xalıq:xal%{y%}q N1 ; ! "people"
 
 organizm:organizm N1 ; ! ""
 kapitalizm:kapitalizm N1 ; ! ""
@@ -321,6 +404,7 @@ oktyabr:oktyabr N1 ; ! ""
 noyabr:noyabr N1 ; ! ""
 dekabr:dekabr N1 ; ! ""
 
+azatlıq:azatlıq N1 ; ! ""
 
 ! AUTOMATIC FROM APERTIUM-KAZ
 
@@ -531,6 +615,8 @@ xabardar:xabardar A4 ; ! "" FIXME note that this takes personal copula endings
 xalıqaralıq:xalıqaralıq A4 ; ! "international"
 ximiyalıq:ximiyalıq A4 ; ! ""
 
+jergilikli:jergilikli A4 ; ! ""
+
 LEXICON Adverbs
 
 erte:erte ADV ; ! ""
@@ -543,6 +629,8 @@ kel:kel V-IV ; ! ""
 de:de V-TV ; ! ""
 et:et V-TV ; ! ""
 ish:ish V-TV ; ! ""
+tezlet:tezlet V-TV ; ! "to quicken"
+
 
 LEXICON Punctuation
 

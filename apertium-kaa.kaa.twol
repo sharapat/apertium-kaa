@@ -6,7 +6,7 @@ Alphabet
 
  %{A%}:a %{A%}:e
  %{I%}:ı %{I%}:i 
- %{G%}:g
+ %{G%}:g %{G%}:k %{G%}:q
  %{N%}:n
  %{K%}:k %{K%}:q
  %{D%}:d %{D%}:t
@@ -14,6 +14,7 @@ Alphabet
  %{'%}:0 %{'%}:%'
  %{s%}:s %{s%}:0
  %{n%}:n %{n%}:0
+ %{y%}:ı %{y%}:0
  %{l%}:l
 
  %'
@@ -23,8 +24,8 @@ Alphabet
 
 Sets
 
-Vow = a e i o u ı    ! o' u' 
-      A E İ O U I ;  ! O' U'
+Vow = a e i o u ı    ! a' o' u' 
+      A E İ O U I ;  ! A' O' U'
 
 Cns = B V G D J Z Y K Q L M N R S T W F X H     ! N' G' 
       b v g d j z y k q l m n r s t w f x h ;   ! n' g'
