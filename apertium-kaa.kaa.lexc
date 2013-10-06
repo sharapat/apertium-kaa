@@ -1,0 +1,90 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!   K A R A K A L P A K · M O R P H O L O G I C A L · T R A N S D U C E R   !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! See http://wiki.apertium.org/wiki/Turkic_lexicon
+
+Multichar_Symbols
+
+%<n%>               !             
+%<post%>            !
+
+LEXICON Root
+
+Conjunctions ; 
+Postpositions ;
+Nouns ;
+ProperNouns ;
+Punctuation ; 
+
+LEXICON CASES
+
+%<nom%>: # ; ! CLIT-INCL-COP ;
+!CASES-OBL ;
+
+LEXICON N1
+
+%<n%>: # ; 
+
+LEXICON NP-TOP
+
+%<np%>%<top%>: NP-COMMON ;
+%<np%>%<top%>%<attr%>: # ;
+
+LEXICON NP-AL
+
+%<np%>%<al%>: CASES ;
+%<np%>%<al%>%<attr%>: # ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Conjunctions
+
+ja'ne:ja'ne CC ; ! ""
+
+LEXICON Postpositions
+
+qadar:qadar POST ; ! ""
+
+LEXICON Nouns 
+
+ensiklopediya:ensiklopediya N1 ; ! ""
+maqala:maqala N1 ; ! ""
+proekt:proekt N1 ; ! ""
+til:til N1 ; ! ""
+kategoriya:kategoriya N1 ; ! ""
+partiya:partiya N1 ; ! ""
+
+LEXICON ProperNouns
+
+Qaraqalpaqstan:Qaraqalpaqstan NP-TOP ; ! ""
+
+Wikipedia:Wikipedia NP-AL ; ! ""
+
+LEXICON Punctuation
+
+%.%<sent%>:%. # ;
+%.%.%<sent%>:%.%. # ;
+%.%.%.%<sent%>:%.%.%. # ;
+…%<sent%>:… # ;
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%-%<guio%>:%- # ;
+%—%<guio%>:%— # ;
+%–%<guio%>:%– # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ;
+%'%<apos%>:%' # ;
+%"%<sent%>:%" # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%”%<rquot%>:%” # ;
+%“%<lquot%>:%“ # ;
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
+%\%<sent%>:%\ # ;
+%/%<sent%>:%/ # ;
+
