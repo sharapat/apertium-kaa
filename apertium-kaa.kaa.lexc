@@ -9,6 +9,14 @@ Multichar_Symbols
 %<n%>               !             
 %<post%>            !
 
+%{A%}
+%{I%}
+%{N%}
+%{G%}
+
+%{s%}
+%{n%}
+
 LEXICON Root
 
 Conjunctions ; 
@@ -17,14 +25,60 @@ Nouns ;
 ProperNouns ;
 Punctuation ; 
 
+LEXICON CLIT
+
+# ; 
+
+LEXICON CLIT-COP
+
+# ;
+
+LEXICON CASES-OBL
+
+%<gen%>:%>%{N%}%{I%}n%' CLIT ;
+%<acc%>:%>%{N%}%{I%} CLIT ;
+%<dat%>:%>%{G%}%{A%} CLIT ;
+%<loc%>:%>%{D%}%{A%} CLIT-COP ;
+%<abl%>:%>%{D%}%{A%}n CLIT-COP ;
+
 LEXICON CASES
 
-%<nom%>: # ; ! CLIT-INCL-COP ;
-!CASES-OBL ;
+%<nom%>: CLIT-COP ;
+CASES-OBL ;
+
+LEXICON POSS
+
+CASES-ETC ;
+%<px1sg%>:%>%{I%}m CASES-ETC ;
+%<px2sg%>:%>%{I%}n%' CASES-ETC ;
+%<px3sp%>:%>%{s%}%{I%}%{n%} CASES-ETC ;
+%<px1pl%>:%>%{I%}m%{I%}z CASES-ETC ;
+%<px2pl%>:%>%{I%}n%'d%{A%}r CASES-ETC ;
+
+LEXICON CASES-ETC
+
+CASES ;
+!GENPOSS-ETC ;
+
+LEXICON N-INFL-COMMON
+
+POSS ;
+CASES-ETC ;
+!ABESS ;
+
+LEXICON SUBST
+
+N-INFL-COMMON ;
+%<pl%>:%>l%{A%}r N-INFL-COMMON ;
 
 LEXICON N1
 
-%<n%>: # ; 
+%<n%>%<attr%>: # ;
+%<n%>: SUBST ;
+
+LEXICON NP-COMMON
+
+N-INFL-COMMON ;
 
 LEXICON NP-TOP
 
@@ -36,11 +90,21 @@ LEXICON NP-AL
 %<np%>%<al%>: CASES ;
 %<np%>%<al%>%<attr%>: # ;
 
+LEXICON POST
+
+%<post%>: # ;
+
+LEXICON CC
+
+%<cnjcoo%>: # ;
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Conjunctions
 
 ja'ne:ja'ne CC ; ! ""
+ha'm:ha'm CC ; ! ""
 
 LEXICON Postpositions
 
@@ -58,6 +122,7 @@ partiya:partiya N1 ; ! ""
 LEXICON ProperNouns
 
 Qaraqalpaqstan:Qaraqalpaqstan NP-TOP ; ! ""
+Samarqand:Samarqand NP-TOP ; ! ""
 
 Wikipedia:Wikipedia NP-AL ; ! ""
 
