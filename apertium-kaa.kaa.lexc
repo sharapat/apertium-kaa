@@ -17,6 +17,10 @@ Multichar_Symbols
 %{s%}
 %{n%}
 
+%>
+%  
+%'
+
 LEXICON Root
 
 Conjunctions ; 
@@ -120,12 +124,14 @@ kategoriya:kategoriya N1 ; ! ""
 partiya:partiya N1 ; ! ""
 teatr:teatr N1 ; ! ""
 federatsiya:federatsiya N1 ; ! ""
+respublika:respublika N1 ; ! ""
 
 LEXICON ProperNouns
 
 Qaraqalpaqstan:Qaraqalpaqstan NP-TOP ; ! ""
 Rossiya:Rossiya NP-TOP ; ! ""
 Samarqand:Samarqand NP-TOP ; ! ""
+No%'kis:No%'kis NP-TOP ; ! ""
 
 Wikipedia:Wikipedia NP-AL ; ! ""
 
