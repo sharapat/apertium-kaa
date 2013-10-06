@@ -27,6 +27,9 @@ Conjunctions ;
 Postpositions ;
 Nouns ;
 ProperNouns ;
+Adjectives ;
+Adverbs ;
+Verbs ;
 Punctuation ; 
 
 LEXICON CLIT
@@ -94,6 +97,40 @@ LEXICON NP-AL
 %<np%>%<al%>: CASES ;
 %<np%>%<al%>%<attr%>: # ;
 
+
+LEXICON A4                 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
+                           !# ұлттық
+
+%<adj%>: CLIT ; !CLITICS-INCLUDING-COPULA ;   !# ұлттық тағам
+
+LEXICON ADV
+
+%<adv%>: CLIT ; ! COMMON-CLITICS ;
+
+LEXICON V-FINITE-REGULAR_NEGATIVE
+
+%<aor%>:%>%{E%} # ; ! V-PERS-AOR ;
+%<past%>:%>%{G%}%{A%}n # ; ! V-PERS-S1 ;
+%<ifi%>:%>%{D%}%{I%} # ; ! V-PERS-S2 ;
+%<ifi_evid%>:%>%{I%}p  # ; !V-PERS-IFI_EVID ;
+!%<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
+
+
+LEXICON V-COMMON
+
+V-FINITE-REGULAR_NEGATIVE ;
+
+
+LEXICON V-DER
+
+%<coop%>:%>%{I%}s V-COMMON ;
+
+LEXICON V-IV
+
+%<v%>%<iv%>: V-COMMON ;
+%<v%>%<iv%>: V-DER ;
+
+
 LEXICON POST
 
 %<post%>: # ;
@@ -125,6 +162,30 @@ partiya:partiya N1 ; ! ""
 teatr:teatr N1 ; ! ""
 federatsiya:federatsiya N1 ; ! ""
 respublika:respublika N1 ; ! ""
+materiya:materiya N1 ; ! ""
+filosofiya:filosofiya N1 ; ! ""
+energiya:energiya N1 ; ! ""
+poeziya:poeziya N1 ; ! ""
+korporatsiya:korporatsiya N1 ; ! ""
+teoriya:teoriya N1 ; ! ""
+repressiya:repressiya N1 ; ! ""
+recessiya:recessiya N1 ; ! ""
+kriminologiya:kriminologiya N1 ; ! ""
+komissiya:komissiya N1 ; ! ""
+ximiya:ximiya N1 ; ! ""
+territoriya:territoriya N1 ; ! ""
+
+arxitektor:arxitektor N1 ; ! ""
+kompozitor:kompozitor N1 ; ! ""
+skulptor:skulptor N1 ; ! ""
+lektor:lektor N1 ; ! ""
+doktor:doktor N1 ; ! ""
+faktor:faktor N1 ; ! ""
+redaktor:redaktor N1 ; ! ""
+direktor:direktor N1 ; ! ""
+sektor:sektor N1 ; ! ""
+
+
 
 LEXICON ProperNouns
 
@@ -133,8 +194,21 @@ Rossiya:Rossiya NP-TOP ; ! ""
 Samarqand:Samarqand NP-TOP ; ! ""
 Qazaqstan:Qazaqstan NP-TOP ; ! ""
 No%'kis:No%'kis NP-TOP ; ! ""
+Shotlandiya:Shotlandiya NP-TOP ; ! ""
 
 Wikipedia:Wikipedia NP-AL ; ! ""
+
+LEXICON Adjectives
+
+biologiyalıq:biologiyalıq A4 ; ! ""
+
+LEXICON Adverbs
+
+erte:erte ADV ; ! ""
+
+LEXICON Verbs
+
+bol:bol V-IV ; ! ""
 
 LEXICON Punctuation
 
