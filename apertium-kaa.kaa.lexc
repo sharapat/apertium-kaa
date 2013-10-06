@@ -13,10 +13,12 @@ Multichar_Symbols
 %{I%}
 %{N%}
 %{G%}
+%{K%}
 %{D%}
 
 %{s%}
 %{n%}
+%{l%}
 %{'%}
 
 %>
@@ -132,8 +134,32 @@ LEXICON NP-AL
 %<np%>%<al%>%<attr%>: # ;
 
 
-LEXICON A4                 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
-                           !# ұлттық
+LEXICON A1                ! adjectives that can be both substantivised and andverbialised;
+                          ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
+                          !# жақсы, тез
+
+%<adj%>: CLIT ; !CLITICS-INCLUDING-COPULA ;                             !# жақсы адам
+%<adj%>%<comp%>:%>%{I%}r%{A%}%{K%} CLIT ; !CLITICS-INCLUDING-COPULA ;   !# жақсырақ іс
+
+%<adj%>%<subst%>: SUBST ;                             !# жақсыны таптым
+%<adj%>%<comp%>%<subst%>:%>%{I%}r%{A%}%{K%} SUBST ;   !# жақсырақты таптым
+
+%<adj%>%<advl%>: CLIT ; ! COMMON-CLITICS ;                               !# жақсы білемін
+%<adj%>%<comp%>%<advl%>:%>%{I%}r%{A%}%{K%} CLIT ; !COMMON-CLITICS ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
+
+LEXICON A3                 
+! (derived/not fully lexicalised) adjectives without adverbial reading,
+! so-called "predicatives" (бар, жоқ);
+! no comparison levels at all.
+!# көктемгі, басты, бар, жоқ
+
+%<adj%>: CLIT ; !CLITICS-INCLUDING-COPULA ;   !# көктемгі су тасқыны
+%<adj%>%<subst%>: SUBST ;           !# "...Самаранч ең бастыны түсінді..."
+                                    !# "Аты бардың заты бар."
+
+LEXICON A4 
+! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
+!# ұлттық
 
 %<adj%>: CLIT ; !CLITICS-INCLUDING-COPULA ;   !# ұлттық тағам
 
@@ -164,6 +190,11 @@ LEXICON V-IV
 %<v%>%<iv%>: V-COMMON ;
 %<v%>%<iv%>: V-DER ;
 
+LEXICON V-TV
+
+%<v%>%<tv%>: V-COMMON ;
+%<v%>%<tv%>: V-DER ;
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON ;
 
 LEXICON POST
 
@@ -208,6 +239,14 @@ kitap:kitap N1 ; ! ""
 medrese:medrese N1 ; ! ""
 til:til N1 ; ! ""
 mektep:mektep N1 ; ! ""
+ma%'mleket:ma%'mleket N1 ; ! ""
+adam:adam N1 ; ! ""
+jıl:jıl N1 ; ! ""
+jıl:jil N1 ; ! "" ! Der/LR ! Use/Sub
+xabar:xabar N1 ; ! ""
+
+organizm:organizm N1 ; ! ""
+kapitalizm:kapitalizm N1 ; ! ""
 
 ensiklopediya:ensiklopediya N1 ; ! ""
 maqala:maqala N1 ; ! ""
@@ -232,6 +271,8 @@ ximiya:ximiya N1 ; ! ""
 territoriya:territoriya N1 ; ! ""
 astronomiya:astronomiya N1 ; ! ""
 matematika:matematika N1 ; ! ""
+obligatsiya:obligatsiya N1 ; ! ""
+gravitatsiya:gravitatsiya N1 ; ! ""
 
 
 arxitektor:arxitektor N1 ; ! ""
@@ -261,6 +302,7 @@ qazaq:qazaq N1 ; ! ""
 tatar:tatar N1 ; ! ""
 o%'zbek:o%'zbek N1 ; ! ""
 rus:rus N1 ; ! ""
+frantsuz:frantsuz N1 ; ! ""
 qaraqalpaq:qaraqalpaq N1 ; ! ""
 arab:arab N1 ; ! ""
 
@@ -288,6 +330,7 @@ Britanya:Britanya NP-TOP ; ! ""
 London:London NP-TOP ; ! ""
 Ukraina:Ukraina NP-TOP ; ! ""
 Sankt% Peterburg:Sankt% Peterburg NP-TOP ; ! ""
+İran:İran NP-TOP ; ! ""
 Parij:Parij NP-TOP ; ! ""
 Aziya:Aziya NP-TOP ; ! ""
 Amerika:Amerika NP-TOP ; ! ""
@@ -309,6 +352,9 @@ Anglya:Anglya NP-TOP ; ! ""
 Finlyandiya:Finlyandiya NP-TOP ; ! ""
 Frantsiya:Frantsiya NP-TOP ; ! ""
 Zimbabve:Zimbabve NP-TOP ; ! ""
+Ta%'jikistan:Ta%'jikistan NP-TOP ; ! ""
+Pakistan:Pakistan NP-TOP ; ! ""
+İndiya:İndiya NP-TOP ; ! ""
 
 Xristofor:Xristofor NP-ANT-M ; ! ""
 Yosif:Yosif NP-ANT-M ; ! ""
@@ -338,6 +384,13 @@ GlaxoSmithKline:GlaxoSmithKline NP-AL ; ! ""
 
 LEXICON Adjectives
 
+basqa:basqa A1 ; ! "" FIXME +comp?
+u%'lken:u%'lken A1 ; ! ""
+u%'lken:ulken A1 ; ! "" ! Dir/LR ! Use/Sub
+
+bar:bar A3 ; ! ""
+joq:joq A3 ; ! ""
+
 biologiyalıq:biologiyalıq A4 ; ! ""
 ekonomikalıq:ekonomikalıq A4 ; ! ""
 
@@ -348,6 +401,11 @@ erte:erte ADV ; ! ""
 LEXICON Verbs
 
 bol:bol V-IV ; ! ""
+kel:kel V-IV ; ! ""
+
+de:de V-TV ; ! ""
+et:et V-TV ; ! ""
+ish:ish V-TV ; ! ""
 
 LEXICON Punctuation
 
