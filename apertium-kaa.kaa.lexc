@@ -118,6 +118,7 @@ proekt:proekt N1 ; ! ""
 til:til N1 ; ! ""
 kategoriya:kategoriya N1 ; ! ""
 partiya:partiya N1 ; ! ""
+teatr:teatr N1 ; ! ""
 
 LEXICON ProperNouns
 

@@ -1,0 +1,29 @@
+
+Alphabet
+
+ A B V G D E J Z İ Y K Q L M N O P R S T U W F X H I
+ a b v g d e j z i y k q l m n o p r s t u w f x h ı
+
+ %{A%}:a
+ %{I%}:ı
+
+ %{s%}:s
+ %{n%}:0
+
+ %>:0 
+ % 
+ %- ; 
+
+Sets
+
+Vow = a e i o u ı
+      A E İ O U I ; 
+
+Cns = B V G D J Z Y K Q L M N R S T W F X H 
+      b v g d j z y k q l m n r s t w f x h ; 
+
+Rules
+
+"Deletion of {s} after a consonant"
+%{s%}:0 <=> :Cns %>: _  ; 
+
