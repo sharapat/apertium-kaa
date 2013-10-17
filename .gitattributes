@@ -9,6 +9,7 @@
 /apertium-kaa.kaa.rlx -text
 /apertium-kaa.kaa.twol -text
 /apertium-kaa.pc.in -text
+/apertium-kaa.post-kaa.dix -text
 /autogen.sh -text
 /configure.ac -text
 dev/countstems.sh -text

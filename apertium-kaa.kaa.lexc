@@ -6,8 +6,118 @@
 
 Multichar_Symbols
 
-%<n%>               !             
-%<post%>            !
+%<n%>         ! Noun                       ! Зат есім
+%<np%>        ! Proper noun                ! Жалқы есім
+%<adj%>       ! Adjective                  ! Сын есім
+%<num%>       ! Numeral                    ! Сан есім
+%<prn%>       ! Pronoun                    ! Есімдік
+%<det%>       ! Determiner                 ! Детерминатив
+%<v%>         ! Verb                       ! Етістік
+%<vaux%>      ! Auxilary verb              ! Көмекші етістік
+%<adv%>       ! Adverb                     ! Үстеу
+%<post%>      ! Postposition               ! Септеулік шылау
+%<postadv%>   ! Postadverb                 ! "Постүстеу" (*1)
+%<cnjcoo%>    ! Co-ordinating conjunction  ! Cалаластырғыш жалғаулық
+%<cnjsub%>    ! Sub-ordinating conjunction ! Cабақтастырғыш жалғаулық
+%<cnjadv%>    ! Adverbial conjunction      ! "Үстеу-жалғаулық"
+%<ij%>        ! Interjection               ! Одағай
+%<abbr%>      ! Abbreviation               ! Қысқарған сөз
+%<cop%>       ! Copula                     ! Копула
+%<ideo%>      ! Ideophone                  ! Еліктеу сөз
+%<top%>       ! Toponym      ! Топоним
+%<ant%>       ! Anthroponym  ! Кісі есімі
+%<cog%>       ! Cognomen     ! Фамилия
+%<pat%>       ! Patronym     ! Әке текті есім
+%<org%>       ! Organization ! Ұйым есімі
+%<al%>        ! Other        ! Басқалар
+%<m%>         ! Masculine
+%<f%>         ! Feminine
+%<mf%>        ! Masculine/feminine !# basically cognoms without -ов/-ова,
+%<attr%>      ! Attributive
+%<subst%>     ! Substantive
+%<advl%>      ! Adverbial
+%<sg%>        ! Singular
+%<pl%>        ! Plural
+%<px1sg%>     ! First person singular
+%<px2sg%>     ! Second person singular
+%<px3sp%>     ! Third person singular/plural
+%<px1pl%>     ! First person plural
+%<px2pl%>     ! Second person plural
+%<px%>        ! General possessive          !# -нікі
+%<nom%>       ! Nominative
+%<gen%>       ! Genitive
+%<dat%>       ! Dative
+%<acc%>       ! Accusative
+%<abl%>       ! Ablative
+%<loc%>       ! Locative
+%<ins%>       ! Instrumental
+%<sim%>       ! Similative
+%<abe%>       ! Abessive=Privative ! Лишительный
+%<reas%>      ! not used rigth now, just in case for
+%<comp%>      ! Comparative
+%<pers%>      ! Personal
+%<recip%>     ! Reciprocal
+%<dem%>       ! Demonstrative
+%<ind%>       ! Indefinite
+%<itg%>       ! Interrogative
+%<qnt%>       ! Quantifier
+%<neg%>       ! Negative       !# ешкім
+%<ref%>       ! Reflexive
+%<ord%>       ! Ordinal
+%<coll%>      ! Collective
+%<dist%>      ! Distributive
+%<imp%>       ! Imperative
+%<opt%>       ! Optative/jussive
+%<caus%>      ! Causative
+%<pass%>      ! Passive
+%<coop%>      ! Cooperative
+%<pres%>      ! for "жатыр", "тұр", "отыр" and "жүр"
+%<aor%>       ! -{E}
+%<past%>      ! -{G}{A}н
+%<ifi%>       ! -{D}{I}
+%<ifi_evid%>  ! -{I}пт{I}
+%<fut%>       ! -{I}р
+%<fut_plan%>  ! -{M}{A}{K}
+%<prc_perf%>  ! Perfect participle
+%<prc_impf%>  ! Imperfect participle
+%<prc_vol%>   ! Volition participle
+%<prc_cond%>  ! Conditional participle
+%<prc_fplan%> ! Future plan participle
+%<prc_plan%>  ! Plan participle
+%<gna_perf%>  ! -{I}п
+%<gna_cond%>  ! -с{A}
+%<gna_until%> ! -{G}{A}нш{A}
+%<gna_after%> ! -{G}{A}л{I}
+%<gpr_past%>  ! -{G}{A}н               ! past verbal adjective
+%<gpr_impf%>  ! -{E}{T}{I}н            ! imperfect verbal adjective
+%<gpr_pot%>   ! -{U}ш{I}               ! potential verbal adjective
+%<gpr_ppot%>  ! -{A}рл{I}{K}
+%<gpr_fut%>   ! -{I}р                  ! future verbal adjective
+%<ger%>       ! -{U}
+%<ger_past%>  ! -{G}{A}н
+%<ger_perf%>  ! -{G}{A}нл{I}{K}   (stresses the fact that something happened)
+%<ger_ppot%>  ! -{A}рл{I}{K}      (~the ability to do the denoted action)
+%<ger_abs%>   ! -уш{I}л{I}{K}          FIXME CHECK
+%<ger_fut%>   ! -{A}р
+%<ger_impf%>  ! -{E}{T}{I}н
+%<tv%>        ! Transitive
+%<iv%>        ! Intransitive
+%<p1%>        ! First person
+%<p2%>        ! Second person
+%<p3%>        ! Third person
+%<frm%>       ! Formality
+%<qst%>       ! Modal question particle
+%<emph%>      ! Emphasizing modal particle
+%<mod_ass%>   ! Assertive modal particle
+%<mod%>       ! Other modal words (шығар, сияқты etc)
+%<sent%>      ! Sentence marker
+%<guio%>      ! Hyphen
+%<cm%>        ! Comma
+%<apos%>      ! Apostrophe
+%<rquot%>     ! Quote marker (right hand side)
+%<lquot%>     ! Quote marker (left hand side)
+%<rpar%>      ! Parenthetical marker (right hand side)
+%<lpar%>      ! Parenthetical marker (left hand side)
 
 %{A%}
 %{I%}
@@ -138,18 +248,19 @@ LEXICON NP-AL
 %<np%>%<al%>%<attr%>: # ;
 
 
-LEXICON A1                ! adjectives that can be both substantivised and andverbialised;
-                          ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
-                          !# жақсы, тез
+LEXICON A1                
+! adjectives that can be both substantivised and adverbialised;
+! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
+!# жақсы, тез
 
-%<adj%>: CLIT ; !CLITICS-INCLUDING-COPULA ;                             !# жақсы адам
-%<adj%>%<comp%>:%>%{I%}r%{A%}%{K%} CLIT ; !CLITICS-INCLUDING-COPULA ;   !# жақсырақ іс
+%<adj%>: CLIT ; !CLITICS-INCLUDING-COPULA ;                             
+%<adj%>%<comp%>:%>%{I%}r%{A%}%{K%} CLIT ; !CLITICS-INCLUDING-COPULA ;   
 
-%<adj%>%<subst%>: SUBST ;                             !# жақсыны таптым
-%<adj%>%<comp%>%<subst%>:%>%{I%}r%{A%}%{K%} SUBST ;   !# жақсырақты таптым
+%<adj%>%<subst%>: SUBST ;                             
+%<adj%>%<comp%>%<subst%>:%>%{I%}r%{A%}%{K%} SUBST ;   
 
-%<adj%>%<advl%>: CLIT ; ! COMMON-CLITICS ;                               !# жақсы білемін
-%<adj%>%<comp%>%<advl%>:%>%{I%}r%{A%}%{K%} CLIT ; !COMMON-CLITICS ;     !# "...ион көп болса соғұрлым тоқ жақсырақ өтеді."
+%<adj%>%<advl%>: CLIT ; ! COMMON-CLITICS ;                               
+%<adj%>%<comp%>%<advl%>:%>%{I%}r%{A%}%{K%} CLIT ; !COMMON-CLITICS ;     
 
 LEXICON A3                 
 ! (derived/not fully lexicalised) adjectives without adverbial reading,
@@ -157,10 +268,9 @@ LEXICON A3
 ! no comparison levels at all.
 !# көктемгі, басты, бар, жоқ
 
-%<adj%>: CLIT ; !CLITICS-INCLUDING-COPULA ;   !# көктемгі су тасқыны
-%<adj%>%<subst%>: SUBST ;           !# "...Самаранч ең бастыны түсінді..."
-                                    !# "Аты бардың заты бар."
-
+%<adj%>: CLIT ; !CLITICS-INCLUDING-COPULA ;   
+%<adj%>%<subst%>: SUBST ;           
+                                    
 LEXICON A4 
 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
 !# ұлттық
@@ -233,7 +343,6 @@ LEXICON NUM-COMMON
 LEXICON NUM
 
 NUM-COMMON ;
-! FIXME: base form, <det> reading
 %<num%>%<ord%>:%>%{I%}nsh%{I%} # ;             
 %<num%>%<ord%>:%>%{I%}nsh%{I%} N-INFL-COMMON ;
 
@@ -386,6 +495,7 @@ tatar:tatar N1 ; ! ""
 o%'zbek:o%'zbek N1 ; ! ""
 rus:rus N1 ; ! ""
 frantsuz:frantsuz N1 ; ! ""
+nemis:nemis N1 ; ! ""
 mon%'g%'ol:mon%'g%'ol N1 ; ! "Mongol"
 qaraqalpaq:qaraqalpaq N1 ; ! ""
 arab:arab N1 ; ! ""
@@ -658,6 +768,7 @@ LEXICON Punctuation
 %)%<rpar%>:%) # ;
 %\%<sent%>:%\ # ;
 %/%<sent%>:%/ # ;
+ʻ%<apos%>:ʻ # ;
 
 ! Temporary numeral lexicon
 <[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
