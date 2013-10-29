@@ -148,6 +148,7 @@ ProperNouns ;
 Adjectives ;
 Adverbs ;
 Verbs ;
+Abbreviations ; 
 Punctuation ; 
 
 LEXICON CLIT
@@ -368,6 +369,9 @@ LEXICON CC
 
 %<cnjcoo%>: # ;
 
+LEXICON ABBR
+
+%<abbr%>: # ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -871,6 +875,17 @@ de:de V-TV ; ! ""
 et:et V-TV ; ! ""
 ish:ish V-TV ; ! ""
 tezlet:tezlet V-TV ; ! "to quicken"
+
+
+LEXICON Abbreviations
+
+kg:kg ABBR ; ! "kg"
+km²:km² ABBR ; ! "km²"
+km²:km2 ABBR ; ! "km²" Dir/LR
+km³:km³ ABBR ; ! "km³"
+km³:km3 ABBR ; ! "km³" Dir/LR
+km:km ABBR ; ! "km"
+t%.b%.:t%.b%. ABBR ; ! "etc."
 
 
 LEXICON Punctuation
