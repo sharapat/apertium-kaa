@@ -4,8 +4,8 @@ Alphabet
  A B V G D E J Z İ Y K Q L M N O P R S T U W F X H I
  a b v g d e j z i y k q l m n o p r s t u w f x h ı
 
- %{A%}:a %{A%}:e
- %{I%}:ı %{I%}:i 
+ %{A%}:a ! %{A%}:e
+ %{I%}:ı ! %{I%}:i 
  %{G%}:g %{G%}:k %{G%}:q
  %{N%}:n
  %{K%}:k %{K%}:q
@@ -54,4 +54,8 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                 Cy in ( г ) ! ғ )
                 matched;
 
+"{A} vowel harmony"
+%{A%}:е <=> [ [ :FrontVow | [ :a :%' ] ] :Cns* :Cns ]/[ %>: | %  ] _ ;
 
+"{I} vowel harmony"
+%{I%}:i <=> [ [ :FrontVow | [ :a :%' ] ] :Cns* :Cns ]/[ %>: | %  ] _ ;

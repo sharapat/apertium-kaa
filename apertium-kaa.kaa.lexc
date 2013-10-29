@@ -596,6 +596,7 @@ avtor:avtor N1 ; ! ""
 opera:opera N1 ; ! ""
 kompyuter:kompyuter N1 ; ! ""
 kontinent:kontinent N1 ; ! ""
+prezident:prezident N1 ; ! ""
 
 qazaq:qazaq N1 ; ! ""
 tatar:tatar N1 ; ! ""
@@ -622,6 +623,7 @@ noyabr:noyabr N1 ; ! ""
 dekabr:dekabr N1 ; ! ""
 
 azatlıq:azatlıq N1 ; ! ""
+
 
 LEXICON ProperNouns
 
