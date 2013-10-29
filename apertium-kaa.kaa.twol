@@ -17,6 +17,8 @@ Alphabet
  %{y%}:ı %{y%}:0
  %{l%}:l
 
+ %{❗%}:0
+
  %'
  %>:0 
  % 
@@ -26,6 +28,9 @@ Sets
 
 Vow = a e i o u ı    ! a' o' u' 
       A E İ O U I ;  ! A' O' U'
+
+FrontVow = e i       ! a'
+           E I ;     ! A' 
 
 Cns = B V G D J Z Y K Q L M N R S T W F X H     ! N' G' 
       b v g d j z y k q l m n r s t w f x h ;   ! n' g'
@@ -37,4 +42,16 @@ Rules
 
 "Intervocalic voicing of p"
 p:b <=> :Vow (:0) _ %>: (:0) :Vow ;
+
+"Epenthesis in some stems"
+%{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
+
+"Intervocalic voicing of к/қ"
+Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
+          except
+            %{❗%}:0 _ ;
+          where Cx in ( к ) ! қ )
+                Cy in ( г ) ! ғ )
+                matched;
+
 

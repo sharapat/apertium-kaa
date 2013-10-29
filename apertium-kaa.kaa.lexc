@@ -333,7 +333,13 @@ LEXICON PRON-PERS-OLAR
 %<prn%>%<pers%>%<p3%>%<pl%>%<nom%>: # ;
 %<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:%>g%'a # ;
 
+LEXICON PRON-XXX ! To categorise
 
+%<prn%>: # ;
+
+LEXICON DET-XXX ! To categorise
+
+%<det%>: # ;
 
 LEXICON NUM-COMMON
 
@@ -365,25 +371,66 @@ LEXICON CC
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON Conjunctions
 
-ja'ne:ja'ne CC ; ! ""
-ha'm:ha'm CC ; ! ""
-biraq:biraq CC ; ! "but"
+LEXICON Conjunctions 
+
+al:al CC ; ! ""
+birese:birese CC ; ! ""
+yamasa:yamasa CC ; ! ""
+sonday%-aq:sonday%-aq CC ; ! ""
+tek:tek CC ; ! ""
+ha%'m:ha%'m CC ; ! ""
+ya:ya CC ; ! ""
 
 eger:eger CS ; ! ""
+egerde:egerde CS ; ! ""
+ma%'bada:ma%'bada CS ; ! ""
+o%'ytkeni:o%'ytkeni CS ; ! ""
+onda:onda CS ; ! ""
+onday% bolsa:onday% bolsa CS ; ! ""
+sebebi:sebebi CS ; ! ""
+yag%'nıy:yag%'nıy CS ; ! ""
 
+LEXICON Postpositions 
 
-
-LEXICON Postpositions
-
-qadar:qadar POST ; ! ""
-deyin:deyin POST ; ! "until, up to, as far as" + DAT
-keyin:keyin POST ; ! "after, afterwards, later" + ABL
-basqa:basqa POST ; ! "besides, except" + ABL     
-qabat:qabat POST ;
-qaray:qaray POST ; ! "toward" + DAT
-qarsı:qarsı POST ; ! "anti-, against, contra-" + DAT
+arqalı:arqalı POST ; ! ""
+arnalg%'an:arnalg%'an POST ; ! ""
+basqa:basqa POST ; ! ""
+beri:beri POST ; ! ""
+beter:beter POST ; ! ""
+birge:birge POST ; ! ""
+boyı:boyı POST ; ! ""
+boyı menen:boyı menen POST ; ! ""
+boyında:boyında POST ; ! ""
+boyınsha:boyınsha POST ; ! ""
+burın:burın POST ; ! ""
+ko%'re:ko%'re POST ; ! ""
+qurlı:qurlı POST ; ! ""
+deyin:deyin POST ; ! ""
+haqqında:haqqında POST ; ! ""
+jo%'ninde:jo%'ninde POST ; ! ""
+jaqın:jaqın POST ; ! ""
+ilgeri:ilgeri POST ; ! ""
+uqsas:uqsas POST ; ! ""
+qabat:qabat POST ; ! ""
+qarag%'anda:qarag%'anda POST ; ! ""
+qaray:qaray POST ; ! ""
+qaramag%'ında:qaramag%'ında POST ; ! ""
+qaramag%'ındag%'ı:qaramag%'ındag%'ı POST ; ! ""
+qaramay:qaramay POST ; ! ""
+qaramastan:qaramastan POST ; ! ""
+qarsı:qarsı POST ; ! ""
+qatar:qatar POST ; ! ""
+keyin:keyin POST ; ! ""
+maqsetınde:maqsetınde POST ; ! ""
+men:men POST ; ! ""
+sayın:sayın POST ; ! ""
+sa%'ykes:sa%'ykes POST ; ! ""
+sıyaqlı:sıyaqlı POST ; ! ""
+sıyaqlı:sıyaqlı POST ; ! ""
+tuwralı:tuwralı POST ; ! ""
+ushın:ushın POST ; ! ""
+haqqında:haqqında POST ; ! ""
 
 LEXICON Pronouns 
 
@@ -394,24 +441,84 @@ biz:biz PRON-PERS-BIZ ;
 siz:siz PRON-PERS-SIZ ;
 olar:olar PRON-PERS-OLAR ;
 
-LEXICON Determiners
+barlıq:barlıq PRON-XXX ; ! ""
+basqa:basqa PRON-XXX ; ! ""
+ba%'ri:ba%'ri PRON-XXX ; ! ""
+bir% na%'rse:bir% na%'rse PRON-XXX ; ! ""
+birew:birew PRON-XXX ; ! ""
+ha%'r% kim:ha%'r% kim PRON-XXX ; ! ""
+kim:kim PRON-XXX ; ! ""
+ne:ne PRON-XXX ; ! ""
+o%'z:o%'z PRON-XXX ; ! ""
+
+LEXICON Determiners 
 
 o%'z:o%'z DET-REF ; 
 
-LEXICON Numerals
+anaw:anaw DET-XXX ; ! ""
+bar:bar DET-XXX ; ! ""
+barlıq:barlıq DET-XXX ; ! ""
+bir:bir DET-XXX ; ! ""
+bir% neshe:bir% neshe DET-XXX ; ! ""
+bir% neshe:bir% neshe DET-XXX ; ! ""
+pu'tkil:pu'tkil DET-XXX ; ! ""
+bul:bul DET-XXX ; ! ""
+ha'r% bir:ha'r% bir DET-XXX ; ! ""
+ha'r% tu'rli:ha'r% tu'rli DET-XXX ; ! ""
+hesh% bir:hesh% bir DET-XXX ; ! ""
+hesh% qanday:hesh% qanday DET-XXX ; ! ""
+ju%'zlegen:ju%'zlegen DET-XXX ; ! ""
+qaysı:qaysı DET-XXX ; ! ""
+qaysıbir:qaysıbir DET-XXX ; ! ""
+geybir:geybir DET-XXX ; ! ""
+ko%'plegen:ko%'plegen DET-XXX ; ! ""
+pu%'tkil:pu%'tkil DET-XXX ; ! ""
+milliardlag%'an:milliardlag%'an DET-XXX ; ! ""
+millionlag%'an:millionlag%'an DET-XXX ; ! ""
+mınaw:mınaw DET-XXX ; ! ""
+mın%'lag%'an:mın%'lag%'an DET-XXX ; ! ""
+ol:ol DET-XXX ; ! ""
+onlag%'an:onlag%'an DET-XXX ; ! ""
+usı:usı DET-XXX ; ! ""
+usını:usını DET-XXX ; ! ""
+sol:sol DET-XXX ; ! ""
+anaw:anaw DET-XXX ; ! ""
 
-bir:bir NUM ; ! "one"
-eki:eki NUM ; ! "two"
-u'sh:u'sh NUM ; ! "three"
-to'rt:to'rt NUM ; ! "four"
-bes:bes NUM ; ! "five"
-altı:altı NUM ; ! "six"
-jeti:jeti NUM ; ! "seven"
-segiz:segiz NUM ; ! "eight"
-tog'ıs:tog'ıs  NUM ; ! "nine"
-on:on NUM ; ! "ten"
+LEXICON Numerals 
 
-ju'z:ju'z NUM ; ! "hundred"
+nol:nol NUM ; ! ""
+bir:bir NUM ; ! ""
+eki:eki NUM ; ! ""
+u%'sh:u%'sh NUM ; ! ""
+to%'rt:to%'rt NUM ; ! ""
+bes:bes NUM ; ! ""
+altı:altı NUM ; ! ""
+jeti:jeti NUM ; ! ""
+segiz:segiz NUM ; ! ""
+tog%'ız:tog%'ız NUM ; ! ""
+on:on NUM ; ! ""
+on% bir:on% bir NUM ; ! ""
+on% eki:on% eki NUM ; ! ""
+on% u%'sh:on% u%'sh NUM ; ! ""
+on% to%'rt:on% to%'rt NUM ; ! ""
+on% bes:on% bes NUM ; ! ""
+on% altı:on% altı NUM ; ! ""
+on% jeti:on% jeti NUM ; ! ""
+on% segiz:on% segiz NUM ; ! ""
+on% tog%'ız:on% tog%'ız NUM ; ! ""
+otız:otız NUM ; ! ""
+qırıq:qırıq NUM ; ! ""
+eliw:eliw NUM ; ! ""
+alpıs:alpıs NUM ; ! ""
+jetpis:jetpis NUM ; ! ""
+seksen:seksen NUM ; ! ""
+toqsan:toqsan NUM ; ! ""
+ju%'z:ju%'z NUM ; ! ""
+mın%':mın%' NUM ; ! ""
+on% mın%':on% mın%' NUM ; ! ""
+million:million NUM ; ! ""
+milliard:milliard NUM ; ! ""
+trillion:trillion NUM ; ! ""
 
 LEXICON Nouns 
 
@@ -515,9 +622,6 @@ noyabr:noyabr N1 ; ! ""
 dekabr:dekabr N1 ; ! ""
 
 azatlıq:azatlıq N1 ; ! ""
-
-! AUTOMATIC FROM APERTIUM-KAZ
-
 
 LEXICON ProperNouns
 
