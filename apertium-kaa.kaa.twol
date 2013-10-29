@@ -46,6 +46,9 @@ p:b <=> :Vow (:0) _ %>: (:0) :Vow ;
 "Epenthesis in some stems"
 %{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
 
+"{n} deletion word final"
+%{n%}:0 <=> _ .#. ;
+
 "Intervocalic voicing of к/қ"
 Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
           except
