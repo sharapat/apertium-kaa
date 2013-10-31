@@ -5,8 +5,28 @@ Alphabet
 
 ;
 
+Sets
+
+DottedLetters = ә ө ү ғ ! a o u g
+                Ә Ө Ү Ғ ! A O U G ;
+
+hLetters = ш ч ! s c
+           Ш Ч ! S C ;
+
 Rules
 
 Lx:Ly <=> _ %' ;
       where Lx in ( a o u g A O U G )
             Ly in ( ә ө ү ғ Ә Ө Ү Ғ ) ;
+
+%':0 <=> :DottedLetters _ ;
+
+Lx:Ly <=> _ h ;
+      where Lx in ( s c S C )
+            Ly in ( ш ч Ш Ч ) ;
+
+h:0 <=> :hLetters _ ;
+
+n:ң <=> _ g ;
+
+g:0 <=> ң:n _ ;
