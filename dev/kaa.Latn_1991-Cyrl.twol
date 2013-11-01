@@ -7,26 +7,34 @@ Alphabet
 
 Sets
 
-DottedLetters = ә ө ү ғ ! a o u g
-                Ә Ө Ү Ғ ! A O U G ;
+DottedLetters = ә ө ү ғ   ! a o u g
+                Ә Ө Ү Ғ ; ! A O U G
 
-hLetters = ш ч ! s c
-           Ш Ч ! S C ;
+hLetters = ш ч   ! s c
+           Ш Ч ; ! S C
 
 Rules
 
+"Dotted Letters"
 Lx:Ly <=> _ %' ;
       where Lx in ( a o u g A O U G )
-            Ly in ( ә ө ү ғ Ә Ө Ү Ғ ) ;
+            Ly in ( ә ө ү ғ Ә Ө Ү Ғ )
+      matched ;
 
+"Get rid of apostrophe after apostrophe letters"
 %':0 <=> :DottedLetters _ ;
 
+"H letters"
 Lx:Ly <=> _ h ;
       where Lx in ( s c S C )
-            Ly in ( ш ч Ш Ч ) ;
+            Ly in ( ш ч Ш Ч )
+      matched ;
 
+"Get rid of h after h letters"
 h:0 <=> :hLetters _ ;
 
+"Ng"
 n:ң <=> _ g ;
 
+"Get rid of g after ң"
 g:0 <=> ң:n _ ;
