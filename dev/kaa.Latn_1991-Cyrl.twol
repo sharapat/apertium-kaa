@@ -40,3 +40,5 @@ n:ң <=> _ g ;
 
 "Get rid of g after ң"
 g:0 <=> ң:n _ ;
+    except
+        _ %' ;
