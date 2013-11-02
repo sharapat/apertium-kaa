@@ -655,6 +655,12 @@ uyg%'ır:uyg%'ır N1 ; ! ""
 pasport:pasport N1 ; ! ""
 memleket:memleket N1 ; ! ""
 
+a%'ke:a%'ke N1 ; ! "father"
+a%'sker:a%'sker N1 ; ! "soldier"
+a%'lem:a%'lem N1 ; ! "world"
+a%'lipbe:a%'lipbe N1 ; ! "alphabet"
+a%'rman:a%'rman N1 ; ! "dream/regret?"
+
 
 
 LEXICON ProperNouns
@@ -702,6 +708,7 @@ Ta%'jikistan:Ta%'jikistan NP-TOP ; ! ""
 Pakistan:Pakistan NP-TOP ; ! ""
 İndiya:İndiya NP-TOP ; ! ""
 Tu%'rkmenistan:Tu%'rkmenistan NP-TOP ; ! ""
+A%'zerbayjan:A%'zerbayjan NP-TOP ; ! ""
 
 Xristofor:Xristofor NP-ANT-M ; ! ""
 Yosif:Yosif NP-ANT-M ; ! ""
@@ -868,6 +875,7 @@ jergilikli:jergilikli A4 ; ! ""
 LEXICON Adverbs
 
 erte:erte ADV ; ! ""
+a%'bden:a%'bden ADV ; ! "extremely"
 
 LEXICON Verbs
 
