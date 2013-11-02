@@ -285,7 +285,7 @@ LEXICON ADV
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
 %<aor%>:%>%{E%} # ; ! V-PERS-AOR ;
-%<past%>:%>%{G%}%{A%}n # ; ! V-PERS-S1 ;
+%<past%>:%>%{G%}%{'%}%{A%}n # ; ! V-PERS-S1 ;
 %<ifi%>:%>%{D%}%{I%} # ; ! V-PERS-S2 ;
 %<ifi_evid%>:%>%{I%}p  # ; !V-PERS-IFI_EVID ;
 !%<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
