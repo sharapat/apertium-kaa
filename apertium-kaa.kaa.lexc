@@ -122,6 +122,7 @@ Multichar_Symbols
 %{A%}
 %{I%}
 %{N%}
+%{M%}
 %{G%}
 %{K%}
 %{D%}
@@ -293,6 +294,7 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 LEXICON V-COMMON
 
 V-FINITE-REGULAR_NEGATIVE ;
+%<neg%>:%>%{M%}%{A%} V-FINITE-REGULAR_NEGATIVE ;
 
 LEXICON V-DER
 
