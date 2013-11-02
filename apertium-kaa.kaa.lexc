@@ -136,6 +136,7 @@ Multichar_Symbols
 %>
 %  
 %'
+%~
 
 LEXICON Root
 
@@ -380,6 +381,10 @@ LEXICON ABBR
 
 LEXICON Conjunctions 
 
+da:%~da CC ; ! "" ! Dir/RL
+da:da CC ; ! "" ! Dir/LR
+da:de CC ; ! "" ! Dir/LR
+
 al:al CC ; ! ""
 birese:birese CC ; ! ""
 yamasa:yamasa CC ; ! ""
@@ -466,7 +471,6 @@ anaw:anaw DET-XXX ; ! ""
 bar:bar DET-XXX ; ! ""
 barlıq:barlıq DET-XXX ; ! ""
 bir:bir DET-XXX ; ! ""
-bir% neshe:bir% neshe DET-XXX ; ! ""
 bir% neshe:bir% neshe DET-XXX ; ! ""
 pu'tkil:pu'tkil DET-XXX ; ! ""
 bul:bul DET-XXX ; ! ""
@@ -897,6 +901,7 @@ km³:km³ ABBR ; ! "km³"
 km³:km3 ABBR ; ! "km³" Dir/LR
 km:km ABBR ; ! "km"
 t%.b%.:t%.b%. ABBR ; ! "etc."
+j%.:j%. ABBR ; ! "year"
 
 
 LEXICON Punctuation
