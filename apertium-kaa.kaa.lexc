@@ -552,7 +552,7 @@ mektep:mektep N1 ; ! ""
 ma%'mleket:ma%'mleket N1 ; ! ""
 adam:adam N1 ; ! ""
 jıl:jıl N1 ; ! ""
-jıl:jil N1 ; ! "" ! Der/LR ! Use/Sub
+!jıl:jil N1 ; ! "" ! Der/LR ! Use/Sub
 xabar:xabar N1 ; ! ""
 xalıq:xal%{y%}q N1 ; ! "people"
 
