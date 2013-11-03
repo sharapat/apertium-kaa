@@ -1,0 +1,29 @@
+Config:
+  hfst:
+      App: hfst-lookup
+      Gen: ../kaa.autogen.hfst
+      Morph: ../kaa.automorf.hfst
+
+Tests:
+
+ "[twol] {G}{'} becomes g'":
+    jıl<n><dat> : jılg'a
+    maqala<n><dat> : maqalag'a
+    adam<n><dat> : adamg'a
+    qıl<n><tv><past> : qılg'an
+    bol<v><iv><past> : bolg'an
+
+ "[twol] {G}{'} becomes g":
+    til<n><dat> : tilge
+    kel<v><iv><past> : kelgen
+
+ "[twol] {G}{'} becomes k":
+    ma'mleket<n><dat> : ma'mleketke
+    ket<v><iv><past> : ketken
+    ish<v><tv><past> : ishken
+
+ "[twol] {G}{'} becomes q":
+    kitap<n><dat> : kitapqa
+    soq<v><tv><past> : soqqan
+
+

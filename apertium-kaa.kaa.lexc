@@ -883,14 +883,16 @@ a%'bden:a%'bden ADV ; ! "extremely"
 
 LEXICON Verbs
 
-bol:bol V-IV ; ! ""
-kel:kel V-IV ; ! ""
+bol:bol V-IV ; ! "be, become"
+kel:kel V-IV ; ! "come"
+ket:ket V-IV ; ! "leave"
 
 de:de V-TV ; ! ""
 et:et V-TV ; ! ""
-ish:ish V-TV ; ! ""
+ish:ish V-TV ; ! "drink"
 tezlet:tezlet V-TV ; ! "to quicken"
-
+qıl:qıl V-TV ; ! "do, make"
+soq:soq V-TV ; ! ""
 
 LEXICON Abbreviations
 
