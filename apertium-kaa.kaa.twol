@@ -6,13 +6,15 @@ Alphabet
 
  %{A%}:a ! %{A%}:e
  %{I%}:ı ! %{I%}:i 
- %{G%}:g %{G%}:k %{G%}:q
+! %{G%}:g %{G%}:k %{G%}:q
+ %{G%}:g
  %{N%}:n
  %{K%}:k %{K%}:q
  %{D%}:d %{D%}:t
  %{M%}:m %{M%}:b %{M%}:p
 
- %{'%}:0 %{'%}:%'
+! %{'%}:0 %{'%}:%'
+ %{'%}:0
  %{s%}:s %{s%}:0
  %{n%}:n %{n%}:0
  %{y%}:ı %{y%}:0
@@ -33,7 +35,14 @@ Vow = a e i o u ı    ! a' o' u'
       A E İ O U I ;  ! A' O' U'
 
 FrontVow = e i       ! a' o' u'
-           E I ;     ! A' O' U'
+           E İ ;     ! A' O' U'
+
+! Vowels that are front if ' follows
+FrontableVow = a o u
+               A O U ;
+
+BackVow = a ı o u
+          A I O U ;
 
 Cns = B V G D J Z Y K Q L M N R S T W F X H     ! N' G' 
       b v g d j z y k q l m n r s t w f x h ;   ! n' g'
@@ -45,6 +54,9 @@ CnsRight = B V G D J Z Y K Q L M N R S T W F X H     ! N' G'
 
 VoicelessCns = b v p f d t j s g h k q 
                B V P F D T J S G H K Q ; 
+
+VoicedCns = z y l m n w
+            Z Y L M N W ;
 
 
 Rules
@@ -83,5 +95,17 @@ Cx:Cy <=> :VoicelessCns/[ %>: | %  | %{☭%}:0 | %{ъ%}:0 ] _ ;
 "{I} vowel harmony"
 %{I%}:i <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] :Cns* :CnsRight ]/[ %>: | % | :0 ] _ ;
 
-"' is impossible after k"
-%{'%}:0 <=> :k (:0)  _ ; 
+!"' is impossible after k"
+!%{'%}:0 <=> :k (:0)  _ ; 
+
+"Insert ' after everything but g in the context of back vowels"
+%{'%}:%' <=> [ :BackVow :Cns* :g ]/:0 _ ;
+
+"{G} to q after a voiceless sound followed by back vowels"
+%{G%}:q <=> [ :BackVow :Cns* :VoicelessCns ]/:0 _ ;
+
+"{G} to k after a voiceless sound followed by front vowels"
+%{G%}:k <=> [ [ :FrontVow | [ :FrontableVow :%' ] ] :Cns* :VoicelessCns ]/:0 _ ;
+
+!"{G} to g after voiced cons or vowel"
+!%{G%}:g <=> [ :VoicedCns | :Vow | [ :n :%' ] ]/:0 _ ;
