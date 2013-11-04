@@ -132,7 +132,7 @@ Multichar_Symbols
 %{l%}
 %{'%}
 %{y%}
-%{_%}
+%{%_%}
 
 %>
 %  
@@ -215,7 +215,7 @@ N-INFL-COMMON ;
 LEXICON N1
 
 %<n%>%<attr%>: # ;
-%<n%>:%{_%} SUBST ;
+%<n%>:%{%_%} SUBST ;
 
 LEXICON NP-COMMON
 
@@ -223,18 +223,18 @@ N-INFL-COMMON ;
 
 LEXICON NP-TOP
 
-%<np%>%<top%>:%{_%} NP-COMMON ;
+%<np%>%<top%>:%{%_%} NP-COMMON ;
 %<np%>%<top%>%<attr%>: # ;
 
 LEXICON NP-ANT-F
 
-%<np%>%<ant%>%<f%>:%{_%} NP-COMMON ;
+%<np%>%<ant%>%<f%>:%{%_%} NP-COMMON ;
 %<np%>%<ant%>%<f%>%<attr%>: # ;
 
 
 LEXICON NP-ANT-M
 
-%<np%>%<ant%>%<m%>:%{_%} NP-COMMON ;
+%<np%>%<ant%>%<m%>:%{%_%} NP-COMMON ;
 %<np%>%<ant%>%<m%>%<attr%>: # ;
 
 LEXICON NP-COG-OV
@@ -248,7 +248,7 @@ LEXICON NP-COG-OV
 
 LEXICON NP-AL
 
-%<np%>%<al%>:%{_%} CASES ;
+%<np%>%<al%>:%{%_%} CASES ;
 %<np%>%<al%>%<attr%>: # ;
 
 
@@ -257,14 +257,14 @@ LEXICON A1
 ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
 !# жақсы, тез
 
-%<adj%>:%{_%} CLIT ; !CLITICS-INCLUDING-COPULA ;                             
-%<adj%>%<comp%>:%{_%}%>%{I%}r%{A%}%{K%} CLIT ; !CLITICS-INCLUDING-COPULA ;   
+%<adj%>:%{%_%} CLIT ; !CLITICS-INCLUDING-COPULA ;                             
+%<adj%>%<comp%>:%{%_%}%>%{I%}r%{A%}%{K%} CLIT ; !CLITICS-INCLUDING-COPULA ;   
 
-%<adj%>%<subst%>:%{_%} SUBST ;                             
-%<adj%>%<comp%>%<subst%>:%{_%}%>%{I%}r%{A%}%{K%} SUBST ;   
+%<adj%>%<subst%>:%{%_%} SUBST ;                             
+%<adj%>%<comp%>%<subst%>:%{%_%}%>%{I%}r%{A%}%{K%} SUBST ;   
 
-%<adj%>%<advl%>:%{_%} CLIT ; ! COMMON-CLITICS ;                               
-%<adj%>%<comp%>%<advl%>:%{_%}%>%{I%}r%{A%}%{K%} CLIT ; !COMMON-CLITICS ;     
+%<adj%>%<advl%>:%{%_%} CLIT ; ! COMMON-CLITICS ;                               
+%<adj%>%<comp%>%<advl%>:%{%_%}%>%{I%}r%{A%}%{K%} CLIT ; !COMMON-CLITICS ;     
 
 LEXICON A3                 
 ! (derived/not fully lexicalised) adjectives without adverbial reading,
@@ -272,18 +272,18 @@ LEXICON A3
 ! no comparison levels at all.
 !# көктемгі, басты, бар, жоқ
 
-%<adj%>:%{_%} CLIT ; !CLITICS-INCLUDING-COPULA ;   
-%<adj%>%<subst%>:%{_%} SUBST ;           
+%<adj%>:%{%_%} CLIT ; !CLITICS-INCLUDING-COPULA ;   
+%<adj%>%<subst%>:%{%_%} SUBST ;           
                                     
 LEXICON A4 
 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
 !# ұлттық
 
-%<adj%>:%{_%} CLIT ; !CLITICS-INCLUDING-COPULA ;   !# ұлттық тағам
+%<adj%>:%{%_%} CLIT ; !CLITICS-INCLUDING-COPULA ;   !# ұлттық тағам
 
 LEXICON ADV
 
-%<adv%>:%{_%} CLIT ; ! COMMON-CLITICS ;
+%<adv%>:%{%_%} CLIT ; ! COMMON-CLITICS ;
 
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
@@ -304,14 +304,14 @@ LEXICON V-DER
 
 LEXICON V-IV
 
-%<v%>%<iv%>:%{_%} V-COMMON ;
-%<v%>%<iv%>:%{_%} V-DER ;
+%<v%>%<iv%>:%{%_%} V-COMMON ;
+%<v%>%<iv%>:%{%_%} V-DER ;
 
 LEXICON V-TV
 
-%<v%>%<tv%>:%{_%} V-COMMON ;
-%<v%>%<tv%>:%{_%} V-DER ;
-%<v%>%<tv%>%<pass%>:%{_%}%>%{I%}%{l%} V-COMMON ;
+%<v%>%<tv%>:%{%_%} V-COMMON ;
+%<v%>%<tv%>:%{%_%} V-DER ;
+%<v%>%<tv%>%<pass%>:%{%_%}%>%{I%}%{l%} V-COMMON ;
 
 LEXICON PRON-PERS-MEN
 

@@ -19,7 +19,7 @@ Alphabet
  %{n%}:n %{n%}:0
  %{y%}:ı %{y%}:0
  %{l%}:l
- %{_%}:0  ! sometimes surfaces as '
+ %{%_%}:0  ! sometimes surfaces as '
 
  %{❗%}:0
  %{☭%}:0
