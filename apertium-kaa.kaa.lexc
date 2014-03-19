@@ -285,6 +285,11 @@ LEXICON ADV
 
 %<adv%>:%{%_%} CLIT ; ! COMMON-CLITICS ;
 
+LEXICON ADV-WITH-KI
+
+ADV ;
+%<adv%>: KI ;
+
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
 %<aor%>:%>%{E%} # ; ! V-PERS-AOR ;
@@ -386,11 +391,15 @@ da:%~da CC ; ! "" ! Dir/RL
 da:da CC ; ! "" ! Dir/LR
 da:de CC ; ! "" ! Dir/LR
 
-al:al CC ; ! ""
+!! Противительные
+
+al:al CC ; ! "contrastive and"
+biraq:biraq ; ! "but"
+tek:tek CC ; ! "but, just"
+
 birese:birese CC ; ! ""
 yamasa:yamasa CC ; ! ""
 sonday%-aq:sonday%-aq CC ; ! ""
-tek:tek CC ; ! ""
 ha%'m:ha%'m CC ; ! ""
 ya:ya CC ; ! ""
 ja%'ne:ja%'ne CC ; ! ""
@@ -534,14 +543,15 @@ trillion:trillion NUM ; ! ""
 
 LEXICON Nouns 
 
+ara:ara N1 ; ! ""
 arqa:arqa N1 ; ! ""
 art:art N1 ; ! ""
 ast:ast N1 ; ! ""
+bag%':bag%' N1 ; ! ""
 jan:jan N1 ; ! ""
-u%'st:u%'st N1 ; ! ""
-tus:tus N1 ; ! ""
-ara:ara N1 ; ! ""
 qas:qas N1 ; ! ""
+tus:tus N1 ; ! ""
+u%'st:u%'st N1 ; ! ""
 
 
 ha%'reket:ha%'reket N1 ; ! ""
@@ -698,7 +708,6 @@ du%'mpek:du%'mpek N1 ; ! ""
 a%'jel:a%'jel N1 ; ! ""
 kelbet:kelbet N1 ; ! ""
 sıpat:sıpat N1 ; ! ""
-azamat:azamat N1 ; ! ""
 puxaralıq:puxaralıq N1 ; ! ""
 azan:azan N1 ; ! ""
 azap:azap N1 ; ! ""
@@ -736,8 +745,9 @@ akula:akula N1 ; ! ""
 akustika:akustika N1 ; ! ""
 akusher:akusher N1 ; ! ""
 aktsiya:aktsiya N1 ; ! ""
-haqiyqat:haqiyqat N1 ; ! ""
-fevral:fevral N1 ; ! ""
+haqıyqat:haqıyqat N1 ; ! ""
+hawa% rayı:hawa% rayı N1 ; ! """weather,climate"
+fevral:fevral N1 ; ! "february"
 xabar:xabar N1 ; ! ""
 mag%'lıwmat:mag%'lıwmat N1 ; ! ""
 aqsaqal:aqsaqal N1 ; ! ""
@@ -826,7 +836,7 @@ atlet:atlet N1 ; ! ""
 atletika:atletika N1 ; ! ""
 atmosfera:atmosfera N1 ; ! ""
 atom:atom N1 ; ! ""
-hawa:hawa N1 ; ! ""
+hawa:hawa N1 ; ! "air"
 aw:aw N1 ; ! ""
 awdarıwshı:awdarıwshı N1 ; ! ""
 auditoriya:auditoriya N1 ; ! ""
@@ -2074,6 +2084,7 @@ John:John NP-ANT-M ; ! ""
 Charles:Charles NP-ANT-M ; ! ""
 Wilhelm:Wilhelm NP-ANT-M ; ! ""
 
+Aysha:Aysha NP-ANT-F ; ! ""
 Veronica:Veronica NP-ANT-F ; ! ""
 Nadejda:Nadejda NP-ANT-F ; ! ""
 
@@ -2084,7 +2095,6 @@ Begimov:Begimov NP-COG-OV ; ! ""
 Muwsaev:Muwsaev NP-COG-OV ; ! ""
 Divaev:Divaev NP-COG-OV ; ! ""
 
-
 Wikipedia:Wikipedia NP-AL ; ! ""
 Pedtexnikum:Pedtexnikum NP-AL ; ! ""
 GlaxoSmithKline:GlaxoSmithKline NP-AL ; ! ""
@@ -2092,12 +2102,13 @@ GlaxoSmithKline:GlaxoSmithKline NP-AL ; ! ""
 LEXICON Adjectives
 
 basqa:basqa A1 ; ! "" FIXME +comp?
+jaqsı:jaqsı A1 ; ! "good"
+jıllı:jıllı A1 ; ! "warm"
+ma%'n%'gi:ma%'n%'gi A1 ; ! ""
+qara:qara A1 ; ! ""
+qızıl:qızıl A1 ; ! ""
 u%'lken:u%'lken A1 ; ! ""
 u%'lken:ulken A1 ; ! "" ! Dir/LR ! Use/Sub
-ma%'n%'gi:ma%'n%'gi A1 ; ! ""
-
-qızıl:qızıl A1 ; ! ""
-qara:qara A1 ; ! ""
 
 bar:bar A3 ; ! ""
 joq:joq A3 ; ! ""
@@ -2226,8 +2237,35 @@ jergilikli:jergilikli A4 ; ! ""
 
 LEXICON Adverbs
 
-erte:erte ADV ; ! ""
 a%'bden:a%'bden ADV ; ! "extremely"
+erte:erte ADV ; ! ""
+! bu%'gin:bu%'gin ADV ; ! "today"
+ju%'da%':ju%'da%' ADV ; ! "very"
+
+! Adverbs wich take -KI and become an attr/adj
+! ============================================
+
+! алғаш:алғаш ADV-WITH-KI ; ! "at first > first/initial"
+! ha%'zir:ha%'zir ADV-WITH-KI ; ! "now > the one now"
+! bag%'ana:bag%'ana ADV-WITH-KI ; ! "just now > the one just now" FIXME: gloss
+! биыл:биыл ADV-WITH-KI ; ! "this year > this year's"
+bu%'gin:bu%'gin ADV-WITH-KI ; ! "today > today's"   FIXME: takes abl, dat, ...
+! бұрын:бұрын ADV-WITH-KI ; ! "earlier"
+! бұрын:бұрың ADV-WITH-KI ; ! "earlier" Dir/LR
+! былтыр:былтыр ADV-WITH-KI ; ! "last year > last year's"
+! ежел:ежел ADV-WITH-KI ; ! "ancient"
+! енді:енді ADV-WITH-KI ; ! "contrastive now > the one now"
+! жаңа:жаңа ADV-WITH-KI ; ! "a while ago's"
+! кәзір:кәзір ADV-WITH-KI ; ! "now > the one now (dial.)"
+! кейін:кейін ADV-WITH-KI ; ! "after"   FIXME: takes comparative
+! кеше:кеше ADV-WITH-KI ; ! "yesterday > yesterday's"
+! кеш:кеш ADV-WITH-KI ; ! "evening/late"
+! күндіз:күндіз ADV-WITH-KI ; ! "during the day"
+! қазір:қазір ADV-WITH-KI ; ! "now > the one now"
+! соң:соң ADV-WITH-KI ; ! ""
+! таңертең:таңертең ADV-WITH-KI ; ! "morning"
+! төмен:төмен ADV-WITH-KI ; ! "lower"
+
 
 LEXICON Verbs
 
