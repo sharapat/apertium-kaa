@@ -394,7 +394,7 @@ da:de CC ; ! "" ! Dir/LR
 !! Противительные
 
 al:al CC ; ! "contrastive and"
-biraq:biraq ; ! "but"
+biraq:biraq CC ; ! "but"
 tek:tek CC ; ! "but, just"
 
 birese:birese CC ; ! ""
