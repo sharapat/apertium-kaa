@@ -281,6 +281,11 @@ LEXICON A4
 
 %<adj%>:%{%_%} CLIT ; !CLITICS-INCLUDING-COPULA ;   !# ұлттық тағам
 
+LEXICON KI
+
+%<attr%>:%>%{G%}%{I%} CLIT ; ! COMMON-CLITICS ;
+%<subst%>:%>%{G%}%{I%} N-INFL-COMMON ;
+
 LEXICON ADV
 
 %<adv%>:%{%_%} CLIT ; ! COMMON-CLITICS ;
