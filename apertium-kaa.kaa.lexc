@@ -422,12 +422,34 @@ LEXICON CC
 
 %<cnjcoo%>: # ;
 
+LEXICON QST
+
+%<qst%>: # ;
+
 LEXICON ABBR
 
 %<abbr%>: # ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+
+ LEXICON ModalParticles
+
+ma:%~ma QST ; ! "" Dir/RL
+ma:ma QST ; ! "" Dir/LR
+! ма:ба QST ; ! "" Dir/LR
+! ма:па QST ; ! "" Dir/LR
+! ма:ме QST ; ! "" Dir/LR
+! ма:бе QST ; ! "" Dir/LR
+! ма:пе QST ; ! "" Dir/LR
+ma% ne:%~ma% ne QST ; ! "" Dir/RL
+ma% ne:ma% ne QST ; ! "" Dir/LR
+! ма% не:ме% не QST ; ! "" Dir/LR
+! ше:ше QST ; ! ""
+
+! ғой:%~ғой MOD-ASS ; ! "" Dir/RL
+! ғой:ғой MOD-ASS ; ! "" Dir/LR
+! ғой:қой MOD-ASS ; ! "" Dir/LR
 
 LEXICON Conjunctions 
 
