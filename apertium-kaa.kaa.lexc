@@ -323,6 +323,45 @@ LEXICON V-TV
 %<v%>%<tv%>:%{%_%} V-DER ;
 %<v%>%<tv%>%<pass%>:%{%_%}%>%{I%}%{l%} V-COMMON ;
 
+LEXICON PRON-PERS-INFL
+
+ CASES-ETC ;
+ 
+ LEXICON PersonalPronouns
+ 
+! мен%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мен COMMON-CLITICS ;
+! мен%<prn%>%<pers%>%<p1%>%<sg%>:м PRON-12SG-CASES ;
+! 
+! сен%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:сен COMMON-CLITICS ;
+! сен%<prn%>%<pers%>%<p2%>%<sg%>:с PRON-12SG-CASES ;
+! 
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол COMMON-CLITICS ;
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:о COMMON-CLITICS ; ! Dir/LR
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:оның COMMON-CLITICS ;
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:оған COMMON-CLITICS ;
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:оны COMMON-CLITICS ;
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:одан COMMON-CLITICS ;
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:онда COMMON-CLITICS ;
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:онымен COMMON-CLITICS ;
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:онікі%{n%} CASES ;
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондағы ATTR-SUBST ;
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:ондай COMMON-CLITICS ;
+! ол%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:оныңша COMMON-CLITICS ;
+! 
+! біз%<prn%>%<pers%>%<p1%>%<pl%>:біз PRON-PERS-INFL ;
+! біз%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:біздіңше COMMON-CLITICS ;
+! 
+! сендер%<prn%>%<pers%>%<p2%>%<pl%>:сендер PRON-PERS-INFL ;
+! сендер%<prn%>%<pers%>%<p2%>%<pl%>%<adv%>:сендерше COMMON-CLITICS ;
+! 
+ olar%<prn%>%<pers%>%<p3%>%<pl%>:olar PRON-PERS-INFL ;
+! олар%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:оларша COMMON-CLITICS ;
+! 
+! сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
+! сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:сіздіңше COMMON-CLITICS ;
+! сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
+! сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:сіздерше COMMON-CLITICS ;
+
 LEXICON PRON-PERS-MEN
 
 %<prn%>%<pers%>%<p1%>%<sg%>%<nom%>: # ;
@@ -343,10 +382,10 @@ LEXICON PRON-PERS-SIZ
 
 %<prn%>%<pers%>%<p2%>%<pl%>%<nom%>: # ;
 
-LEXICON PRON-PERS-OLAR
+! LEXICON PRON-PERS-OLAR
 
-%<prn%>%<pers%>%<p3%>%<pl%>%<nom%>: # ;
-%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:%>g%'a # ;
+! %<prn%>%<pers%>%<p3%>%<pl%>%<nom%>: # ;
+! %<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:%>g%'a # ;
 
 LEXICON PRON-XXX ! To categorise
 
@@ -421,6 +460,29 @@ onday% bolsa:onday% bolsa CS ; ! ""
 sebebi:sebebi CS ; ! ""
 yag%'nıy:yag%'nıy CS ; ! ""
 
+! Adverbial conjunctions = "Относительные слова"
+! ==============================================
+
+! айтуынша:айтуынша CA ; ! ""
+! алайда:алайда CA ; ! "nevertheless"
+! әйтпесе:әйтпесе CA ; ! ""
+! әйтсе% де:әйтсе% де CA ; ! "nevertheless"
+! басқаша% айтканда:басқаша% айтканда CA ; ! ""
+! дегенмен:дегенмен CA ; ! "nevertheless"
+! жазуынша:жазуынша CA ; ! ""
+! мәлімдеуінше:мәлімдеуінше CA ; ! ""
+! ондықтан:ондықтан CA ; ! "that is why"
+usı% sebepten:usı% sebepten CA ; ! "therefore"
+! пікірінше:пікірінше CA ; ! ""
+! сонда% да:сонда% да CA ; ! "nevertheless" Use/MT   = (tat) шулай да
+! сонда:сонда CA ; ! "nevertheless"                  = (tat) шулай да
+! сондықтан:сондықтан CA ; ! "that is why"
+! сөздерінше:сөздерінше CA ; ! ""
+! сөзінше:сөзінше CA ; ! ""
+! сөйтсе% де:сөйтсе% де CA ; ! "nevertheless"
+! сөйтсе:сөйтсе CA ; ! "nevertheless"
+! хабарлауынша:хабарлауынша CA ; ! ""
+
 LEXICON Postpositions 
 
 arqalı:arqalı POST ; ! ""
@@ -469,7 +531,7 @@ sen:sen PRON-PERS-SEN ;
 ol:ol PRON-PERS-OL ;
 biz:biz PRON-PERS-BIZ ;
 siz:siz PRON-PERS-SIZ ;
-olar:olar PRON-PERS-OLAR ;
+! olar:olar PRON-PERS-OLAR ;
 
 barlıq:barlıq PRON-XXX ; ! ""
 basqa:basqa PRON-XXX ; ! ""
@@ -551,15 +613,20 @@ trillion:trillion NUM ; ! ""
 
 LEXICON Nouns 
 
-ara:ara N1 ; ! ""
-arqa:arqa N1 ; ! ""
-art:art N1 ; ! ""
-ast:ast N1 ; ! ""
 bag%':bag%' N1 ; ! ""
-jan:jan N1 ; ! ""
-qas:qas N1 ; ! ""
-tus:tus N1 ; ! ""
-u%'st:u%'st N1 ; ! ""
+
+! Nouns used as postpositions when <posssessive><case>
+! ====================================================
+
+ald:ald N1 ; ! "front"
+ara:ara N1 ; ! "among"
+arqa:arqa N1 ; ! "back"
+art:art N1 ; ! "back"
+ast:ast N1 ; ! "under"
+jan:jan N1 ; ! "next to"
+qas:qas N1 ; ! "near"
+! tu%'s:tu%'s N1 ; ! "~ near"
+u%'st:u%'st N1 ; ! "top
 
 
 ha%'reket:ha%'reket N1 ; ! ""
@@ -2228,8 +2295,8 @@ jıllı:jıllı A1 ; ! "warm"
 ! кеш:кеш A1 ; ! "late, evening"
 ! киелі:киелі A1 ; ! "holy"
 ! кір:кір A1 ; ! "dirty"
-! кішкене:кішкене A1 ; ! "little"
-! кішкентай:кішкентай A1 ; ! "small, little"
+kishkene:kishkene A1 ; ! "little"
+kishkentay:kishkentay A1 ; ! "small, little"
 ! көк:көк A1 ; ! "blue"
 ! көне:көне A1 ; ! "old/ancient (thing)"
 ! көңілді:көңілді A1 ; ! "happy"
@@ -2258,7 +2325,7 @@ qara:qara A1 ; ! "black"
 ! қорқынышты:қорқынышты A1 ; ! ""
 ! қош:қош A1 ; ! ""
 ! қою:қою A1 ; ! "dark, deep, thick"
-! қуанышты:қуанышты A1 ; ! "glad"
+quwanıshlı:quwanıshlı A1 ; ! "glad"
 ! қу:қу A1 ; ! "?crafty,сухой,высохший"
 ! құрама:құрама A1 ; ! "united,collected"
 ! құрғақ:құрғақ A1 ; ! "dry"
@@ -2310,7 +2377,7 @@ ma%'n%'gi:ma%'n%'gi A1 ; ! "eternal"
 ! сирек:сирек A1 ; ! ""
 ! сол:сол A1 ; ! "left"
 ! соң:соң A1 ; ! "last" ! FIXME:CHECK
-! суық:суық A1 ; ! "cold"
+suwıq:suwıq A1 ; ! "cold"
 ! сұйық:сұйық A1 ; ! ""
 ! сұлу:сұлу A1 ; ! "beautiful"
 ! сұр:сұр A1 ; ! "grey"
@@ -2383,8 +2450,11 @@ u%'lken:u%'lken A1 ; ! "big"
 
 u%'lken:ulken A1 ; ! "" ! Dir/LR ! Use/Sub
 
+! A3 adj., adj.subst
+! ==================
 
 bar:bar A3 ; ! ""
+jasar:jasar A3 ; ! "after numerals: of ageX"
 joq:joq A3 ; ! ""
 
 ma%'mleketlik:ma%'mleketlik A3 ; ! ""
@@ -2512,6 +2582,8 @@ jergilikli:jergilikli A4 ; ! ""
 LEXICON Adverbs
 
 a%'bden:a%'bden ADV ; ! "extremely"
+ha%'rdayım:ha%'rdayım ADV ; ! "always"
+ha%'r% waqıt:ha%'r% waqıt ADV ; ! "always"
 erte:erte ADV ; ! ""
 ! bu%'gin:bu%'gin ADV ; ! "today"
 ju%'da%':ju%'da%' ADV ; ! "very"
@@ -2553,6 +2625,8 @@ ish:ish V-TV ; ! "drink"
 tezlet:tezlet V-TV ; ! "to quicken"
 qıl:qıl V-TV ; ! "do, make"
 soq:soq V-TV ; ! ""
+oyna:oyna V-TV ; ! "play"
+jaqsı% ko%'r:jaqsı% ko%'r V-TV ; ! "to like"
 
 LEXICON Abbreviations
 
