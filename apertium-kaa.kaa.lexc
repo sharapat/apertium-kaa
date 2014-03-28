@@ -426,6 +426,10 @@ LEXICON QST
 
 %<qst%>: # ;
 
+LEXICON INTERJ
+
+%<ij%>: # ;
+
 LEXICON ABBR
 
 %<abbr%>: # ; 
@@ -2649,6 +2653,46 @@ qıl:qıl V-TV ; ! "do, make"
 soq:soq V-TV ; ! ""
 oyna:oyna V-TV ; ! "play"
 jaqsı% ko%'r:jaqsı% ko%'r V-TV ; ! "to like"
+
+ LEXICON Interjections
+!=====================!
+
+
+! ау:ау INTERJ ; ! ""
+! амин:амин INTERJ ; ! ""
+! ә:ә INTERJ ; ! ""
+! әй:әй INTERJ ; ! ""
+! әйе:әйе INTERJ ; ! "yes"
+! әлбетте:әлбетте INTERJ ; ! "of course"
+! әрине:әрине INTERJ ; ! "of course"
+! әттеген%-ай:әттеген%-ай INTERJ ; ! "" 
+! әттең:әттең INTERJ ; ! ""
+! әу:әу INTERJ ; ! ""
+! бәрекелді:бәрекелді INTERJ ; ! ""
+! бәсе:бәсе INTERJ ; ! ""
+! болыпты:болыпты INTERJ ; ! "okay / that's it"
+! дариға:дариға INTERJ ; ! ""
+! демек:демек INTERJ ; ! "that is"
+! дұрыс:дұрыс INTERJ ; ! "right"
+! е:е INTERJ ; ! "" 
+! ей:ей INTERJ ; ! ""
+! жарайды:жарайды INTERJ ; ! "okay / it'll do"
+joq:joq INTERJ ; ! "no"
+! иә:иә INTERJ ; ! "yes"
+! қане:қане INTERJ ; ! "where" ! interrog. interjection (question form of "вот")
+! қош:қош INTERJ ; ! ""
+! Құдай%-ай:Құдай%-ай INTERJ ; ! ""
+! мақұл:мақұл INTERJ ; ! "fine/okay"
+! мә:мә INTERJ ; ! "here you go / take"
+! мейлі:мейлі INTERJ ; ! "okay/fine"
+! міне:міне INTERJ ; ! "here is, вот"
+! мына:мына INTERJ ; ! "here is, вот"
+! ойбай:ойбай INTERJ ; ! "" 
+! ой:ой INTERJ ; ! "hey"
+! өй:өй INTERJ ; ! ""
+! өтінем:өтінем INTERJ ; ! "please"
+! түсінікті:түсінікті INTERJ ; ! "understood"
+! уа:уа INTERJ ; ! ""
 
 LEXICON Abbreviations
 
