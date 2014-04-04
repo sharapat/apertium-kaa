@@ -63,7 +63,7 @@ VoicedCns = z y l m n w
 Rules
 
 "Deletion of {s} after a consonant"
-%{s%}:0 <=> :Cns %>: _  ; 
+%{s%}:0 <=> :Cns (:0) %>: _  ; 
 
 "Intervocalic voicing of p"
 p:b <=> :Vow (:0) _ %>: (:0) :Vow ;
