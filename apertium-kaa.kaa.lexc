@@ -312,6 +312,11 @@ LEXICON V-DER
 
 %<coop%>:%>%{I%}s V-COMMON ;
 
+LEXICON V-TV-NOPASS
+
+%<v%>%<tv%>: V-COMMON ;
+%<v%>%<tv%>: V-DER ;
+
 LEXICON V-IV
 
 %<v%>%<iv%>:%{%_%} V-COMMON ;
@@ -2649,11 +2654,12 @@ uyıqla:uyıqla V-IV ; ! "sleep"
 de:de V-TV ; ! ""
 et:et V-TV ; ! ""
 ish:ish V-TV ; ! "drink"
-tezlet:tezlet V-TV ; ! "to quicken"
+jaqsı% ko%'r:jaqsı% ko%'r V-TV ; ! "to like"
+ko%'r:ko%'r V-TV-NOPASS ; ! "see"
+oyna:oyna V-TV ; ! "play"
 qıl:qıl V-TV ; ! "do, make"
 soq:soq V-TV ; ! ""
-oyna:oyna V-TV ; ! "play"
-jaqsı% ko%'r:jaqsı% ko%'r V-TV ; ! "to like"
+tezlet:tezlet V-TV ; ! "to quicken"
 
  LEXICON Interjections
 !=====================!
