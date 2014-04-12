@@ -317,6 +317,10 @@ LEXICON V-TV-NOPASS
 %<v%>%<tv%>: V-COMMON ;
 %<v%>%<tv%>: V-DER ;
 
+LEXICON Vinfl-AUX-IMPF
+
+%<vaux%>%<pres%>: V-PERS-S1 ; ! /ju%'r, jatir, tur, otir/
+
 LEXICON V-IV
 
 %<v%>%<iv%>:%{%_%} V-COMMON ;
@@ -836,7 +840,7 @@ baqırıs:baqırıs N1 ; ! ""
 hiyle:hiyle N1 ; ! ""
 aylıq:aylıq N1 ; ! ""
 aymaq:aymaq N1 ; ! ""
-ayna:ayna N1 ; ! ""
+ayna:ayna N1 ; ! "window"
 aynala:aynala N1 ; ! ""
 aylanıs:aylanıs N1 ; ! ""
 ayrıqshalıq:ayrıqshalıq N1 ; ! ""
@@ -2278,7 +2282,7 @@ basqa:basqa A1 ; ! "other"
 ! еркін:еркін A1 ; ! "free"
 ! ерте:ерте A1 ; ! "early"
 ! есіл:есіл A1 ; ! ""
-! ескі:ескі A1 ; ! "old"
+eski:eski A1 ; ! "old"
 ! жабық:жабық A1 ; ! "closed"
 ! жайлы:жайлы A1 ; ! ""
 jaqsı:jaqsı A1 ; ! "good"
@@ -2649,6 +2653,7 @@ LEXICON Verbs
 bol:bol V-IV ; ! "be, become"
 kel:kel V-IV ; ! "come"
 ket:ket V-IV ; ! "leave"
+tur:tur V-IV ; ! "rise,stand"
 uyıqla:uyıqla V-IV ; ! "sleep"
 
 de:de V-TV ; ! ""
@@ -2657,9 +2662,18 @@ ish:ish V-TV ; ! "drink"
 jaqsı% ko%'r:jaqsı% ko%'r V-TV ; ! "to like"
 ko%'r:ko%'r V-TV-NOPASS ; ! "see"
 oyna:oyna V-TV ; ! "play"
+qara:qara V-TV ; ! "look at"
 qıl:qıl V-TV ; ! "do, make"
 soq:soq V-TV ; ! ""
 tezlet:tezlet V-TV ; ! "to quicken"
+
+! Auxiliary verbs
+! ===============
+
+jat:jatır Vinfl-AUX-IMPF ; ! 
+ju%'r:ju%'r Vinfl-AUX-IMPF ; ! 
+otır:otır Vinfl-AUX-IMPF ; ! 
+tur:tur Vinfl-AUX-IMPF ; ! 
 
  LEXICON Interjections
 !=====================!
