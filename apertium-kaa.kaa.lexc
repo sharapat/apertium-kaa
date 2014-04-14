@@ -371,6 +371,11 @@ LEXICON PRON-PERS-INFL
 ! сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздер PRON-PERS-INFL ;
 ! сіздер%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:сіздерше COMMON-CLITICS ;
 
+
+LEXICON PRNNEG
+
+%<prn%>%<neg%>: CASES ;
+
 LEXICON PRON-PERS-MEN
 
 %<prn%>%<pers%>%<p1%>%<sg%>%<nom%>: # ;
@@ -577,6 +582,11 @@ ha%'r% kim:ha%'r% kim PRON-XXX ; ! ""
 kim:kim PRON-XXX ; ! ""
 ne:ne PRON-XXX ; ! ""
 o%'z:o%'z PRON-XXX ; ! ""
+
+! ешкім:ешкім PRNNEG ; ! ""
+! ешнәрсе:ешнәрсе PRNNEG ; ! ""
+hesh% na%'rse:hesh% na%'rse PRNNEG ; ! "" Use/MT
+! ештеңе:ештеңе PRNNEG ; ! ""
 
 LEXICON Determiners 
 
@@ -2619,6 +2629,7 @@ LEXICON Adverbs
 a%'bden:a%'bden ADV ; ! "extremely"
 ha%'rdayım:ha%'rdayım ADV ; ! "always"
 ha%'r% waqıt:ha%'r% waqıt ADV ; ! "always"
+hesh:hesh ADV ; ! "not, any"
 erte:erte ADV ; ! ""
 ! bu%'gin:bu%'gin ADV ; ! "today"
 ju%'da%':ju%'da%' ADV ; ! "very"
@@ -2653,20 +2664,26 @@ LEXICON Verbs
 abay% bol:abay% bol V-IV ; ! "cautious,attentive,beware"
 bar:bar V-IV ; ! ""
 bol:bol V-IV ; ! "be, become"
+jasırın:jasırın V-IV ; ! "hide oneself"
+jaw:jaw V-IV ; ! "percipitate"
 ju%'gir:ju%'gir V-IV ; ! "run"
 kel:kel V-IV ; ! "come"
 ket:ket V-IV ; ! "leave"
 tur:tur V-IV ; ! "rise,stand"
 uyıqla:uyıqla V-IV ; ! "sleep"
 
-de:de V-TV ; ! ""
-et:et V-TV ; ! ""
+bil:bil V-TV ; ! "know,understand"
+bu%'yt:bu%'yt V-TV ; ! "do that way"
+de:de V-TV-NOPASS ; ! "speak"
+et:et V-TV ; ! "do,make"
 ish:ish V-TV ; ! "drink"
+isle:isle V-TV ; ! "do,make"
 jaqsı% ko%'r:jaqsı% ko%'r V-TV ; ! "to like"
 ko%'r:ko%'r V-TV-NOPASS ; ! "see"
 oyna:oyna V-TV ; ! "play"
 qara:qara V-TV ; ! "look at"
 qıl:qıl V-TV ; ! "do, make"
+sana:sana V-TV ; ! "count"
 soq:soq V-TV ; ! ""
 tezlet:tezlet V-TV ; ! "to quicken"
 
