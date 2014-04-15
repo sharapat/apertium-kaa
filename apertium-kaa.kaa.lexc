@@ -2690,8 +2690,10 @@ tezlet:tezlet V-TV ; ! "to quicken"
 ! Auxiliary verbs
 ! ===============
 
+pit:pit Vinfl-AUX ; !
 jat:jatır Vinfl-AUX-IMPF ; ! 
 ju%'r:ju%'r Vinfl-AUX-IMPF ; ! 
+ket:ket Vinfl-AUX ; ! 
 otır:otır Vinfl-AUX-IMPF ; ! 
 tur:tur Vinfl-AUX-IMPF ; ! 
 
