@@ -2634,6 +2634,34 @@ erte:erte ADV ; ! ""
 ! bu%'gin:bu%'gin ADV ; ! "today"
 ju%'da%':ju%'da%' ADV ; ! "very"
 
+! "Interrogative adverbs", "pronoun-adverbs"
+! ==========================================
+! Better classification/implementation possible
+qayda:qayda ADV-ITG ; ! "where (где;куда)"
+! қайдан:қайдан ADV-ITG ; ! ""
+! қалай:қалай ADV-ITG ; ! "how"
+! нендей:нендей ADV-ITG ; ! "how"
+! қашан:қашан ADV-ITG ; ! "when"
+! неғұрлым:неғұрлым ADV-ITG ; ! ""
+! осылайша:осылайша ADV ; ! "" FIXME not good, temporal solution
+! еш% қашан:еш% қашан ADV ; ! "never" Use/MT
+! не:не ADV-ITG ; ! "what" Use/MT
+! ешқашан:ешқашан ADV ; ! "never"
+! қаншалық:қаншалық ADV-ITG ; ! ""
+! қаншалықты:қаншалықты ADV-ITG ; ! ""
+! әлдеқайда:әлдеқайда ADV ; ! ""
+! жақында:жақында ADV ; ! "nearly" !Use/MT
+! жоғары:жоғары  ADV ; ! "up" !Use/MT
+! қаншама:қаншама ADV-ITG ; ! ""
+! бұлайша:бұлайша ADV ; ! ""
+! қалайша:қалайша ADV ; ! ""
+! кейін:кейін ADV ; ! " after" !Use/MT
+! неліктен:неліктен ADV ; ! ""
+! оншалық:оншалық ADV ; ! "" 
+! соншалық:соншалық ADV ; ! "" 
+! соншалықты:соншалықты ADV ; ! ""
+! соншама:соншама ADV ; ! ""
+
 ! Adverbs wich take -KI and become an attr/adj
 ! ============================================
 
@@ -2676,6 +2704,7 @@ bil:bil V-TV ; ! "know,understand"
 bu%'yt:bu%'yt V-TV ; ! "do that way"
 de:de V-TV-NOPASS ; ! "speak"
 et:et V-TV ; ! "do,make"
+izle:izle V-TV ; ! "seek,look for"
 ish:ish V-TV ; ! "drink"
 isle:isle V-TV ; ! "do,make"
 jaqsı% ko%'r:jaqsı% ko%'r V-TV ; ! "to like"
@@ -2685,6 +2714,7 @@ qara:qara V-TV ; ! "look at"
 qıl:qıl V-TV ; ! "do, make"
 sana:sana V-TV ; ! "count"
 soq:soq V-TV ; ! ""
+sora:sora V-TV ; ! "request/ask for"
 tezlet:tezlet V-TV ; ! "to quicken"
 
 ! Auxiliary verbs
