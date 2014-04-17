@@ -2641,10 +2641,10 @@ qayda:qayda ADV-ITG ; ! "where (где;куда)"
 ! қайдан:қайдан ADV-ITG ; ! ""
 ! қалай:қалай ADV-ITG ; ! "how"
 ! нендей:нендей ADV-ITG ; ! "how"
-! қашан:қашан ADV-ITG ; ! "when"
+qashan:qashan ADV-ITG ; ! "when"
 ! неғұрлым:неғұрлым ADV-ITG ; ! ""
 ! осылайша:осылайша ADV ; ! "" FIXME not good, temporal solution
-! еш% қашан:еш% қашан ADV ; ! "never" Use/MT
+hesh% qashan:hesh% qashan ADV ; ! "never" Use/MT
 ! не:не ADV-ITG ; ! "what" Use/MT
 ! ешқашан:ешқашан ADV ; ! "never"
 ! қаншалық:қаншалық ADV-ITG ; ! ""
@@ -2700,6 +2700,7 @@ ket:ket V-IV ; ! "leave"
 tur:tur V-IV ; ! "rise,stand"
 uyıqla:uyıqla V-IV ; ! "sleep"
 
+al:al V-TV ; ! "take,recieve,buy,collect,"
 bil:bil V-TV ; ! "know,understand"
 bu%'yt:bu%'yt V-TV ; ! "do that way"
 de:de V-TV-NOPASS ; ! "speak"
@@ -2714,12 +2715,14 @@ qara:qara V-TV ; ! "look at"
 qıl:qıl V-TV ; ! "do, make"
 sana:sana V-TV ; ! "count"
 soq:soq V-TV ; ! ""
+so%'yle:so%'yle V-TV ; ! "say,speak"
 sora:sora V-TV ; ! "request/ask for"
 tezlet:tezlet V-TV ; ! "to quicken"
 
 ! Auxiliary verbs
 ! ===============
 
+al:al Vinfl-AUX ; ! 
 pit:pit Vinfl-AUX ; !
 jat:jatır Vinfl-AUX-IMPF ; ! 
 ju%'r:ju%'r Vinfl-AUX-IMPF ; ! 
@@ -2736,7 +2739,7 @@ tur:tur Vinfl-AUX-IMPF ; !
 ! ә:ә INTERJ ; ! ""
 ! әй:әй INTERJ ; ! ""
 ! әйе:әйе INTERJ ; ! "yes"
-! әлбетте:әлбетте INTERJ ; ! "of course"
+a%'lbette:a%'lbette INTERJ ; ! "of course"
 ! әрине:әрине INTERJ ; ! "of course"
 ! әттеген%-ай:әттеген%-ай INTERJ ; ! "" 
 ! әттең:әттең INTERJ ; ! ""
