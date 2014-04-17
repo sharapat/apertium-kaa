@@ -162,6 +162,10 @@ LEXICON CLIT-COP
 
 # ;
 
+LEXICON CLITICS-INCL-COP         ! Can appear only after nominals
+          
+# ;
+
 LEXICON CASES-OBL
 
 %<gen%>:%>%{N%}%{I%}n%' CLIT ;
@@ -431,6 +435,10 @@ LEXICON POST
 LEXICON CS
 
 %<cnjsub%>: # ;
+
+LEXICON ADV-ITG
+
+%<adv%>%<itg%>: CLITICS-INCL-COP ;
 
 LEXICON CC
 
