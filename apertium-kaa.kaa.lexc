@@ -400,10 +400,10 @@ LEXICON PRON-PERS-SIZ
 
 %<prn%>%<pers%>%<p2%>%<pl%>%<nom%>: # ;
 
-! LEXICON PRON-PERS-OLAR
+LEXICON PRON-PERS-OLAR
 
-! %<prn%>%<pers%>%<p3%>%<pl%>%<nom%>: # ;
-! %<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:%>g%'a # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<nom%>: # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:%>g%'a # ;
 
 LEXICON PRON-XXX ! To categorise
 
@@ -563,7 +563,7 @@ qarsı:qarsı POST ; ! ""
 qatar:qatar POST ; ! ""
 keyin:keyin POST ; ! ""
 maqsetınde:maqsetınde POST ; ! ""
-men:men POST ; ! ""
+penen:penen POST ; ! ""
 sayın:sayın POST ; ! ""
 sa%'ykes:sa%'ykes POST ; ! ""
 sıyaqlı:sıyaqlı POST ; ! ""
@@ -579,7 +579,7 @@ sen:sen PRON-PERS-SEN ;
 ol:ol PRON-PERS-OL ;
 biz:biz PRON-PERS-BIZ ;
 siz:siz PRON-PERS-SIZ ;
-! olar:olar PRON-PERS-OLAR ;
+olar:olar PRON-PERS-OLAR ;
 
 barlıq:barlıq PRON-XXX ; ! ""
 basqa:basqa PRON-XXX ; ! ""
@@ -588,6 +588,7 @@ bir% na%'rse:bir% na%'rse PRON-XXX ; ! ""
 birew:birew PRON-XXX ; ! ""
 ha%'r% kim:ha%'r% kim PRON-XXX ; ! ""
 kim:kim PRON-XXX ; ! ""
+na%'rse:na%'rse PRON-ITG-INFL ; ! "thing" ! Use/MT
 ne:ne PRON-XXX ; ! ""
 o%'z:o%'z PRON-XXX ; ! ""
 
@@ -694,6 +695,10 @@ jıl:jıl N1 ; ! ""
 !jıl:jil N1 ; ! "" ! Der/LR ! Use/Sub
 xabar:xabar N1 ; ! ""
 xalıq:xal%{y%}q N1 ; ! "people"
+ha%'reket:ha%'reket N1 ; ! "behaviour,move, activity"
+stol:stol N1 ; ! "table"
+orındıq:orındıq N1 ; ! "chair"
+dawıs:dawıs N1 ; ! "sound,noise"
 
 organizm:organizm N1 ; ! ""
 kapitalizm:kapitalizm N1 ; ! ""
@@ -2242,14 +2247,14 @@ LEXICON Adjectives
 ! айрықша:айрықша A1 ; ! ""
 ! активті:активті A1 ; ! ""
 ! ақ:ақ A1 ; ! "white"
-! ақырын:ақырын A1 ; ! "slow"
+aqırın:aqırın A1 ; ! "slow"
 ! ала:ала A1 ; ! "~speckled/mottled"
 ! аласа:аласа A1 ; ! "low"
 ! алуан:алуан A1 ; ! ""
 ! алыс:алыс A1 ; ! "far, distant"
 ! алып:алып A1 ; ! "enormous" !Use/MT
 ! аман:аман A1 ; ! ""
-! анық:анық A1 ; ! "clear;clearly"
+anıq:anıq A1 ; ! "clear;clearly"
 ! арзан:арзан A1 ; ! ""
 ! арнайы:арнайы A1 ; ! ""
 ! артық:артық A1 ; ! ""
@@ -2304,7 +2309,7 @@ eski:eski A1 ; ! "old"
 ! жабық:жабық A1 ; ! "closed"
 ! жайлы:жайлы A1 ; ! ""
 jaqsı:jaqsı A1 ; ! "good"
-! жақын:жақын A1 ; ! "close"
+jaqın:jaqın A1 ; ! "close"
 ! жалғыз:жалғыз A1 ; ! "lonely"
 ! жалпақ:жалпақ A1 ; ! ""
 ! жалпы:жалпы A1 ; ! "united,collected"
@@ -2352,7 +2357,7 @@ kishkene:kishkene A1 ; ! "little"
 kishkentay:kishkentay A1 ; ! "small, little"
 ! көк:көк A1 ; ! "blue"
 ! көне:көне A1 ; ! "old/ancient (thing)"
-! көңілді:көңілді A1 ; ! "happy"
+kewilli:kewilli A1 ; ! "happy"
 ! көп:көп A1 ; ! "many, much"
 ! көркем:көркем A1 ; ! "beautiful"
 ! күрең:күрең A1 ; ! "light brown?"
@@ -2635,12 +2640,18 @@ jergilikli:jergilikli A4 ; ! ""
 LEXICON Adverbs
 
 a%'bden:a%'bden ADV ; ! "extremely"
+ele:ele ADV ; ! "now" !FIXME:CHECK
+elede% bolsa:elede% bolsa ADV ; ! "still" ! Use/MT
+erte:erte ADV ; ! ""
 ha%'rdayım:ha%'rdayım ADV ; ! "always"
 ha%'r% waqıt:ha%'r% waqıt ADV ; ! "always"
 hesh:hesh ADV ; ! "not, any"
-erte:erte ADV ; ! ""
-! bu%'gin:bu%'gin ADV ; ! "today"
+ishinde:ishinde ADV ; ! "in"
 ju%'da%':ju%'da%' ADV ; ! "very"
+mu%'mkin:mu%'mkin ADV ; ! "probably"
+qayta:qayta ADV ; ! "again"
+! bu%'gin:bu%'gin ADV ; ! "today"
+
 
 ! "Interrogative adverbs", "pronoun-adverbs"
 ! ==========================================
@@ -2682,7 +2693,7 @@ bu%'gin:bu%'gin ADV-WITH-KI ; ! "today > today's"   FIXME: takes abl, dat, ...
 ! бұрын:бұрың ADV-WITH-KI ; ! "earlier" Dir/LR
 ! былтыр:былтыр ADV-WITH-KI ; ! "last year > last year's"
 ! ежел:ежел ADV-WITH-KI ; ! "ancient"
-! енді:енді ADV-WITH-KI ; ! "contrastive now > the one now"
+endi:endi ADV-WITH-KI ; ! "contrastive now > the one now"
 ! жаңа:жаңа ADV-WITH-KI ; ! "a while ago's"
 ! кәзір:кәзір ADV-WITH-KI ; ! "now > the one now (dial.)"
 ! кейін:кейін ADV-WITH-KI ; ! "after"   FIXME: takes comparative
@@ -2705,19 +2716,29 @@ jaw:jaw V-IV ; ! "percipitate"
 ju%'gir:ju%'gir V-IV ; ! "run"
 kel:kel V-IV ; ! "come"
 ket:ket V-IV ; ! "leave"
+ku%'l:ku%'l V-IV ; ! "laugh"
+ku%'limsire:ku%'limsire ; ! "to smile"
 tur:tur V-IV ; ! "rise,stand"
 uyıqla:uyıqla V-IV ; ! "sleep"
 
 al:al V-TV ; ! "take,recieve,buy,collect,"
+ayt:ayt V-TV ; ! "say,tell/сказать,говорить,рассказывать"  ! basically TV...
+bas:bas V-IV ; ! "вставать"
+bas:bas V-TV ; ! "давить;печатать"
+basta:basta V-TV ; ! "start,begin"
+ber:ber V-TV ; ! "give"
 bil:bil V-TV ; ! "know,understand"
 bu%'yt:bu%'yt V-TV ; ! "do that way"
 de:de V-TV-NOPASS ; ! "speak"
+esit:esit V-TV ; ! "hear"
 et:et V-TV ; ! "do,make"
 izle:izle V-TV ; ! "seek,look for"
 ish:ish V-TV ; ! "drink"
 isle:isle V-TV ; ! "do,make"
 jaqsı% ko%'r:jaqsı% ko%'r V-TV ; ! "to like"
+je:je V-TV ; ! "eat"
 ko%'r:ko%'r V-TV-NOPASS ; ! "see"
+oyla:oyla V-TV ; ! "think"
 oyna:oyna V-TV ; ! "play"
 qara:qara V-TV ; ! "look at"
 qıl:qıl V-TV ; ! "do, make"
@@ -2725,7 +2746,9 @@ sana:sana V-TV ; ! "count"
 soq:soq V-TV ; ! ""
 so%'yle:so%'yle V-TV ; ! "say,speak"
 sora:sora V-TV ; ! "request/ask for"
+tap:tap V-TV ; ! "find"
 tezlet:tezlet V-TV ; ! "to quicken"
+tın%'la:tın%'la V-TV ; ! "listen"
 
 ! Auxiliary verbs
 ! ===============
@@ -2737,6 +2760,7 @@ ju%'r:ju%'r Vinfl-AUX-IMPF ; !
 ket:ket Vinfl-AUX ; ! 
 otır:otır Vinfl-AUX-IMPF ; ! 
 tur:tur Vinfl-AUX-IMPF ; ! 
+shıq:shıq Vinfl-AUX ; !
 
  LEXICON Interjections
 !=====================!
@@ -2777,6 +2801,16 @@ joq:joq INTERJ ; ! "no"
 ! өтінем:өтінем INTERJ ; ! "please"
 ! түсінікті:түсінікті INTERJ ; ! "understood"
 ! уа:уа INTERJ ; ! ""
+
+! Вводные слова
+! =============
+
+! айтпақшы:айтпақшы INTERJ ; ! ""
+! бәлкім:бәлкім INTERJ ; ! ""
+! есесіне:есесіне INTERJ ; ! ""
+! мәселен:мәселен INTERJ ; ! "e.g."
+! мысалы:мысалы INTERJ ; ! "e.g."
+mu%'mkin:mu%'mkin INTERJ ; ! "probably"
 
 LEXICON Abbreviations
 
