@@ -52,7 +52,8 @@ Cns = B V G D J Z Y K Q L M N R S T W F X H     ! N' G'
 CnsRight = B V G D J Z Y K Q L M N R S T W F X H     ! N' G' 
       b v g d j z y k q l m n r s t w f x h ;   ! n' g'
 
-
+CnsApostroph = G N
+               g n ;
 
 VoicelessCns = b v p f d t j s g h k q 
                B V P F D T J S G H K Q ; 
@@ -117,3 +118,9 @@ Cx:Cy <=> :VoicelessCns/[ %>: | %  | %{☭%}:0 | %{ъ%}:0 ] _ ;
 
 "{E} vowel harmony"
 %{E%}:e <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] :Cns* :CnsRight ]/[ %>: | % | :0 ] _ ;
+
+"{N} to d after consonant"
+%{N%}:d <=> [ :Cns | [ :CnsApostroph :%' ] ]/:0 _ ;
+
+"{N} to t after consonant"
+%{N%}:t <=> [ :VoicelessCns ]/:0 _ ;
