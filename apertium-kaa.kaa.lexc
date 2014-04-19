@@ -311,7 +311,7 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Participles
-%<prc_impf%>:%>%{E%} CLIT-GHANA-ETC ;
+%<prc_impf%>:%>%{E%} # ; ! CLIT-GHANA-ETC ;
 %<prc_cond%>:%>s%{A%} V-PERS-S2 ;
 
 ! Verbal adverbs
@@ -2767,6 +2767,7 @@ je:je V-TV ; ! "eat"
 ko%'r:ko%'r V-TV-NOPASS ; ! "see"
 oyla:oyla V-TV ; ! "think"
 oyna:oyna V-TV ; ! "play"
+oyna:oyna V-IV ; ! "play"
 qara:qara V-TV ; ! "look at"
 qıl:qıl V-TV ; ! "do, make"
 sana:sana V-TV ; ! "count"
