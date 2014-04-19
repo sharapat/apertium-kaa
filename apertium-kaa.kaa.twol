@@ -9,7 +9,7 @@ Alphabet
 ! %{G%}:g %{G%}:k %{G%}:q
  %{G%}:g
  %{N%}:n
- %{E%}:y
+ %{E%}:a
  %{K%}:k %{K%}:q
  %{D%}:d %{D%}:t
  %{M%}:m %{M%}:b %{M%}:p
@@ -111,3 +111,9 @@ Cx:Cy <=> :VoicelessCns/[ %>: | %  | %{☭%}:0 | %{ъ%}:0 ] _ ;
 
 !"{G} to g after voiced cons or vowel"
 !%{G%}:g <=> [ :VoicedCns | :Vow | [ :n :%' ] ]/:0 _ ;
+
+"{E} to y after vowels"
+%{E%}:y <=> [ :Vow ]/:0 _ ;
+
+"{E} vowel harmony"
+%{E%}:e <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] :Cns* :CnsRight ]/[ %>: | % | :0 ] _ ;
