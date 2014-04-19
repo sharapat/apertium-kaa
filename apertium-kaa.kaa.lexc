@@ -143,6 +143,7 @@ Multichar_Symbols
 LEXICON Root
 
 Conjunctions ; 
+Copula ;
 Postpositions ;
 Pronouns ;
 Determiners ;
@@ -286,6 +287,38 @@ LEXICON A4
 
 %<adj%>:%{%_%} CLIT ; !CLITICS-INCLUDING-COPULA ;   !# ұлттық тағам
 
+LEXICON V-PERS-S1-NO3PERSON
+
+%<p1%>%<sg%>:%>%{M%}%{A%}n COMMON-CLITICS ;
+%<p2%>%<sg%>:%>s%{A%}n%' COMMON-CLITICS ;
+%<p1%>%<pl%>:%>%{M%}%{I%}z COMMON-CLITICS ;
+%<p2%>%<pl%>:%>s%{I%}zl%{I%}r COMMON-CLITICS ;
+
+%<p2%>%<frm%>%<sg%>:%>s%{I%}z COMMON-CLITICS ;
+%<p2%>%<frm%>%<pl%>:%>s%{I%}zl%{A%}r COMMON-CLITICS ;
+
+LEXICON V-PERS-S1
+
+! Used for: -AR-<fut>, -GAn-<past>, -MAK-<fut_plan>, copula
+
+V-PERS-S1-NO3PERSON ;
+%<p3%>%<sg%>: COMMON-CLITICS ;
+%<p3%>%<pl%>: COMMON-CLITICS ;
+
+LEXICON V-PERS-S2
+
+! Used for: -DI-<ifi>, -sA-<prc_cond>, -sA-<gna_cond>
+
+%<p1%>%<sg%>:%>m COMMON-CLITICS ;
+%<p2%>%<sg%>:%>n%' COMMON-CLITICS ;
+%<p3%>%<sg%>: COMMON-CLITICS ;
+%<p1%>%<pl%>:%>%{K%} COMMON-CLITICS ;
+%<p2%>%<pl%>:%>n%'l%{A%}r COMMON-CLITICS ;
+%<p3%>%<pl%>: COMMON-CLITICS ;
+
+%<p2%>%<frm%>%<sg%>:%>n%'%{I%}z COMMON-CLITICS ;
+%<p2%>%<frm%>%<pl%>:%>n%'l%{A%}r COMMON-CLITICS ;
+
 LEXICON V-PERS-AOR
 
 ! As the name indicates, used for -{E}-<aor>
@@ -314,16 +347,21 @@ ADV ;
 
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
-%<aor%>:%>%{E%} # ; ! V-PERS-AOR ;
-%<past%>:%>%{G%}%{'%}%{A%}n # ; ! V-PERS-S1 ;
-%<ifi%>:%>%{D%}%{I%} # ; ! V-PERS-S2 ;
-%<ifi_evid%>:%>%{I%}p  # ; !V-PERS-IFI_EVID ;
-!%<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
+%<aor%>:%>%{E%} # ; V-PERS-AOR ;
+%<past%>:%>%{G%}%{'%}%{A%}n # ; V-PERS-S1 ;
+%<ifi%>:%>%{D%}%{I%} # ; V-PERS-S2 ;
+! %<ifi_evid%>:%>%{I%}p  # ; !V-PERS-IFI_EVID ;
+! %<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
+
+LEXICON V-FINITE-IRREGULAR_NEGATIVE
+
+%<fut%>:%>%{A%}r V-PERS-S1 ;
+%<neg%>%<fut%>:%>m%{A%}s V-PERS-S1 ;
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Participles
-%<prc_impf%>:%>%{E%} # ; ! CLIT-GHANA-ETC ;
+%<prc_impf%>:%>%{E%} # ; CLIT-GHANA-ETC ;
 %<prc_cond%>:%>s%{A%} V-PERS-S2 ;
 
 ! Verbal adverbs
@@ -346,6 +384,8 @@ LEXICON V-COMMON
 
 V-FINITE-REGULAR_NEGATIVE ;
 %<neg%>:%>%{M%}%{A%} V-FINITE-REGULAR_NEGATIVE ;
+
+V-FINITE-IRREGULAR_NEGATIVE ;
 
 V-NONFINITE-REGULAR_NEGATIVE ;
 %<neg%>:%>%{M%}%{A%} V-NONFINITE-REGULAR_NEGATIVE ;
@@ -371,9 +411,28 @@ LEXICON V-IV
 
 LEXICON V-TV
 
-%<v%>%<tv%>:%{%_%} V-COMMON ;
-%<v%>%<tv%>:%{%_%} V-DER ;
-%<v%>%<tv%>%<pass%>:%{%_%}%>%{I%}%{l%} V-COMMON ;
+%<v%>%<tv%>: V-COMMON ;
+%<v%>%<tv%>: V-DER ;
+%<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON ;
+
+LEXICON V-IV
+
+%<v%>%<iv%>: V-COMMON ;
+%<v%>%<iv%>: V-DER ;
+
+!!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
+
+LEXICON Vinfl-AUX-IMPF
+
+%<vaux%>%<pres%>: V-PERS-S1 ; ! /жүр, жатыр, тұр, отыр/
+
+LEXICON Vinfl-AUX-IMPF-NEG
+
+%<vaux%>%<neg%>%<pres%>: V-PERS-S1 ; !USE MT /жатқан жоқ/
+
+LEXICON Vinfl-AUX
+
+%<vaux%>: V-COMMON ; ! these four verbs in other tenses and all other aux. verbs
 
 LEXICON Copula
 
@@ -460,9 +519,32 @@ LEXICON PRON-XXX ! To categorise
 
 %<prn%>: # ;
 
-LEXICON DET-XXX ! To categorise
+!!!!!!!!!!!!!!!!!!!!!!     DETERMINERS
 
-%<det%>: # ;
+LEXICON DET-DEM
+
+%<det%>%<dem%>: # ;
+
+LEXICON DET-QNT
+
+%<det%>%<qnt%>: # ;
+
+LEXICON DET-IND
+
+%<det%>%<ind%>: # ;
+
+LEXICON DET-ITG
+
+%<det%>%<itg%>: # ;
+
+LEXICON DET-NEG
+
+%<det%>%<neg%>: # ;
+
+LEXICON DET-REF
+
+%<det%>%<ref%>: # ;
+
 
 LEXICON NUM-COMMON
 
@@ -475,6 +557,58 @@ NUM-COMMON ;
 %<num%>%<ord%>:%>%{I%}nsh%{I%} # ;             
 %<num%>%<ord%>:%>%{I%}nsh%{I%} N-INFL-COMMON ;
 
+!==============================================================================!
+! CLITICS
+!==============================================================================!
+
+! First, let's list all the clitics we have
+
+LEXICON CLIT-EMPH
+
+%+shı%<emph%>:%>sh%{I%} # ;
+# ;
+
+LEXICON CLIT-QST-MA
+
+%+ma%<qst%>:%>% %{M%}%{A%} # ;
+
+LEXICON CLIT-QST
+
+CLIT-QST-MA ;
+%+meken%<qst%>:% %{M%}eken # ;
+# ;
+
+LEXICON CLIT-MODASS
+
+%+g%'oy%<mod_ass%>:% %{G%}oy # ;
+# ;
+
+LEXICON CLIT-GHANA-ETC
+
+%+%-aq%<postadv%>:%-aq # ; ! ""
+%+g%'ana%<postadv%>:% %{G%}ana # ; ! ""
+%+da%<cnjcoo%>:% %{D%}%{A%} # ; ! ""
+%+da%<postadv%>:% %{D%}%{A%} # ; ! ""
+# ;
+
+LEXICON CLIT-COP
+
+%+e%<cop%>: V-PERS-S1 ;
+
+! Now, let's group them depending on what they can attach to
+
+LEXICON COMMON-CLITICS
+
+CLIT-QST ;
+CLIT-MODASS ;
+CLIT-GHANA-ETC ;
+
+LEXICON CLITICS-INCL-COP         ! Can appear only after nominals
+                                 ! (and only after some cases).
+COMMON-CLITICS ;
+CLIT-COP ;
+
+
 LEXICON DET-REF
 
 %<det%>%<ref%>: # ;
@@ -486,6 +620,10 @@ LEXICON POST
 LEXICON CS
 
 %<cnjsub%>: # ;
+
+LEXICON CA
+
+%<cnjadv%>: CLIT-GHANA-ETC ;
 
 LEXICON ADV-ITG
 
@@ -648,37 +786,90 @@ o%'z:o%'z PRON-XXX ; ! ""
 hesh% na%'rse:hesh% na%'rse PRNNEG ; ! "" Use/MT
 ! ештеңе:ештеңе PRNNEG ; ! ""
 
-LEXICON Determiners 
+!===================!
+ LEXICON Determiners
+!===================!
 
-o%'z:o%'z DET-REF ; 
 
-anaw:anaw DET-XXX ; ! ""
-bar:bar DET-XXX ; ! ""
-barlıq:barlıq DET-XXX ; ! ""
-bir:bir DET-XXX ; ! ""
-bir% neshe:bir% neshe DET-XXX ; ! ""
-pu'tkil:pu'tkil DET-XXX ; ! ""
-bul:bul DET-XXX ; ! ""
-ha'r% bir:ha'r% bir DET-XXX ; ! ""
-ha'r% tu'rli:ha'r% tu'rli DET-XXX ; ! ""
-hesh% bir:hesh% bir DET-XXX ; ! ""
-hesh% qanday:hesh% qanday DET-XXX ; ! ""
-ju%'zlegen:ju%'zlegen DET-XXX ; ! ""
-qaysı:qaysı DET-XXX ; ! ""
-qaysıbir:qaysıbir DET-XXX ; ! ""
-geybir:geybir DET-XXX ; ! ""
-ko%'plegen:ko%'plegen DET-XXX ; ! ""
-pu%'tkil:pu%'tkil DET-XXX ; ! ""
-milliardlag%'an:milliardlag%'an DET-XXX ; ! ""
-millionlag%'an:millionlag%'an DET-XXX ; ! ""
-mınaw:mınaw DET-XXX ; ! ""
-mın%'lag%'an:mın%'lag%'an DET-XXX ; ! ""
-ol:ol DET-XXX ; ! ""
-onlag%'an:onlag%'an DET-XXX ; ! ""
-usı:usı DET-XXX ; ! ""
-usını:usını DET-XXX ; ! ""
-sol:sol DET-XXX ; ! ""
-anaw:anaw DET-XXX ; ! ""
+anaw:anaw DET-DEM ; ! ""
+bul:bul DET-DEM ; ! ""
+ol:ol DET-DEM ; ! ""
+mınaw:mınaw DET-DEM ; ! ""
+sol:sol DET-DEM ; ! ""
+usı:usı DET-DEM ; ! ""
+! әлгі:әлгі DET-DEM ; ! "~этот"
+! usını:usını DET-DEM ; ! ""
+! сонау:сонау DET-DEM ;
+! осынау:осынау DET-DEM ;
+
+
+! ha'r% bir:ha'r% bir DET-XXX ; ! ""
+! ha'r% tu'rli:ha'r% tu'rli DET-XXX ; ! ""
+! hesh% bir:hesh% bir DET-XXX ; ! ""
+! hesh% qanday:hesh% qanday DET-XXX ; ! ""
+! әр:әр DET-QNT ; ! "every"
+! әрбір:әрбір DET-QNT ; ! "each"
+! әрбір:һәрбір DET-QNT ; ! "each" Dir/LR
+! әртүрлі:әртүрлі DET-QNT ; ! "~every kind"
+! әр:һәр DET-QNT ; ! "every" Dir/LR
+! бар:бар DET-QNT ; ! "all"
+! барлық:барлық DET-QNT ; ! "all"
+! бірқатар:бірқатар DET-QNT ; ! "several"
+! бірнеше:бірнеше DET-QNT ; ! "some"
+! бүкіл:бүкіл DET-QNT ; ! "whole"
+! көптеген:көптеген DET-QNT ; ! "many"
+! қанша:қанша DET-QNT ; ! "how many"
+! 
+! 
+! ондаған:ондаған DET-QNT ; ! ""
+! жүздеген:жүздеген DET-QNT ; ! ""
+! мыңдаған:мыңдаған DET-QNT ; ! ""
+! түмендеген:түмендеген DET-QNT ; ! ""
+! миллиондаған:миллиондаған DET-QNT ; ! ""
+! миллиардтаған:миллиардтаған DET-QNT ; ! ""
+! күллі:күллі DET-QNT ; ! ""
+! исі:исі DET-QNT ; ! ""
+! 
+! әлдебір:әлдебір DET-IND ; ! "a"
+! бір:бір DET-IND ; ! "a"
+! кей:кей DET-IND ; ! "some"
+! кейбір:кейбір DET-IND ; ! "some"
+! қайсыбір:қайсыбір DET-IND ; ! "some"
+! әлденеше:әлденеше DET-IND ; ! ""
+! бірер:бірер DET-IND ; ! ""
+! 
+! қай:қай DET-ITG ; ! "which"
+! қайсы:қайсы DET-ITG ; ! "which"
+! 
+! ешбір:ешбір DET-NEG ; ! "none, no"
+! ешқандай:ешқандай DET-NEG ; ! "no [kind of], none"
+! 
+! өз:өз DET-REF ; ! "oneself's"
+! 
+! o%'z:o%'z DET-REF ; 
+! 
+! bar:bar DET-XXX ; ! ""
+! barlıq:barlıq DET-XXX ; ! ""
+! bir:bir DET-XXX ; ! ""
+! bir% neshe:bir% neshe DET-XXX ; ! ""
+! ha'r% bir:ha'r% bir DET-XXX ; ! ""
+! ha'r% tu'rli:ha'r% tu'rli DET-XXX ; ! ""
+! hesh% bir:hesh% bir DET-XXX ; ! ""
+! hesh% qanday:hesh% qanday DET-XXX ; ! ""
+! ju%'zlegen:ju%'zlegen DET-XXX ; ! ""
+! qaysı:qaysı DET-XXX ; ! ""
+! qaysıbir:qaysıbir DET-XXX ; ! ""
+! geybir:geybir DET-XXX ; ! ""
+! ko%'plegen:ko%'plegen DET-XXX ; ! ""
+! pu%'tkil:pu%'tkil DET-XXX ; ! ""
+! milliardlag%'an:milliardlag%'an DET-XXX ; ! ""
+! millionlag%'an:millionlag%'an DET-XXX ; ! ""
+! mın%'lag%'an:mın%'lag%'an DET-XXX ; ! ""
+! ol:ol DET-XXX ; ! ""
+! onlag%'an:onlag%'an DET-XXX ; ! ""
+! pu'tkil:pu'tkil DET-XXX ; ! ""
+
+
 
 LEXICON Numerals 
 
