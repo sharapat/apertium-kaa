@@ -286,6 +286,18 @@ LEXICON A4
 
 %<adj%>:%{%_%} CLIT ; !CLITICS-INCLUDING-COPULA ;   !# ұлттық тағам
 
+LEXICON V-PERS-AOR
+
+! As the name indicates, used for -{E}-<aor>
+! NOTE that: Alma teatrg'a bara<aor><p3><sg> ma? – Алма в театр идёт?
+
+V-PERS-S1-NO3PERSON ;
+%<p1%>%<sg%>:%>m COMMON-CLITICS ;                    ! Dir/LR
+%<p3%>%<sg%>:%>d%{I%} COMMON-CLITICS ;
+%<p3%>%<sg%>: CLIT-QST-MA ;              ! Dir/LR
+%<p3%>%<pl%>:%>d%{I%} COMMON-CLITICS ;
+%<p3%>%<pl%>: CLIT-QST-MA ;              ! Dir/LR ;
+
 LEXICON KI
 
 %<attr%>:%>%{G%}%{I%} CLIT ; ! COMMON-CLITICS ;
@@ -363,6 +375,16 @@ LEXICON V-TV
 %<v%>%<tv%>:%{%_%} V-DER ;
 %<v%>%<tv%>%<pass%>:%{%_%}%>%{I%}%{l%} V-COMMON ;
 
+LEXICON Copula
+
+e%<cop%>%<ger_past%>:eken GER-POSSESSIVES ;
+e%<cop%>%<ger_perf%>:eken%>%{L%}%{I%}k GER-POSSESSIVES ;
+
+e%<cop%>%<neg%>:emes V-PERS-S1 ;
+e%<cop%>%<past%>:eken V-PERS-S1 ;
+e%<cop%>%<neg%>%<past%>:emes% eken V-PERS-S1 ;
+e%<cop%>%<ifi%>:e%>%{D%}%{I%} V-PERS-S2 ;
+
 LEXICON PRON-PERS-INFL
 
  CASES-ETC ;
@@ -417,7 +439,9 @@ LEXICON PRON-PERS-SEN
 
 LEXICON PRON-PERS-OL
 
-%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>: # ;
+%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:l # ;
+%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:nın%' # ;
+%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:g%'an # ;
 
 LEXICON PRON-PERS-BIZ
 
@@ -603,7 +627,7 @@ LEXICON Pronouns
 
 men:men PRON-PERS-MEN ;
 sen:sen PRON-PERS-SEN ;
-ol:ol PRON-PERS-OL ;
+ol:o PRON-PERS-OL ;
 biz:biz PRON-PERS-BIZ ;
 siz:siz PRON-PERS-SIZ ;
 olar:olar PRON-PERS-OLAR ;
