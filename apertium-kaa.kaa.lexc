@@ -119,6 +119,7 @@ Multichar_Symbols
 %<rpar%>      ! Parenthetical marker (right hand side)
 %<lpar%>      ! Parenthetical marker (left hand side)
 
+%{E%}
 %{A%}
 %{I%}
 %{N%}
@@ -307,10 +308,36 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 %<ifi_evid%>:%>%{I%}p  # ; !V-PERS-IFI_EVID ;
 !%<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
 
+LEXICON V-NONFINITE-REGULAR_NEGATIVE
+
+! Participles
+%<prc_impf%>:%>%{E%} CLIT-GHANA-ETC ;
+%<prc_cond%>:%>s%{A%} V-PERS-S2 ;
+
+! Verbal adverbs
+%<gna_cond%>:%>s%{A%} V-PERS-S2 ;
+
+! Verbal adjectives
+%<gpr_past%>:%>%{G%}%{A%}n V-ADJ ;
+%<gpr_impf%>:%>%{E%}t%{I%}n V-ADJ ;
+%<gpr_pot%>:%>u%>sh%{I%} V-ADJ ;
+
+! Gerunds
+%<ger%>:%>у GER-INFL ;
+%<ger_past%>:%>%{G%}%{A%}n GER-INFL ;
+%<ger_perf%>:%>%{G%}%{A%}n%>%{L%}%{I%}%{K%} GER-INFL ;
+%<ger_abs%>:%>u%>sh%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
+%<ger_impf%>:%>%{E%}t%{I%}n GER-POSSESSIVES ;
+
+
 LEXICON V-COMMON
 
 V-FINITE-REGULAR_NEGATIVE ;
 %<neg%>:%>%{M%}%{A%} V-FINITE-REGULAR_NEGATIVE ;
+
+V-NONFINITE-REGULAR_NEGATIVE ;
+%<neg%>:%>%{M%}%{A%} V-NONFINITE-REGULAR_NEGATIVE ;
+
 
 LEXICON V-DER
 
