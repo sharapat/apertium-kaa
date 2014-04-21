@@ -347,10 +347,10 @@ ADV ;
 
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
-%<aor%>:%>%{E%} # ; V-PERS-AOR ;
-%<past%>:%>%{G%}%{'%}%{A%}n # ; V-PERS-S1 ;
-%<ifi%>:%>%{D%}%{I%} # ; V-PERS-S2 ;
-! %<ifi_evid%>:%>%{I%}p  # ; !V-PERS-IFI_EVID ;
+%<aor%>:%>%{E%}  V-PERS-AOR ;
+%<past%>:%>%{G%}%{'%}%{A%}n  V-PERS-S1 ;
+%<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;
+! %<ifi_evid%>:%>%{I%}p !V-PERS-IFI_EVID ;
 ! %<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
 
 LEXICON V-FINITE-IRREGULAR_NEGATIVE
@@ -361,7 +361,7 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Participles
-%<prc_impf%>:%>%{E%} # ; CLIT-GHANA-ETC ;
+%<prc_impf%>:%>%{E%} CLIT-GHANA-ETC ;
 %<prc_cond%>:%>s%{A%} V-PERS-S2 ;
 
 ! Verbal adverbs
@@ -838,7 +838,7 @@ usı:usı DET-DEM ; ! ""
 ! әлденеше:әлденеше DET-IND ; ! ""
 ! бірер:бірер DET-IND ; ! ""
 ! 
-! қай:қай DET-ITG ; ! "which"
+qay:qay DET-ITG ; ! "which"
 ! қайсы:қайсы DET-ITG ; ! "which"
 ! 
 ! ешбір:ешбір DET-NEG ; ! "none, no"
@@ -846,7 +846,7 @@ usı:usı DET-DEM ; ! ""
 ! 
 ! өз:өз DET-REF ; ! "oneself's"
 ! 
-! o%'z:o%'z DET-REF ; 
+o%'z:o%'z DET-REF ; 
 ! 
 ! bar:bar DET-XXX ; ! ""
 ! barlıq:barlıq DET-XXX ; ! ""
