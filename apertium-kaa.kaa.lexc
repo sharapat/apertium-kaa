@@ -176,6 +176,13 @@ LEXICON CASES-OBL
 %<loc%>:%>%{D%}%{A%} CLIT-COP ;
 %<abl%>:%>%{D%}%{A%}n CLIT-COP ;
 
+LEXICON CASES-COMMON
+
+%<gen%>:%>%{N%}%{I%}nın%' COMMON-CLITICS ;
+%<dat%>:%>%{G%}%{A%} COMMON-CLITICS ;
+%<acc%>:%>%{N%}%{I%} COMMON-CLITICS ;
+%<ins%>:%>%{M%}enen COMMON-CLITICS ;
+
 LEXICON CASES
 
 %<nom%>: CLIT-COP ;
@@ -345,6 +352,68 @@ LEXICON ADV-WITH-KI
 ADV ;
 %<adv%>: KI ;
 
+!!!!!!!   G E R U N D S   I N F L E C T I O N
+
+! This is a somewhat simplified version of N-INFL-COMMON.
+! The idea was to avoid overgeneration (I don't think that ger+DAGI would take
+! case endings e.g. Same for ger+NIKI). Still, this cont.class might be not
+! suitable for all of the gerunds. /IS/
+
+LEXICON GER-CASE-NO_COPULA
+
+CASES-COMMON ;
+%<nom%>: COMMON-CLITICS ;
+%<abl%>:%>%{D%}%{A%}n COMMON-CLITICS ;
+%<loc%>:%>%{D%}%{A%} COMMON-CLITICS ;
+
+LEXICON GER-ATTR/SUBST
+
+%<attr%>: COMMON-CLITICS ;
+!%<subst%>: CASES ;
+!%<subst%>%<pl%>:%>%{L%}%{A%}r CASES ;
+
+LEXICON GER-ABE-ATTR/ADVL/SUBST
+
+!%<attr%>: COMMON-CLITICS ;
+%<advl%>: COMMON-CLITICS ;
+!%<subst%>: CASE-2 ;
+!%<subst%>%<pl%>:%>%{L%}%{A%}р CASE-2 ;
+
+LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
+
+%+sız%<post%>:%>s%{I%}z GER-ABE-ATTR/ADVL/SUBST ;
+
+LEXICON GER-GENPOSS-ETC      ! Stuff which can appear after possessives too
+
+%<px%>:%>%{N%}ікі%{n%} COMMON-CLITICS ;
+%<loc%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
+%<sim%>:%>%{D%}%{A%}y COMMON-CLITICS ;
+
+LEXICON GER-CASE-ETC
+
+GER-CASE-NO_COPULA ;
+GER-GENPOSS-ETC ;
+
+LEXICON GER-POSSESSIVES
+
+%<px1sg%>:%>%{I%}m GER-CASE-ETC ;
+%<px2sg%>:%>%{I%}n%' GER-CASE-ETC ;
+%<px3sp%>:%>%{S%}a%{n%} GER-CASE-ETC ;
+%<px1pl%>:%>%{I%}m%{I%}z GER-CASE-ETC ;
+%<px2pl%>:%>%{I%}n%'l%{A%}r GER-CASE-ETC ;
+
+%<px2sg%>%<frm%>:%>%{I%}n%'%{I%}z GER-CASE-ETC ;
+%<px2pl%>%<frm%>:%>%{I%}n%'%{I%}zl%{A%}r GER-CASE-ETC ;
+
+LEXICON GER-INFL
+
+GER-POSSESSIVES ;
+GER-CASE-ETC ;
+%<pl%>:%>%{L%}%{A%}r GER-POSSESSIVES ;
+%<pl%>:%>%{L%}%{A%}r GER-CASE-ETC ;
+GER-ABE-ETC ;
+
+
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
 %<aor%>:%>%{E%}  V-PERS-AOR ;
@@ -374,7 +443,7 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Gerunds
 %<ger%>:%>у GER-INFL ;
-%<ger_past%>:%>%{G%}%{A%}n GER-INFL ;
+%<ger_past%>:%>%{G%}'%{A%}n GER-INFL ;
 %<ger_perf%>:%>%{G%}%{A%}n%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_abs%>:%>u%>sh%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_impf%>:%>%{E%}t%{I%}n GER-POSSESSIVES ;
@@ -2982,7 +3051,6 @@ je:je V-TV ; ! "eat"
 ko%'r:ko%'r V-TV-NOPASS ; ! "see"
 oyla:oyla V-TV ; ! "think"
 oyna:oyna V-TV ; ! "play"
-oyna:oyna V-IV ; ! "play"
 qara:qara V-TV ; ! "look at"
 qıl:qıl V-TV ; ! "do, make"
 sana:sana V-TV ; ! "count"
