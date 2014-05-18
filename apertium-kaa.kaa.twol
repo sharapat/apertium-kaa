@@ -12,7 +12,7 @@ Alphabet
  %{E%}:a
  %{K%}:k %{K%}:q
  %{D%}:d %{D%}:t
- %{M%}:m %{M%}:b %{M%}:p
+ %{M%}:m ! %{M%}:b %{M%}:p
 
 ! %{'%}:0 %{'%}:%'
  %{'%}:0
@@ -55,12 +55,18 @@ CnsRight = B V G D J Z Y K Q L M N R S T W F X H     ! N' G'
 CnsApostroph = G N
                g n ;
 
+! these consonants are voiceless when they're at the end of a word
 VoicelessCns = b v p f d t j s g h k q 
                B V P F D T J S G H K Q ; 
 
 VoicedCns = z y l m n w
             Z Y L M N W ;
 
+LowSonVoicedCons = m n z
+                   M N Z ;
+
+Nasal = m n 
+        M N ;
 
 Rules
 
@@ -85,8 +91,7 @@ Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
                 matched;
 
 "Forward voicing assimilation"
-Cx:Cy <=> :VoicelessCns/[ %>: | %  | %{☭%}:0 | %{ъ%}:0 ] _ ;
-          !AbstrVoicelessCns:/[ %-: | %>: ] _ ;
+Cx:Cy <=> :VoicelessCns/[ %>: | %  ] _ ;
           where Cx in ( %{M%}  %{D%}  %{N%} )
                 Cy in (   p      t      t   )
                 matched;
@@ -119,8 +124,14 @@ Cx:Cy <=> :VoicelessCns/[ %>: | %  | %{☭%}:0 | %{ъ%}:0 ] _ ;
 "{E} vowel harmony"
 %{E%}:e <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] :Cns* :CnsRight ]/[ %>: | % | :0 ] _ ;
 
-"{N} to d after consonant"
-%{N%}:d <=> [ :Cns | [ :CnsApostroph :%' ] ]/:0 _ ;
+"{N} to d after voiced consonant"
+%{N%}:d <=> [ :VoicedCns | [ :CnsApostroph :%' ] ]/:0 _ ;
 
-"{N} to t after consonant"
-%{N%}:t <=> [ :VoicelessCns ]/:0 _ ;
+!"{N} to t after voiceless consonant"
+!%{N%}:t <=> [ :VoicelessCns ]/:0 _ ;
+
+"{M} to b after voiced low-sonority consonat"
+%{M%}:b <=> [ :LowSonVoicedCons | [ :n :%' ] ]/[ :0 | %  ] _ ;
+        except
+            _ :Nasal/:0 ;
+
