@@ -185,15 +185,18 @@ LEXICON CASES-COMMON
 
 LEXICON CASES
 
-%<nom%>: CLIT-COP ;
-CASES-OBL ;
+CASES-COMMON ;
+%<nom%>: CLITICS-INCL-COP ;
+%<abl%>:%>%{D%}%{A%}n CLITICS-INCL-COP ;
+%<loc%>:%>%{D%}%{A%} CLITICS-INCL-COP ;
 
-LEXICON POSS
+
+LEXICON POSSESSIVES
 
 CASES-ETC ;
 %<px1sg%>:%>%{I%}m CASES-ETC ;
 %<px2sg%>:%>%{I%}n%' CASES-ETC ;
-%<px3sp%>:%>%{s%}%{I%}%{n%} CASES-ETC ;
+%<px3sp%>:%>%{n%}%{I%}%{n%} CASES-ETC ;
 %<px1pl%>:%>%{I%}m%{I%}z CASES-ETC ;
 %<px2pl%>:%>%{I%}n%'d%{A%}r CASES-ETC ;
 
@@ -390,7 +393,7 @@ LEXICON GER-GENPOSS-ETC      ! Stuff which can appear after possessives too
 %<sim%>:%>%{D%}%{A%}y COMMON-CLITICS ;
 
 LEXICON GER-CASE-ETC
-
+	
 GER-CASE-NO_COPULA ;
 GER-GENPOSS-ETC ;
 
@@ -398,7 +401,7 @@ LEXICON GER-POSSESSIVES
 
 %<px1sg%>:%>%{I%}m GER-CASE-ETC ;
 %<px2sg%>:%>%{I%}n%' GER-CASE-ETC ;
-%<px3sp%>:%>%{S%}a%{n%} GER-CASE-ETC ;
+%<px3sp%>:%>%{s%}%{I%}%{n%} GER-CASE-ETC ;
 %<px1pl%>:%>%{I%}m%{I%}z GER-CASE-ETC ;
 %<px2pl%>:%>%{I%}n%'l%{A%}r GER-CASE-ETC ;
 
