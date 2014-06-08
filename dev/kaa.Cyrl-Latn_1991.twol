@@ -87,7 +87,7 @@ Alphabet
  ю:yu
  я:ya
 
- %':%'
+ %'
 
 ;
 
@@ -100,4 +100,4 @@ DottedLetters = ә ө ү ғ   ! a o u g
 Rules
 
 "Dummy"
-0:0 <=> _ ;
+%':%' <=> _ ;
