@@ -12,8 +12,10 @@
 /apertium-kaa.post-kaa.dix -text
 /autogen.sh -text
 /configure.ac -text
+dev/Makefile -text
 dev/countstems.sh -text
 dev/editdist.py -text
+dev/kaa.Cyrl-Latn_1991.twol -text
 dev/kaa.Latn_1991-Cyrl.twol -text
 dev/kaz-nouns.txt -text
 dev/spellrelax.twol -text
