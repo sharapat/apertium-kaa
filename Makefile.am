@@ -122,10 +122,10 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 ## Installation stuff
 ###############################################################################
 #
-#   apertium_kaa_libdir: This is where the compiled binaries go
+#   apertium_kaa_dir: This is where the compiled binaries go
 #   apertium_kaa_srcdir: This is where the source files go
 
-apertium_kaadir=$(prefix)/lib/apertium/$(BASENAME)/
+apertium_kaadir=$(prefix)/share/apertium/$(BASENAME)/
 apertium_kaa_srcdir=$(prefix)/share/apertium/$(BASENAME)/
 
 EXTRA_TARGETS=
@@ -139,7 +139,7 @@ apertium_kaa_DATA=$(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 		    $(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
 		    $(LANG1).rlx.bin $(EXTRA_TARGETS)
 
-pkgconfigdir = $(libdir)/pkgconfig
+pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
 
 # Modes are not installed since they're all just "debug modes". All
