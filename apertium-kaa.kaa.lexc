@@ -466,10 +466,12 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Gerunds
 %<ger%>:%>у GER-INFL ;
-%<ger_past%>:%>%{G%}'%{A%}n GER-INFL ;
+%<ger_past%>:%>%{G%}%'%{A%}n GER-INFL ;
 %<ger_perf%>:%>%{G%}%{A%}n%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_abs%>:%>u%>sh%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_impf%>:%>%{E%}t%{I%}n GER-POSSESSIVES ;
+
+
 
 LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 
