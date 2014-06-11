@@ -228,20 +228,6 @@ LEXICON SUBST
 N-INFL-COMMON ;
 %<pl%>:%>l%{A%}r N-INFL-COMMON ;
 
-LEXICON N-COMPOUND-PX-COMMON
-
-:%>%{s%}%{I%}%{n%} CASES-ETC ;
-POSSESSIVES ;       ! for stuff like "біздің ауа райымыз" and even "оның ауа райы",
-                  ! which should have a <px3sp> analysis
-
-
-LEXICON N-COMPOUND-PX ! consider "N2" for the name
-                      ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
-
-%<n%>: N-COMPOUND-PX-COMMON ;
-%<n%>%<pl%>:%>%{L%}%{A%}r%>%{s%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сакчылары=пограничники)
-                                                      !  FIXME CHECK: Is {s} needed here ?
-
 LEXICON N1
 
 %<n%>%<attr%>: # ;
@@ -2848,7 +2834,7 @@ akciya:akciya N1 ; ! ""
 memleket:memleket N1 ; ! ""
 a%'lipbe:a%'lipbe N1 ; ! ""
 haqıyqat:haqıyqat N1 ; ! ""
-hawa% rayı:hawa% ray N-COMPOUND-PX ; ! "weather"
+hawa% rayı:hawa% rayı N1 ; ! ""
 ba%'seke:ba%'seke N1 ; ! ""
 iman:iman N1 ; ! ""
 xızmetshi:xızmetshi N1 ; ! ""
@@ -3322,7 +3308,7 @@ o%'tkirlen:o%'tkirlen V-IV ; ! ""
 otır:otır V-IV ; ! ""
 oyan:oyan V-IV ; ! ""
 pısqır:pısqır V-IV ; ! ""
- jıllı% ju%'zli% bol: jıllı% ju%'zli% bol V-IV ; ! ""
+jıllı% ju%'zli% bol: jıllı% ju%'zli% bol V-IV ; ! ""
 jaras:jaras V-IV ; ! ""
 renj:renj V-IV ; ! ""
 ruwxlan:ruwxlan V-IV ; ! ""
