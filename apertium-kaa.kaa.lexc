@@ -168,6 +168,10 @@ LEXICON CLITICS-INCL-COP         ! Can appear only after nominals
           
 # ;
 
+LEXICON CLITICS-NO-COP 
+
+# ; 
+
 LEXICON CASES-OBL
 
 %<gen%>:%>%{N%}%{I%}n%' CLIT ;
@@ -228,10 +232,26 @@ LEXICON SUBST
 N-INFL-COMMON ;
 %<pl%>:%>l%{A%}r N-INFL-COMMON ;
 
+
 LEXICON N1
 
 %<n%>%<attr%>: # ;
 %<n%>:%{%_%} SUBST ;
+
+LEXICON N-COMPOUND-PX-COMMON
+
+:%>%{s%}%{I%}%{n%} CASES-ETC ;
+POSSESSIVES ;       ! for stuff like "біздің ауа райымыз" and even "оның ауа райы",
+                  ! which should have a <px3sp> analysis
+
+
+LEXICON N-COMPOUND-PX ! consider "N2" for the name
+                      ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
+
+%<n%>: N-COMPOUND-PX-COMMON ;
+%<n%>%<pl%>:%>%{L%}%{A%}r%>%{s%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сакчылары=пограничники)
+                                                      !  FIXME CHECK: Is {S} needed here ?
+
 
 LEXICON NP-COMMON
 
@@ -451,6 +471,10 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<ger_abs%>:%>u%>sh%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_impf%>:%>%{E%}t%{I%}n GER-POSSESSIVES ;
 
+LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
+
+%<gna_perf%>:%>%{I%}p CLITICS-NO-COP ;
+%<neg%>%<gna_perf%>:%>%{M%}%{A%}%>%{E%} CLITICS-NO-COP ;
 
 LEXICON V-COMMON
 
@@ -462,6 +486,7 @@ V-FINITE-IRREGULAR_NEGATIVE ;
 V-NONFINITE-REGULAR_NEGATIVE ;
 %<neg%>:%>%{M%}%{A%} V-NONFINITE-REGULAR_NEGATIVE ;
 
+V-NONFINITE-IRREGULAR_NEGATIVE ;
 
 LEXICON V-DER
 
