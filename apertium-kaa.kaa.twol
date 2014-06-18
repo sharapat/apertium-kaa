@@ -137,3 +137,9 @@ Cx:Cy <=> :VoicelessCns/[ %>: | %  ] _ ;
 
 "{K} to k after a front vowel"
 %{K%}:k <=> :FrontVow/:0 _ ;
+
+"Passives for verbs ending in l"
+%{l%}:n <=> :l [ :Vow | :%' ]*/[ :0 ] _ ;
+
+"Delete {I} after another vowel"
+%{I%}:0 <=> :Vow/:0 _ ;
