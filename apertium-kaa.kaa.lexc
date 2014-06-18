@@ -612,11 +612,6 @@ LEXICON V-TV
 %<v%>%<tv%>: V-DER ;
 %<v%>%<tv%>%<pass%>:%>%{I%}%{l%} V-COMMON ;
 
-LEXICON V-IV
-
-%<v%>%<iv%>: V-COMMON ;
-%<v%>%<iv%>: V-DER ;
-
 !!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
 
 LEXICON Vinfl-AUX-IMPF
