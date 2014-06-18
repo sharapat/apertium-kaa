@@ -131,9 +131,10 @@ Multichar_Symbols
 %{s%}
 %{n%}
 %{l%}
-%{'%}
+! %{'%}
 %{y%}
-%{%_%}
+! %{%_%}
+%{ъ%}    ! turns to ' sometimes; replaces %{'%} and %{%_%}
 
 %>
 %  
@@ -221,14 +222,14 @@ LEXICON CASES-OBL
 
 %<gen%>:%>%{N%}%{I%}n%' CLIT ;
 %<acc%>:%>%{N%}%{I%} CLIT ;
-%<dat%>:%>%{G%}%{'%}%{A%} CLIT ;
+%<dat%>:%>%{G%}%{ъ%}%{A%} CLIT ;
 %<loc%>:%>%{D%}%{A%} CLIT-COP ;
 %<abl%>:%>%{D%}%{A%}n CLIT-COP ;
 
 LEXICON CASES-COMMON
 
 %<gen%>:%>%{N%}%{I%}n%' COMMON-CLITICS ;
-%<dat%>:%>%{G%}%{A%} COMMON-CLITICS ;
+%<dat%>:%>%{G%}%{ъ%}%{A%} COMMON-CLITICS ;
 %<acc%>:%>%{N%}%{I%} COMMON-CLITICS ;
 %<ins%>:%>%{M%}enen COMMON-CLITICS ;
 
@@ -258,7 +259,7 @@ LEXICON ATTR-SUBST
 LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
 
 %<px%>:%>%{N%}iki%{n%} CASES ;
-%<loc%>:%>%{D%}%{A%}%{G%}%{'%}%{I%} ATTR-SUBST ; 
+%<loc%>:%>%{D%}%{A%}%{G%}%{ъ%}%{I%} ATTR-SUBST ; 
 %<sim%>:%>%{D%}%{A%}y CLIT ; ! COMMON-CLITICS ;        
 
 LEXICON CASES-ETC
@@ -297,7 +298,7 @@ N-INFL-COMMON ;
 LEXICON N1
 
 %<n%>%<attr%>: # ;
-%<n%>:%{%_%} SUBST ;
+%<n%>:%{ъ%} SUBST ;
 
 LEXICON N-COMPOUND-PX-COMMON
 
@@ -319,18 +320,18 @@ N-INFL-COMMON ;
 
 LEXICON NP-TOP
 
-%<np%>%<top%>:%{%_%} NP-COMMON ;
+%<np%>%<top%>:%{ъ%} NP-COMMON ;
 %<np%>%<top%>%<attr%>: # ;
 
 LEXICON NP-ANT-F
 
-%<np%>%<ant%>%<f%>:%{%_%} NP-COMMON ;
+%<np%>%<ant%>%<f%>:%{ъ%} NP-COMMON ;
 %<np%>%<ant%>%<f%>%<attr%>: # ;
 
 
 LEXICON NP-ANT-M
 
-%<np%>%<ant%>%<m%>:%{%_%} NP-COMMON ;
+%<np%>%<ant%>%<m%>:%{ъ%} NP-COMMON ;
 %<np%>%<ant%>%<m%>%<attr%>: # ;
 
 LEXICON NP-COG-OV
@@ -344,7 +345,7 @@ LEXICON NP-COG-OV
 
 LEXICON NP-AL
 
-%<np%>%<al%>:%{%_%} CASES ;
+%<np%>%<al%>:%{ъ%} CASES ;
 %<np%>%<al%>%<attr%>: # ;
 
 
@@ -353,14 +354,14 @@ LEXICON A1
 ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
 !# жaқсы, тeз
 
-%<adj%>:%{%_%} CLITICS-INCL-COP ;                             
-%<adj%>%<comp%>:%{%_%}%>%{I%}r%{A%}%{K%} CLIT ; !CLITICS-INCL-COP ;   
+%<adj%>:%{ъ%} CLITICS-INCL-COP ;                             
+%<adj%>%<comp%>:%{ъ%}%>%{I%}r%{A%}%{K%} CLIT ; !CLITICS-INCL-COP ;   
 
-%<adj%>%<subst%>:%{%_%} SUBST ;                             
-%<adj%>%<comp%>%<subst%>:%{%_%}%>%{I%}r%{A%}%{K%} SUBST ;   
+%<adj%>%<subst%>:%{ъ%} SUBST ;                             
+%<adj%>%<comp%>%<subst%>:%{ъ%}%>%{I%}r%{A%}%{K%} SUBST ;   
 
-%<adj%>%<advl%>:%{%_%} CLIT ; ! COMMON-CLITICS ;                               
-%<adj%>%<comp%>%<advl%>:%{%_%}%>%{I%}r%{A%}%{K%} CLIT ; !COMMON-CLITICS ;     
+%<adj%>%<advl%>:%{ъ%} CLIT ; ! COMMON-CLITICS ;                               
+%<adj%>%<comp%>%<advl%>:%{ъ%}%>%{I%}r%{A%}%{K%} CLIT ; !COMMON-CLITICS ;     
 
 LEXICON A2
 
@@ -377,14 +378,14 @@ LEXICON A3
 ! no comparison levels at all.
 !# көктeмгі, бaсты, бaр, жoқ
 
-%<adj%>:%{%_%} CLITICS-INCL-COP ;   
-%<adj%>%<subst%>:%{%_%} SUBST ;           
+%<adj%>:%{ъ%} CLITICS-INCL-COP ;   
+%<adj%>%<subst%>:%{ъ%} SUBST ;           
                                     
 LEXICON A4 
 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
 !# ұлттық
 
-%<adj%>:%{%_%} CLITICS-INCL-COP ;   !# ұлттық тaғaм
+%<adj%>:%{ъ%} CLITICS-INCL-COP ;   !# ұлттық тaғaм
 
 
 LEXICON V-ADJ
@@ -445,7 +446,7 @@ LEXICON KI
 
 LEXICON ADV
 
-%<adv%>:%{%_%} CLIT ; ! COMMON-CLITICS ;
+%<adv%>:%{ъ%} CLIT ; ! COMMON-CLITICS ;
 
 LEXICON ADV-WITH-KI
 
@@ -517,7 +518,7 @@ GER-ABE-ETC ;
 LEXICON V-FINITE-REGULAR_NEGATIVE
 
 %<aor%>:%>%{E%}  V-PERS-AOR ;
-%<past%>:%>%{G%}%{'%}%{A%}n  V-PERS-S1 ;
+%<past%>:%>%{G%}%{ъ%}%{A%}n  V-PERS-S1 ;
 %<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;
 ! %<ifi_evid%>:%>%{I%}p !V-PERS-IFI_EVID ;
 ! %<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
@@ -580,8 +581,8 @@ LEXICON Vinfl-AUX-IMPF
 
 LEXICON V-IV
 
-%<v%>%<iv%>:%{%_%} V-COMMON ;
-%<v%>%<iv%>:%{%_%} V-DER ;
+%<v%>%<iv%>:%{ъ%} V-COMMON ;
+%<v%>%<iv%>:%{ъ%} V-DER ;
 
 LEXICON V-TV
 

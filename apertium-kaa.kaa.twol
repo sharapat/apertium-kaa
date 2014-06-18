@@ -15,12 +15,12 @@ Alphabet
  %{M%}:m ! %{M%}:b %{M%}:p
 
 ! %{'%}:0 %{'%}:%'
- %{'%}:0
+! %{'%}:0
  %{s%}:s %{s%}:0
  %{n%}:n %{n%}:0
  %{y%}:ı %{y%}:i %{y%}:0
  %{l%}:l
- %{%_%}:0  ! sometimes surfaces as '
+! %{%_%}:0  ! sometimes surfaces as '
 
  %{❗%}:0
  %{☭%}:0
@@ -68,13 +68,12 @@ LowSonVoicedCons = m n z
 Nasal = m n 
         M N ;
 
+Archiphon = %{G%} %{N%} %{K%} %{D%} %{D%} %{M%} ;
+
 Rules
 
 "Deletion of {s} after a consonant"
-%{s%}:0 <=> :Cns (:0) %>: _  ; 
-
-"Intervocalic voicing of p"
-p:b <=> :Vow (:0) _ %>: (:0) :Vow ;
+%{s%}:0 <=> [ :Cns %>: ]/:0* _  ; 
 
 "Epenthesis in some stems"
 %{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
@@ -82,35 +81,44 @@ p:b <=> :Vow (:0) _ %>: (:0) :Vow ;
 "{n} deletion word final"
 %{n%}:0 <=> _ .#. ;
 
-"Intervocalic voicing of к/қ"
-Cx:Cy <=> :Vow (:0) _ %>: (:0) :Vow ;
+!"Intervocalic voicing of p"
+!p:b <=> :Vow (:0) _ %>: (:0) :Vow ;
+
+"Intervocalic voicing of k/q/p"
+Cx:Cy <=> :Vow :0* _ [ %>: :Vow ]/[ :0 - %>: ]* ;
+          ! :Vow (:0) _ %{ъ%}: %>: :0* :Vow ;
           except
             %{❗%}:0 _ ;
-          where Cx in ( к ) ! қ )
-                Cy in ( г ) ! ғ )
+          where Cx in ( k q p ) ! к қ )
+                Cy in ( g g b ) ! г ғ )
                 matched;
 
 "Forward voicing assimilation"
-Cx:Cy <=> :VoicelessCns/[ %>: | %  ] _ ;
+Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
           where Cx in ( %{M%}  %{D%}  %{N%} )
                 Cy in (   p      t      t   )
                 matched;
 
 
 "{A} vowel harmony"
-%{A%}:e <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] :Cns* :CnsRight ]/[ %>: | % | :0 ] _ ;
+%{A%}:e <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] :Cns* :CnsRight ]/[ %>: | % | :0 | %{ъ%}: ] _ ;
 
 "{I} vowel harmony"
-%{I%}:i <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] :Cns* :CnsRight ]/[ %>: | % | :0 ] _ ;
+%{I%}:i <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] :Cns* :CnsRight ]/[ %>: | % | :0 | %{ъ%}: ] _ ;
 
 !"' is impossible after k"
 !%{'%}:0 <=> :k (:0)  _ ; 
 
-"Insert ' after everything but g in the context of back vowels"
-%{'%}:%' <=> [ :BackVow :Cns* :g ]/:0 _ ;
+"Insert ' after g in the context of back vowels"
+%{ъ%}:%' <=> :g [ :0 - %{ъ%}: ]* _ :BackVow/[ :0 - %{ъ%}: ]* ;
+
+!"q to g intervocalically across morpheme boundary"
+!q:g <=> _ [ %>: :Vow ]/[ :0 - %>: ] ;
 
 "{G} to q after a voiceless sound followed by back vowels"
 %{G%}:q <=> [ :BackVow :Cns* :VoicelessCns ]/:0 _ ;
+! maybe better?
+!%{G%}:q <=> :VoicelessCns/:0 _ :BackVow/:0 ;
 
 "{G} to k after a voiceless sound followed by front vowels"
 %{G%}:k <=> [ [ :FrontVow | [ :FrontableVow :%' ] ] :Cns* :VoicelessCns ]/:0 _ ;
@@ -125,7 +133,7 @@ Cx:Cy <=> :VoicelessCns/[ %>: | %  ] _ ;
 %{E%}:e <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] :Cns* :CnsRight ]/[ %>: | % | :0 ] _ ;
 
 "{N} to d after voiced consonant"
-%{N%}:d <=> [ :VoicedCns | [ :CnsApostroph :%' ] ]/:0 _ ;
+%{N%}:d <=> [ :VoicedCns | [ :CnsApostroph :%' ] ]/[ :0 - %{ъ%}: ] _ ;
 
 !"{N} to t after voiceless consonant"
 !%{N%}:t <=> [ :VoicelessCns ]/:0 _ ;
