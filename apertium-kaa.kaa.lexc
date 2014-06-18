@@ -227,7 +227,7 @@ LEXICON CASES-OBL
 
 LEXICON CASES-COMMON
 
-%<gen%>:%>%{N%}%{I%}nın%' COMMON-CLITICS ;
+%<gen%>:%>%{N%}%{I%}n%' COMMON-CLITICS ;
 %<dat%>:%>%{G%}%{A%} COMMON-CLITICS ;
 %<acc%>:%>%{N%}%{I%} COMMON-CLITICS ;
 %<ins%>:%>%{M%}enen COMMON-CLITICS ;
