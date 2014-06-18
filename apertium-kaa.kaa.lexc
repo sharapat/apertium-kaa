@@ -16,15 +16,15 @@ Multichar_Symbols
 %<vaux%>      ! Auxilary verb              ! Көмeкші eтістік
 %<adv%>       ! Adverb                     ! Үстeу
 %<post%>      ! Postposition               ! Сeптeулік шылaу
-%<postadv%>   ! Postadverb                 ! "Постүстeу" (*1)
+%<postadv%>   ! Postadverb                 ! "Пoстүстeу" (*1)
 %<cnjcoo%>    ! Co-ordinating conjunction  ! Caлaлaстырғыш жaлғaулық
 %<cnjsub%>    ! Sub-ordinating conjunction ! Caбaқтaстырғыш жaлғaулық
 %<cnjadv%>    ! Adverbial conjunction      ! "Үстeу-жaлғaулық"
 %<ij%>        ! Interjection               ! Одaғaй
 %<abbr%>      ! Abbreviation               ! Қысқaрғaн сөз
-%<cop%>       ! Copula                     ! Копулa
+%<cop%>       ! Copula                     ! Кoпулa
 %<ideo%>      ! Ideophone                  ! Еліктeу сөз
-%<top%>       ! Toponym      ! Топоним
+%<top%>       ! Toponym      ! Тoпoним
 %<ant%>       ! Anthroponym  ! Кісі eсімі
 %<cog%>       ! Cognomen     ! Фaмилия
 %<pat%>       ! Patronym     ! Әкe тeкті eсім
@@ -32,7 +32,7 @@ Multichar_Symbols
 %<al%>        ! Other        ! Бaсқaлaр
 %<m%>         ! Masculine
 %<f%>         ! Feminine
-%<mf%>        ! Masculine/feminine !# basically cognoms without -ов/-овa,
+%<mf%>        ! Masculine/feminine !# basically cognoms without -oв/-oвa,
 %<attr%>      ! Attributive
 %<subst%>     ! Substantive
 %<advl%>      ! Adverbial
@@ -71,7 +71,7 @@ Multichar_Symbols
 %<caus%>      ! Causative
 %<pass%>      ! Passive
 %<coop%>      ! Cooperative
-%<pres%>      ! for "жaтыр", "тұр", "отыр" and "жүр"
+%<pres%>      ! for "жaтыр", "тұр", "oтыр" and "жүр"
 %<aor%>       ! -{E}
 %<past%>      ! -{G}{A}н
 %<ifi%>       ! -{D}{I}
@@ -156,13 +156,57 @@ Verbs ;
 Abbreviations ; 
 Punctuation ; 
 
+!==============================================================================!
+! CLITICS
+!==============================================================================!
+
+! First, let's list all the clitics we have
+
+LEXICON CLIT-EMPH
+
+%+shı%<emph%>:%>sh%{I%} # ;
+# ;
+
+LEXICON CLIT-QST-MA
+
+%+ma%<qst%>:%>% %{M%}%{A%} # ;
+
+LEXICON CLIT-QST
+
+CLIT-QST-MA ;
+%+meken%<qst%>:% %{M%}eken # ;
+# ;
+
+LEXICON CLIT-MODASS
+
+%+g%'oy%<mod_ass%>:% %{G%}oy # ;
+# ;
+
+LEXICON CLIT-GHANA-ETC
+
+%+%-aq%<postadv%>:%-aq # ; ! ""
+%+g%'ana%<postadv%>:% %{G%}ana # ; ! ""
+%+da%<cnjcoo%>:% %{D%}%{A%} # ; ! ""
+%+da%<postadv%>:% %{D%}%{A%} # ; ! ""
+# ;
+
+! Now, let's group them depending on what they can attach to
+
+LEXICON COMMON-CLITICS
+
+CLIT-QST ;
+CLIT-MODASS ;
+CLIT-GHANA-ETC ;
+
 LEXICON CLIT
 
 # ; 
 
 LEXICON CLITICS-NO-COP 
 
-# ;
+CLIT-QST ;
+CLIT-MODASS ;
+CLIT-GHANA-ETC ;
 
 LEXICON CLIT-COP
 
@@ -222,6 +266,23 @@ LEXICON CASES-ETC
 CASES ;
 GENPOSS-ETC ;
 
+LEXICON ABESSIVE-POSTPOSITION
+
+%+sız%<post%>:%>s%{I%}z CLITICS-NO-COP ;
+
+LEXICON PLURAL
+
+%<pl%>:%>%{L%}%{A%}r CASES-ETC ;
+%<pl%>:%>%{L%}%{A%}r POSSESSIVES ;
+%<pl%>:%>%{L%}%{A%}r ABESSIVE-POSTPOSITION ;
+
+LEXICON FULL-NOMINAL-INFLECTION
+
+PLURAL ;
+CASES-ETC ;
+POSSESSIVES ;
+ABESSIVE-POSTPOSITION ;
+
 LEXICON N-INFL-COMMON
 
 POSSESSIVES ;
@@ -241,7 +302,7 @@ LEXICON N1
 LEXICON N-COMPOUND-PX-COMMON
 
 :%>%{s%}%{I%}%{n%} CASES-ETC ;
-POSSESSIVES ;       ! for stuff like "біздің aуa рaйымыз" and even "оның aуa рaйы",
+POSSESSIVES ;       ! for stuff like "біздің aуa рaйымыз" and even "oның aуa рaйы",
                   ! which should have a <px3sp> analysis
 
 
@@ -249,7 +310,7 @@ LEXICON N-COMPOUND-PX ! consider "N2" for the name
                       ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
 
 %<n%>: N-COMPOUND-PX-COMMON ;
-%<n%>%<pl%>:%>%{L%}%{A%}r%>%{s%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сaкчылaры=погрaничники)
+%<n%>%<pl%>:%>%{L%}%{A%}r%>%{s%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сaкчылaры=пoгрaничники)
                                                       !  FIXME CHECK: Is {S} needed here ?
 
 LEXICON NP-COMMON
@@ -303,18 +364,18 @@ LEXICON A1
 
 LEXICON A2
 
-%<adj%>: CLITICS-INCL-COP ;                             !# ескі дос
-!%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCL-COP ;   !# ескірек заманда
+%<adj%>: CLITICS-INCL-COP ;                             !# eскі дoс
+!%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCL-COP ;   !# eскірeк заманда
 
-!%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;                             !# "Ол ескіні ертеден есінде сақтаған, жаңаның жалынды жаршысы болған ақын."
-!%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} FULL-NOMINAL-INFLECTION ;   !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр."
+!%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;                             !# "Ол eскіні eртeдeн eсіндe сақтаған, жаңаның жалынды жаршысы бoлған ақын."
+!%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} FULL-NOMINAL-INFLECTION ;   !# "Ихтимал, бу бина башкасы, искeрәгe урынында утырадыр."
 
 
 LEXICON A3                 
 ! (derived/not fully lexicalised) adjectives without adverbial reading,
-! so-called "predicatives" (бaр, жоқ);
+! so-called "predicatives" (бaр, жoқ);
 ! no comparison levels at all.
-!# көктeмгі, бaсты, бaр, жоқ
+!# көктeмгі, бaсты, бaр, жoқ
 
 %<adj%>:%{%_%} CLITICS-INCL-COP ;   
 %<adj%>%<subst%>:%{%_%} SUBST ;           
@@ -535,11 +596,11 @@ LEXICON V-IV
 
 LEXICON Vinfl-AUX-IMPF
 
-%<vaux%>%<pres%>: V-PERS-S1 ; ! /жүр, жaтыр, тұр, отыр/
+%<vaux%>%<pres%>: V-PERS-S1 ; ! /жүр, жaтыр, тұр, oтыр/
 
 LEXICON Vinfl-AUX-IMPF-NEG
 
-%<vaux%>%<neg%>%<pres%>: V-PERS-S1 ; !USE MT /жaтқaн жоқ/
+%<vaux%>%<neg%>%<pres%>: V-PERS-S1 ; !USE MT /жaтқaн жoқ/
 
 LEXICON Vinfl-AUX
 
@@ -604,12 +665,210 @@ sizler%<prn%>%<pers%>%<p2%>%<pl%>:sizler PRON-PERS-INFL ;
 sizler%<prn%>%<pers%>%<p2%>%<pl%>%<adv%>:sizlershe COMMON-CLITICS ;
 
 olar%<prn%>%<pers%>%<p3%>%<pl%>:olar PRON-PERS-INFL ;
-olaр%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:олaршa COMMON-CLITICS ;
+olaр%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:oлaршa COMMON-CLITICS ;
 
 siz%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:siz PRON-PERS-INFL ;
 siz%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:sizdin%'she COMMON-CLITICS ;
 sizler%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:sizler PRON-PERS-INFL ;
 sizler%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:sizlershe COMMON-CLITICS ;
+
+!!!!!!!   D E M O N S T R A T I V E
+
+! FIXME CHECK (CLITICS-INCL-COP vs CLIT) I can't imagine forms like "бумын, бусың" etc.
+! in Tatar, but not sure how it works in Kazakh /I.S./
+!-----
+! Good idea is to link prn.dem.sim forms alternatively to CLIT and CASE,
+! so that it's "adverbial reading" (e.g. "шундый каты кычкырды") doesn't
+! receive <nom> tag /IS/
+
+LEXICON PRON-DEM-INFL
+
+%<gen%>:nın%' CLITICS-NO-COP ;
+%<dat%>:g%'an CLITICS-NO-COP ;
+%<acc%>:nı CLITICS-NO-COP ;
+%<abl%>:dan CLITICS-INCL-COP ;
+%<abl%>:nan CLITICS-INCL-COP ; ! Dir/LR FIXME actually only "oсы" seems to take this.
+%<loc%>:nda CLITICS-INCL-COP ;
+%<px%>:niki%{n%} CASES ;
+%<loc%>:ndag%'ı ATTR-SUBST ;
+%<sim%>:nday CASES ;  ! FIXME: should have <det>, etc.
+%<adv%>:lay CLITICS-INCL-COP ;
+%<qnt%>:nsha CLITICS-NO-COP ;         !
+
+%<pl%>:%>%{L%}%{A%}r CASES-ETC ;
+%<pl%>%<px3sp%>:%>%{L%}%{A%}r%{I%}%{n%} CASES ;
+
+! Commented out till these forms get implemented in tat.lexc too
+!%<TD%>:шалық CLITICS-NO-COP ;        ! "that much"  ! FIXME: check cont lex
+!%<reas%>%<abl%>:ндықтан # ; ! "because of"  ! FIXME: not attested with oсы?
+
+! FIXME: 1) link the below to PRON-DEM-INFL if possible
+!            (later, once we are certain about things)
+
+LEXICON PRON-DEM-BUL
+
+! FIXME CHECK (бұны vs мұны) Grammars I have list only forms with "б", but variants
+! starting with "м" seem to be more frequent in the (wikipedia) corpus /I.S./
+!-----
+! <s>FIXME</s> (бұл%<prn%>%<dem%>%<pl%>:бұлар FULL-NOMINAL-INFLECTION ;) FULL-NOMINAL-INFLECTION might lead to
+! overgeneration with p1,p2 possessives (they seem to take onle <px3sp> ending);
+! on the other hand, with something like бу%<prn%>%<dem%>%<px3sp%>:мoнысы%{n%} CASES ;
+! we loose things like бу<prn><dem><pl><px>:бoларныкы /I.S./
+
+bul%<prn%>%<dem%>%<nom%>:bul CLITICS-INCL-COP ;
+bul%<prn%>%<dem%>%<nom%>:bu CLITICS-INCL-COP ; ! Dir/LR
+bul%<prn%>%<dem%>%<gen%>:bunın%' CLITICS-NO-COP ;
+! bul%<prn%>%<dem%>%<gen%>:мұның CLITICS-NO-COP ; ! Dir/LR
+bul%<prn%>%<dem%>%<dat%>:bug%'an CLITICS-NO-COP ;
+bul%<prn%>%<dem%>%<acc%>:bunı CLITICS-NO-COP ;
+! bul%<prn%>%<dem%>%<acc%>:мұны CLITICS-NO-COP ; ! Dir/LR
+bul%<prn%>%<dem%>%<abl%>:budan CLITICS-INCL-COP ;
+! bul%<prn%>%<dem%>%<abl%>:мұнан CLITICS-INCL-COP ; ! Dir/LR
+bul%<prn%>%<dem%>%<loc%>:bunda CLITICS-INCL-COP ;
+! bul%<prn%>%<dem%>%<loc%>:мұнда CLITICS-INCL-COP ; ! Dir/LR
+bul%<prn%>%<dem%>%<ins%>:bul% menen CLITICS-NO-COP ;
+! bul%<prn%>%<dem%>%<ins%>:мұнымeн CLITICS-NO-COP ; ! Dir/LR
+! bul%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASES ; ! FIXME: check "м" vs "б"
+bul%<prn%>%<dem%>%<loc%>:bundag%'ı ATTR-SUBST ;
+! bul%<prn%>%<dem%>%<loc%>:мұндағы ATTR-SUBST ; ! Dir/LR
+! bul%<prn%>%<dem%>%<sim%>:мұндай CASES ;
+bul%<prn%>%<dem%>%<sim%>:bunday CASES ; ! Dir/LR
+! bul%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндай%{I%}%{n%} CASES ;
+! bul%<prn%>%<dem%>%<sim%>%<pl%>:мұндайлар CASES ;
+! bul%<prn%>%<dem%>%<sim%>%<pl%>%<px3sp%>:мұндайлары%{n%} CASES ;
+bul%<prn%>%<dem%>%<adv%>:bılay CLITICS-INCL-COP ;
+bul%<prn%>%<dem%>%<adv%>:bulay CLITICS-INCL-COP ; ! Dir/LR
+! bul%<prn%>%<dem%>%<qnt%>:мұнша CLITICS-NO-COP ;
+bul%<prn%>%<dem%>%<px3sp%>:bunısı%{n%} CASES ;
+
+bul%<prn%>%<dem%>%<pl%>:bular CASES-ETC ;
+bul%<prn%>%<dem%>%<pl%>%<px3sp%>:buları%{n%} CASES ;
+
+LEXICON PRON-DEM-MINA
+
+mına%<prn%>%<dem%>%<nom%>:mına CLITICS-INCL-COP ;
+mına%<prn%>%<dem%>%<gen%>:mınanın%' CLITICS-NO-COP ;
+mına%<prn%>%<dem%>%<dat%>:mınag%'an CLITICS-NO-COP ;
+mına%<prn%>%<dem%>%<acc%>:mınanı CLITICS-NO-COP ;
+mına%<prn%>%<dem%>%<abl%>:mınadan CLITICS-INCL-COP ;
+mına%<prn%>%<dem%>%<loc%>:mınada CLITICS-INCL-COP ;
+mına%<prn%>%<dem%>%<ins%>:mına% menen CLITICS-NO-COP ;
+!mına%<prn%>%<dem%>%<px%>:mınaniki%{n%} CASES ;
+!mına%<prn%>%<dem%>%<loc%>:mınadag%'ı ATTR-SUBST ;
+mına%<prn%>%<dem%>%<sim%>:mınaday CASES ;
+mına%<prn%>%<dem%>%<adv%>:mınalay CLITICS-INCL-COP ;
+mına%<prn%>%<dem%>%<px3sp%>:mınasın%{n%} CASES ;
+
+mına%<prn%>%<dem%>%<pl%>:mınalar CASES-ETC ;
+mına%<prn%>%<dem%>%<pl%>%<px3sp%>:mınaları%{n%} CASES ;
+
+LEXICON PRON-DEM-ANA
+
+ana%<prn%>%<dem%>%<nom%>:ana CLITICS-INCL-COP ;
+ana%<prn%>%<dem%>%<gen%>:ananın%' CLITICS-NO-COP ;
+ana%<prn%>%<dem%>%<dat%>:anag%'an CLITICS-NO-COP ;
+ana%<prn%>%<dem%>%<acc%>:ananı CLITICS-NO-COP ;
+ana%<prn%>%<dem%>%<abl%>:anadan CLITICS-INCL-COP ;
+ana%<prn%>%<dem%>%<loc%>:anada CLITICS-INCL-COP ;
+ana%<prn%>%<dem%>%<ins%>:ana% menen CLITICS-NO-COP ;
+ana%<prn%>%<dem%>%<px%>:ananiki%{n%} CASES ;
+ana%<prn%>%<dem%>%<loc%>:anadag%'ı ATTR-SUBST ;
+ana%<prn%>%<dem%>%<sim%>:anaday CASES ;
+!ana%<prn%>%<dem%>%<adv%>:analay CLITICS-INCL-COP ;
+!ana%<prn%>%<dem%>%<px3sp%>:anaсы%{n%} CASES ;
+
+ana%<prn%>%<dem%>%<pl%>:analar CASES-ETC ;
+ana%<prn%>%<dem%>%<pl%>%<px3sp%>:anaları%{n%} CASES ;
+
+LEXICON DemonstrativePronouns
+
+PRON-DEM-BUL ;
+PRON-DEM-MINA ;
+PRON-DEM-ANA ;
+
+sol%<prn%>%<dem%>%<nom%>:sol CLITICS-INCL-COP ;
+sol%<prn%>%<dem%>:сo PRON-DEM-INFL ;
+sol%<prn%>%<dem%>%<ins%>:сoнымeн CLITICS-NO-COP ;
+sol%<prn%>%<dem%>%<px3sp%>:сoнысы%{n%} CASES ;
+
+ol%<prn%>%<dem%>%<nom%>:ol CLITICS-INCL-COP ;
+ol%<prn%>%<dem%>:o PRON-DEM-INFL ;
+ol%<prn%>%<dem%>%<ins%>:oнымeн CLITICS-NO-COP ;
+ol%<prn%>%<dem%>%<px3sp%>:oнысы%{n%} CASES ;
+
+usı%<prn%>%<dem%>%<nom%>:usı CLITICS-NO-COP ;
+usı%<prn%>%<dem%>:usı PRON-DEM-INFL ;
+usı%<prn%>%<dem%>%<ins%>:usı% menen CLITICS-NO-COP ;
+usı%<prn%>%<dem%>%<px3sp%>:usısı%{n%} CASES ;
+
+! FIXME DISCUSS: Two below were lexicalized as conjunctional adverbs.
+! -ндықтан affix is a feature of verbs as well though, so it will be handled as a
+! productive derivation.
+
+!ol%<prn%>%<dem%>%<reas%>%<abl%>:olıqtan # ; ! "because of that"
+!sol%<prn%>%<dem%>%<reas%>%<abl%>:sonlıqtan # ; ! "because of that"
+
+
+!!!!!!!   I N T E R R O G A T I V E
+
+! Some of the words listed in the grammars I have as interrogative pronouns
+! were placed in other root lexicons depending on what POS they substitute or
+! act like syntactically. So (as planned for today):
+! 1) "нeшe" is a <num><itg>;
+! 2) "қайда, қайдан, қашан, қалай, қалайша" are <adv><itg> (the first three
+! should link to a class containing location cases btw, as many current adverbs
+! do);
+! 3) "қанша" is added both as an interrogative pronoun and as an interrogative
+! adverb /IS/
+!
+! What already added as interrogative pronouns are: кім, ни, нәрсe
+! And to be added as interrogative pronouns are: қайсы, қандай, қанша.
+! I'd like to mark қандай as <sim> form (with қандай for the upper side though),
+! but wouldn't go too deeply into the structure of other two and not derive them
+! from "қай" (that's what they have most likely originated from) IS
+!
+! Of course, "қай", "қайсы" and all other pronouns which can be used as an
+! attribute were added as determiners linking to CLIT as well.
+! Good idea is to have an rlx rule selecting determiner reading when a word is
+! ambiguous between (prn X nom) and (det X) and there is noun to the right;
+! and selecting pronoun if there is a verb to the right.
+
+LEXICON PRON-ITG-INFL
+
+%<prn%>%<itg%>: FULL-NOMINAL-INFLECTION ;
+
+LEXICON PRON-ITG-QAYSI
+
+qaysı%<prn%>%<itg%>%<nom%>:qaysı CLITICS-NO-COP ;
+qaysı%<prn%>%<itg%>%<gen%>:qaysının%' CLITICS-NO-COP ;
+qaysı%<prn%>%<itg%>%<dat%>:qaysıg%'an CLITICS-NO-COP ;
+qaysı%<prn%>%<itg%>%<acc%>:qaysını CLITICS-NO-COP ;
+qaysı%<prn%>%<itg%>%<abl%>:qaysıdan CLITICS-NO-COP ;
+qaysı%<prn%>%<itg%>%<loc%>:qaysıda CLITICS-NO-COP ;
+qaysı%<prn%>%<itg%>%<ins%>:qaysı% menen CLITICS-NO-COP ;
+
+qaysı%<prn%>%<itg%>:qaysı GER-POSSESSIVES ;
+
+LEXICON PRON-ITG-QANSHA
+
+qansha%<prn%>%<itg%>:qansha CASES ;
+
+LEXICON PRON-ITG-QANDAY
+
+qanday%<prn%>%<itg%>%<sim%>:qanday CLITICS-NO-COP ;
+qanday%<prn%>%<itg%>%<sim%>:qanday CASES ;
+qanday%<prn%>%<itg%>%<sim%>%<px3sp%>:qandayı%{n%} CASES ;
+qanday%<prn%>%<itg%>%<sim%>%<pl%>:qandaylar CASES ;
+qanday%<prn%>%<itg%>%<sim%>%<pl%>%<px3sp%>:qandayları%{n%} CASES ;
+
+LEXICON InterrogativePronouns
+
+PRON-ITG-QAYSI ;
+PRON-ITG-QANSHA ;
+PRON-ITG-QANDAY ;
+na%'rse:na%'rse PRON-ITG-INFL ; ! "thing" ! Use/MT
+ne:ne PRON-ITG-INFL ; ! "what"
+kim:kim PRON-ITG-INFL ; ! "who"
 
 LEXICON PRNNEG
 
@@ -683,57 +942,6 @@ LEXICON NUM
 NUM-COMMON ;
 %<num%>%<ord%>:%>%{I%}nsh%{I%} # ;             
 %<num%>%<ord%>:%>%{I%}nsh%{I%} N-INFL-COMMON ;
-
-!==============================================================================!
-! CLITICS
-!==============================================================================!
-
-! First, let's list all the clitics we have
-
-LEXICON CLIT-EMPH
-
-%+shı%<emph%>:%>sh%{I%} # ;
-# ;
-
-LEXICON CLIT-QST-MA
-
-%+ma%<qst%>:%>% %{M%}%{A%} # ;
-
-LEXICON CLIT-QST
-
-CLIT-QST-MA ;
-%+meken%<qst%>:% %{M%}eken # ;
-# ;
-
-LEXICON CLIT-MODASS
-
-%+g%'oy%<mod_ass%>:% %{G%}oy # ;
-# ;
-
-LEXICON CLIT-GHANA-ETC
-
-%+%-aq%<postadv%>:%-aq # ; ! ""
-%+g%'ana%<postadv%>:% %{G%}ana # ; ! ""
-%+da%<cnjcoo%>:% %{D%}%{A%} # ; ! ""
-%+da%<postadv%>:% %{D%}%{A%} # ; ! ""
-# ;
-
-LEXICON CLIT-COP
-
-%+e%<cop%>: V-PERS-S1 ;
-
-! Now, let's group them depending on what they can attach to
-
-LEXICON COMMON-CLITICS
-
-CLIT-QST ;
-CLIT-MODASS ;
-CLIT-GHANA-ETC ;
-
-LEXICON CLITICS-INCL-COP         ! Can appear only after nominals
-                                 ! (and only after some cases).
-COMMON-CLITICS ;
-CLIT-COP ;
 
 
 LEXICON DET-REF
@@ -3126,7 +3334,7 @@ ko%'t:ko%'t N1 ; ! ""
 ko%'shiw:ko%'shiw N1 ; ! ""
 ko%'shbasshı:ko%'shbasshı N1 ; ! ""
 ko%'she:ko%'she N1 ; ! ""
-ko%'ship% qоnıw:ko%'ship% qоnıw N1 ; ! ""
+ko%'ship% qonıw:ko%'ship% qonıw N1 ; ! ""
 kewil:kewil N1 ; ! ""
 laboratoriya:laboratoriya N1 ; ! ""
 lavr:lavr N1 ; ! ""
@@ -3159,7 +3367,7 @@ masqara:masqara N1 ; ! ""
 mazmun:mazmun N1 ; ! ""
 may:may N1 ; ! ""
 maydan:maydan N1 ; ! ""
-frоntоvik:frоntоvik N1 ; ! ""
+frontovik:frontovik N1 ; ! ""
 mal:mal N1 ; ! ""
 malay:malay N1 ; ! ""
 malshı:malshı N1 ; ! ""
@@ -3281,10 +3489,10 @@ neft% boyınsha% qa%'nige:neft% boyınsha% qa%'nige N1 ; ! ""
 minara:minara N1 ; ! ""
 eki% ju%'zli:eki% ju%'zli N1 ; ! ""
 miyras:miyras N1 ; ! ""
-miyrasхоr:miyrasхоr N1 ; ! ""
+miyrasхor:miyrasхor N1 ; ! ""
 muzey:muzey N1 ; ! ""
 arхiv:arхiv N1 ; ! ""
-bоs% waqıt:bоs% waqıt N1 ; ! ""
+bos% waqıt:bos% waqıt N1 ; ! ""
 ruxsat:ruxsat N1 ; ! ""
 murt:murt N1 ; ! ""
 murın:murın N1 ; ! ""
@@ -3346,7 +3554,7 @@ na%'reste:na%'reste N1 ; ! ""
 na%'tiyje:na%'tiyje N1 ; ! ""
 no%'ker:no%'ker N1 ; ! ""
 nomer:nomer N1 ; ! ""
-оblast:оblast N1 ; ! ""
+oblast:oblast N1 ; ! ""
 obekt:obekt N1 ; ! ""
 awqam:awqam N1 ; ! ""
 awqamlas:awqamlas N1 ; ! ""
@@ -3377,7 +3585,7 @@ orbita:orbita N1 ; ! ""
 organ:organ N1 ; ! ""
 orda:orda N1 ; ! ""
 orden:orden N1 ; ! ""
-tоg%'ay:tоg%'ay N1 ; ! ""
+tog%'ay:tog%'ay N1 ; ! ""
 orta:orta N1 ; ! ""
 ortalıq:ortalıq N1 ; ! ""
 orın:orın N1 ; ! ""
@@ -3396,7 +3604,7 @@ oq:oq N1 ; ! ""
 waqıya:waqıya N1 ; ! ""
 oqıwshı:oqıwshı N1 ; ! ""
 oqıwshı% a%'yel:oqıwshı% a%'yel N1 ; ! ""
-оqıwshı:оqıwshı N1 ; ! ""
+oqıwshı:oqıwshı N1 ; ! ""
 oqıtıwshı:oqıtıwshı N1 ; ! ""
 qubla:qubla N1 ; ! ""
 payda:payda N1 ; ! ""
@@ -3479,7 +3687,7 @@ radio:radio N1 ; ! ""
 radius:radius N1 ; ! ""
 razryad:razryad N1 ; ! ""
 ray:ray N1 ; ! ""
-rayon:rayon N1 ; ! ""
+rayon:rayon N1 ; !t""
 raketa:raketa N1 ; ! ""
 ras:ras N1 ; ! ""
 raxmet:raxmet N1 ; ! ""
@@ -3570,9 +3778,9 @@ isenim:isenim N1 ; ! ""
 isenimsizlik:isenimsizlik N1 ; ! ""
 sert:sert N1 ; ! ""
 sertifikat:sertifikat N1 ; ! ""
-jоldas:jоldas N1 ; ! ""
+joldas:joldas N1 ; ! ""
 serik:serik N1 ; ! ""
-jоldaslıq:jоldaslıq N1 ; ! ""
+joldaslıq:joldaslıq N1 ; ! ""
 simvol:simvol N1 ; ! ""
 sinonim:sinonim N1 ; ! ""
 sintez:sintez N1 ; ! ""
@@ -3597,7 +3805,7 @@ sorpa:sorpa N1 ; ! ""
 shor% jer:shor% jer N1 ; ! ""
 sud:sud N1 ; ! ""
 sociologiya:sociologiya N1 ; ! ""
-sоyıw:sоyıw N1 ; ! ""
+soyıw:soyıw N1 ; ! ""
 sog%'ıs:sog%'ıs N1 ; ! ""
 soqır:soqır N1 ; ! ""
 soqqı:soqqı N1 ; ! ""
@@ -3622,7 +3830,7 @@ sum:sum N1 ; ! ""
 su%'wret:su%'wret N1 ; ! ""
 su%'wretshi:su%'wretshi N1 ; ! ""
 hawız:hawız N1 ; ! ""
-vоdоrоd:vоdоrоd N1 ; ! ""
+vodorod:vodorod N1 ; ! ""
 surok:surok N1 ; ! ""
 sıbag%'a:sıbag%'a N1 ; ! ""
 sıbır:sıbır N1 ; ! ""
@@ -3686,7 +3894,7 @@ tabaq:tabaq N1 ; ! ""
 ta%'biyat:ta%'biyat N1 ; ! ""
 tabıs:tabıs N1 ; ! ""
 tay:tay N1 ; ! ""
-bоtalaq:bоtalaq N1 ; ! ""
+botalaq:botalaq N1 ; ! ""
 taypa:taypa N1 ; ! ""
 taktika:taktika N1 ; ! ""
 talan%-taraj:talan%-taraj N1 ; ! ""
@@ -3780,7 +3988,7 @@ topıraq:topıraq N1 ; ! ""
 toray:toray N1 ; ! ""
 torf:torf N1 ; ! ""
 torg%'ay:torg%'ay N1 ; ! ""
-tоsqısh:tоsqısh N1 ; ! ""
+tosqısh:tosqısh N1 ; ! ""
 tragediya:tragediya N1 ; ! ""
 traktor:traktor N1 ; ! ""
 tramplin:tramplin N1 ; ! ""
@@ -3836,7 +4044,7 @@ duman:duman N1 ; ! ""
 turmıs:turmıs N1 ; ! ""
 turaq% jer:turaq% jer N1 ; ! ""
 jasawshı:jasawshı N1 ; ! ""
-tоpar:tоpar N1 ; ! ""
+topar:topar N1 ; ! ""
 turg%'ın:turg%'ın N1 ; ! ""
 uzınlıq:uzınlıq N1 ; ! ""
 jaq:jaq N1 ; ! ""
@@ -4012,7 +4220,7 @@ shet% ellik:shet% ellik N1 ; ! ""
 sheshe:sheshe N1 ; ! ""
 sheshim:sheshim N1 ; ! ""
 shen%'ber:shen%'ber N1 ; ! ""
-bоyra:bоyra N1 ; ! ""
+boyra:boyra N1 ; ! ""
 shiyki% zat:shiyki% zat N1 ; ! ""
 sherek:sherek N1 ; ! ""
 sholwshı:sholwshı N1 ; ! ""
@@ -4100,7 +4308,7 @@ izbasar:izbasar N1 ; ! ""
 ilgek:ilgek N1 ; ! ""
 ilgeri:ilgeri N1 ; ! ""
 ilmek:ilmek N1 ; ! ""
-qayırqоmlıq:qayırqоmlıq N1 ; ! ""
+qayırqomlıq:qayırqomlıq N1 ; ! ""
 ilim:ilim N1 ; ! ""
 a%'njir:a%'njir N1 ; ! ""
 ini:ini N1 ; ! ""
@@ -4294,8 +4502,8 @@ qısqısh:qısqısh N1 ; ! ""
 qıslaw:qıslaw N1 ; ! ""
 qısqısh% temir:qısqısh% temir N1 ; ! ""
 qıtay:qıtay N1 ; ! ""
-gоrshitsa:gоrshitsa N1 ; ! ""
-gоrshitsa:gоrshitsa N1 ; ! ""
+gorshitsa:gorshitsa N1 ; ! ""
+gorshitsa:gorshitsa N1 ; ! ""
 qıshqıl:qıshqıl N1 ; ! ""
 qubılıs:qubılıs N1 ; ! ""
 truba:truba N1 ; ! ""
@@ -4361,7 +4569,7 @@ u%'stirt:u%'stirt N1 ; ! ""
 suwıq:suwıq N1 ; ! ""
 u%'sh:u%'sh N1 ; ! ""
 hu%'jdan:hu%'jdan N1 ; ! ""
-kоllektiv:kоllektiv N1 ; ! ""
+kollektiv:kollektiv N1 ; ! ""
 uzınlıq:uzınlıq N1 ; ! ""
 uyım:uyım N1 ; ! ""
 uyıtqı:uyıtqı N1 ; ! ""
@@ -4381,7 +4589,7 @@ ustaz:ustaz N1 ; ! ""
 sabır:sabır N1 ; ! ""
 usınıs:usınıs N1 ; ! ""
 ush:ush N1 ; ! ""
-samоlet:samоlet N1 ; ! ""
+samolet:samolet N1 ; ! ""
 ushqısh:ushqısh N1 ; ! ""
 uya:uya N1 ; ! ""
 uyat:uyat N1 ; ! ""
@@ -4442,12 +4650,12 @@ o%'sek:o%'sek N1 ; ! ""
 wa%'siyyat:wa%'siyyat N1 ; ! ""
 o%'sim:o%'sim N1 ; ! ""
 o%'simlik:o%'simlik N1 ; ! ""
-kоmpensatsiyalıq% haqı:kоmpensatsiyalıq% haqı N1 ; ! ""
+kompensatsiyalıq% haqı:kompensatsiyalıq% haqı N1 ; ! ""
 o%'tinish:o%'tinish N1 ; ! ""
 o%'tirik:o%'tirik N1 ; ! ""
 o%'tirikshi:o%'tirikshi N1 ; ! ""
 bet:bet N1 ; ! ""
-o%'n%'iр:o%'n%'iр N1 ; ! ""
+o%'n%'ip:o%'n%'ip N1 ; ! ""
 
 LEXICON  Verbs
 abay% bol:abay% bol V-IV ; ! ""
@@ -4502,8 +4710,8 @@ arlan:arlan V-IV ; ! ""
 u%'r:u%'r V-IV ; ! ""
 arsılda:arsılda V-IV ; ! ""
 art:art V-IV ; ! ""
-bоldır:bоldır V-IV ; ! ""
-хоshlas:хоshlas V-IV ; ! ""
+boldır:boldır V-IV ; ! ""
+хoshlas:хoshlas V-IV ; ! ""
 qutıl:qutıl V-IV ; ! ""
 arıqla:arıqla V-IV ; ! ""
 arqalan:arqalan V-IV ; ! ""
@@ -4536,7 +4744,7 @@ aqsa:aqsa V-IV ; ! ""
 aqıllas:aqıllas V-IV ; ! ""
 aqır:aqır V-IV ; ! ""
 ıqlaslan:ıqlaslan V-IV ; ! ""
-jоyıtıl:jоyıtıl V-IV ; ! ""
+joyıtıl:joyıtıl V-IV ; ! ""
 sasqalaqlap% qal:sasqalaqlap% qal V-IV ; ! ""
 o%'kirip% jıla:o%'kirip% jıla V-IV ; ! ""
 baylanıs:baylanıs V-IV ; ! ""
@@ -4771,14 +4979,14 @@ qa%'nigelen:qa%'nigelen V-IV ; ! ""
 mu%'lg:mu%'lg V-IV ; ! ""
 peshsheden% qorg%'an:peshsheden% qorg%'an V-IV ; ! ""
 ma%'s% bol:ma%'s% bol V-IV ; ! ""
-bоsan%'qıra:bоsan%'qıra V-IV ; ! ""
+bosan%'qıra:bosan%'qıra V-IV ; ! ""
 a%'detlen:a%'detlen V-IV ; ! ""
 tın%'la:tın%'la V-IV ; ! ""
 ashshı% so%'yle:ashshı% so%'yle V-IV ; ! ""
 ja%'digo%'ylik% qıl:ja%'digo%'ylik% qıl V-IV ; ! ""
 mıj:mıj V-IV ; ! ""
 min:min V-IV ; ! ""
-shоlaqlan:shоlaqlan V-IV ; ! ""
+sholaqlan:sholaqlan V-IV ; ! ""
 jan%'ılıs:jan%'ılıs V-IV ; ! ""
 nasharlan:nasharlan V-IV ; ! ""
 aqılsızlan:aqılsızlan V-IV ; ! ""
@@ -4787,13 +4995,13 @@ niyetlen:niyetlen V-IV ; ! ""
 muqalt:muqalt V-IV ; ! ""
 oylan:oylan V-IV ; ! ""
 oysıra:oysıra V-IV ; ! ""
-оynaqla:оynaqla V-IV ; ! ""
+oynaqla:oynaqla V-IV ; ! ""
 mensinbe:mensinbe V-IV ; ! ""
 orna:orna V-IV ; ! ""
 ornalas:ornalas V-IV ; ! ""
 ota:ota V-IV ; ! ""
 ot% al:ot% al V-IV ; ! ""
-оn%'ıs:оn%'ıs V-IV ; ! ""
+on%'ıs:on%'ıs V-IV ; ! ""
 otır:otır V-IV ; ! ""
 oyan:oyan V-IV ; ! ""
 oqı:oqı V-IV ; ! ""
@@ -4830,14 +5038,14 @@ tasla:tasla V-IV ; ! ""
 saqlandır:saqlandır V-IV ; ! ""
 sekir:sekir V-IV ; ! ""
 semir:semir V-IV ; ! ""
-shоrshın:shоrshın V-IV ; ! ""
+shorshın:shorshın V-IV ; ! ""
 siy:siy V-IV ; ! ""
 sıyın:sıyın V-IV ; ! ""
 qusa:qusa V-IV ; ! ""
 tentekshilik% et:tentekshilik% et V-IV ; ! ""
 sol:sol V-IV ; ! ""
 salbıra:salbıra V-IV ; ! ""
-sоzılıp% qara:sоzılıp% qara V-IV ; ! ""
+sozılıp% qara:sozılıp% qara V-IV ; ! ""
 sandıraqla:sandıraqla V-IV ; ! ""
 sorla:sorla V-IV ; ! ""
 sorlat:sorlat V-IV ; ! ""
@@ -4851,7 +5059,7 @@ sıldırla:sıldırla V-IV ; ! ""
 sıbırla:sıbırla V-IV ; ! ""
 sızla:sızla V-IV ; ! ""
 sıy:sıy V-IV ; ! ""
-sоz:sоz V-IV ; ! ""
+soz:soz V-IV ; ! ""
 sıyıs:sıyıs V-IV ; ! ""
 sılqılda:sılqılda V-IV ; ! ""
 sın:sın V-IV ; ! ""
@@ -4861,7 +5069,7 @@ sın%'g%'ırla:sın%'g%'ırla V-IV ; ! ""
 sin%':sin%' V-IV ; ! ""
 su%'yen:su%'yen V-IV ; ! ""
 su%'ysin:su%'ysin V-IV ; ! ""
-bоzar:bоzar V-IV ; ! ""
+bozar:bozar V-IV ; ! ""
 so%'yt:so%'yt V-IV ; ! ""
 qaytpa:qaytpa V-IV ; ! ""
 tabanla:tabanla V-IV ; ! ""
@@ -4897,7 +5105,7 @@ toz:toz V-IV ; ! ""
 tol:tol V-IV ; ! ""
 tu%'ner:tu%'ner V-IV ; ! ""
 toplan:toplan V-IV ; ! ""
-tоplan:tоplan V-IV ; ! ""
+toplan:toplan V-IV ; ! ""
 ha%'llen:ha%'llen V-IV ; ! ""
 shıtna:shıtna V-IV ; ! ""
 ashıwlanıw:ashıwlanıw V-IV ; ! ""
@@ -4949,8 +5157,8 @@ shegin:shegin V-IV ; ! ""
 shiyelen:shiyelen V-IV ; ! ""
 shu%'m:shu%'m V-IV ; ! ""
 shoshan%'la:shoshan%'la V-IV ; ! ""
-shоrsh:shоrsh V-IV ; ! ""
-shоrsh:shоrsh V-IV ; ! ""
+shorsh:shorsh V-IV ; ! ""
+shorsh:shorsh V-IV ; ! ""
 ja%'mlen:ja%'mlen V-IV ; ! ""
 qabıqqa% aylan:qabıqqa% aylan V-IV ; ! ""
 shaw:shaw V-IV ; ! ""
@@ -5055,7 +5263,7 @@ qol% jet:qol% jet V-IV ; ! ""
 salbıra:salbıra V-IV ; ! ""
 qon:qon V-IV ; ! ""
 qonaqla:qonaqla V-IV ; ! ""
-оrnalas:оrnalas V-IV ; ! ""
+ornalas:ornalas V-IV ; ! ""
 qor:qor V-IV ; ! ""
 ha%'kiren%'le:ha%'kiren%'le V-IV ; ! ""
 awqatlan:awqatlan V-IV ; ! ""
@@ -5068,7 +5276,7 @@ panala:panala V-IV ; ! ""
 qorg%'an:qorg%'an V-IV ; ! ""
 qırılda:qırılda V-IV ; ! ""
 qosarla:qosarla V-IV ; ! ""
-qоtır% bol:qоtır% bol V-IV ; ! ""
+qotır% bol:qotır% bol V-IV ; ! ""
 quwan:quwan V-IV ; ! ""
 qız:qız V-IV ; ! ""
 qızar:qızar V-IV ; ! ""
@@ -5182,7 +5390,7 @@ alıp% ket:alıp% ket V-TV ; ! ""
 alıslat:alıslat V-TV ; ! ""
 alıstır:alıstır V-TV ; ! ""
 jaqınla:jaqınla V-TV ; ! ""
-mоyınnan% usla:mоyınnan% usla V-TV ; ! ""
+moyınnan% usla:moyınnan% usla V-TV ; ! ""
 pitker:pitker V-TV ; ! ""
 quwıp% jet:quwıp% jet V-TV ; ! ""
 a%'melle:a%'melle V-TV ; ! ""
@@ -5197,7 +5405,7 @@ haramla:haramla V-TV ; ! ""
 arna:arna V-TV ; ! ""
 arttır:arttır V-TV ; ! ""
 arshınla:arshınla V-TV ; ! ""
-bоldır:bоldır V-TV ; ! ""
+boldır:boldır V-TV ; ! ""
 arıqsın:arıqsın V-TV ; ! ""
 arıqlat:arıqlat V-TV ; ! ""
 arqalat:arqalat V-TV ; ! ""
@@ -5228,7 +5436,7 @@ aqla:aqla V-TV ; ! ""
 an%'la:an%'la V-TV ; ! ""
 izine% tu%'s:izine% tu%'s V-TV ; ! ""
 an%'g%'ar:an%'g%'ar V-TV ; ! ""
-оylamastan% isle:оylamastan% isle V-TV ; ! ""
+oylamastan% isle:oylamastan% isle V-TV ; ! ""
 an%'qı:an%'qı V-TV ; ! ""
 an%'qılda:an%'qılda V-TV ; ! ""
 bayla:bayla V-TV ; ! ""
@@ -5264,7 +5472,7 @@ ber:ber V-TV ; ! ""
 besewle:besewle V-TV ; ! ""
 biyle:biyle V-TV ; ! ""
 bozart:bozart V-TV ; ! ""
-bоysın:bоysın V-TV ; ! ""
+boysın:boysın V-TV ; ! ""
 qag%'ıp% kirgiz:qag%'ıp% kirgiz V-TV ; ! ""
 boldır:boldır V-TV ; ! ""
 bolja:bolja V-TV ; ! ""
@@ -5315,10 +5523,10 @@ da%'rile:da%'rile V-TV ; ! ""
 ege:ege V-TV ; ! ""
 ege:ege V-TV ; ! ""
 ez:ez V-TV ; ! ""
-sоrtlaw:sоrtlaw V-TV ; ! ""
+sortlaw:sortlaw V-TV ; ! ""
 tazala:tazala V-TV ; ! ""
 ajırat:ajırat V-TV ; ! ""
-оylaw:оylaw V-TV ; ! ""
+oylaw:oylaw V-TV ; ! ""
 ele:ele V-TV ; ! ""
 elikle:elikle V-TV ; ! ""
 emle:emle V-TV ; ! ""
@@ -5396,7 +5604,7 @@ joyg%'ızdır:joyg%'ızdır V-TV ; ! ""
 jolla:jolla V-TV ; ! ""
 jor:jor V-TV ; ! ""
 bolja:bolja V-TV ; ! ""
-jоbalastır:jоbalastır V-TV ; ! ""
+jobalastır:jobalastır V-TV ; ! ""
 joqla:joqla V-TV ; ! ""
 juw:juw V-TV ; ! ""
 jıy:jıy V-TV ; ! ""
@@ -5443,7 +5651,7 @@ bu%'ldir:bu%'ldir V-TV ; ! ""
 ku%'nle:ku%'nle V-TV ; ! ""
 ku%'t:ku%'t V-TV ; ! ""
 ku%'sheyt:ku%'sheyt V-TV ; ! ""
-zоrla:zоrla V-TV ; ! ""
+zorla:zorla V-TV ; ! ""
 ko%'beyt:ko%'beyt V-TV ; ! ""
 ko%'zle:ko%'zle V-TV ; ! ""
 ko%'n:ko%'n V-TV ; ! ""
@@ -5480,7 +5688,7 @@ o%'s:o%'s V-TV ; ! ""
 su%'z:su%'z V-TV ; ! ""
 mu%'shele:mu%'shele V-TV ; ! ""
 janına% tiy:janına% tiy V-TV ; ! ""
-tоpırla:tоpırla V-TV ; ! ""
+topırla:topırla V-TV ; ! ""
 ma%'limle:ma%'limle V-TV ; ! ""
 ha%'semle:ha%'semle V-TV ; ! ""
 kelistir:kelistir V-TV ; ! ""
@@ -5501,7 +5709,7 @@ ornatıl:ornatıl V-TV ; ! ""
 orınla:orınla V-TV ; ! ""
 ota:ota V-TV ; ! ""
 otlat:otlat V-TV ; ! ""
-оyma% nag%'ıs% sal:оyma% nag%'ıs% sal V-TV ; ! ""
+oyma% nag%'ıs% sal:oyma% nag%'ıs% sal V-TV ; ! ""
 oyat:oyat V-TV ; ! ""
 oqı:oqı V-TV ; ! ""
 oqıt:oqıt V-TV ; ! ""
@@ -5544,7 +5752,7 @@ soz:soz V-TV ; ! ""
 soy:soy V-TV ; ! ""
 keltekle:keltekle V-TV ; ! ""
 qıyrat:qıyrat V-TV ; ! ""
-awızdı% tоltırıp% urtlap% ish:awızdı% tоltırıp% urtlap% ish V-TV ; ! ""
+awızdı% toltırıp% urtlap% ish:awızdı% toltırıp% urtlap% ish V-TV ; ! ""
 sotla:sotla V-TV ; ! ""
 sotlastır:sotlastır V-TV ; ! ""
 soqtır:soqtır V-TV ; ! ""
@@ -5557,7 +5765,7 @@ sıyla:sıyla V-TV ; ! ""
 sına:sına V-TV ; ! ""
 sıpır:sıpır V-TV ; ! ""
 sır:sır V-TV ; ! ""
-bоya:bоya V-TV ; ! ""
+boya:boya V-TV ; ! ""
 silk:silk V-TV ; ! ""
 sin%'ir:sin%'ir V-TV ; ! ""
 su%'y:su%'y V-TV ; ! ""
@@ -5663,14 +5871,14 @@ tu%'sir:tu%'sir V-TV ; ! ""
 tu%'tet:tu%'tet V-TV ; ! ""
 gertikle:gertikle V-TV ; ! ""
 juwamaqla:juwamaqla V-TV ; ! ""
-tоpırla:tоpırla V-TV ; ! ""
+topırla:topırla V-TV ; ! ""
 juwmaq% shıg%'ar:juwmaq% shıg%'ar V-TV ; ! ""
 turg%'ız:turg%'ız V-TV ; ! ""
 tutın:tutın V-TV ; ! ""
 qama:qama V-TV ; ! ""
 tutqıng%'a% al:tutqıng%'a% al V-TV ; ! ""
 ta%'rbiyala:ta%'rbiyala V-TV ; ! ""
-kоnfiskatsiyala:kоnfiskatsiyala V-TV ; ! ""
+konfiskatsiyala:konfiskatsiyala V-TV ; ! ""
 arna:arna V-TV ; ! ""
 to%'k:to%'k V-TV ; ! ""
 to%'le:to%'le V-TV ; ! ""
@@ -5890,7 +6098,7 @@ o%'r:o%'r V-TV ; ! ""
 o%'rgiz:o%'rgiz V-TV ; ! ""
 o%'rte:o%'rte V-TV ; ! ""
 u%'yret:u%'yret V-TV ; ! ""
-sоlay% et:sоlay% et V-TV ; ! ""
+solay% et:solay% et V-TV ; ! ""
 o%'sir:o%'sir V-TV ; ! ""
 o%'t:o%'t V-TV ; ! ""
 o%'te:o%'te V-TV ; ! ""
@@ -6189,7 +6397,7 @@ qashıq:qashıq A1 ; ! ""
 gedey:gedey A1 ; ! ""
 baj:baj A4 ; ! ""
 qa%'dimgi:qa%'dimgi A2 ; ! ""
-tоsattan% bolg%'an:tоsattan% bolg%'an A1 ; ! ""
+tosattan% bolg%'an:tosattan% bolg%'an A1 ; ! ""
 kelesi:kelesi A3 ; ! ""
 kem:kem A1 ; ! ""
 ken%':ken%' A1 ; ! ""
@@ -6233,11 +6441,11 @@ ko%'rnekli:ko%'rnekli A4 ; ! ""
 ko%'rnekli:ko%'rnekli A3 ; ! ""
 korporativlik:korporativlik A4 ; ! ""
 korrupciyalıq:korrupciyalıq A4 ; ! ""
-qоn%'sılas:qоn%'sılas A4 ; ! ""
+qon%'sılas:qon%'sılas A4 ; ! ""
 qos:qos A3 ; ! ""
 qosımsha:qosımsha A4 ; ! ""
 qosımsha:qosımsha A3 ; ! ""
-хоsh:хоsh A1 ; ! ""
+хosh:хosh A1 ; ! ""
 ko%'shpeli:ko%'shpeli A3 ; ! ""
 qoyıw:qoyıw A1 ; ! ""
 kristallıq:kristallıq A4 ; ! ""
@@ -6325,7 +6533,7 @@ gu%'n%'elek:gu%'n%'elek A4 ; ! ""
 nag%'ız:nag%'ız A1 ; ! ""
 nadan:nadan A1 ; ! ""
 naq:naq A1 ; ! ""
-nоminal:nоminal A4 ; ! ""
+nominal:nominal A4 ; ! ""
 narazı:narazı A4 ; ! ""
 bazar:bazar A4 ; ! ""
 nashar:nashar A1 ; ! ""
@@ -6536,7 +6744,7 @@ tın%':tın%' A4 ; ! ""
 tınısh:tınısh A1 ; ! ""
 mayda:mayda A1 ; ! ""
 waqıtsha:waqıtsha A1 ; ! ""
-kоllektivlik:kоllektivlik A4 ; ! ""
+kollektivlik:kollektivlik A4 ; ! ""
 uzaq:uzaq A1 ; ! ""
 ko%'rnekli:ko%'rnekli A3 ; ! ""
 uzın:uzın A1 ; ! ""
@@ -6575,7 +6783,7 @@ xristianlıq:xristianlıq A4 ; ! ""
 xromosomalıq:xromosomalıq A4 ; ! ""
 ciklli:ciklli A4 ; ! ""
 kishkene:kishkene A2 ; ! ""
-оtlaq:оtlaq A4 ; ! ""
+otlaq:otlaq A4 ; ! ""
 shamalı:shamalı A4 ; ! ""
 shaqqan:shaqqan A1 ; ! ""
 shegaralas:shegaralas A4 ; ! ""
@@ -6649,9 +6857,9 @@ ma% ne:ma% ne QST ; ! "" Dir/LR
 ! мa% нe:мe% нe QST ; ! "" Dir/LR
 ! шe:шe QST ; ! ""
 
-! ғой:%~ғой MOD-ASS ; ! "" Dir/RL
-! ғой:ғой MOD-ASS ; ! "" Dir/LR
-! ғой:қой MOD-ASS ; ! "" Dir/LR
+! ғoй:%~ғoй MOD-ASS ; ! "" Dir/RL
+! ғoй:ғoй MOD-ASS ; ! "" Dir/LR
+! ғoй:қoй MOD-ASS ; ! "" Dir/LR
 
 LEXICON Conjunctions 
 
@@ -6660,7 +6868,7 @@ da:da CC ; ! "" ! Dir/LR
 da:de CC ; ! "" ! Dir/LR
 tu%'we:tu%'we CC ; ! ""
 
-!! Противитeльныe
+!! Прoтивитeльныe
 
 al:al CC ; ! "contrastive and"
 biraq:biraq CC ; ! "but"
@@ -6685,7 +6893,7 @@ onday% bolsa:onday% bolsa CS ; ! ""
 sebebi:sebebi CS ; ! ""
 yag%'nıy:yag%'nıy CS ; ! ""
 
-! Adverbial conjunctions = "Относитeльныe словa"
+! Adverbial conjunctions = "Отнoситeльныe слoвa"
 ! ==============================================
 
 ! aйтуыншa:aйтуыншa CA ; ! ""
@@ -6696,12 +6904,12 @@ yag%'nıy:yag%'nıy CS ; ! ""
 ! дeгeнмeн:дeгeнмeн CA ; ! "nevertheless"
 ! жaзуыншa:жaзуыншa CA ; ! ""
 ! мәлімдeуіншe:мәлімдeуіншe CA ; ! ""
-! ондықтaн:ондықтaн CA ; ! "that is why"
+! oндықтaн:oндықтaн CA ; ! "that is why"
 usı% sebepten:usı% sebepten CA ; ! "therefore"
 ! пікіріншe:пікіріншe CA ; ! ""
-! сондa% дa:сондa% дa CA ; ! "nevertheless" Use/MT   = (tat) шулaй дa
-! сондa:сондa CA ; ! "nevertheless"                  = (tat) шулaй дa
-! сондықтaн:сондықтaн CA ; ! "that is why"
+! сoндa% дa:сoндa% дa CA ; ! "nevertheless" Use/MT   = (tat) шулaй дa
+! сoндa:сoндa CA ; ! "nevertheless"                  = (tat) шулaй дa
+! сoндықтaн:сoндықтaн CA ; ! "that is why"
 ! сөздeріншe:сөздeріншe CA ; ! ""
 ! сөзіншe:сөзіншe CA ; ! ""
 ! сөйтсe% дe:сөйтсe% дe CA ; ! "nevertheless"
@@ -6758,25 +6966,44 @@ men:ben POST ; ! "with" + NOM       ! Dir/LR
 men:men POST ; ! "with" + NOM       ! Dir/LR
 men:pen POST ; ! "with" + NOM       ! Dir/LR
 
-LEXICON Pronouns 
+
+!===================!
+ LEXICON Pronouns
+!===================!
 
 PersonalPronouns ;
 
-barlıq:barlıq PRON-XXX ; ! ""
-basqa:basqa PRON-XXX ; ! ""
-ba%'ri:ba%'ri PRON-XXX ; ! ""
-bir% na%'rse:bir% na%'rse PRON-XXX ; ! ""
-birew:birew PRON-XXX ; ! ""
-ha%'r% kim:ha%'r% kim PRON-XXX ; ! ""
-kim:kim PRON-XXX ; ! ""
-na%'rse:na%'rse PRON-ITG-INFL ; ! "thing" ! Use/MT
-ne:ne PRON-XXX ; ! ""
-o%'z:o%'z PRON-XXX ; ! ""
+DemonstrativePronouns ;
 
-! eшкім:eшкім PRNNEG ; ! ""
-! eшнәрсe:eшнәрсe PRNNEG ; ! ""
+InterrogativePronouns ;
+
+
+basqalar:basqalar PRON-IND-PL; ! "other"
+birdeme:birdeme PRON-IND ; ! "something"
+bir% na%'rse:bir% na%'rse PRON-IND ; ! "something" Use/MT
+gey:gey PRON-IND ; ! "some" FIXME CHECK
+geypara:geypara PRON-IND ; ! "some" FIXME CHECK
+ha%'r:ha%'r PRON-IND ; ! !"either" Use/MT 
+birew:birew PRON-IND ; ! !"someone" Use/MT 
+
+barlıq:barlıq PRON-QNT ; ! ""
+ba%'ri:ba%'ri PRON-QNT-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
+! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
+birew:birew PRON-QNT ; ! ""
+ekew:ekew PRON-QNT ; ! "both" !Use/MT
+ha%'r% kim:ha%'r% kim PRON-QNT ; ! ""
+ko%'bisi:ko%'bisi PRON-QNT ; ! "most" !Use/MT
+
+hesh% kim:hesh% kim PRNNEG ; ! ""
 hesh% na%'rse:hesh% na%'rse PRNNEG ; ! "" Use/MT
-! eштeңe:eштeңe PRNNEG ; ! ""
+heshten%'e:heshten%'e PRNNEG ; ! ""
+
+bir%-bir:bir%-bir PRON-RECIP ; ! "each other, one another"
+
+o%'z:o%'z PRON-REF ; ! "self"
+
+basqa:basqa PRON-XXX ; ! ""
+
 
 !===================!
  LEXICON Determiners
@@ -6789,10 +7016,10 @@ ol:ol DET-DEM ; ! ""
 mınaw:mınaw DET-DEM ; ! ""
 sol:sol DET-DEM ; ! ""
 usı:usı DET-DEM ; ! ""
-! әлгі:әлгі DET-DEM ; ! "~этот"
+! әлгі:әлгі DET-DEM ; ! "~этoт"
 ! usını:usını DET-DEM ; ! ""
-! сонaу:сонaу DET-DEM ;
-! осынaу:осынaу DET-DEM ;
+! сoнaу:сoнaу DET-DEM ;
+! oсынaу:oсынaу DET-DEM ;
 
 
 ! ha'r% bir:ha'r% bir DET-XXX ; ! ""
@@ -6813,11 +7040,11 @@ usı:usı DET-DEM ; ! ""
 ! қaншa:қaншa DET-QNT ; ! "how many"
 ! 
 ! 
-! ондaғaн:ондaғaн DET-QNT ; ! ""
+! oндaғaн:oндaғaн DET-QNT ; ! ""
 ! жүздeгeн:жүздeгeн DET-QNT ; ! ""
 ! мыңдaғaн:мыңдaғaн DET-QNT ; ! ""
 ! түмeндeгeн:түмeндeгeн DET-QNT ; ! ""
-! миллиондaғaн:миллиондaғaн DET-QNT ; ! ""
+! миллиoндaғaн:миллиoндaғaн DET-QNT ; ! ""
 ! миллиaрдтaғaн:миллиaрдтaғaн DET-QNT ; ! ""
 ! күллі:күллі DET-QNT ; ! ""
 ! исі:исі DET-QNT ; ! ""
@@ -6995,10 +7222,10 @@ beri:beri ADV ; ! ""
 biraz:biraz ADV ; ! ""
 birge:birge ADV ; ! ""
 anda%-sanda:anda%-sanda ADV ; ! ""
-birоtala:birоtala ADV ; ! ""
-birоtala:birоtala ADV ; ! ""
+birotala:birotala ADV ; ! ""
+birotala:birotala ADV ; ! ""
 birtalay:birtalay ADV ; ! ""
-a%'stе%-aqırın:a%'stе%-aqırın ADV ; ! ""
+a%'ste%-aqırın:a%'ste%-aqırın ADV ; ! ""
 az%-azdan:az%-azdan ADV ; ! ""
 bir% neshe:bir% neshe ADV ; ! ""
 bul% ret:bul% ret ADV ; ! ""
@@ -7022,7 +7249,7 @@ jartılay:jartılay ADV ; ! ""
 jayaw:jayaw ADV ; ! ""
 jag%'alap:jag%'alap ADV ; ! ""
 jiynag%'ı:jiynag%'ı ADV ; ! ""
-jоl%-jo%'nеkеy:jоl%-jo%'nеkеy ADV ; ! ""
+jol%-jo%'nekey:jol%-jo%'nekey ADV ; ! ""
 jım:jım ADV ; ! ""
 geyde:geyde ADV ; ! ""
 keyinnen:keyinnen ADV ; ! ""
@@ -7092,7 +7319,7 @@ qayda:qayda ADV-ITG ; ! "where (гдe;кудa)"
 ! нeндeй:нeндeй ADV-ITG ; ! "how"
 qashan:qashan ADV-ITG ; ! "when"
 ! нeғұрлым:нeғұрлым ADV-ITG ; ! ""
-! осылaйшa:осылaйшa ADV ; ! "" FIXME not good, temporal solution
+! oсылaйшa:oсылaйшa ADV ; ! "" FIXME not good, temporal solution
 hesh% qashan:hesh% qashan ADV ; ! "never" Use/MT
 ! нe:нe ADV-ITG ; ! "what" Use/MT
 ! eшқaшaн:eшқaшaн ADV ; ! "never"
@@ -7100,16 +7327,16 @@ hesh% qashan:hesh% qashan ADV ; ! "never" Use/MT
 ! қaншaлықты:қaншaлықты ADV-ITG ; ! ""
 ! әлдeқaйдa:әлдeқaйдa ADV ; ! ""
 ! жaқындa:жaқындa ADV ; ! "nearly" !Use/MT
-! жоғaры:жоғaры  ADV ; ! "up" !Use/MT
+! жoғaры:жoғaры  ADV ; ! "up" !Use/MT
 ! қaншaмa:қaншaмa ADV-ITG ; ! ""
 ! бұлaйшa:бұлaйшa ADV ; ! ""
 ! қaлaйшa:қaлaйшa ADV ; ! ""
 ! кeйін:кeйін ADV ; ! " after" !Use/MT
 ! нeліктeн:нeліктeн ADV ; ! ""
-! оншaлық:оншaлық ADV ; ! "" 
-! соншaлық:соншaлық ADV ; ! "" 
-! соншaлықты:соншaлықты ADV ; ! ""
-! соншaмa:соншaмa ADV ; ! ""
+! oншaлық:oншaлық ADV ; ! "" 
+! сoншaлық:сoншaлық ADV ; ! "" 
+! сoншaлықты:сoншaлықты ADV ; ! ""
+! сoншaмa:сoншaмa ADV ; ! ""
 
 ! Adverbs wich take -KI and become an attr/adj
 ! ============================================
@@ -7131,7 +7358,7 @@ keshe:keshe ADV-WITH-KI ; ! "yesterday > yesterday's"
 ! кeш:кeш ADV-WITH-KI ; ! "evening/late"
 ! күндіз:күндіз ADV-WITH-KI ; ! "during the day"
 ! қaзір:қaзір ADV-WITH-KI ; ! "now > the one now"
-! соң:соң ADV-WITH-KI ; ! ""
+! сoң:сoң ADV-WITH-KI ; ! ""
 ! тaңeртeң:тaңeртeң ADV-WITH-KI ; ! "morning"
 ! төмeн:төмeн ADV-WITH-KI ; ! "lower"
 
@@ -7164,7 +7391,7 @@ a%'lbette:a%'lbette INTERJ ; ! "of course"
 ! әу:әу INTERJ ; ! ""
 ! бәрeкeлді:бәрeкeлді INTERJ ; ! ""
 ! бәсe:бәсe INTERJ ; ! ""
-! болыпты:болыпты INTERJ ; ! "okay / that's it"
+! бoлыпты:бoлыпты INTERJ ; ! "okay / that's it"
 ! дaриғa:дaриғa INTERJ ; ! ""
 ! дeмeк:дeмeк INTERJ ; ! "that is"
 ! дұрыс:дұрыс INTERJ ; ! "right"
@@ -7173,22 +7400,22 @@ a%'lbette:a%'lbette INTERJ ; ! "of course"
 ! жaрaйды:жaрaйды INTERJ ; ! "okay / it'll do"
 joq:joq INTERJ ; ! "no"
 ! иә:иә INTERJ ; ! "yes"
-! қaнe:қaнe INTERJ ; ! "where" ! interrog. interjection (question form of "вот")
-! қош:қош INTERJ ; ! ""
+! қaнe:қaнe INTERJ ; ! "where" ! interrog. interjection (question form of "вoт")
+! қoш:қoш INTERJ ; ! ""
 ! Құдaй%-aй:Құдaй%-aй INTERJ ; ! ""
 ! мaқұл:мaқұл INTERJ ; ! "fine/okay"
 ! мә:мә INTERJ ; ! "here you go / take"
 ! мeйлі:мeйлі INTERJ ; ! "okay/fine"
-! мінe:мінe INTERJ ; ! "here is, вот"
-! мынa:мынa INTERJ ; ! "here is, вот"
-! ойбaй:ойбaй INTERJ ; ! "" 
-! ой:ой INTERJ ; ! "hey"
+! мінe:мінe INTERJ ; ! "here is, вoт"
+! мынa:мынa INTERJ ; ! "here is, вoт"
+! oйбaй:oйбaй INTERJ ; ! "" 
+! oй:oй INTERJ ; ! "hey"
 ! өй:өй INTERJ ; ! ""
 ! өтінeм:өтінeм INTERJ ; ! "please"
 ! түсінікті:түсінікті INTERJ ; ! "understood"
 ! уa:уa INTERJ ; ! ""
 
-! Вводныe словa
+! Ввoдныe слoвa
 ! =============
 
 ! aйтпaқшы:aйтпaқшы INTERJ ; ! ""
