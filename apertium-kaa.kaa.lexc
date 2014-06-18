@@ -551,6 +551,8 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<ger_abs%>:%>%{I%}w%>sh%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_impf%>:%>%{E%}t%{I%}n GER-POSSESSIVES ;
 
+! Imperatives
+%<imp%>%<p2%>%<sg%>: CLIT-EMPH ;
 
 LEXICON V-COMMON
 
