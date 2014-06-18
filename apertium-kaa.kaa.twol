@@ -59,8 +59,8 @@ CnsApostroph = G N
 VoicelessCns = b v p f d t j s g h k q 
                B V P F D T J S G H K Q ; 
 
-VoicedCns = z y l m n w
-            Z Y L M N W ;
+VoicedCns = z y r l m n w
+            Z Y R L M N W ;
 
 LowSonVoicedCons = m n z
                    M N Z ;
