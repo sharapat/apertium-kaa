@@ -597,6 +597,11 @@ LEXICON V-TV-NOPASS
 %<v%>%<tv%>: V-COMMON ;
 %<v%>%<tv%>: V-DER ;
 
+LEXICON V-TV-PASS
+
+! e.g. ko'rin
+%<v%>%<tv%>%<pass%>: V-COMMON ;
+
 LEXICON Vinfl-AUX-IMPF
 
 %<vaux%>%<pres%>: V-PERS-S1 ; ! /ju%'r, jatir, tur, otir/
@@ -6188,6 +6193,7 @@ isle:isle V-TV ; ! ""
 
 de:de V-TV-NOPASS ; ! "speak"
 ko%'r:ko%'r V-TV-NOPASS ; ! "see"
+ko%'r:ko%'rin V-TV-PASS ; ! "be seen"
 
 LEXICON Adjectives
 absolyut:absolyut A4 ; ! ""
