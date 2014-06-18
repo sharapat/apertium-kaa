@@ -7401,7 +7401,7 @@ hesh% qashan:hesh% qashan ADV ; ! "never" Use/MT
 ! ============================================
 
 ! aлғaш:aлғaш ADV-WITH-KI ; ! "at first > first/initial"
-! ha%'zir:ha%'zir ADV-WITH-KI ; ! "now > the one now"
+ha%'zir:ha%'zir ADV-WITH-KI ; ! "now > the one now"
 ! bag%'ana:bag%'ana ADV-WITH-KI ; ! "just now > the one just now" FIXME: gloss
 ! биыл:биыл ADV-WITH-KI ; ! "this year > this year's"
 bu%'gin:bu%'gin ADV-WITH-KI ; ! "today > today's"   FIXME: takes abl, dat, ...
