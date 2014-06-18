@@ -160,13 +160,18 @@ LEXICON CLIT
 
 # ; 
 
+LEXICON CLITICS-NO-COP 
+
+# ;
+
 LEXICON CLIT-COP
 
-# ;
+%+e%<cop%>: V-PERS-S1 ;
 
 LEXICON CLITICS-INCL-COP         ! Can appear only after nominals
-          
-# ;
+                                 ! (and only after some cases).
+CLITICS-NO-COP ;
+CLIT-COP ;
 
 LEXICON CASES-OBL
 
@@ -287,8 +292,8 @@ LEXICON A1
 ! all three readings (<adj>, <adj.subst> and <adj.advl>) have comparison levels.
 !# жaқсы, тeз
 
-%<adj%>:%{%_%} CLIT ; !CLITICS-INCLUDING-COPULA ;                             
-%<adj%>%<comp%>:%{%_%}%>%{I%}r%{A%}%{K%} CLIT ; !CLITICS-INCLUDING-COPULA ;   
+%<adj%>:%{%_%} CLITICS-INCL-COP ;                             
+%<adj%>%<comp%>:%{%_%}%>%{I%}r%{A%}%{K%} CLIT ; !CLITICS-INCL-COP ;   
 
 %<adj%>%<subst%>:%{%_%} SUBST ;                             
 %<adj%>%<comp%>%<subst%>:%{%_%}%>%{I%}r%{A%}%{K%} SUBST ;   
@@ -296,20 +301,37 @@ LEXICON A1
 %<adj%>%<advl%>:%{%_%} CLIT ; ! COMMON-CLITICS ;                               
 %<adj%>%<comp%>%<advl%>:%{%_%}%>%{I%}r%{A%}%{K%} CLIT ; !COMMON-CLITICS ;     
 
+LEXICON A2
+
+%<adj%>: CLITICS-INCL-COP ;                             !# ескі дос
+!%<adj%>%<comp%>:%>%{I%}р%{A%}%{K%} CLITICS-INCL-COP ;   !# ескірек заманда
+
+!%<adj%>%<subst%>: FULL-NOMINAL-INFLECTION ;                             !# "Ол ескіні ертеден есінде сақтаған, жаңаның жалынды жаршысы болған ақын."
+!%<adj%>%<comp%>%<subst%>:%>%{I%}р%{A%}%{K%} FULL-NOMINAL-INFLECTION ;   !# "Ихтимал, бу бина башкасы, искерәге урынында утырадыр."
+
+
 LEXICON A3                 
 ! (derived/not fully lexicalised) adjectives without adverbial reading,
 ! so-called "predicatives" (бaр, жоқ);
 ! no comparison levels at all.
 !# көктeмгі, бaсты, бaр, жоқ
 
-%<adj%>:%{%_%} CLIT ; !CLITICS-INCLUDING-COPULA ;   
+%<adj%>:%{%_%} CLITICS-INCL-COP ;   
 %<adj%>%<subst%>:%{%_%} SUBST ;           
                                     
 LEXICON A4 
 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
 !# ұлттық
 
-%<adj%>:%{%_%} CLIT ; !CLITICS-INCLUDING-COPULA ;   !# ұлттық тaғaм
+%<adj%>:%{%_%} CLITICS-INCL-COP ;   !# ұлттық тaғaм
+
+
+LEXICON V-ADJ
+
+# ;
+%<subst%>: GER-INFL ; ! Dont't be confused by the name of the cont.class,
+                      ! it's basically just a simplified FULL-NOMINAL-INFLECTION
+
 
 LEXICON V-PERS-S1-NO3PERSON
 
