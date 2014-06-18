@@ -544,6 +544,7 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<gpr_past%>:%>%{G%}%{A%}n V-ADJ ;
 %<gpr_impf%>:%>%{E%}t%{I%}n V-ADJ ;
 %<gpr_pot%>:%>%{I%}w%>sh%{I%} V-ADJ ;
+%<gpr_fut%>:%>%{A%}r V-ADJ ;
 
 ! Gerunds
 %<ger%>:%>%{I%}w GER-INFL ;
@@ -1001,6 +1002,10 @@ NUM-COMMON ;
 %<num%>%<ord%>:%>%{I%}nsh%{I%} # ;             
 %<num%>%<ord%>:%>%{I%}nsh%{I%} N-INFL-COMMON ;
 
+LEXICON NUM-COLL
+
+%<num%>%<coll%>%<subst%>: FULL-NOMINAL-INFLECTION ;
+%<num%>%<coll%>%<advl%>: # ;
 
 LEXICON DET-REF
 
@@ -5415,6 +5420,7 @@ abayla:abayla V-TV ; ! ""
 jinin% keltir:jinin% keltir V-TV ; ! ""
 aqla:aqla V-TV ; ! ""
 gez:gez V-TV ; ! ""
+basta:basta V-TV ; ! ""
 jaqsıla:jaqsıla V-TV ; ! ""
 jekkelen:jekkelen V-TV ; ! ""
 ajırat:ajırat V-TV ; ! ""
@@ -7126,7 +7132,7 @@ qay:qay DET-ITG ; ! "which"
 o%'z:o%'z DET-REF ; 
 ! 
 ! bar:bar DET-XXX ; ! ""
-! barlıq:barlıq DET-XXX ; ! ""
+barlıq:barlıq DET-QNT ; ! ""
 bir:bir DET-IND ; ! ""
 ! bir% neshe:bir% neshe DET-XXX ; ! ""
 ! ha'r% bir:ha'r% bir DET-XXX ; ! ""
@@ -7183,6 +7189,8 @@ on% mın%':on% mın%' NUM ; ! ""
 million:million NUM ; ! ""
 milliard:milliard NUM ; ! ""
 trillion:trillion NUM ; ! ""
+
+eki:ekew NUM-COLL ; ! "" ! FIXME: check
 
 
 LEXICON ProperNouns
