@@ -424,7 +424,7 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 
 LEXICON GER-GENPOSS-ETC      ! Stuff which can appear after possessives too
 
-%<px%>:%>%{N%}ікі%{n%} COMMON-CLITICS ;
+%<px%>:%>%{N%}iki%{n%} COMMON-CLITICS ;
 %<loc%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
 %<sim%>:%>%{D%}%{A%}y COMMON-CLITICS ;
 
@@ -555,45 +555,61 @@ e%<cop%>%<past%>:eken V-PERS-S1 ;
 e%<cop%>%<neg%>%<past%>:emes% eken V-PERS-S1 ;
 e%<cop%>%<ifi%>:e%>%{D%}%{I%} V-PERS-S2 ;
 
+!!!!!!!!!!!!!!!!!!!!!!     PRONOUN'S INFLECTION
+
+!!!!!!!   P E R S O N A L
+
+LEXICON PRON-12SG-CASES
+
+%<gen%>:enin%' CLITICS-NO-COP ;
+%<dat%>:ag%'an CLITICS-NO-COP ;
+%<acc%>:eni CLITICS-NO-COP ;
+%<abl%>:enen CLITICS-NO-COP ;
+%<loc%>:ende CLITICS-NO-COP ;
+%<ins%>:en% menen CLITICS-NO-COP ;
+%<px%>:eniki%{n%} CASES ;
+%<loc%>:endegi ATTR-SUBST ;
+%<sim%>:endey CLITICS-NO-COP ;
+%<adv%>:enin%'she CLITICS-NO-COP ;
+
 LEXICON PRON-PERS-INFL
 
- CASES-ETC ;
+CASES-ETC ;
  
- LEXICON PersonalPronouns
+LEXICON PersonalPronouns
  
-! мeн%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:мeн COMMON-CLITICS ;
-! мeн%<prn%>%<pers%>%<p1%>%<sg%>:м PRON-12SG-CASES ;
-! 
-! сeн%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:сeн COMMON-CLITICS ;
-! сeн%<prn%>%<pers%>%<p2%>%<sg%>:с PRON-12SG-CASES ;
-! 
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ол COMMON-CLITICS ;
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:о COMMON-CLITICS ; ! Dir/LR
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:оның COMMON-CLITICS ;
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:оғaн COMMON-CLITICS ;
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:оны COMMON-CLITICS ;
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:одaн COMMON-CLITICS ;
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондa COMMON-CLITICS ;
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:онымeн COMMON-CLITICS ;
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:онікі%{n%} CASES ;
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ондaғы ATTR-SUBST ;
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:ондaй COMMON-CLITICS ;
-! ол%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:оныңшa COMMON-CLITICS ;
-! 
-! біз%<prn%>%<pers%>%<p1%>%<pl%>:біз PRON-PERS-INFL ;
-! біз%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:біздіңшe COMMON-CLITICS ;
-! 
-! сeндeр%<prn%>%<pers%>%<p2%>%<pl%>:сeндeр PRON-PERS-INFL ;
-! сeндeр%<prn%>%<pers%>%<p2%>%<pl%>%<adv%>:сeндeршe COMMON-CLITICS ;
-! 
- olar%<prn%>%<pers%>%<p3%>%<pl%>:olar PRON-PERS-INFL ;
-! олaр%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:олaршa COMMON-CLITICS ;
-! 
-! сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:сіз PRON-PERS-INFL ;
-! сіз%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:сіздіңшe COMMON-CLITICS ;
-! сіздeр%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:сіздeр PRON-PERS-INFL ;
-! сіздeр%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:сіздeршe COMMON-CLITICS ;
+men%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:men COMMON-CLITICS ;
+men%<prn%>%<pers%>%<p1%>%<sg%>:n PRON-12SG-CASES ;
 
+sen%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:sen COMMON-CLITICS ;
+sen%<prn%>%<pers%>%<p2%>%<sg%>:s PRON-12SG-CASES ;
+
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ol COMMON-CLITICS ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:o COMMON-CLITICS ; ! Dir/LR
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:onın%' COMMON-CLITICS ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:og%'an COMMON-CLITICS ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:onı COMMON-CLITICS ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:odan COMMON-CLITICS ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:onda COMMON-CLITICS ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:ol% menen COMMON-CLITICS ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:oniki%{n%} CASES ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ondag%'ı ATTR-SUBST ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:onday COMMON-CLITICS ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:onın%'sha COMMON-CLITICS ;
+ 
+biz%<prn%>%<pers%>%<p1%>%<pl%>:biz PRON-PERS-INFL ;
+biz%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:bizin%'she COMMON-CLITICS ;
+
+sizler%<prn%>%<pers%>%<p2%>%<pl%>:sizler PRON-PERS-INFL ;
+sizler%<prn%>%<pers%>%<p2%>%<pl%>%<adv%>:sizlershe COMMON-CLITICS ;
+
+olar%<prn%>%<pers%>%<p3%>%<pl%>:olar PRON-PERS-INFL ;
+olaр%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:олaршa COMMON-CLITICS ;
+
+siz%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:siz PRON-PERS-INFL ;
+siz%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:sizdin%'she COMMON-CLITICS ;
+sizler%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:sizler PRON-PERS-INFL ;
+sizler%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:sizlershe COMMON-CLITICS ;
 
 LEXICON PRNNEG
 
@@ -6744,12 +6760,7 @@ men:pen POST ; ! "with" + NOM       ! Dir/LR
 
 LEXICON Pronouns 
 
-men:men PRON-PERS-MEN ;
-sen:sen PRON-PERS-SEN ;
-ol:o PRON-PERS-OL ;
-biz:biz PRON-PERS-BIZ ;
-siz:siz PRON-PERS-SIZ ;
-olar:olar PRON-PERS-OLAR ;
+PersonalPronouns ;
 
 barlıq:barlıq PRON-XXX ; ! ""
 basqa:basqa PRON-XXX ; ! ""
