@@ -444,6 +444,9 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 %<fut%>:%>%{A%}r V-PERS-S1 ;
 %<neg%>%<fut%>:%>m%{A%}s V-PERS-S1 ;
 
+%<prc_perf%>:%>%{I%}p CLIT-GHANA-ETC ;
+%<neg%>%<prc_perf%>:%{M%}%{A%}%>%{E%} CLIT-GHANA-ETC ;
+
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Participles
@@ -456,13 +459,13 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 ! Verbal adjectives
 %<gpr_past%>:%>%{G%}%{A%}n V-ADJ ;
 %<gpr_impf%>:%>%{E%}t%{I%}n V-ADJ ;
-%<gpr_pot%>:%>u%>sh%{I%} V-ADJ ;
+%<gpr_pot%>:%>%{I%}w%>sh%{I%} V-ADJ ;
 
 ! Gerunds
-%<ger%>:%>у GER-INFL ;
+%<ger%>:%>%{I%}w GER-INFL ;
 %<ger_past%>:%>%{G%}'%{A%}n GER-INFL ;
 %<ger_perf%>:%>%{G%}%{A%}n%>%{L%}%{I%}%{K%} GER-INFL ;
-%<ger_abs%>:%>u%>sh%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
+%<ger_abs%>:%>%{I%}w%>sh%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_impf%>:%>%{E%}t%{I%}n GER-POSSESSIVES ;
 
 
