@@ -990,7 +990,6 @@ LEXICON DET-REF
 
 %<det%>%<ref%>: # ;
 
-
 LEXICON NUM-COMMON
 
 %<num%>: # ;
@@ -7128,7 +7127,7 @@ o%'z:o%'z DET-REF ;
 ! 
 ! bar:bar DET-XXX ; ! ""
 ! barlıq:barlıq DET-XXX ; ! ""
-! bir:bir DET-XXX ; ! ""
+bir:bir DET-IND ; ! ""
 ! bir% neshe:bir% neshe DET-XXX ; ! ""
 ! ha'r% bir:ha'r% bir DET-XXX ; ! ""
 ! ha'r% tu'rli:ha'r% tu'rli DET-XXX ; ! ""
