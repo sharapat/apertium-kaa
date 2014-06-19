@@ -120,7 +120,7 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 "{G} to q after a voiceless sound followed by back vowels"
 !%{G%}:q <=> [ :BackVow :Cns* :VoicelessCns ]/:0 _ ;
 ! maybe better?
-%{G%}:q <=> :VoicelessCns/:0* _ :BackVow/:0* ;
+%{G%}:q <=> :VoicelessCns/:0* _ :BackVow/[ :0 | %{ъ%}: ]* ;
         except
             _ [ :FrontableVow :%' ]/:0* ;
 
