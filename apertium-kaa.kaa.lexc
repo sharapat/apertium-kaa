@@ -232,7 +232,7 @@ LEXICON CASES-COMMON
 %<gen%>:%>%{N%}%{I%}n%' COMMON-CLITICS ;
 %<dat%>:%>%{G%}%{ъ%}%{A%} COMMON-CLITICS ;
 %<acc%>:%>%{N%}%{I%} COMMON-CLITICS ;
-%<ins%>:%>%{M%}enen COMMON-CLITICS ;
+%<ins%>:%>% %{M%}enen COMMON-CLITICS ;
 
 LEXICON CASES
 

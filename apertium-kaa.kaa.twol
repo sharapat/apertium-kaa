@@ -156,7 +156,7 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 %{M%}:b <=> [ :LowSonVoicedCons | [ :n :%' ] ]/[ :0 | %  ] _ ;
         except
             _ :Nasal/:0 ;
-            :Nasal ( :%' ) :0* _ :Vow* :Nasal ;  ! Nasal harmony
+            [ :Nasal ( :%' ) :0* ]/[ :0 | %  ] _ [ :Vow* :Nasal ]/[ :0 | %  ] ;  ! Nasal harmony (FMT: CHECK: ignore spaces!)
 
 "{K} to k after a front vowel"
 %{K%}:k <=> :FrontVow/:0 _ ;
