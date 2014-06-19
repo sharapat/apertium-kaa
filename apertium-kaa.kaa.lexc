@@ -554,7 +554,7 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Verbal adjectives
 %<gpr_past%>:%>%{G%}%{A%}n V-ADJ ;
-%<gpr_impf%>:%>%{E%}t%{I%}n V-ADJ ;
+%<gpr_impf%>:%>%{E%}tug%'ın V-ADJ ;
 %<gpr_pot%>:%>%{I%}w%>sh%{I%} V-ADJ ;
 %<gpr_fut%>:%>%{A%}r V-ADJ ;
 
@@ -563,7 +563,7 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<ger_past%>:%>%{G%}'%{A%}n GER-INFL ;
 %<ger_perf%>:%>%{G%}%{A%}n%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_abs%>:%>%{I%}w%>sh%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
-%<ger_impf%>:%>%{E%}t%{I%}n GER-POSSESSIVES ;
+%<ger_impf%>:%>%{E%}tug%'ın GER-POSSESSIVES ;
 
 ! Imperatives
 %<imp%>%<p2%>%<sg%>: CLIT-EMPH ;
