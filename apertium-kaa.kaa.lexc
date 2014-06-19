@@ -275,9 +275,9 @@ LEXICON ABESSIVE-POSTPOSITION
 
 LEXICON PLURAL
 
-%<pl%>:%>%{L%}%{A%}r CASES-ETC ;
-%<pl%>:%>%{L%}%{A%}r POSSESSIVES ;
-%<pl%>:%>%{L%}%{A%}r ABESSIVE-POSTPOSITION ;
+%<pl%>:%>l%{A%}r CASES-ETC ;
+%<pl%>:%>l%{A%}r POSSESSIVES ;
+%<pl%>:%>l%{A%}r ABESSIVE-POSTPOSITION ;
 
 LEXICON FULL-NOMINAL-INFLECTION
 
@@ -313,7 +313,7 @@ LEXICON N-COMPOUND-PX ! consider "N2" for the name
                       ! equiv of kir:LEXICON N-INFL-3PX-COMPOUND
 
 %<n%>: N-COMPOUND-PX-COMMON ;
-%<n%>%<pl%>:%>%{L%}%{A%}r%>%{s%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сaкчылaры=пoгрaничники)
+%<n%>%<pl%>:%>l%{A%}r%>%{s%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сaкчылaры=пoгрaничники)
                                                       !  FIXME CHECK: Is {s} needed here ?
 
 LEXICON NP-COMMON
@@ -487,14 +487,14 @@ LEXICON GER-ATTR/SUBST
 
 %<attr%>: COMMON-CLITICS ;
 !%<subst%>: CASES ;
-!%<subst%>%<pl%>:%>%{L%}%{A%}r CASES ;
+!%<subst%>%<pl%>:%>l%{A%}r CASES ;
 
 LEXICON GER-ABE-ATTR/ADVL/SUBST
 
 !%<attr%>: COMMON-CLITICS ;
 %<advl%>: COMMON-CLITICS ;
 !%<subst%>: CASE-2 ;
-!%<subst%>%<pl%>:%>%{L%}%{A%}р CASE-2 ;
+!%<subst%>%<pl%>:%>l%{A%}р CASE-2 ;
 
 LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 
@@ -526,8 +526,8 @@ LEXICON GER-INFL
 
 GER-POSSESSIVES ;
 GER-CASE-ETC ;
-%<pl%>:%>%{L%}%{A%}r GER-POSSESSIVES ;
-%<pl%>:%>%{L%}%{A%}r GER-CASE-ETC ;
+%<pl%>:%>l%{A%}r GER-POSSESSIVES ;
+%<pl%>:%>l%{A%}r GER-CASE-ETC ;
 GER-ABE-ETC ;
 
 
@@ -562,8 +562,8 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 ! Gerunds
 %<ger%>:%>%{I%}w GER-INFL ;
 %<ger_past%>:%>%{G%}%{ъ%}%{A%}n GER-INFL ;
-%<ger_perf%>:%>%{G%}%{A%}n%>%{L%}%{I%}%{K%} GER-INFL ;
-%<ger_abs%>:%>%{I%}w%>sh%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
+%<ger_perf%>:%>%{G%}%{A%}n%>l%{I%}%{K%} GER-INFL ;
+%<ger_abs%>:%>%{I%}w%>sh%{I%}%>l%{I%}%{K%} GER-INFL ;
 %<ger_impf%>:%>%{E%}tug%'ın GER-POSSESSIVES ;
 
 ! Imperatives
@@ -641,7 +641,7 @@ LEXICON Vinfl-AUX
 LEXICON Copula
 
 e%<cop%>%<ger_past%>:eken GER-POSSESSIVES ;
-e%<cop%>%<ger_perf%>:eken%>%{L%}%{I%}k GER-POSSESSIVES ;
+e%<cop%>%<ger_perf%>:eken%>l%{I%}k GER-POSSESSIVES ;
 
 e%<cop%>%<neg%>:emes V-PERS-S1 ;
 e%<cop%>%<past%>:eken V-PERS-S1 ;
@@ -727,8 +727,8 @@ LEXICON PRON-DEM-INFL
 %<adv%>:lay CLITICS-INCL-COP ;
 %<qnt%>:nsha CLITICS-NO-COP ;         !
 
-%<pl%>:%>%{L%}%{A%}r CASES-ETC ;
-%<pl%>%<px3sp%>:%>%{L%}%{A%}r%{I%}%{n%} CASES ;
+%<pl%>:%>l%{A%}r CASES-ETC ;
+%<pl%>%<px3sp%>:%>l%{A%}r%{I%}%{n%} CASES ;
 
 ! Commented out till these forms get implemented in tat.lexc too
 !%<TD%>:шалық CLITICS-NO-COP ;        ! "that much"  ! FIXME: check cont lex
@@ -956,7 +956,7 @@ LEXICON PRON-REF
 
 ! This is how it was before:
 !%<prn%>%<ref%>: POSSESSIVES ;
-!%<prn%>%<ref%>%<pl%>:%{L%}%{A%}р POSSESSIVES ;
+!%<prn%>%<ref%>%<pl%>:l%{A%}р POSSESSIVES ;
 
 LEXICON PRNNEG
 
