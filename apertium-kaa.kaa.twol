@@ -164,3 +164,4 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 "Delete dative {G} after {n}"
 %{G%}:0 <=> %{n%}:/[ :0 - %{n%}: ]* _ ;
             [ %{I%}: :n :%' ]/:0* _ ;
+            [ %{I%}: :m ]/:0* _ ;
