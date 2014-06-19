@@ -18,7 +18,7 @@ Alphabet
 ! %{'%}:0
  %{s%}:s ! %{s%}:0
  %{n%}:n ! %{n%}:0
- %{y%}:ı %{y%}:i %{y%}:0
+ %{y%}:0 ! %{y%}:i %{y%}:0
  %{l%}:l
 ! %{%_%}:0  ! sometimes surfaces as '
 
@@ -75,8 +75,8 @@ Rules
 "Deletion of {s} after a consonant"
 %{s%}:0 <=> [ :Cns (:%') %>: ]/:0* _  ; 
 
-"Epenthesis in some stems"
-%{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
+!"Epenthesis in some stems"
+!%{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
 
 "{n} deletion word final"
 %{n%}:0 <=> _ .#. ;
@@ -171,4 +171,17 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 
 "{D} nasal harmony"
 %{D%}:n <=> :Nasal ( :%' ) :0* _ :Vow* :Nasal ;
+
+"Back-vowel epenthesis"
+%{y%}:ı <=> [ :BackVow [ :Cns* :Cns ]/:%' ]/:0 _ [ :Cns :Cns ]/[ :%' | :0 ] ;
+            [ :BackVow [ :Cns* :Cns ]/:%' ]/:0 _ [ :Cns :Cns* ]/[ :%' | :0 ] .#. ;
+        except
+            _ [ :Cns :Vow ]/[ :%' | :0 ] ;
+
+"Front-vowel epenthesis"
+%{y%}:i <=> [ [ :FrontVow | [ :FrontableVow :%' ] ] [ :Cns* :Cns ]/:%' ]/:0 _ [ :Cns :Cns ]/[ :%' | :0 ] ;
+            [ [ :FrontVow | [ :FrontableVow :%' ] ] [ :Cns* :Cns ]/:%' ]/:0 _ [ :Cns :Cns* ]/[ :%' | :0 ] .#. ;
+        except
+            _ [ :Cns :Vow ]/[ :%' | :0 ] ;
+
 
