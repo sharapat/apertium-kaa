@@ -553,14 +553,14 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<gna_cond%>:%>s%{A%} V-PERS-S2 ;
 
 ! Verbal adjectives
-%<gpr_past%>:%>%{G%}%{A%}n V-ADJ ;
+%<gpr_past%>:%>%{G%}%{ъ%}%{A%}n V-ADJ ;
 %<gpr_impf%>:%>%{E%}tug%'ın V-ADJ ;
 %<gpr_pot%>:%>%{I%}w%>sh%{I%} V-ADJ ;
 %<gpr_fut%>:%>%{A%}r V-ADJ ;
 
 ! Gerunds
 %<ger%>:%>%{I%}w GER-INFL ;
-%<ger_past%>:%>%{G%}'%{A%}n GER-INFL ;
+%<ger_past%>:%>%{G%}%{ъ%}%{A%}n GER-INFL ;
 %<ger_perf%>:%>%{G%}%{A%}n%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_abs%>:%>%{I%}w%>sh%{I%}%>%{L%}%{I%}%{K%} GER-INFL ;
 %<ger_impf%>:%>%{E%}tug%'ın GER-POSSESSIVES ;
