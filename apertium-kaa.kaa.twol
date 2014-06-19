@@ -79,7 +79,8 @@ Rules
 !%{y%}:0 <=> _ [ :Cns :Vow ]/[ :0 | %>: ] ;
 
 "{n} deletion word final"
-%{n%}:0 <=> _ .#. ;
+%{n%}:0 <=> _ (:0) .#. ;
+            _ (:0) % ;  ! also deletion in forms like pıshıq<n><px3sp><ins>, eki<num><coll><subst><px3sp><nom>+da<cnjcoo>
 
 !"Intervocalic voicing of p"
 !p:b <=> :Vow (:0) _ %>: (:0) :Vow ;
