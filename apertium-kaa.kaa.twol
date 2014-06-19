@@ -105,6 +105,8 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 
 "{I} vowel harmony"
 %{I%}:i <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] [ :Cns* :CnsRight ]/:%' ]/[ %>: | % | :0 | %{ъ%}: ] _ ;
+        except
+            [ %{n%}: %{N%}:0 ]/[ :0 - %{n%}: ]* _ .#. ; ! px3 + accusative
 
 !"' is impossible after k"
 !%{'%}:0 <=> :k (:0)  _ ; 
@@ -145,6 +147,7 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 %{N%}:d <=> [ :VoicedCns | [ :CnsApostroph :%' ] ]/:0* _ ;
         except
             :Nasal ( :%' ) :0* _ :Vow* :Nasal ; ! Nasal harmony
+            %{n%}:/[ :0 - %{n%}: ]* _ ; ! px+gen form
 
 !"{N} to t after voiceless consonant"
 !%{N%}:t <=> [ :VoicelessCns ]/:0 _ ;
@@ -168,6 +171,12 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 %{G%}:0 <=> %{n%}:/[ :0 - %{n%}: ]* _ ;
             [ %{I%}: :n :%' ]/:0* _ ;
             [ %{I%}: :m ]/:0* _ ;
+
+"Delete genitive and accusative {N} after {n}"
+%{N%}:0 <=> %{n%}:/[ :0 - %{n%}: ]* _ ;
+
+"Delete accusative {I} after {n}"
+%{I%}:0 <=> [ %{n%}:n %{N%}:0 ]/[ :0 - %{n%}: ]* _ .#. ;
 
 "{D} nasal harmony"
 %{D%}:n <=> :Nasal ( :%' ) :0* _ :Vow* :Nasal ;
