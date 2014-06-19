@@ -7456,12 +7456,15 @@ keshe:keshe ADV-WITH-KI ; ! "yesterday > yesterday's"
 
 al:al Vinfl-AUX ; ! 
 pit:pit Vinfl-AUX ; !
-jat:jatır Vinfl-AUX-IMPF ; ! 
 ju%'r:ju%'r Vinfl-AUX-IMPF ; ! 
 ket:ket Vinfl-AUX ; ! 
 otır:otır Vinfl-AUX-IMPF ; ! 
 tur:tur Vinfl-AUX-IMPF ; ! 
 shıq:shıq Vinfl-AUX ; !
+
+! FIXME: check which is the most appropriate variant.
+jat:jatır Vinfl-AUX-IMPF ; ! Dir/LR
+jat:atır Vinfl-AUX-IMPF ; ! 
 
 tur:tur Vinfl-AUX ; ! 
 
