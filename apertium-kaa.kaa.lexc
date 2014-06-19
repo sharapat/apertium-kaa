@@ -171,7 +171,8 @@ LEXICON CLIT-EMPH
 
 LEXICON CLIT-QST-MA
 
-%+ma%<qst%>:%>% %{M%}%{A%} # ;
+%+ma%<qst%>:%>% %{M%}%{A%} # ; ! Dir/LR
+%+ma%<qst%>:%>%{M%}%{A%} # ;
 
 LEXICON CLIT-QST
 
