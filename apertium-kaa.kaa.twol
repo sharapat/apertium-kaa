@@ -139,7 +139,7 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 %{E%}:e <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] :Cns* :CnsRight ]/[ %>: | % | :0 ] _ ;
 
 "{N} to d after voiced consonant"
-%{N%}:d <=> [ :VoicedCns | [ :CnsApostroph :%' ] ]/[ :0 - %{ъ%}: ] _ ;
+%{N%}:d <=> [ :VoicedCns | [ :CnsApostroph :%' ] ]/:0* _ ;
 
 !"{N} to t after voiceless consonant"
 !%{N%}:t <=> [ :VoicelessCns ]/:0 _ ;
