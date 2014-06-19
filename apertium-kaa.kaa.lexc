@@ -314,7 +314,7 @@ LEXICON N-COMPOUND-PX ! consider "N2" for the name
 
 %<n%>: N-COMPOUND-PX-COMMON ;
 %<n%>%<pl%>:%>%{L%}%{A%}r%>%{s%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сaкчылaры=пoгрaничники)
-                                                      !  FIXME CHECK: Is {S} needed here ?
+                                                      !  FIXME CHECK: Is {s} needed here ?
 
 LEXICON NP-COMMON
 
@@ -946,10 +946,10 @@ LEXICON PRON-REF
 
 %<prn%>%<ref%>%<p1%>%<sg%>:%>%{I%}m PRON-REF-ADV ;
 %<prn%>%<ref%>%<p2%>%<sg%>:%>%{I%}n%' PRON-REF-ADV ;
-%<prn%>%<ref%>%<p3%>%<sg%>:%>%{S%}%{I%}%{n%} PRON-REF-ADV ;
+%<prn%>%<ref%>%<p3%>%<sg%>:%>%{s%}%{I%}%{n%} PRON-REF-ADV ;
 %<prn%>%<ref%>%<p1%>%<pl%>:%>%{I%}m%{I%}z PRON-REF-ADV ;
 %<prn%>%<ref%>%<p2%>%<pl%>:%>l%{A%}r%>%{I%}n%' PRON-REF-ADV ;
-%<prn%>%<ref%>%<p3%>%<pl%>:%>l%{A%}r%>%{S%}%{I%}%{n%} PRON-REF-ADV ;
+%<prn%>%<ref%>%<p3%>%<pl%>:%>l%{A%}r%>%{s%}%{I%}%{n%} PRON-REF-ADV ;
 
 %<prn%>%<ref%>%<p2%>%<sg%>%<frm%>:%>%{I%}n%'%{I%}z PRON-REF-ADV ;
 %<prn%>%<ref%>%<p2%>%<pl%>%<frm%>:%>l%{A%}r%>%{I%}n%'%{I%}z PRON-REF-ADV ;
