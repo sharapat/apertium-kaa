@@ -68,7 +68,7 @@ LowSonVoicedCons = m n z
 Nasal = m n 
         M N ;
 
-Archiphon = %{G%} %{N%} %{K%} %{D%} %{D%} %{M%} ;
+Archiphon = %{G%} %{N%} %{K%} %{D%} %{M%} ;
 
 Rules
 
@@ -143,6 +143,8 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 
 "{N} to d after voiced consonant"
 %{N%}:d <=> [ :VoicedCns | [ :CnsApostroph :%' ] ]/:0* _ ;
+        except
+            :Nasal ( :%' ) :0* _ :Vow* :Nasal ; ! Nasal harmony
 
 !"{N} to t after voiceless consonant"
 !%{N%}:t <=> [ :VoicelessCns ]/:0 _ ;
@@ -151,6 +153,7 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 %{M%}:b <=> [ :LowSonVoicedCons | [ :n :%' ] ]/[ :0 | %  ] _ ;
         except
             _ :Nasal/:0 ;
+            :Nasal ( :%' ) :0* _ :Vow* :Nasal ;  ! Nasal harmony
 
 "{K} to k after a front vowel"
 %{K%}:k <=> :FrontVow/:0 _ ;
@@ -165,3 +168,7 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 %{G%}:0 <=> %{n%}:/[ :0 - %{n%}: ]* _ ;
             [ %{I%}: :n :%' ]/:0* _ ;
             [ %{I%}: :m ]/:0* _ ;
+
+"{D} nasal harmony"
+%{D%}:n <=> :Nasal ( :%' ) :0* _ :Vow* :Nasal ;
+
