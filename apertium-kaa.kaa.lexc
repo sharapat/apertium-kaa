@@ -182,13 +182,13 @@ CLIT-QST-MA ;
 
 LEXICON CLIT-MODASS
 
-%+g%'oy%<mod_ass%>:% %{G%}oy # ;
+%+g%{ъ%}oy%<mod_ass%>:% %{G%}%{ъ%}oy # ;
 # ;
 
 LEXICON CLIT-GHANA-ETC
 
 %+%-aq%<postadv%>:%-aq # ; ! ""
-%+g%'ana%<postadv%>:% %{G%}ana # ; ! ""
+%+g%{ъ%}ana%<postadv%>:% %{G%}%{ъ%}ana # ; ! ""
 %+da%<cnjcoo%>:% %{D%}%{A%} # ; ! ""
 %+da%<postadv%>:% %{D%}%{A%} # ; ! ""
 # ;
@@ -222,7 +222,7 @@ CLIT-COP ;
 
 LEXICON CASES-OBL
 
-%<gen%>:%>%{N%}%{I%}n%' CLIT ;
+%<gen%>:%>%{N%}%{I%}n%{ъ%} CLIT ;
 %<acc%>:%>%{N%}%{I%} CLIT ;
 %<dat%>:%>%{G%}%{ъ%}%{A%} CLIT ;
 %<loc%>:%>%{D%}%{A%} CLIT-COP ;
@@ -247,10 +247,10 @@ LEXICON POSSESSIVES
 
 !CASES-ETC ;
 %<px1sg%>:%>%{I%}m CASES-ETC ;
-%<px2sg%>:%>%{I%}n%' CASES-ETC ;
+%<px2sg%>:%>%{I%}n%{ъ%} CASES-ETC ;
 %<px3sp%>:%>%{s%}%{I%}%{n%} CASES-ETC ;
 %<px1pl%>:%>%{I%}m%{I%}z CASES-ETC ;
-%<px2pl%>:%>%{I%}n%'l%{A%}r CASES-ETC ;
+%<px2pl%>:%>%{I%}n%{ъ%}l%{A%}r CASES-ETC ;
 
 LEXICON ATTR-SUBST
 
@@ -300,7 +300,8 @@ N-INFL-COMMON ;
 LEXICON N1
 
 %<n%>%<attr%>: # ;
-%<n%>:%{ъ%} SUBST ;
+! %<n%>:%{ъ%} SUBST ;
+%<n%>: FULL-NOMINAL-INFLECTION ;
 
 LEXICON N-COMPOUND-PX-COMMON
 
@@ -315,6 +316,31 @@ LEXICON N-COMPOUND-PX ! consider "N2" for the name
 %<n%>: N-COMPOUND-PX-COMMON ;
 %<n%>%<pl%>:%>l%{A%}r%>%{s%}%{I%}%{n%} CASES-ETC ; ! (e.g. чик сaкчылaры=пoгрaничники)
                                                       !  FIXME CHECK: Is {s} needed here ?
+
+LEXICON N3
+! Singularia tantum
+
+%<n%>%<attr%>: # ;
+%<n%>: FULL-NOMINAL-INFLECTION ;
+
+LEXICON N5
+
+: N1 ;
+
+
+!LEXICON NAT
+! Nationalites
+
+!A1 ;              ! nationality's adjectival form, e.g. "Turkish [food]" ! Consider <n.attr> reading for this 
+!N1 ;              ! a member of the nationality, e.g. "A Turk"
+!:%>sh%{A%} ADV ;   ! as / in the style of the nat., e.g. "à la Turk"
+!:%>sh%{A%} ADV ;   ! in the language of the nationality, e.g. "in Turkish" ! I guess ADJ was meant /I.S./
+!:%>sh%{A%} N1 ;    ! the language of the nationality, e.g. "Turkish"
+
+LEXICON ADV-LANG
+
+N1 ;
+ADV ;
 
 LEXICON NP-COMMON
 
@@ -400,7 +426,7 @@ LEXICON V-ADJ
 LEXICON V-PERS-S1-NO3PERSON
 
 %<p1%>%<sg%>:%>%{M%}%{A%}n COMMON-CLITICS ;
-%<p2%>%<sg%>:%>s%{A%}n%' COMMON-CLITICS ;
+%<p2%>%<sg%>:%>s%{A%}n%{ъ%} COMMON-CLITICS ;
 %<p1%>%<pl%>:%>%{M%}%{I%}z COMMON-CLITICS ;
 %<p2%>%<pl%>:%>s%{I%}zl%{I%}r COMMON-CLITICS ;
 
@@ -420,14 +446,14 @@ LEXICON V-PERS-S2
 ! Used for: -DI-<ifi>, -sA-<prc_cond>, -sA-<gna_cond>
 
 %<p1%>%<sg%>:%>m COMMON-CLITICS ;
-%<p2%>%<sg%>:%>n%' COMMON-CLITICS ;
+%<p2%>%<sg%>:%>n%{ъ%} COMMON-CLITICS ;
 %<p3%>%<sg%>: COMMON-CLITICS ;
 %<p1%>%<pl%>:%>%{K%} COMMON-CLITICS ;
-%<p2%>%<pl%>:%>n%'l%{A%}r COMMON-CLITICS ;
+%<p2%>%<pl%>:%>n%{ъ%}l%{A%}r COMMON-CLITICS ;
 %<p3%>%<pl%>: COMMON-CLITICS ;
 
-%<p2%>%<frm%>%<sg%>:%>n%'%{I%}z COMMON-CLITICS ;
-%<p2%>%<frm%>%<pl%>:%>n%'l%{A%}r COMMON-CLITICS ;
+%<p2%>%<frm%>%<sg%>:%>n%{ъ%}%{I%}z COMMON-CLITICS ;
+%<p2%>%<frm%>%<pl%>:%>n%{ъ%}l%{A%}r COMMON-CLITICS ;
 
 LEXICON V-PERS-AOR
 
@@ -457,8 +483,8 @@ LEXICON VOL-ENDINGS
 
 LEXICON KI
 
-%<attr%>:%>%{G%}%{I%} CLIT ; ! COMMON-CLITICS ;
-%<subst%>:%>%{G%}%{I%} N-INFL-COMMON ;
+%<attr%>:%>%{G%}%{ъ%}%{I%} CLIT ; ! COMMON-CLITICS ;
+%<subst%>:%>%{G%}%{ъ%}%{I%} N-INFL-COMMON ;
 
 LEXICON ADV
 
@@ -503,7 +529,7 @@ LEXICON GER-ABE-ETC          ! Stuff which doesn't appear after possessives
 LEXICON GER-GENPOSS-ETC      ! Stuff which can appear after possessives too
 
 %<px%>:%>%{N%}iki%{n%} COMMON-CLITICS ;
-%<loc%>:%>%{D%}%{A%}%{G%}%{I%} GER-ATTR/SUBST ;
+%<loc%>:%>%{D%}%{A%}%{G%}%{ъ%}%{I%} GER-ATTR/SUBST ;
 %<sim%>:%>%{D%}%{A%}y COMMON-CLITICS ;
 
 LEXICON GER-CASE-ETC
@@ -514,13 +540,13 @@ GER-GENPOSS-ETC ;
 LEXICON GER-POSSESSIVES
 
 %<px1sg%>:%>%{I%}m GER-CASE-ETC ;
-%<px2sg%>:%>%{I%}n%' GER-CASE-ETC ;
+%<px2sg%>:%>%{I%}n%{ъ%} GER-CASE-ETC ;
 %<px3sp%>:%>%{s%}%{I%}%{n%} GER-CASE-ETC ;
 %<px1pl%>:%>%{I%}m%{I%}z GER-CASE-ETC ;
-%<px2pl%>:%>%{I%}n%'l%{A%}r GER-CASE-ETC ;
+%<px2pl%>:%>%{I%}n%{ъ%}l%{A%}r GER-CASE-ETC ;
 
-%<px2sg%>%<frm%>:%>%{I%}n%'%{I%}z GER-CASE-ETC ;
-%<px2pl%>%<frm%>:%>%{I%}n%'%{I%}zl%{A%}r GER-CASE-ETC ;
+%<px2sg%>%<frm%>:%>%{I%}n%{ъ%}%{I%}z GER-CASE-ETC ;
+%<px2pl%>%<frm%>:%>%{I%}n%{ъ%}%{I%}zl%{A%}r GER-CASE-ETC ;
 
 LEXICON GER-INFL
 
@@ -555,16 +581,16 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Verbal adjectives
 %<gpr_past%>:%>%{G%}%{ъ%}%{A%}n V-ADJ ;
-%<gpr_impf%>:%>%{E%}tug%'ın V-ADJ ;
+%<gpr_impf%>:%>%{E%}tug%{ъ%}ın V-ADJ ;
 %<gpr_pot%>:%>%{I%}w%>sh%{I%} V-ADJ ;
 %<gpr_fut%>:%>%{A%}r V-ADJ ;
 
 ! Gerunds
 %<ger%>:%>%{I%}w GER-INFL ;
 %<ger_past%>:%>%{G%}%{ъ%}%{A%}n GER-INFL ;
-%<ger_perf%>:%>%{G%}%{A%}n%>l%{I%}%{K%} GER-INFL ;
+%<ger_perf%>:%>%{G%}%{ъ%}%{A%}n%>l%{I%}%{K%} GER-INFL ;
 %<ger_abs%>:%>%{I%}w%>sh%{I%}%>l%{I%}%{K%} GER-INFL ;
-%<ger_impf%>:%>%{E%}tug%'ın GER-POSSESSIVES ;
+%<ger_impf%>:%>%{E%}tug%{ъ%}ın GER-POSSESSIVES ;
 
 ! Imperatives
 %<imp%>%<p2%>%<sg%>: CLIT-EMPH ;
@@ -575,7 +601,7 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 
 %<prc_perf%>:%>%{I%}p CLIT-GHANA-ETC ;
 %<neg%>%<prc_perf%>:%{M%}%{A%}%>%{E%} CLIT-GHANA-ETC ;
-%<prc_vol%>:%>%{G%}%{I%} VOL-ENDINGS ;
+%<prc_vol%>:%>%{G%}%{ъ%}%{I%} VOL-ENDINGS ;
 %<prc_fplan%>:%>%{M%}%{A%}%{K%} CLITICS-NO-COP ;
 
 %<gna_perf%>:%>%{I%}p CLITICS-NO-COP ;
@@ -654,8 +680,8 @@ e%<cop%>%<ifi%>:e%>%{D%}%{I%} V-PERS-S2 ;
 
 LEXICON PRON-12SG-CASES
 
-%<gen%>:enin%' CLITICS-NO-COP ;
-%<dat%>:ag%'an CLITICS-NO-COP ;
+%<gen%>:enin%{ъ%} CLITICS-NO-COP ;
+%<dat%>:ag%{ъ%}an CLITICS-NO-COP ;
 %<acc%>:eni CLITICS-NO-COP ;
 %<abl%>:enen CLITICS-NO-COP ;
 %<loc%>:ende CLITICS-NO-COP ;
@@ -663,7 +689,7 @@ LEXICON PRON-12SG-CASES
 %<px%>:eniki%{n%} CASES ;
 %<loc%>:endegi ATTR-SUBST ;
 %<sim%>:endey CLITICS-NO-COP ;
-%<adv%>:enin%'she CLITICS-NO-COP ;
+%<adv%>:enin%{ъ%}she CLITICS-NO-COP ;
 
 LEXICON PRON-PERS-INFL
 
@@ -679,19 +705,19 @@ sen%<prn%>%<pers%>%<p2%>%<sg%>:s PRON-12SG-CASES ;
 
 ol%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:ol COMMON-CLITICS ;
 ol%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:o COMMON-CLITICS ; ! Dir/LR
-ol%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:onın%' COMMON-CLITICS ;
-ol%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:og%'an COMMON-CLITICS ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:onın%{ъ%} COMMON-CLITICS ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:og%{ъ%}an COMMON-CLITICS ;
 ol%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:onı COMMON-CLITICS ;
 ol%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:odan COMMON-CLITICS ;
 ol%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:onda COMMON-CLITICS ;
 ol%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:ol% menen COMMON-CLITICS ;
 ol%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:oniki%{n%} CASES ;
-ol%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ondag%'ı ATTR-SUBST ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ondag%{ъ%}ı ATTR-SUBST ;
 ol%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:onday COMMON-CLITICS ;
-ol%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:onın%'sha COMMON-CLITICS ;
+ol%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:onın%{ъ%}sha COMMON-CLITICS ;
  
 biz%<prn%>%<pers%>%<p1%>%<pl%>:biz PRON-PERS-INFL ;
-biz%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:bizin%'she COMMON-CLITICS ;
+biz%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:bizin%{ъ%}she COMMON-CLITICS ;
 
 sizler%<prn%>%<pers%>%<p2%>%<pl%>:sizler PRON-PERS-INFL ;
 sizler%<prn%>%<pers%>%<p2%>%<pl%>%<adv%>:sizlershe COMMON-CLITICS ;
@@ -700,7 +726,7 @@ olar%<prn%>%<pers%>%<p3%>%<pl%>:olar PRON-PERS-INFL ;
 olaр%<prn%>%<pers%>%<p3%>%<pl%>%<adv%>:oлaршa COMMON-CLITICS ;
 
 siz%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>:siz PRON-PERS-INFL ;
-siz%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:sizdin%'she COMMON-CLITICS ;
+siz%<prn%>%<pers%>%<p2%>%<sg%>%<frm%>%<adv%>:sizdin%{ъ%}she COMMON-CLITICS ;
 sizler%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>:sizler PRON-PERS-INFL ;
 sizler%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:sizlershe COMMON-CLITICS ;
 
@@ -715,14 +741,14 @@ sizler%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:sizlershe COMMON-CLITICS ;
 
 LEXICON PRON-DEM-INFL
 
-%<gen%>:nın%' CLITICS-NO-COP ;
-%<dat%>:g%'an CLITICS-NO-COP ;
+%<gen%>:nın%{ъ%} CLITICS-NO-COP ;
+%<dat%>:g%{ъ%}an CLITICS-NO-COP ;
 %<acc%>:nı CLITICS-NO-COP ;
 %<abl%>:dan CLITICS-INCL-COP ;
 %<abl%>:nan CLITICS-INCL-COP ; ! Dir/LR FIXME actually only "oсы" seems to take this.
 %<loc%>:nda CLITICS-INCL-COP ;
 %<px%>:niki%{n%} CASES ;
-%<loc%>:ndag%'ı ATTR-SUBST ;
+%<loc%>:ndag%{ъ%}ı ATTR-SUBST ;
 %<sim%>:nday CASES ;  ! FIXME: should have <det>, etc.
 %<adv%>:lay CLITICS-INCL-COP ;
 %<qnt%>:nsha CLITICS-NO-COP ;         !
@@ -749,9 +775,9 @@ LEXICON PRON-DEM-BUL
 
 bul%<prn%>%<dem%>%<nom%>:bul CLITICS-INCL-COP ;
 bul%<prn%>%<dem%>%<nom%>:bu CLITICS-INCL-COP ; ! Dir/LR
-bul%<prn%>%<dem%>%<gen%>:bunın%' CLITICS-NO-COP ;
+bul%<prn%>%<dem%>%<gen%>:bunın%{ъ%} CLITICS-NO-COP ;
 ! bul%<prn%>%<dem%>%<gen%>:мұның CLITICS-NO-COP ; ! Dir/LR
-bul%<prn%>%<dem%>%<dat%>:bug%'an CLITICS-NO-COP ;
+bul%<prn%>%<dem%>%<dat%>:bug%{ъ%}an CLITICS-NO-COP ;
 bul%<prn%>%<dem%>%<acc%>:bunı CLITICS-NO-COP ;
 ! bul%<prn%>%<dem%>%<acc%>:мұны CLITICS-NO-COP ; ! Dir/LR
 bul%<prn%>%<dem%>%<abl%>:budan CLITICS-INCL-COP ;
@@ -761,7 +787,7 @@ bul%<prn%>%<dem%>%<loc%>:bunda CLITICS-INCL-COP ;
 bul%<prn%>%<dem%>%<ins%>:bul% menen CLITICS-NO-COP ;
 ! bul%<prn%>%<dem%>%<ins%>:мұнымeн CLITICS-NO-COP ; ! Dir/LR
 ! bul%<prn%>%<dem%>%<px%>:мұнікі%{n%} CASES ; ! FIXME: check "м" vs "б"
-bul%<prn%>%<dem%>%<loc%>:bundag%'ı ATTR-SUBST ;
+bul%<prn%>%<dem%>%<loc%>:bundag%{ъ%}ı ATTR-SUBST ;
 ! bul%<prn%>%<dem%>%<loc%>:мұндағы ATTR-SUBST ; ! Dir/LR
 ! bul%<prn%>%<dem%>%<sim%>:мұндай CASES ;
 bul%<prn%>%<dem%>%<sim%>:bunday CASES ; ! Dir/LR
@@ -779,14 +805,14 @@ bul%<prn%>%<dem%>%<pl%>%<px3sp%>:buları%{n%} CASES ;
 LEXICON PRON-DEM-MINA
 
 mına%<prn%>%<dem%>%<nom%>:mına CLITICS-INCL-COP ;
-mına%<prn%>%<dem%>%<gen%>:mınanın%' CLITICS-NO-COP ;
-mına%<prn%>%<dem%>%<dat%>:mınag%'an CLITICS-NO-COP ;
+mına%<prn%>%<dem%>%<gen%>:mınanın%{ъ%} CLITICS-NO-COP ;
+mına%<prn%>%<dem%>%<dat%>:mınag%{ъ%}an CLITICS-NO-COP ;
 mına%<prn%>%<dem%>%<acc%>:mınanı CLITICS-NO-COP ;
 mına%<prn%>%<dem%>%<abl%>:mınadan CLITICS-INCL-COP ;
 mına%<prn%>%<dem%>%<loc%>:mınada CLITICS-INCL-COP ;
 mına%<prn%>%<dem%>%<ins%>:mına% menen CLITICS-NO-COP ;
 !mına%<prn%>%<dem%>%<px%>:mınaniki%{n%} CASES ;
-!mına%<prn%>%<dem%>%<loc%>:mınadag%'ı ATTR-SUBST ;
+!mına%<prn%>%<dem%>%<loc%>:mınadag%{ъ%}ı ATTR-SUBST ;
 mına%<prn%>%<dem%>%<sim%>:mınaday CASES ;
 mına%<prn%>%<dem%>%<adv%>:mınalay CLITICS-INCL-COP ;
 mına%<prn%>%<dem%>%<px3sp%>:mınasın%{n%} CASES ;
@@ -797,14 +823,14 @@ mına%<prn%>%<dem%>%<pl%>%<px3sp%>:mınaları%{n%} CASES ;
 LEXICON PRON-DEM-ANA
 
 ana%<prn%>%<dem%>%<nom%>:ana CLITICS-INCL-COP ;
-ana%<prn%>%<dem%>%<gen%>:ananın%' CLITICS-NO-COP ;
-ana%<prn%>%<dem%>%<dat%>:anag%'an CLITICS-NO-COP ;
+ana%<prn%>%<dem%>%<gen%>:ananın%{ъ%} CLITICS-NO-COP ;
+ana%<prn%>%<dem%>%<dat%>:anag%{ъ%}an CLITICS-NO-COP ;
 ana%<prn%>%<dem%>%<acc%>:ananı CLITICS-NO-COP ;
 ana%<prn%>%<dem%>%<abl%>:anadan CLITICS-INCL-COP ;
 ana%<prn%>%<dem%>%<loc%>:anada CLITICS-INCL-COP ;
 ana%<prn%>%<dem%>%<ins%>:ana% menen CLITICS-NO-COP ;
 ana%<prn%>%<dem%>%<px%>:ananiki%{n%} CASES ;
-ana%<prn%>%<dem%>%<loc%>:anadag%'ı ATTR-SUBST ;
+ana%<prn%>%<dem%>%<loc%>:anadag%{ъ%}ı ATTR-SUBST ;
 ana%<prn%>%<dem%>%<sim%>:anaday CASES ;
 !ana%<prn%>%<dem%>%<adv%>:analay CLITICS-INCL-COP ;
 !ana%<prn%>%<dem%>%<px3sp%>:anaсы%{n%} CASES ;
@@ -872,8 +898,8 @@ LEXICON PRON-ITG-INFL
 LEXICON PRON-ITG-QAYSI
 
 qaysı%<prn%>%<itg%>%<nom%>:qaysı CLITICS-NO-COP ;
-qaysı%<prn%>%<itg%>%<gen%>:qaysının%' CLITICS-NO-COP ;
-qaysı%<prn%>%<itg%>%<dat%>:qaysıg%'an CLITICS-NO-COP ;
+qaysı%<prn%>%<itg%>%<gen%>:qaysının%{ъ%} CLITICS-NO-COP ;
+qaysı%<prn%>%<itg%>%<dat%>:qaysıg%{ъ%}an CLITICS-NO-COP ;
 qaysı%<prn%>%<itg%>%<acc%>:qaysını CLITICS-NO-COP ;
 qaysı%<prn%>%<itg%>%<abl%>:qaysıdan CLITICS-NO-COP ;
 qaysı%<prn%>%<itg%>%<loc%>:qaysıda CLITICS-NO-COP ;
@@ -898,7 +924,7 @@ LEXICON InterrogativePronouns
 PRON-ITG-QAYSI ;
 PRON-ITG-QANSHA ;
 PRON-ITG-QANDAY ;
-na%'rse:na%'rse PRON-ITG-INFL ; ! "thing" ! Use/MT
+na%{ъ%}rse:na%{ъ%}rse PRON-ITG-INFL ; ! "thing" ! Use/MT
 ne:ne PRON-ITG-INFL ; ! "what"
 kim:kim PRON-ITG-INFL ; ! "who"
 
@@ -945,14 +971,14 @@ LEXICON PRON-REF
 ! Root Lexicon
 
 %<prn%>%<ref%>%<p1%>%<sg%>:%>%{I%}m PRON-REF-ADV ;
-%<prn%>%<ref%>%<p2%>%<sg%>:%>%{I%}n%' PRON-REF-ADV ;
+%<prn%>%<ref%>%<p2%>%<sg%>:%>%{I%}n%{ъ%} PRON-REF-ADV ;
 %<prn%>%<ref%>%<p3%>%<sg%>:%>%{s%}%{I%}%{n%} PRON-REF-ADV ;
 %<prn%>%<ref%>%<p1%>%<pl%>:%>%{I%}m%{I%}z PRON-REF-ADV ;
-%<prn%>%<ref%>%<p2%>%<pl%>:%>l%{A%}r%>%{I%}n%' PRON-REF-ADV ;
+%<prn%>%<ref%>%<p2%>%<pl%>:%>l%{A%}r%>%{I%}n%{ъ%} PRON-REF-ADV ;
 %<prn%>%<ref%>%<p3%>%<pl%>:%>l%{A%}r%>%{s%}%{I%}%{n%} PRON-REF-ADV ;
 
-%<prn%>%<ref%>%<p2%>%<sg%>%<frm%>:%>%{I%}n%'%{I%}z PRON-REF-ADV ;
-%<prn%>%<ref%>%<p2%>%<pl%>%<frm%>:%>l%{A%}r%>%{I%}n%'%{I%}z PRON-REF-ADV ;
+%<prn%>%<ref%>%<p2%>%<sg%>%<frm%>:%>%{I%}n%{ъ%}%{I%}z PRON-REF-ADV ;
+%<prn%>%<ref%>%<p2%>%<pl%>%<frm%>:%>l%{A%}r%>%{I%}n%{ъ%}%{I%}z PRON-REF-ADV ;
 
 ! This is how it was before:
 !%<prn%>%<ref%>: POSSESSIVES ;
@@ -973,8 +999,8 @@ LEXICON PRON-PERS-SEN
 LEXICON PRON-PERS-OL
 
 %<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:l # ;
-%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:nın%' # ;
-%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:g%'an # ;
+%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:nın%{ъ%} # ;
+%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:g%{ъ%}an # ;
 
 LEXICON PRON-PERS-BIZ
 
@@ -987,7 +1013,7 @@ LEXICON PRON-PERS-SIZ
 LEXICON PRON-PERS-OLAR
 
 %<prn%>%<pers%>%<p3%>%<pl%>%<nom%>: # ;
-%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:%>g%'a # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:%>g%{ъ%}a # ;
 
 LEXICON PRON-XXX ! To categorise
 
@@ -1144,6 +1170,7 @@ amplituda:amplituda N1 ; ! ""
 an%':an%' N1 ; ! ""
 an%'ız:an%'ız N1 ; ! ""
 an%'ız% a%'ngime:an%'ız% a%'ngime N1 ; ! ""
+an%'law:an%'law N1 ; ! ""
 ana:ana N1 ; ! ""
 ansambl:ansambl N1 ; ! ""
 ansambl:ansambl N1 ; ! ""
@@ -1309,6 +1336,7 @@ belgi:belgi N1 ; ! ""
 belorus:belorus N1 ; ! ""
 bet:bet N1 ; ! ""
 bez:bez N1 ; ! ""
+Bihar:Bihar N1 ; ! ""
 bilezik:bilezik N1 ; ! ""
 bilim:bilim N1 ; ! ""
 biologiya:biologiya N1 ; ! ""
@@ -1326,6 +1354,8 @@ boy:boy N1 ; ! ""
 britan:britan N1 ; ! ""
 bu%'rkit:bu%'rkit N1 ; ! ""
 bug%'a:bug%'a N1 ; ! ""
+Budda:budda N3 ; ! ""
+Buddizm:Buddizm N5 ; ! ""
 bult:bult N1 ; ! ""
 burshaq:burshaq N1 ; ! ""
 buryat:buryat N1 ; ! ""
@@ -1499,6 +1529,7 @@ g%'ayrat:g%'ayrat N1 ; ! ""
 g%'ayratker:g%'ayratker N1 ; ! ""
 gamma:gamma N1 ; ! ""
 gaz:gaz N1 ; ! ""
+Gautama:Gautama N1 ; ! ""
 gazeta:gazeta N1 ; ! ""
 gektar:gektar N1 ; ! ""
 gen:gen N1 ; ! ""
@@ -1896,6 +1927,7 @@ mıltıq:mıltıq N1 ; ! ""
 mırza:mırza N1 ; ! ""
 mıs:mıs N1 ; ! ""
 mısal:mısal N1 ; ! ""
+na%'psi:na%'psi N1 ; ! ""
 na%'reste:na%'reste N1 ; ! ""
 na%'tiyje:na%'tiyje N1 ; ! ""
 namaz:namaz N1 ; ! ""
@@ -2080,6 +2112,7 @@ qamshı:qamshı N1 ; ! ""
 qamır:qamır N1 ; ! ""
 qamıs:qamıs N1 ; ! ""
 qan:qan N1 ; ! ""
+qanaat:qanaat N1 ; ! "gratification"
 qanat:qanat N1 ; ! ""
 qant:qant N1 ; ! ""
 qar:qar N1 ; ! ""
@@ -2266,6 +2299,7 @@ shıg%'ıs:shıg%'ıs N1 ; ! ""
 shıg%'ıs:shıg%'ıs N1 ; ! ""
 shın:shın N1 ; ! ""
 shıraq:shıraq N1 ; ! ""
+Siddhartha:Siddhartha N1 ; ! ""
 silteme:silteme N1 ; ! ""
 simvol:simvol N1 ; ! ""
 sin%'li:sin%'li N1 ; ! ""
@@ -2424,6 +2458,7 @@ tramplin:tramplin N1 ; ! ""
 transkripciya:transkripciya N1 ; ! ""
 transport:transport N1 ; ! ""
 tranzit:tranzit N1 ; ! ""
+Tripitaka:Tripitaka N1 ; ! ""
 tu%'k:tu%'k N1 ; ! ""
 tu%'lki:tu%'lki N1 ; ! ""
 tu%'n:tu%'n N1 ; ! ""
@@ -2968,6 +3003,8 @@ o%'re:o%'re N1 ; ! ""
 du%'yshembi:du%'yshembi N1 ; ! ""
 du%'kan:du%'kan N1 ; ! ""
 du%'nya:du%'nya N1 ; ! ""
+du%'nya% ju%'zi:du%'nya% ju%'z N-COMPOUND-PX ; ! "world"
+du%'nya% ju%'z:du%'nya% ju%'z  N-COMPOUND-PX ; ! "world"
 dushpan:dushpan N1 ; ! ""
 duwa:duwa N1 ; ! ""
 da%'llik:da%'llik N1 ; ! ""
@@ -3850,6 +3887,7 @@ saat:saat N1 ; ! ""
 saqal:saqal N1 ; ! ""
 sebep:sebep N1 ; ! ""
 sebepker:sebepker N1 ; ! ""
+sebet:sebet N1 ; ! ""
 segiz% ayaq:segiz% ayaq N1 ; ! ""
 sezon:sezon N1 ; ! ""
 sezim:sezim N1 ; ! ""
@@ -3894,7 +3932,6 @@ shor% jer:shor% jer N1 ; ! ""
 sud:sud N1 ; ! ""
 sociologiya:sociologiya N1 ; ! ""
 soyıw:soyıw N1 ; ! ""
-sog%'ıs:sog%'ıs N1 ; ! ""
 soqır:soqır N1 ; ! ""
 soqqı:soqqı N1 ; ! ""
 son%':son%' N1 ; ! ""
@@ -7520,12 +7557,15 @@ mu%'mkin:mu%'mkin INTERJ ; ! "probably"
 
 LEXICON Abbreviations
 
+b%.t%.:b%.t%. ABBR ; ! "болып табылады"
+b%.z%.b%.:b%.z%.b%. ABBR ; ! ""
 kg:kg ABBR ; ! "kg"
 km²:km² ABBR ; ! "km²"
 km²:km2 ABBR ; ! "km²" Dir/LR
 km³:km³ ABBR ; ! "km³"
 km³:km3 ABBR ; ! "km³" Dir/LR
 km:km ABBR ; ! "km"
+mlrd:mlrd ABBR ; ! "billion"
 t%.b%.:t%.b%. ABBR ; ! "etc."
 j%.:j%. ABBR ; ! "year"
 
