@@ -136,6 +136,9 @@ Multichar_Symbols
 ! %{%_%}
 %{ъ%}    ! turns to ' sometimes; replaces %{'%} and %{%_%}
 
+%{а%}
+%{с%}
+
 %>
 %  
 %'
@@ -296,6 +299,13 @@ LEXICON SUBST
 
 N-INFL-COMMON ;
 %<pl%>:%>l%{A%}r N-INFL-COMMON ;
+
+LEXICON N1-ABBR
+
+%<n%>%<attr%>: # ;
+%<n%>:%- POSSESSIVES ;
+%<n%>:%- CASES-ETC ;
+%<n%>: CASES-ETC ; ! Dir/LR
 
 LEXICON N1
 
@@ -4781,6 +4791,8 @@ o%'tirikshi:o%'tirikshi N1 ; ! ""
 bet:bet N1 ; ! ""
 o%'n%'ip:o%'n%'ip N1 ; ! ""
 
+mlrd:mlrd%{а%}%{с%} N1-ABBR ; ! "billion"
+
 LEXICON  Verbs
 abay% bol:abay% bol V-IV ; ! ""
 albıra:albıra V-IV ; ! ""
@@ -7565,7 +7577,6 @@ km²:km2 ABBR ; ! "km²" Dir/LR
 km³:km³ ABBR ; ! "km³"
 km³:km3 ABBR ; ! "km³" Dir/LR
 km:km ABBR ; ! "km"
-mlrd:mlrd ABBR ; ! "billion"
 t%.b%.:t%.b%. ABBR ; ! "etc."
 j%.:j%. ABBR ; ! "year"
 
