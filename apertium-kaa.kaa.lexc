@@ -311,7 +311,7 @@ LEXICON N1
 
 %<n%>%<attr%>: # ;
 ! %<n%>:%{ъ%} SUBST ;
-%<n%>: FULL-NOMINAL-INFLECTION ;
+%<n%>:%{ъ%} FULL-NOMINAL-INFLECTION ;
 
 LEXICON N-COMPOUND-PX-COMMON
 
