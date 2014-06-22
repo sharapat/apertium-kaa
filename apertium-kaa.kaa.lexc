@@ -584,6 +584,7 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Participles
 %<prc_impf%>:%>%{E%} CLIT-GHANA-ETC ;
+%<prc_perf%>:%>%{I%}p CLIT-GHANA-ETC ;
 %<prc_cond%>:%>s%{A%} V-PERS-S2 ;
 
 ! Verbal adverbs
