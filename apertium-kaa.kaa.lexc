@@ -609,16 +609,16 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 
 %<neg%>:%>%{M%}%{A%} V-NONFINITE-REGULAR_NEGATIVE ;
 
-%<prc_perf%>:%>%{I%}p CLIT-GHANA-ETC ;
+%<prc_perf%>:%>%{I%}r CLIT-GHANA-ETC ;
 %<neg%>%<prc_perf%>:%{M%}%{A%}%>%{E%} CLIT-GHANA-ETC ;
 %<prc_vol%>:%>%{G%}%{ъ%}%{I%} VOL-ENDINGS ;
 %<prc_fplan%>:%>%{M%}%{A%}%{K%} CLITICS-NO-COP ;
 
-%<gna_perf%>:%>%{I%}p CLITICS-NO-COP ;
+%<gna_perf%>:%>%{I%}r CLITICS-NO-COP ;
 %<neg%>%<gna_perf%>:%{M%}%{A%}%>%{E%} CLITICS-NO-COP ;
 
-%<ger_fut%>:%>%{A%}р GER-POSSESSIVES ;
-%<neg%>%<ger_fut%>:%>%{M%}%{A%}%>с GER-POSSESSIVES ;
+%<ger_fut%>:%>%{A%}r GER-POSSESSIVES ;
+%<neg%>%<ger_fut%>:%>%{M%}%{A%}%>s GER-POSSESSIVES ;
 
 LEXICON V-COMMON
 
@@ -5546,7 +5546,6 @@ altınla:altınla V-TV ; ! ""
 alıp% bar:alıp% bar V-TV ; ! ""
 alıp% kel:alıp% kel V-TV ; ! ""
 alıp% ket:alıp% ket V-TV ; ! ""
-alıslat:alıslat V-TV ; ! ""
 alıstır:alıstır V-TV ; ! ""
 asıra% maqta:asıra% maqta V-TV ; ! ""
 jaqınla:jaqınla V-TV ; ! ""
