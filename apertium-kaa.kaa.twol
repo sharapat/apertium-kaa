@@ -48,8 +48,8 @@ FrontableVow = a o u
 BackVow = a ı o u
           A I O U ;
 
-Cns = B V G D J Z Y K Q L M N R S T W F X H     ! N' G' 
-      b v g d j z y k q l m n r s t w f x h ;   ! n' g'
+Cns = B V G D J Z Y K P Q L M N R S T W F X H     ! N' G' 
+      b v g d j z y k p q l m n r s t w f x h ;   ! n' g'
 
 CnsRight = B V G D J Z Y K Q L M N R S T W F X H     ! N' G' 
       b v g d j z y k q l m n r s t w f x h ;   ! n' g'
