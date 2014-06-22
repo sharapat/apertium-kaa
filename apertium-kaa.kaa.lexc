@@ -751,14 +751,14 @@ sizler%<prn%>%<pers%>%<p2%>%<pl%>%<frm%>%<adv%>:sizlershe COMMON-CLITICS ;
 
 LEXICON PRON-DEM-INFL
 
-%<gen%>:nın%{ъ%} CLITICS-NO-COP ;
+%<gen%>:nın%' CLITICS-NO-COP ;
 %<dat%>:g%{ъ%}an CLITICS-NO-COP ;
 %<acc%>:nı CLITICS-NO-COP ;
 %<abl%>:dan CLITICS-INCL-COP ;
 %<abl%>:nan CLITICS-INCL-COP ; ! Dir/LR FIXME actually only "oсы" seems to take this.
 %<loc%>:nda CLITICS-INCL-COP ;
 %<px%>:niki%{n%} CASES ;
-%<loc%>:ndag%{ъ%}ı ATTR-SUBST ;
+%<loc%>:ndag%'ı ATTR-SUBST ;
 %<sim%>:nday CASES ;  ! FIXME: should have <det>, etc.
 %<adv%>:lay CLITICS-INCL-COP ;
 %<qnt%>:nsha CLITICS-NO-COP ;         !
@@ -843,7 +843,7 @@ ana%<prn%>%<dem%>%<px%>:ananiki%{n%} CASES ;
 ana%<prn%>%<dem%>%<loc%>:anadag%{ъ%}ı ATTR-SUBST ;
 ana%<prn%>%<dem%>%<sim%>:anaday CASES ;
 !ana%<prn%>%<dem%>%<adv%>:analay CLITICS-INCL-COP ;
-!ana%<prn%>%<dem%>%<px3sp%>:anaсы%{n%} CASES ;
+!ana%<prn%>%<dem%>%<px3sp%>:anası%{n%} CASES ;
 
 ana%<prn%>%<dem%>%<pl%>:analar CASES-ETC ;
 ana%<prn%>%<dem%>%<pl%>%<px3sp%>:anaları%{n%} CASES ;
@@ -855,14 +855,14 @@ PRON-DEM-MINA ;
 PRON-DEM-ANA ;
 
 sol%<prn%>%<dem%>%<nom%>:sol CLITICS-INCL-COP ;
-sol%<prn%>%<dem%>:сo PRON-DEM-INFL ;
-sol%<prn%>%<dem%>%<ins%>:сoнымeн CLITICS-NO-COP ;
-sol%<prn%>%<dem%>%<px3sp%>:сoнысы%{n%} CASES ;
+sol%<prn%>%<dem%>:so PRON-DEM-INFL ;
+sol%<prn%>%<dem%>%<ins%>:sonın%'% menen CLITICS-NO-COP ;
+sol%<prn%>%<dem%>%<px3sp%>:sonısı%{n%} CASES ;
 
 ol%<prn%>%<dem%>%<nom%>:ol CLITICS-INCL-COP ;
 ol%<prn%>%<dem%>:o PRON-DEM-INFL ;
-ol%<prn%>%<dem%>%<ins%>:oнымeн CLITICS-NO-COP ;
-ol%<prn%>%<dem%>%<px3sp%>:oнысы%{n%} CASES ;
+ol%<prn%>%<dem%>%<ins%>:onın%'% menen CLITICS-NO-COP ;
+ol%<prn%>%<dem%>%<px3sp%>:onısı%{n%} CASES ;
 
 usı%<prn%>%<dem%>%<nom%>:usı CLITICS-NO-COP ;
 usı%<prn%>%<dem%>:usı PRON-DEM-INFL ;
@@ -1365,6 +1365,7 @@ britan:britan N1 ; ! ""
 bu%'rkit:bu%'rkit N1 ; ! ""
 bug%'a:bug%'a N1 ; ! ""
 Budda:budda N3 ; ! ""
+buddashı:buddashı N1 ; !
 Buddizm:Buddizm N5 ; ! ""
 bult:bult N1 ; ! ""
 burshaq:burshaq N1 ; ! ""
@@ -1600,6 +1601,8 @@ imam:imam N1 ; ! ""
 iman:iman N1 ; ! ""
 immunitet:immunitet N1 ; ! ""
 imperator:imperator N1 ; ! ""
+imperialist:imperialis N5 ; ! "imperialist" ! Dir/LR
+imperialis:imperialist N5 ; ! "imperialist"
 imperiya:imperiya N1 ; ! ""
 imtixan:imtixan N1 ; ! ""
 indeks:indeks N1 ; ! ""
@@ -1771,6 +1774,7 @@ koalitsiya:koalitsiya N1 ; ! ""
 koeffitsient:koeffitsient N1 ; ! ""
 kofta:kofta N1 ; ! ""
 kollegiya:kollegiya N1 ; ! ""
+kolonializm:kolonializm ; ! ""
 kolonna:kolonna N1 ; ! ""
 kolxoz:kolxoz N1 ; ! ""
 kolxoz:kolxoz N1 ; ! ""
@@ -1820,6 +1824,7 @@ kvant:kvant N1 ; ! ""
 kvarts:kvarts N1 ; ! ""
 kvota:kvota N1 ; ! ""
 laboratoriya:laboratoriya N1 ; ! ""
+lamait:lamait N5 ; ! ""
 laqap:laqap N1 ; ! ""
 latın:latın N1 ; ! ""
 laureat:laureat N1 ; ! ""
@@ -1953,6 +1958,7 @@ negr:negr N1 ; ! ""
 neke:neke N1 ; ! ""
 nemis:nemis N1 ; ! ""
 nemis:nemis N1 ; ! ""
+neobuddizm:neobuddizm N1 ; ! ""
 nesiybe:nesiybe N1 ; ! ""
 nikel:nikel N1 ; ! ""
 niyet:niyet N1 ; ! ""
@@ -1984,6 +1990,7 @@ o%'tirikshi:o%'tirikshi N1 ; ! ""
 o%'zbek:o%'zbek N1 ; ! ""
 o%'zbek:o%'zbek N1 ; ! ""
 o%'zgeris:o%'zgeris N1 ; ! ""
+o%'zine% ta%'nlik:o%'zine% ta%'nlik N1 ; ! ""
 obekt:obekt N1 ; ! ""
 obligatsiya:obligatsiya N1 ; ! ""
 ocherk:ocherk N1 ; ! ""
@@ -2522,6 +2529,7 @@ uyg%'ır:uyg%'ır N1 ; ! ""
 uyg%'ır:uyg%'ır N1 ; ! ""
 uyqı:uyqı N1 ; ! ""
 uzınlıq:uzınlıq N1 ; ! ""
+vajranayana:vajranayana N1 ; !
 vaktsina:vaktsina N1 ; ! ""
 valyuta:valyuta N1 ; ! ""
 veb:veb N1 ; ! ""
@@ -3048,6 +3056,7 @@ elshixana:elshixana N1 ; ! ""
 em:em N1 ; ! ""
 emeslik:emeslik N1 ; ! ""
 imtixan:imtixan N1 ; ! ""
+iso%'kirek:iso%'kirek N1 ; ! ""
 en:en N1 ; ! ""
 ene:ene N1 ; ! ""
 miyras:miyras N1 ; ! ""
@@ -3087,6 +3096,7 @@ jag%'day:jag%'day N1 ; ! ""
 jala:jala N1 ; ! ""
 jalaw:jalaw N1 ; ! ""
 xızmet% danı:xızmet% danı N1 ; ! ""
+jalbır:jalbır N1 ; ! 
 jalbız:jalbız N1 ; ! ""
 jalatay:jalatay N1 ; ! ""
 jalpı:jalpı N1 ; ! ""
@@ -3564,6 +3574,7 @@ mereke:mereke N1 ; ! ""
 mu%'ddet:mu%'ddet N1 ; ! ""
 nabıt:nabıt N1 ; ! ""
 mereke:mereke N1 ; ! ""
+metabuddizm:metabuddizm N5 ; !
 metall:metall N1 ; ! ""
 metallwrgiya:metallwrgiya N1 ; ! ""
 metan:metan N1 ; ! ""
@@ -4032,6 +4043,7 @@ tabaq:tabaq N1 ; ! ""
 ta%'biyat:ta%'biyat N1 ; ! ""
 tabıs:tabıs N1 ; ! ""
 tay:tay N1 ; ! ""
+bodhisattva:bodhisattva N1 ; ! ""
 botalaq:botalaq N1 ; ! ""
 taypa:taypa N1 ; ! ""
 taktika:taktika N1 ; ! ""
@@ -4138,7 +4150,7 @@ tuberkulez:tuberkulez N1 ; ! ""
 tuwrılıq:tuwrılıq N1 ; ! ""
 turnir:turnir N1 ; ! ""
 tuwısqan:tuwısqan N1 ; ! ""
-tuwısqan:tuwısqan N1 ; ! ""
+tuwısqanlıq:tuwısqanlıq N1 ; ! ""
 tıyım:tıyım N1 ; ! ""
 malaхay:malaхay N1 ; ! ""
 dem:dem N1 ; ! ""
@@ -4237,6 +4249,7 @@ faktor:faktor N1 ; ! ""
 fakultet:fakultet N1 ; ! ""
 fauna:fauna N1 ; ! ""
 fashist:fashist N1 ; ! ""
+fenomen:fenomen N1 ; !
 fevral:fevral N1 ; ! ""
 federatsiya:federatsiya N1 ; ! ""
 feldsher:feldsher N1 ; ! ""
@@ -5664,6 +5677,7 @@ anıqla:anıqla V-TV ; ! ""
 da%'liylle:da%'liylle V-TV ; ! ""
 ruwxlandır:ruwxlandır V-TV ; ! ""
 da%'rile:da%'rile V-TV ; ! ""
+diniy% na%'siyat% ber:diniy% na%'siyat% ber V-TV ; ! ""
 ege:ege V-TV ; ! ""
 ege:ege V-TV ; ! ""
 ez:ez V-TV ; ! ""
@@ -6339,6 +6353,7 @@ saldamlı:saldamlı A2 ; ! ""
 banklik:banklik A4 ; ! ""
 bar:bar A3 ; ! ""
 basqa:basqa A1 ; ! ""
+baslang%'ısh:baslang%'ısh A3 ; ! ""
 baslapqı:baslapqı A3 ; ! ""
 baslı:baslı A2 ; ! ""
 basım:basım A1 ; ! ""
@@ -6756,6 +6771,8 @@ radiolokatsiyalıq:radiolokatsiyalıq A4 ; ! ""
 radioelektrondıq:radioelektrondıq A4 ; ! ""
 razı:razı A4 ; ! ""
 raketalıq:raketalıq A4 ; ! ""
+reaktsiyalıq:reaktsiyalıq A4 ; ! ""
+reaktsiyashıl:reaktsiyashıl A4 ; ! ""
 realistik:realistik A4 ; ! ""
 revolyutsiyalıq:revolyutsiyalıq A4 ; ! ""
 rejisserlik:rejisserlik A4 ; ! ""
@@ -6781,12 +6798,14 @@ sıyasıy:sıyasıy A1 ; ! ""
 semiz:semiz A1 ; ! ""
 isenimli:isenimli A1 ; ! ""
 simvolikalıq:simvolikalıq A4 ; ! ""
+sinkretikalıq:sinkretikalıq A4 ; ! ""
 sintaksislik:sintaksislik A4 ; ! ""
 sintetikalıq:sintetikalıq A4 ; ! ""
 siyrek:siyrek A1 ; ! ""
 sovetlik:sovetlik A4 ; ! ""
 sol:sol A1 ; ! ""
 son%':son%' A1 ; ! ""
+son%'g%'ı:son%'g%'ı A1 ; ! ""
 sorlı:sorlı A2 ; ! ""
 sotsial:sotsial A4 ; ! ""
 sotsialislik:sotsialislik A4 ; ! ""
@@ -7138,7 +7157,9 @@ barlıq:barlıq PRON-QNT ; ! ""
 ba%'ri:ba%'ri PRON-QNT-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
 ! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
 birew:birew PRON-QNT ; ! ""
+bir% qatar:bir% qatar PRON-QNT ; !
 ekew:ekew PRON-QNT ; ! "both" !Use/MT
+geybirew:geybirew PRON-QNT ; ! 
 ha%'r% kim:ha%'r% kim PRON-QNT ; ! ""
 ko%'bisi:ko%'bisi PRON-QNT ; ! "most" !Use/MT
 
@@ -7316,6 +7337,7 @@ Finlyandiya:Finlyandiya NP-TOP ; ! ""
 Frantsiya:Frantsiya NP-TOP ; ! ""
 Zimbabve:Zimbabve NP-TOP ; ! ""
 Ta%'jikistan:Ta%'jikistan NP-TOP ; ! ""
+Tuva:Tuva NP-TOP ; ! ""
 Pakistan:Pakistan NP-TOP ; ! ""
 İndiya:İndiya NP-TOP ; ! ""
 Tu%'rkmenistan:Tu%'rkmenistan NP-TOP ; ! ""
@@ -7588,6 +7610,7 @@ km²:km2 ABBR ; ! "km²" Dir/LR
 km³:km³ ABBR ; ! "km³"
 km³:km3 ABBR ; ! "km³" Dir/LR
 km:km ABBR ; ! "km"
+ma%'ml:ma%'ml ABBR ; ! "ma'mleket"
 t%.b%.:t%.b%. ABBR ; ! "etc."
 j%.:j%. ABBR ; ! "year"
 
