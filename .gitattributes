@@ -15,6 +15,7 @@
 dev/Makefile -text
 dev/countstems.sh -text
 dev/editdist.py -text
+dev/instruction -text
 dev/kaa.Cyrl-Latn_1991.sh -text
 dev/kaa.Cyrl-Latn_1991.twol -text
 dev/kaa.Cyrl-Latn_1991.twol.nomulti -text
