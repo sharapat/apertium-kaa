@@ -23,6 +23,8 @@ dev/kaa.Cyrl-Latn_1991.twol.nomulti -text
 dev/kaa.Latn_1991-Cyrl.twol -text
 dev/kaz-nouns.txt -text
 dev/spellrelax.twol -text
+dev/wiki.txt -text
+dev/wiki2.txt -text
 /modes.xml -text
 speller/editdist.default.txt -text
 speller/index.xml -text
