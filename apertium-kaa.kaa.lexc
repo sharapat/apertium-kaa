@@ -626,7 +626,9 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 %<prc_fplan%>:%>%{M%}%{A%}%{K%} CLITICS-NO-COP ;
 
 %<gna_perf%>:%>%{I%}p CLITICS-NO-COP ;
-%<neg%>%<gna_perf%>:%{M%}%{A%}%>%{E%} CLITICS-NO-COP ;
+%<neg%>%<gna_perf%>:%>%{M%}%{A%}%>%{E%} CLITICS-NO-COP ;
+
+!%<gna_until%>:%>%{G%}%{ъ%}%{A%}nsh%{A%} CLITICS-NO-COP ;
 
 %<ger_fut%>:%>%{A%}r GER-POSSESSIVES ;
 %<neg%>%<ger_fut%>:%>%{M%}%{A%}%>s GER-POSSESSIVES ;
@@ -1469,6 +1471,7 @@ ekolog:ekolog N1 ; ! ""
 ekologiya:ekologiya N1 ; ! ""
 ekonomika:ekonomika N1 ; ! ""
 ekspeditsiya:ekspeditsiya N1 ; ! ""
+pozitsiya:pozitsiya N1 ; ! ""
 eksport:eksport N1 ; ! ""
 ekvator:ekvator N1 ; ! ""
 el:el N1 ; ! ""
@@ -3968,7 +3971,7 @@ sor:sor N1 ; ! ""
 sorpa:sorpa N1 ; ! ""
 shor% jer:shor% jer N1 ; ! ""
 sud:sud N1 ; ! ""
-sotsiologiya:sotsiologiya N1 ; ! ""
+sotsialist:sotsialist N1 ; ! "" ! Use/MT
 soyıw:soyıw N1 ; ! ""
 soqır:soqır N1 ; ! ""
 soqqı:soqqı N1 ; ! ""
@@ -7349,9 +7352,20 @@ eki:ekew NUM-COLL ; ! "" ! FIXME: check
 
 LEXICON ProperNouns
 
+Angliya:Angliya NP-TOP ; ! ""
+Evraziya:Evraziya NP-TOP ; ! ""
+Britaniya:Britaniya NP-TOP ; ! ""
+Braziliya:Braziliya NP-TOP ; ! ""
+Yaponiya:Yaponiya NP-TOP ; ! ""
+Avstriya:Avstriya NP-TOP ; ! ""
+Avstraliya:Avstraliya NP-TOP ; ! ""
+Vizantiya:Vizantiya NP-TOP ; ! ""
+Shveytsariya:Shveytsariya NP-TOP ; ! ""
+
 Aral:Aral NP-TOP ; ! ""
 Qaraqalpaqstan:Qaraqalpaqstan NP-TOP ; ! ""
 Rossiya:Rossiya NP-TOP ; ! ""
+Moskva:Moskva NP-TOP ; ! ""
 Samarqand:Samarqand NP-TOP ; ! ""
 Qazaqstan:Qazaqstan NP-TOP ; ! ""
 O%'zbekstan:O%'zbekstan NP-TOP ; ! ""
@@ -7790,7 +7804,8 @@ shıq:shıq Vinfl-AUX ; !
 jat:jatır Vinfl-AUX-IMPF ; ! Dir/LR
 jat:atır Vinfl-AUX-IMPF ; ! 
 
-jat:jat Vinfl-AUX ; ! 
+jat:jat Vinfl-AUX ; ! Dir/LR
+jat:at Vinfl-AUX ; !  
 tur:tur Vinfl-AUX ; ! 
 otır:otır Vinfl-AUX ; ! 
 
@@ -7843,6 +7858,7 @@ joq:joq INTERJ ; ! "no"
 ! мәсeлeн:мәсeлeн INTERJ ; ! "e.g."
 ! мысaлы:мысaлы INTERJ ; ! "e.g."
 mu%'mkin:mu%'mkin INTERJ ; ! "probably"
+že:že INTERJ ; 
 
 LEXICON Abbreviations
 
