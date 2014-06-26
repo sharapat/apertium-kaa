@@ -37,3 +37,13 @@ spectie  beknazar, one thing we can do
 3:19:54 AM	spectie  transliterate to karakalpak
 3:20:05 AM	spectie  then try looking them up in the corpus
 3:20:15 AM	spectie  and add the ones that you find in the corpus
+
+---------------
+
+spectie  btw
+11:27:21 AM	spectie  aida has some texts from wikipedia in her eng-kaz folder
+11:27:27 AM	spectie  you could try translating them with kaz-kaa
+11:27:28 AM	spectie  for wikipedia
+11:27:29 AM	spectie  e.g.
+11:27:32 AM	spectie  http://kaa.wikipedia.org/wiki/Qazaqstan
+11:27:53 AM	spectie  https://svn.code.sf.net/p/apertium/svn/incubator/apertium-eng-kaz/texts/kazakhstan1.kaz.txt
