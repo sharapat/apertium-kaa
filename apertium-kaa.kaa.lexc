@@ -1144,6 +1144,7 @@ Quran:Quran N1 ; ! ""
 a%'debiyat:a%'debiyat N1 ; ! ""
 a%'det:a%'det N1 ; ! ""
 a%'dillik:a%'dillik N1 ; ! ""
+a%'hmiyet:a%'hmiyet N1 ; ! ""
 a%'jel:a%'jel N1 ; ! ""
 a%'ke:a%'ke N1 ; ! ""
 a%'ke:a%'ke N1 ; ! ""
@@ -1732,6 +1733,7 @@ jılqı:jılqı N1 ; ! ""
 jılqıshı:jılqıshı N1 ; ! ""
 jınıs:jınıs N1 ; ! ""
 jır:jır N1 ; ! ""
+jıraw:jıraw N1 ; ! ""
 ka%'sip:ka%'sip N1 ; ! ""
 kadr:kadr N1 ; ! ""
 kafe:kafe N1 ; ! ""
@@ -5953,6 +5955,7 @@ sına:sına V-TV ; ! ""
 sıpır:sıpır V-TV ; ! ""
 sır:sır V-TV ; ! ""
 boya:boya V-TV ; ! ""
+boyla:boyla V-TV ; ! ""
 silk:silk V-TV ; ! ""
 sin%'ir:sin%'ir V-TV ; ! ""
 su%'y:su%'y V-TV ; ! ""
@@ -7198,11 +7201,13 @@ birew:birew PRON-IND ; ! !"someone" Use/MT
 
 barlıq:barlıq PRON-QNT ; ! ""
 ba%'ri:ba%'ri PRON-QNT-POSS ; ! "everyone"  ! FIXME: in the end, this really shouldn't create <px*> tags too (same problem for kymorph)
+ba%'rshe:ba%'rshe PRON-QNT ; ! ""
 ! бәрі PRON-IND ; ! "everyone"  !!! This is an alternate of below ! FIXME: true for Kazakh too?
 birew:birew PRON-QNT ; ! ""
 bir% qatar:bir% qatar PRON-QNT ; !
 ekew:ekew PRON-QNT ; ! "both" !Use/MT
 geybirew:geybirew PRON-QNT ; ! 
+ha%'mme:ha%'mme PRON-QNT ; ! 
 ha%'r% kim:ha%'r% kim PRON-QNT ; ! ""
 ko%'bisi:ko%'bisi PRON-QNT ; ! "most" !Use/MT
 
@@ -7233,11 +7238,6 @@ usı:usı DET-DEM ; ! ""
 ! сoнaу:сoнaу DET-DEM ;
 ! oсынaу:oсынaу DET-DEM ;
 
-
-! ha'r% bir:ha'r% bir DET-XXX ; ! ""
-! ha'r% tu'rli:ha'r% tu'rli DET-XXX ; ! ""
-! hesh% bir:hesh% bir DET-XXX ; ! ""
-! hesh% qanday:hesh% qanday DET-XXX ; ! ""
 ha%'r:ha%'r DET-QNT ; ! "every"
 ha%'r% bir:ha%'r% bir DET-QNT ; ! "each"
 ha%'r% tu%'rli:ha%'r% tu%'rli DET-QNT ; ! "~every kind"
@@ -7257,47 +7257,26 @@ millionlag%'an:millionlag%'an DET-QNT ; ! ""
 milliardlag%'an:milliardlag%'an DET-QNT ; ! ""
 ! күллі:күллі DET-QNT ; ! ""
 ! исі:исі DET-QNT ; ! ""
-! 
+
 ! әлдeбір:әлдeбір DET-IND ; ! "a"
 ! бір:бір DET-IND ; ! "a"
-! кeй:кeй DET-IND ; ! "some"
-! кeйбір:кeйбір DET-IND ; ! "some"
-! қaйсыбір:қaйсыбір DET-IND ; ! "some"
 ! әлдeнeшe:әлдeнeшe DET-IND ; ! ""
 ! бірeр:бірeр DET-IND ; ! ""
-! 
-qay:qay DET-ITG ; ! "which"
-! қaйсы:қaйсы DET-ITG ; ! "which"
-! 
-! eшбір:eшбір DET-NEG ; ! "none, no"
-! eшқaндaй:eшқaндaй DET-NEG ; ! "no [kind of], none"
-! 
-! өз:өз DET-REF ; ! "oneself's"
-! 
-o%'z:o%'z DET-REF ; 
-! 
-! bar:bar DET-XXX ; ! ""
-barlıq:barlıq DET-QNT ; ! ""
+
 bir:bir DET-IND ; ! ""
-! bir% neshe:bir% neshe DET-XXX ; ! ""
-! ha'r% bir:ha'r% bir DET-XXX ; ! ""
-! ha'r% tu'rli:ha'r% tu'rli DET-XXX ; ! ""
-! hesh% bir:hesh% bir DET-XXX ; ! ""
-! hesh% qanday:hesh% qanday DET-XXX ; ! ""
-! ju%'zlegen:ju%'zlegen DET-XXX ; ! ""
-! qaysı:qaysı DET-XXX ; ! ""
-! qaysıbir:qaysıbir DET-XXX ; ! ""
-! geybir:geybir DET-XXX ; ! ""
-! ko%'plegen:ko%'plegen DET-XXX ; ! ""
-! pu%'tkil:pu%'tkil DET-XXX ; ! ""
-! milliardlag%'an:milliardlag%'an DET-XXX ; ! ""
-! millionlag%'an:millionlag%'an DET-XXX ; ! ""
-! mın%'lag%'an:mın%'lag%'an DET-XXX ; ! ""
-! ol:ol DET-XXX ; ! ""
-! onlag%'an:onlag%'an DET-XXX ; ! ""
-! pu'tkil:pu'tkil DET-XXX ; ! ""
+gey:gey DET-IND ; ! ""
+geybir:geybir DET-IND ; ! ""
+qaysıbir:qaysıbir DET-IND ; ! ""
+ha'r% tu'rli:ha'r% tu'rli DET-IND ; ! ""
 
+hesh% bir:hesh% bir DET-NEG ; ! ""
+hesh% qanday:hesh% qanday DET-NEG ; ! ""
 
+qay:qay DET-ITG ; ! "which"
+qaysı:qaysı DET-ITG ; ! ""
+kim:kim DET-ITG ; ! ""
+
+o%'z:o%'z DET-REF ; 
 
 LEXICON Numerals 
 
