@@ -620,18 +620,28 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 
 %<neg%>:%>%{M%}%{A%} V-NONFINITE-REGULAR_NEGATIVE ;
 
+! Participles
 %<prc_perf%>:%>%{I%}p CLIT-GHANA-ETC ;
+%<prc_perf%>:%>%{o%}%{I%}п CLIT-GHANA-ETC ; ! Dir/LR
 %<neg%>%<prc_perf%>:%{M%}%{A%}%>%{E%} CLIT-GHANA-ETC ;
 %<prc_vol%>:%>%{G%}%{ъ%}%{I%} VOL-ENDINGS ;
 %<prc_fplan%>:%>%{M%}%{A%}%{K%} CLITICS-NO-COP ;
+%<prc_fplan%>:%>%{M%}%{A%}%{K%}sh%{I%} CLITICS-NO-COP ;           ! Dir/LR
+%<prc_plan%>:%>%{G%}%{ъ%}%{A%}l%{I%} CLIT-GHANA-ETC ;
 
+! Verbal adverbs
 %<gna_perf%>:%>%{I%}p CLITICS-NO-COP ;
 %<neg%>%<gna_perf%>:%>%{M%}%{A%}%>%{E%} CLITICS-NO-COP ;
 
-!%<gna_until%>:%>%{G%}%{ъ%}%{A%}nsh%{A%} CLITICS-NO-COP ;
+%<gna_until%>:%>%{G%}%{ъ%}%{A%}nsh%{A%} CLITICS-NO-COP ;
+%<gna_after%>:%>%{G%}%{A%}л%{I%} CLITICS-NO-COP ;
 
+! Verbal Adjectives
 %<ger_fut%>:%>%{A%}r GER-POSSESSIVES ;
 %<neg%>%<ger_fut%>:%>%{M%}%{A%}%>s GER-POSSESSIVES ;
+
+%<gpr_ppot%>:%>%{A%}r%>l%{I%}k # ;
+%<neg%>%<gpr_ppot%>:%>%{M%}%{A%}%>sl%{I%}%{K%} # ;
 
 LEXICON V-COMMON
 
