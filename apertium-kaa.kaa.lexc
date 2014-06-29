@@ -139,6 +139,8 @@ Multichar_Symbols
 %{а%}
 %{с%}
 
+%{❗%}    ! blocks normal phon stuff, like fronting harmony
+
 %>
 %  
 %'
@@ -2466,7 +2468,7 @@ taqır:taqır N1 ; ! ""
 taraq:taraq N1 ; ! ""
 taraw:taraw N1 ; ! ""
 tarelka:tarelka N1 ; ! ""
-tariyx:tariyx N1 ; ! ""
+tariyx:tariyx%{❗%} N1 ; ! ""
 tariyxshı:tariyxshı N1 ; ! ""
 tatar:tatar N1 ; ! ""
 taw:taw N1 ; ! ""
@@ -4120,7 +4122,6 @@ jetispewshilik:jetispewshilik N1 ; ! ""
 ta%'rep:ta%'rep N1 ; ! ""
 taraw:taraw N1 ; ! ""
 taraq:taraq N1 ; ! ""
-tariyxshı:tariyxshı N1 ; ! ""
 tarmaq:tarmaq N1 ; ! ""
 tas:tas N1 ; ! ""
 tas% sho%'p:tas% sho%'p N1 ; ! ""
