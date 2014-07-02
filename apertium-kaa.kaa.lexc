@@ -137,7 +137,9 @@ Multichar_Symbols
 %{ъ%}    ! turns to ' sometimes; replaces %{'%} and %{%_%}
 
 %{а%}
+%{э%}
 %{с%}
+%{з%}
 
 %{❗%}    ! blocks normal phon stuff, like fronting harmony
 
@@ -2620,7 +2622,6 @@ vokal:vokal N1 ; ! ""
 vzvod:vzvod N1 ; ! ""
 wa%'de:wa%'de N1 ; ! ""
 wa%'layat:wa%'layat N1 ; ! ""
-waqıt:waqıt N1 ; ! ""
 watan:watan N1 ; ! ""
 xabar:xabar N1 ; ! ""
 xabar:xabar N1 ; ! ""
@@ -4876,6 +4877,8 @@ bet:bet N1 ; ! ""
 o%'n%'ip:o%'n%'ip N1 ; ! ""
 
 mlrd:mlrd%{а%}%{с%} N1-ABBR ; ! "billion"
+km:km%{э%}%{з%} N1-ABBR ; ! "km"
+mm:mm%{э%}%{з%} N1-ABBR ; ! "km"
 
 LEXICON  Verbs
 abay% bol:abay% bol V-IV ; ! ""
@@ -8051,7 +8054,6 @@ km²:km² ABBR ; ! "km²"
 km²:km2 ABBR ; ! "km²" Dir/LR
 km³:km³ ABBR ; ! "km³"
 km³:km3 ABBR ; ! "km³" Dir/LR
-km:km ABBR ; ! "km"
 ma%'ml:ma%'ml ABBR ; ! "ma'mleket"
 t%.b%.:t%.b%. ABBR ; ! "etc."
 j%.:j%. ABBR ; ! "year"
