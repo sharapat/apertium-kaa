@@ -143,6 +143,7 @@ Multichar_Symbols
 
 %{❗%}    ! blocks normal phon stuff, like fronting harmony
 %{ь%}    ! forces front harmony
+%{ꙑ%}    ! forces back harmony
 
 %>
 %  
@@ -2478,7 +2479,7 @@ taqır:taqır N1 ; ! ""
 taraq:taraq N1 ; ! ""
 taraw:taraw N1 ; ! ""
 tarelka:tarelka N1 ; ! ""
-tariyx:tariyx%{❗%} N1 ; ! ""
+tariyx:tariyx%{ꙑ%} N1 ; ! ""
 tariyxshı:tariyxshı N1 ; ! ""
 tatar:tatar N1 ; ! ""
 taw:taw N1 ; ! ""
