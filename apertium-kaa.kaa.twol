@@ -196,7 +196,7 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | :0 ]* _ ;
 %{I%}:0 <=> [ %{n%}:n %{N%}:0 ]/[ :0 - %{n%}: ]* _ .#. ;
 
 "Delete ablative {D} after {n}"
-%{D%}:0 <=> %{n%}:/[ :0 - %{n%}: ]* _ :n ;
+%{D%}:0 <=> %{n%}:/[ :0 - %{n%}: ]* _ %{A%}: :n ;
         except
             [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | :0 ]* _ ;
 
