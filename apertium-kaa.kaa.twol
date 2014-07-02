@@ -95,7 +95,8 @@ Rules
 Cx:Cy <=> :Vow [ :0 | :%' ]* _ [ %>: :Vow ]/[ :%' | [ :0 - %>: ] ]* ;
           ! :Vow (:0) _ %{ъ%}: %>: :0* :Vow ;
           except
-            %{❗%}:0 _ ;
+            ! %{❗%}:0 _ ;
+            _ %{❗%}:0 ;
           where Cx in ( k q p ) ! к қ )
                 Cy in ( g g b ) ! г ғ )
                 matched;
