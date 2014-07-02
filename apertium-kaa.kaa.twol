@@ -182,8 +182,13 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 "Delete accusative {I} after {n}"
 %{I%}:0 <=> [ %{n%}:n %{N%}:0 ]/[ :0 - %{n%}: ]* _ .#. ;
 
+"Delete ablative {D} after {n}"
+%{D%}:0 <=> %{n%}:/[ :0 - %{n%}: ]* _ ;
+
 "{D} nasal harmony"
 %{D%}:n <=> :Nasal ( :%' ) :0* _ :Vow* :Nasal ;
+        except
+            %{n%}:/[ :0 - %{n%}: ]* _ ;
 
 "Back-vowel epenthesis"
 %{y%}:ı <=> [ :BackVow [ :Cns* :Cns ]/:%' ]/:0 _ [ :Cns :Cns ]/[ :%' | :0 ] ;
