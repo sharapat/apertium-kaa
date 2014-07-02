@@ -109,9 +109,11 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 
 "{A} vowel harmony"
 %{A%}:e <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] [ :Cns* :CnsRight ]/:%' ]/[ %>: | % | [ :0 - %{❗%}: ] | %{ъ%}: ] _ ;
+            [ %{ь%}: :Cns* ]/[ :0 - %{ь%}: ] _ ;
 
 "{I} vowel harmony"
 %{I%}:i <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] [ :Cns* :CnsRight ]/:%' ]/[ %>: | % | [ :0 - %{❗%}: ] | %{ъ%}: ] _ ;
+            [ %{ь%}: :Cns* ]/[ :0 - %{ь%}: ] _ ;
         except
             [ %{n%}: %{N%}:0 ]/[ :0 - %{n%}: ]* _ .#. ; ! px3 + accusative
 
@@ -122,6 +124,7 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ] /[ %>: | %  | %{ъ%}:0 ] _ ;
 %{ъ%}:%' <=> :g _ :BackVow/[ :0 ]* ;
          except
              _ [ :FrontableVow :%' ]/[ :0 - %{ъ%}: ]* ;
+            [ %{ь%}: :Cns* ]/[ :0 - %{ь%}: ] _ ;
 
 !"q to g intervocalically across morpheme boundary"
 !q:g <=> _ [ %>: :Vow ]/[ :0 - %>: ] ;
