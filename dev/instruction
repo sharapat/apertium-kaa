@@ -49,11 +49,15 @@ spectie  btw
 11:27:53 AM	spectie  https://svn.code.sf.net/p/apertium/svn/incubator/apertium-eng-kaz/texts/kazakhstan1.kaz.txt
 
 
+-------------
+
+spectie  beknazar, one thing that is missing is numerals
+5:52:22 PM	spectie  the numeral lexicon in kazakh is quite complicated
+5:52:28 PM	spectie  but i think you can manage to do it with copy/past
+
 -------------Firespeaker -----------
 
-dekabrde
-tariyxı
-tariyxınan
+
 sebepli
 a'tirapında
 ta'repi
@@ -68,3 +72,6 @@ qosıqlarınan
 onnan, bunnan, sonnan...
 tariyxta
 ko'beytiriledi
+retlestiriwshi - ive added as noun. OK? or derive from
+ta'repleme
+VII
