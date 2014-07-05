@@ -26,17 +26,6 @@ spectre  beknazar, so the idea is to take some words from the frequency list ---
 1:25:15 AM	spectre  and categorise them
 1:25:26 AM	spectre  in one step you just go through the list and add the category to all of them
 
--------------
-
-spectie  beknazar, one thing we can do
-3:19:11 AM	spectie  is try adding proper names too
-3:19:19 AM	spectie  there are ~4000 proper names in kazakh transducer
-3:19:32 AM	beknazar  yup, i will copy as many as i can then
-3:19:41 AM	spectie  beknazar, i would suggest:
-3:19:49 AM	spectie  take list from kazakh
-3:19:54 AM	spectie  transliterate to karakalpak
-3:20:05 AM	spectie  then try looking them up in the corpus
-3:20:15 AM	spectie  and add the ones that you find in the corpus
 
 ---------------
 
@@ -58,23 +47,18 @@ spectie  beknazar, one thing that is missing is numerals
 -------------Firespeaker -----------
 
 
-sebepli
-a'tirapında
-ta'repi
-ta'repinen
 bizler
 bizin'
-barlıg'ı
-baratırg'an
+baratırg'an & kiyatırg'an
 kelmekte
-sonnan
-qosıqlarınan
 onnan, bunnan, sonnan...
 tariyxta
-ko'beytiriledi
 retlestiriwshi - ive added as noun. OK? or derive from
 ta'repleme
 VII
+neshinshi
+bilimlirek
+etpes
 
 ----------
 
