@@ -61,8 +61,8 @@ CnsApostroph = G N
                g n ;
 
 ! these consonants are voiceless when they're at the end of a word
-VoicelessCns = b v p f d t j s g h k q 
-               B V P F D T J S G H K Q ; 
+VoicelessCns = b v p f d t j s g h k q x 
+               B V P F D T J S G H K Q X ; 
 
 VoicedCns = z y r l m n w
             Z Y R L M N W ;
@@ -120,6 +120,7 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | :0 ]* _ ;
             [ :k :Cns* ]/:0 _ ;
         except
             [ %{n%}: %{N%}:0 ]/[ :0 - %{n%}: ]* _ .#. ; ! px3 + accusative
+            :Vow/:0 _ ;
 
 !"' is impossible after k"
 !%{'%}:0 <=> :k (:0)  _ ; 
