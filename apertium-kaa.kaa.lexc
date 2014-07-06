@@ -287,6 +287,11 @@ LEXICON ABESSIVE-POSTPOSITION
 
 %+sız%<post%>:%>s%{I%}z CLITICS-NO-COP ;
 
+LEXICON LI-POSTPOSITION
+
+%+lı%<post%>:%>l%{I%} CLITICS-NO-COP ;
+
+
 LEXICON PLURAL
 
 %<pl%>:%>l%{A%}r CASES-ETC ;
@@ -299,6 +304,7 @@ PLURAL ;
 CASES-ETC ;
 POSSESSIVES ;
 ABESSIVE-POSTPOSITION ;
+LI-POSTPOSITION ;
 
 LEXICON N-INFL-COMMON
 
@@ -5269,6 +5275,21 @@ Vizantiya:Vizantiya NP-TOP ; ! ""
 Shveytsariya:Shveytsariya NP-TOP ; ! ""
 Qıtay:Qıtay NP-TOP ; ! ""
 
+Armeniya:Armeniya NP-TOP ; ! ""
+Boliviya:Boliviya NP-TOP ; ! ""
+Efiopiya:Efiopiya NP-TOP ; ! ""
+Frantsiya:Frantsiya NP-TOP ; ! ""
+Gruziya:Gruziya NP-TOP ; ! ""
+İndiya:İndiya NP-TOP ; ! ""
+İrlandiya:İrlandiya NP-TOP ; ! ""
+İtaliya:İtaliya NP-TOP ; ! ""
+Moskva:Moskva NP-TOP ; ! ""
+
+Ispaniya:Ispaniya NP-TOP ; ! ""
+!Irlandiya:Irlandiya NP-TOP ; ! ""
+!Italya:Italya NP-TOP ; ! ""
+Israil:Israil NP-TOP ; ! ""
+
 Amerika% qurama% shtatları:Amerika% qurama% shtatları NP-TOP ; ! ""
 AQSh:AQSh NP-TOP ; ! ""
 Aral:Aral NP-TOP ; ! ""
@@ -5276,7 +5297,6 @@ Bozataw:Bozataw NP-TOP ; ! ""
 Ullı% Britaniya:Ullı% Britaniya NP-TOP ; ! ""
 Qaraqalpaqstan:Qaraqalpaqstan NP-TOP ; ! ""
 Rossiya:Rossiya NP-TOP ; ! ""
-Moskva:Moskva NP-TOP ; ! ""
 Kiev:Kiev NP-TOP ; ! ""
 Samarqand:Samarqand NP-TOP ; ! ""
 Qazaqstan:Qazaqstan NP-TOP ; ! ""
@@ -5302,18 +5322,13 @@ Afrika:Afrika NP-TOP ; ! ""
 Tashkent:Tashkent NP-TOP ; ! ""
 Istanbul:Istanbul NP-TOP ; ! ""
 Tu%'rkiya:Tu%'rkiya NP-TOP ; ! ""
-Ispaniya:Ispaniya NP-TOP ; ! ""
-Irlandiya:Irlandiya NP-TOP ; ! ""
-Italya:Italya NP-TOP ; ! ""
-Israil:Israil NP-TOP ; ! ""
+
 Yerusalim:Yerusalim NP-TOP ; ! ""
 Hindstan:Hindstan NP-TOP ; ! ""
 Anglya:Anglya NP-TOP ; ! ""
-Israil:Israil NP-TOP ; ! ""
 Yerusalim:Yerusalim NP-TOP ; ! ""
 Anglya:Anglya NP-TOP ; ! ""
 Finlyandiya:Finlyandiya NP-TOP ; ! ""
-Frantsiya:Frantsiya NP-TOP ; ! ""
 Zimbabve:Zimbabve NP-TOP ; ! ""
 Ta%'jikistan:Ta%'jikistan NP-TOP ; ! ""
 Tuva:Tuva NP-TOP ; ! ""
@@ -5346,7 +5361,7 @@ Belorus:Belorus NP-TOP ; ! "Belarus" Dir/LR
 Keles:Keles NP-TOP ; ! "Keles river"
 Moldaviya:Moldaviya NP-TOP ; ! "Moldavia, Moldova"
 Nyu%-York:Nyu%-York NP-TOP ; ! "New York"
-Orenburg:Orenburg NP-TOP ; ! "" Dir/LR
+Orenburg:Orenburg NP-TOP ; ! ""
 Talas:Talas NP-TOP ; ! "Talas river"
 Tu%'rkmenstan:Tu%'rkmenstan NP-TOP ; ! "" Dir/LR
 Turkistan:Turkistan NP-TOP ; ! "Turkistan" Dir/LR
