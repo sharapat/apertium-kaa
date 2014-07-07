@@ -78,6 +78,7 @@ Multichar_Symbols
 %<ifi_evid%>  ! -{I}пт{I}
 %<fut%>       ! -{I}р
 %<fut_plan%>  ! -{M}{A}{K}
+%<prog%>      ! -{M}{A}{K}t{A}         ! only takes 3rd person, not the only progressive construction
 %<prc_perf%>  ! Perfect participle
 %<prc_impf%>  ! Imperfect participle
 %<prc_vol%>   ! Volition participle
@@ -522,6 +523,10 @@ LEXICON VOL-ENDINGS
 !%<p2%>%<frm%>%<sg%>:%>ң%{I%}з CLIT-GHANA-ETC ;
 !%<p2%>%<frm%>%<pl%>:%>л%{A%}р%>%{I%}ң%{I%}з CLIT-GHANA-ETC ;
 
+LEXICON V-MAKTA-INFL
+
+%<p3%>%<sg%>: # ;
+%<p3%>%<pl%>: # ;
 
 LEXICON KI
 
@@ -611,6 +616,9 @@ LEXICON V-FINITE-IRREGULAR_NEGATIVE
 
 %<fut%>:%>%{A%}r V-PERS-S1 ;
 %<neg%>%<fut%>:%>%{M%}%{A%}s V-PERS-S1 ;
+
+%<prog%>:%>%{M%}%{A%}%{K%}t%{A%} V-MAKTA-INFL ;
+!%<neg%>%<prog%>:%>%{M%}%{A%}%{K%}t%{A%}% emes V-MAKTA-INFL ;  ! FIXME: negative form
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
