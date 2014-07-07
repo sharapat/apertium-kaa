@@ -92,7 +92,7 @@ Multichar_Symbols
 %<gpr_impf%>  ! -{E}{T}{I}н            ! imperfect verbal adjective
 %<gpr_pot%>   ! -{U}ш{I}               ! potential verbal adjective
 %<gpr_ppot%>  ! -{A}рл{I}{K}
-%<gpr_fut%>   ! -{I}р                  ! future verbal adjective
+%<gpr_fut%>   ! -{A}r                  ! future verbal adjective
 %<ger%>       ! -{U}
 %<ger_past%>  ! -{G}{A}н
 %<ger_perf%>  ! -{G}{A}нл{I}{K}   (stresses the fact that something happened)
@@ -610,7 +610,7 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 LEXICON V-FINITE-IRREGULAR_NEGATIVE
 
 %<fut%>:%>%{A%}r V-PERS-S1 ;
-%<neg%>%<fut%>:%>m%{A%}s V-PERS-S1 ;
+%<neg%>%<fut%>:%>%{M%}%{A%}s V-PERS-S1 ;
 
 LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
@@ -669,8 +669,11 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 %<gna_after%>:%>%{G%}%{A%}л%{I%} CLITICS-NO-COP ;
 
 ! Verbal Adjectives
-%<ger_fut%>:%>%{A%}r GER-POSSESSIVES ;
-%<neg%>%<ger_fut%>:%>%{M%}%{A%}%>s GER-POSSESSIVES ;
+%<ger_fut%>:%>%{A%}r GER-INFL ;
+%<neg%>%<ger_fut%>:%>%{M%}%{A%}%>s GER-INFL ;
+
+%<gpr_fut%>:%>%{A%}r # ;
+%<neg%>%<gpr_fut%>:%>%{M%}%{A%}%>s # ;
 
 %<gpr_ppot%>:%>%{A%}r%>l%{I%}k # ;
 %<neg%>%<gpr_ppot%>:%>%{M%}%{A%}%>sl%{I%}%{K%} # ;
@@ -6835,11 +6838,10 @@ ayıpla:ayıpla V-IV ; ! ""
 tarqas:tarqas V-IV ; ! ""
 qıshqır:qıshqır V-IV ; ! ""
 baqır:baqır V-IV ; ! ""
-qıshqır:qıshqır V-IV ; ! ""
 sog%'ıs:sog%'ıs V-IV ; ! ""
 alalan:alalan V-IV ; ! ""
 alar:alar V-IV ; ! ""
-sho%'g:sho%'g V-IV ; ! ""
+sho%'k:sho%'k V-IV ; ! ""
 tınıshsızlan:tınıshsızlan V-IV ; ! ""
 alaqla:alaqla V-IV ; ! ""
 tınıshsızlan:tınıshsızlan V-IV ; ! ""
