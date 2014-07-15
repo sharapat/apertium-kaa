@@ -139,8 +139,15 @@ Multichar_Symbols
 
 %{а%}
 %{э%}
-%{с%}
+!%{с%}
+!%{з%}
+
+%{й%}
+%{л%}
+%{н%}
 %{з%}
+%{т%}
+%{с%}
 
 %{❗%}    ! blocks normal phon stuff, like fronting harmony
 %{ь%}    ! forces front harmony
@@ -185,12 +192,12 @@ LEXICON CASE-NONOM
 ! only it does not include nominative
 !   1<num><nom> = 1, 1<num><acc> = 1-{N}{I}
 
-%<gen%>:%>%{N%}%{I%}n%' CLITICS-NO-COP ;
-%<dat%>:%>%{G%}%{A%} CLITICS-NO-COP ;
+%<gen%>:%>%{N%}%{I%}n%{ъ%} CLITICS-NO-COP ;
+%<dat%>:%>%{G%}%{ъ%}%{A%} CLITICS-NO-COP ;
 %<acc%>:%>%{N%}%{I%} CLITICS-NO-COP ;
 %<abl%>:%>%{D%}%{A%}n # ;
 %<loc%>:%>%{D%}%{A%} # ;
-%<ins%>:%>%{M%}en CLITICS-NO-COP ;
+%<ins%>:%>%{M%}enen CLITICS-NO-COP ;
 
 LEXICON CASE-ETC-NONOM
 
