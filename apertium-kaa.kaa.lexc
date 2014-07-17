@@ -132,10 +132,8 @@ Multichar_Symbols
 %{s%}
 %{n%}
 %{l%}
-! %{'%}
 %{y%}
-! %{%_%}
-%{ъ%}    ! turns to ' sometimes; replaces %{'%} and %{%_%}
+%{ъ%}    ! turns to ' sometimes
 
 %{а%}
 %{э%}
@@ -158,6 +156,8 @@ Multichar_Symbols
 %'
 %~
 %+
+%,
+%.
 
 LEXICON Root
 
@@ -7121,10 +7121,6 @@ QKP:QKP ABBR ; ! ""
 %\%<sent%>:%\ # ;
 %/%<sent%>:%/ # ;
 ʻ%<apos%>:ʻ # ;
-
-! Temporary numeral lexicon
-!<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
-
 
 !==============!
  LEXICON Digits ! Use/Circ

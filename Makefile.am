@@ -37,6 +37,7 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 .deps/$(LANG1).LR.lexc.hfst: .deps/$(LANG1).LR.lexc
 	hfst-lexc -v --format foma $< -o $@
 
+
 .deps/$(LANG1).RL.hfst: .deps/$(LANG1).RL.lexc.hfst .deps/$(LANG1).twol.hfst
 	hfst-compose-intersect -1 .deps/$(LANG1).RL.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
 
