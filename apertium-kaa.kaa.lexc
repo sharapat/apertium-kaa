@@ -598,7 +598,7 @@ LEXICON A1
 %<adj%>:%{ъ%} CLITICS-INCL-COP ;                             
 %<adj%>%<comp%>:%{ъ%}%>%{I%}r%{A%}%{K%} CLIT ; !CLITICS-INCL-COP ;   
 
-%<adj%>%<subst%>:%{ъ%} SUBST ;                             
+%<adj%>%<subst%>:%{ъ%} FULL-NOMINAL-INFLECTION ;                             
 %<adj%>%<comp%>%<subst%>:%{ъ%}%>%{I%}r%{A%}%{K%} SUBST ;   
 
 %<adj%>%<advl%>:%{ъ%} CLIT ; ! COMMON-CLITICS ;                               
@@ -620,7 +620,7 @@ LEXICON A3
 !# көктeмгі, бaсты, бaр, жoқ
 
 %<adj%>:%{ъ%} CLITICS-INCL-COP ;   
-%<adj%>%<subst%>:%{ъ%} SUBST ;           
+%<adj%>%<subst%>:%{ъ%} FULL-NOMINAL-INFLECTION ;           
                                     
 LEXICON A4 
 ! "pure" adjectives - no adverbial and substantive readings, no comparison levels;
@@ -1039,7 +1039,8 @@ bul%<prn%>%<dem%>%<ins%>:bul% menen CLITICS-NO-COP ;
 bul%<prn%>%<dem%>%<loc%>:bundag%{ъ%}ı ATTR-SUBST ;
 ! bul%<prn%>%<dem%>%<loc%>:мұндағы ATTR-SUBST ; ! Dir/LR
 ! bul%<prn%>%<dem%>%<sim%>:мұндай CASES ;
-bul%<prn%>%<dem%>%<sim%>:bunday CASES ; ! Dir/LR
+!bul%<prn%>%<dem%>%<sim%>:bunday CASES ; ! Dir/LR 
+bul%<prn%>%<dem%>%<sim%>:bunday CASES ; ! FIXME: I removed DirLR to generate from Kazakh -FMT
 ! bul%<prn%>%<dem%>%<sim%>%<px3sp%>:мұндай%{I%}%{n%} CASES ;
 ! bul%<prn%>%<dem%>%<sim%>%<pl%>:мұндайлар CASES ;
 ! bul%<prn%>%<dem%>%<sim%>%<pl%>%<px3sp%>:мұндайлары%{n%} CASES ;
@@ -1047,6 +1048,7 @@ bul%<prn%>%<dem%>%<adv%>:bılay CLITICS-INCL-COP ;
 bul%<prn%>%<dem%>%<adv%>:bulay CLITICS-INCL-COP ; ! Dir/LR
 ! bul%<prn%>%<dem%>%<qnt%>:мұнша CLITICS-NO-COP ;
 bul%<prn%>%<dem%>%<px3sp%>:bunısı%{n%} CASES ;
+
 
 bul%<prn%>%<dem%>%<pl%>:bular CASES-ETC ;
 bul%<prn%>%<dem%>%<pl%>%<px3sp%>:buları%{n%} CASES ;
@@ -1553,6 +1555,7 @@ usı:usı DET-DEM ; ! ""
 ! usını:usını DET-DEM ; ! ""
 ! сoнaу:сoнaу DET-DEM ;
 ! oсынaу:oсынaу DET-DEM ;
+ana:ana DET-DEM ; ! ""
 
 ha%'r:ha%'r DET-QNT ; ! "every"
 ha%'r% bir:ha%'r% bir DET-QNT ; ! "each"
@@ -3898,6 +3901,7 @@ piksel:piksel N1 ; ! "pixel"
 ekran:ekran N1 ; ! "screen"
 parol:parol N1 ; ! "password"
 megapiksel:megapiksel N1 ; ! "megapixel(s)"
+arxiv:arxiv N1 ; ! "archive"
 
 
 mlrd:mlrd%{а%}%{с%} N1-ABBR ; ! "billion"
@@ -7083,6 +7087,7 @@ km³:km3 ABBR ; ! "km³" Dir/LR
 ma%'ml:ma%'ml ABBR ; ! "ma'mleket"
 t%.b%.:t%.b%. ABBR ; ! "etc."
 j%.:j%. ABBR ; ! "year"
+jj%.:jj%. ABBR ; ! "year"
 JIO%'.:JIO%' ABBR ; ! "GDP"
 EBRSh:EBRSh ABBR ; ! ""
 TNK:TNK ABBR ; ! ""
