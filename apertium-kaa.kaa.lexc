@@ -455,8 +455,7 @@ LEXICON ABESSIVE-POSTPOSITION
 
 LEXICON LI-POSTPOSITION
 
-%+lı%<post%>:%>l%{I%} CLITICS-NO-COP ;
-
+%+lı%<post%>:%>%{l%}%{I%} CLITICS-NO-COP ;
 
 LEXICON PLURAL
 
@@ -520,6 +519,11 @@ LEXICON N5
 
 : N1 ;
 
+LEXICON N6
+
+: N1 ; 
+N1 ;  ! Dir/LR     ! We want to analyse forms without %{і%}, since they're used
+                   ! but "properly" we want to generate forms with %{і%}
 
 !LEXICON NAT
 ! Nationalites
@@ -1394,8 +1398,10 @@ yag%'nıy:yag%'nıy CS ; ! ""
 ! Adverbial conjunctions = "Отнoситeльныe слoвa"
 ! ==============================================
 
+bolmasa:bolmasa CA ; ! ""
 ! aйтуыншa:aйтуыншa CA ; ! ""
-! aлaйдa:aлaйдa CA ; ! "nevertheless"
+degen% menen:degen% menen CA ; ! "nevertheless"
+lekin:lekin CA ; ! "nevertheless"
 ! әйтпeсe:әйтпeсe CA ; ! ""
 ! әйтсe% дe:әйтсe% дe CA ; ! "nevertheless"
 ! бaсқaшa% aйткaндa:бaсқaшa% aйткaндa CA ; ! ""
@@ -1520,6 +1526,7 @@ geybirew:geybirew PRON-QNT ; !
 ha%'mme:ha%'mme PRON-QNT ; ! 
 ha%'r% kim:ha%'r% kim PRON-QNT ; ! ""
 ko%'bisi:ko%'bisi PRON-QNT ; ! "most" !Use/MT
+ko%'pshilik:ko%'pshilik PRON-QNT ; ! "most" !Use/MT
 
 hesh% kim:hesh% kim PRNNEG ; ! ""
 hesh% na%'rse:hesh% na%'rse PRNNEG ; ! "" Use/MT
@@ -1664,6 +1671,39 @@ neshe:neshe NUM-ITG ;
  LEXICON Nouns
 !=============!
 
+effekt:effekt N6 ; ! ""
+shadlanıw:shadlanıw N1 ; ! ""
+ekran:ekran N1 ; ! ""
+televidenie:televidenie N1 ; ! ""
+disk:disk N1 ; ! ""
+proektor:proektor N1 ; ! ""
+sekund:sekund N1 ; ! ""
+lenta:lenta N1 ; ! ""
+videokasseta:videokasseta N1 ; ! ""
+jıyın:jıyın N1 ; ! ""
+nama:nama N1 ; ! ""
+kinofilm% naması:kinofilm% naması N1 ; ! ""
+prodyuser:prodyuser N1 ; ! ""
+studiya:studiya N1 ; ! ""
+audio:audio N1 ; ! ""
+ko%'shirme:ko%'shirme N1 ; ! ""
+oraw:oraw N1 ; ! ""
+awlaqlanıw:awlaqlanıw N1 ; ! ""
+qaytpaqslıq:qaytpaqslıq N1 ; ! ""
+talpınıs:talpınıs N1 ; ! ""
+da%'reje:da%'reje N1 ; ! ""
+shın%':shın%' N1 ; ! ""
+jetekshilik:jetekshilik N1 ; ! ""
+belgililik:belgililik N1 ; ! ""
+qarawıl:qarawıl N1 ; ! ""
+shok:shok N1 ; ! ""
+u%'nleslik:u%'nleslik N1 ; ! ""
+kelisiklik:kelisiklik N1 ; ! ""
+stsenariyshi:stsenariyshi N5 ; ! ""
+stsenariy:stsenariy N5 ; ! ""
+bank:bank N5 ; ! ""
+injener:injener N5 ; ! ""
+kommunikatsiya:kommunikatsiya N1 ; ! ""
 a%'dalat:a%'dalat N1 ; ! ""
 a%'dalatsızlıq:a%'dalatsızlıq N1 ; ! ""
 a%'debiyat:a%'debiyat N1 ; ! ""
@@ -2554,6 +2594,7 @@ keyis:keyis N1 ; ! ""
 kilogramm:kilogramm N1 ; ! ""
 kilometr:kilometr N1 ; ! ""
 kino:kino N1 ; ! ""
+kinofilm:kinofilm N1 ; ! ""
 kirillitsa:kirillitsa N1 ; ! ""
 kirpik:kirpik N1 ; ! ""
 kishi% balıq:kishi% balıq N1 ; ! ""
@@ -3876,6 +3917,7 @@ Avstraliya:Avstraliya NP-TOP ; ! ""
 Vizantiya:Vizantiya NP-TOP ; ! ""
 Shveytsariya:Shveytsariya NP-TOP ; ! ""
 Qıtay:Qıtay NP-TOP ; ! ""
+Baltıq:Baltıq NP-TOP ; ! ""
 
 Armeniya:Armeniya NP-TOP ; ! ""
 Boliviya:Boliviya NP-TOP ; ! ""
@@ -4018,6 +4060,7 @@ Balenciaga:Balenciaga NP-ANT-M ; ! ""
 Arximed:Arximed NP-ANT-M ; ! ""
 Baqırg'aniy:Baqırg'aniy NP-ANT-M ; ! ""
 Sulayman:Sulayman NP-ANT-M ; ! ""
+Nursultan:Nursultan NP-ANT-M ; ! ""
 
 Abay:Abay NP-ANT-M ; ! ""
 Fizuliy:Fizuliy NP-ANT-M ; ! ""
@@ -4205,6 +4248,7 @@ Begimov:Begimov NP-COG-OV ; ! ""
 Muwsaev:Muwsaev NP-COG-OV ; ! ""
 Divaev:Divaev NP-COG-OV ; ! ""
 Da%'ribaev:Da%'ribaev NP-COG-OV ; ! ""
+Nazarbayev:Nazarbayev NP-COG-OV ; ! ""
 
 Ma%'jitov:Ma%'jitov NP-COG-OV ; ! ""
 Da%'wqaraev:Da%'wqaraev NP-COG-OV ; ! ""
@@ -4293,6 +4337,8 @@ Motorola:Motorola NP-ORG ; ! ""
 Intel:Intel NP-ORG ; ! ""
 Philips:Philips NP-ORG ; ! ""
 Acer:Acer NP-ORG ; ! ""
+Shevron:Shevron NP-ORG ; ! ""
+Tengiz:Tengiz NP-ORG ; ! "Tengiz" !Use/MT
 
 Wikipedia:Wikipedia NP-AL ; ! ""
 Pedtexnikum:Pedtexnikum NP-AL ; ! ""
@@ -4508,6 +4554,15 @@ Stiv:Stiv NP-ANT-M ; ! "Steve"
  LEXICON Adjectives
 !==================!
 
+dawlaspag%'an:dawlaspag%'an A4 ; ! ""
+elektrikalıq:elektrikalıq A1 ; ! ""
+industriyalıq:industriyalıq A1 ; ! ""
+jo'nlewli:jo'nlewli A1 ; ! ""
+birden%-bir:birden%-bir A1 ; ! ""
+muwapıq:muwapıq A1 ; ! ""
+tiyisli:tiyisli A1 ; ! ""
+ılayıq:ılayıq A1 ; ! ""
+ılayıqlı:ılayıqlı A1 ; ! ""
 absolyut:absolyut A4 ; ! ""
 absolyutlik:absolyutlik A4 ; ! ""
 aviatsiyalıq:aviatsiyalıq A4 ; ! ""
@@ -5283,12 +5338,20 @@ orfografiyalıq:orfografiyalıq A4 ; ! ""
 otırıqshı:otırıqshı A4 ; ! ""
 revolyutsiyalıq:revolyutsiyalıq A4 ; ! ""
 to%'l:to%'l A4 ; ! ""
+vizual:vizual A1 ; ! ""
 jergilikli:jergilikli A4 ; ! ""
 
 !===============!
  LEXICON Adverbs
 !===============!
 
+bolmasa:bolmasa ADV ; ! ""
+ekonomikalı:ekonomikalı ADV ; ! ""
+lekin:lekin ADV ; ! ""
+degen% menen:degen% menen ADV ; ! ""
+qatan%':qatan%' ADV ; ! ""
+taban% tirep:taban% tirep ADV ; ! ""
+birden%-bir:birden%-bir ADV ; ! ""
 elede% bolsa:elede% bolsa ADV ; ! "still" ! Use/MT
 ha%'r% waqıt:ha%'r% waqıt ADV ; ! "always"
 ishinde:ishinde ADV ; ! "in"
@@ -5454,6 +5517,7 @@ to%'mengi:to%'mengi ADV-WITH-KI ; ! "lower"
  LEXICON Verbs
 !=============!
 
+jıljı:jıljı V-IV ; ! ""
 abay% bol:abay% bol V-IV ; ! ""
 albıra:albıra V-IV ; ! ""
 jog%'al:jog%'al V-IV ; ! ""
@@ -5493,6 +5557,11 @@ ha%'leklen:ha%'leklen V-IV ; ! ""
 ayırıl:ayırıl V-IV ; ! ""
 alıs:alıs V-IV ; ! ""
 alısla:alısla V-IV ; ! ""
+ko%'mekles:ko%'mekles V-TV ; ! ""
+biriktir:biriktir V-TV ; ! ""
+sarala:sarala V-TV ; ! ""
+awlaqla:awlaqla V-TV ; ! ""
+qamsızlandır:qamsızlandır V-TV ; ! ""
 alıslat:alıslat V-TV ; ! ""
 qızıllan:qızıllan V-IV ; ! ""
 salbıra:salbıra V-IV ; ! ""
@@ -7019,6 +7088,8 @@ TNK:TNK ABBR ; ! ""
 XVF:XVF ABBR ; ! ""
 UEFA:UEFA ABBR ; ! ""
 SSSR:SSSR ABBR ; ! ""
+SBKP:SBKP ABBR ; ! ""
+QKP:QKP ABBR ; ! ""
 
 !===================!
  LEXICON Punctuation
