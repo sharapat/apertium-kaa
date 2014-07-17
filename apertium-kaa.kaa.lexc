@@ -107,6 +107,7 @@ Multichar_Symbols
 %<p2%>        ! Second person
 %<p3%>        ! Third person
 %<frm%>       ! Formality
+%<percent%>   ! Percent
 %<qst%>       ! Modal question particle
 %<emph%>      ! Emphasizing modal particle
 %<mod_ass%>   ! Assertive modal particle
@@ -212,7 +213,7 @@ CASE-ETC-NONOM ;
 LEXICON SUBST-NONOM
 
 FULL-NOMINAL-INFLECTION-NONOM ;
-%<pl%>:%>%{L%}%{A%}r FULL-NOMINAL-INFLECTION-NONOM ;
+%<pl%>:%>l%{A%}r FULL-NOMINAL-INFLECTION-NONOM ;
 
 LEXICON SQRD
 ! This lexicon includes common ways of writing squared, cubed etc.
