@@ -30,7 +30,8 @@ Alphabet
 
  %{а%}:0 %{с%}:0 
  %{э%}:0 %{з%}:0 
- %{т%}:0 %{й%}:0 %{л%}:0 %{н%}:0
+ !%{т%}:0
+ %{й%}:0 %{л%}:0 %{н%}:0
 
  %'
  %>:0 
@@ -78,9 +79,15 @@ Archiphon = %{G%} %{N%} %{K%} %{D%} %{M%} ;
 
 Empty = %{ь%} %{❗%} %{ꙑ%} ;
 
-Abstract =  %{а%} %{с%} %{э%} %{з%} %{т%} %{й%} %{л%} %{н%} ;
+Abstract =  %{а%} %{с%} %{э%} %{з%} %{й%} %{л%} %{н%} ;
 
-AbstCons = %{й%} %{с%} %{з%} %{т%} %{л%} %{н%} ;
+AbstCons = %{й%} %{с%} %{з%} %{л%} %{н%} ;
+
+AbstVcdCns = %{й%} %{з%} %{л%} %{н%} ;
+
+AbstLowSonVcdCns = %{н%} %{л%} ;
+
+AbstVclsCns = %{с%} ;
 
 Rules
 
@@ -108,7 +115,8 @@ Cx:Cy <=> :Vow [ :0 | :%' ]* _ [ %>: :Vow ]/[ :%' | [ :0 - %>: ] ]* ;
                 matched;
 
 "Forward voicing assimilation"
-Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | :0 ]* _ ;
+Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | [ :0 - Abstract: ] ]* _ ;
+          [ AbstVclsCns: ]/[ [ :0 - Abstract: ] | :%- ]* _ ;
           where Cx in ( %{M%}  %{D%}  %{N%} )
                 Cy in (   p      t      t   )
                 matched;
@@ -166,7 +174,8 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | :0 ]* _ ;
 %{E%}:e <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] :Cns* :CnsRight ]/[ %>: | % | :0 ] _ ;
 
 "{N} to d after voiced consonant"
-%{N%}:d <=> [ :VoicedCns | [ :CnsApostroph :%' ] ]/:0* _ ;
+%{N%}:d <=> [ :VoicedCns | [ :CnsApostroph :%' ] ]/[ :0 - Abstract: ]* _ ;
+            [ AbstVcdCns: ]/[ [ :0 - Abstract: ] | :%- ] _ ;
         except
             :Nasal ( :%' ) :0* _ :Vow* :Nasal ; ! Nasal harmony
             %{n%}:/[ :0 - %{n%}: ]* _ ; ! px+gen form
@@ -176,7 +185,8 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | :0 ]* _ ;
 !%{N%}:t <=> [ :VoicelessCns ]/:0 _ ;
 
 "{M} to b after voiced low-sonority consonat"
-%{M%}:b <=> [ :LowSonVoicedCons | [ :n :%' ] ]/[ :0 | %  ] _ ;
+%{M%}:b <=> [ :LowSonVoicedCons | [ :n :%' ] ]/[ [ :0 - Abstract: ] | %  ] _ ;
+            [ AbstLowSonVcdCns: ]/[ [ :0 - Abstract: ] | :%- ] _ ;
         except
             _ :Nasal/:0 ;
             [ :Nasal ( :%' ) :0* ]/[ :0 | %  ] _ [ :Vow* :Nasal ]/[ :0 | %  ] ;  ! Nasal harmony (FMT: CHECK: ignore spaces!)
@@ -198,7 +208,9 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | :0 ]* _ ;
 "Delete genitive and accusative {N} after {n}"
 %{N%}:0 <=> %{n%}:/[ :0 - %{n%}: ]* _ ;
         except
-            [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | :0 ]* _ ;
+            [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | [ :0 - Abstract: ] ]* _ ;
+            [ AbstVclsCns: ]/[ [ :0 - Abstract: ] | :%- ]* _ ;
+
 
 "Delete accusative {I} after {n}"
 %{I%}:0 <=> [ %{n%}:n %{N%}:0 ]/[ :0 - %{n%}: ]* _ .#. ;
@@ -206,10 +218,12 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | :0 ]* _ ;
 "Delete ablative {D} after {n}"
 %{D%}:0 <=> %{n%}:/[ :0 - %{n%}: ]* _ %{A%}: :n ;
         except
-            [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | :0 ]* _ ;
+            [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | [ :0 - Abstract: ] ]* _ ;
+            [ AbstVclsCns: ]/[ [ :0 - Abstract: ] | :%- ]* _ ;
 
 "{D} nasal harmony"
-%{D%}:n <=> :Nasal ( :%' ) :0* _ :Vow* :Nasal ;
+%{D%}:n <=> :Nasal ( :%' ) [ :0 - Abstract: ]* _ :Vow* :Nasal ;
+            %{н%}: ( :%' | :%- ) [ :0 - Abstract: ]* _ :Vow* :Nasal ;
         except
             %{n%}:/[ :0 - %{n%}: ]* _ ;
 
