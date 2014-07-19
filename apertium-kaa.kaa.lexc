@@ -803,7 +803,7 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 %<gpr_past%>:%>%{G%}%{ъ%}%{A%}n V-ADJ ;
 %<gpr_impf%>:%>%{E%}tug%{ъ%}ın V-ADJ ;
 %<gpr_pot%>:%>%{I%}w%>sh%{I%} V-ADJ ;
-%<gpr_fut%>:%>%{A%}r V-ADJ ;
+!%<gpr_fut%>:%>%{A%}r V-ADJ ; ! Irregular NEG in -MAs ?
 
 ! Gerunds
 %<ger%>:%>%{I%}w GER-INFL ;
@@ -963,8 +963,8 @@ ol%<prn%>%<pers%>%<p3%>%<sg%>%<sim%>:onday COMMON-CLITICS ;
 ol%<prn%>%<pers%>%<p3%>%<sg%>%<adv%>:onın%{ъ%}sha COMMON-CLITICS ;
 
 biz%<prn%>%<pers%>%<p1%>%<pl%>:biz PRON-PERS-INFL ; 
-biz%<prn%>%<pers%>%<p1%>%<pl%>:bizler PRON-PERS-INFL ; ! FIXME
-biz%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:bizin%' COMMON-CLITICS ; ! FIXME not sure
+biz%<prn%>%<pers%>%<p1%>%<pl%>:bizler PRON-PERS-INFL ; ! Dir/LR ! FIXME
+biz%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:bizin%' COMMON-CLITICS ; ! Dir/LR ! FIXME not sure
 biz%<prn%>%<pers%>%<p1%>%<pl%>%<adv%>:bizin%{ъ%}she COMMON-CLITICS ;
 
 sizler%<prn%>%<pers%>%<p2%>%<pl%>:sizler PRON-PERS-INFL ;
