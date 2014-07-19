@@ -1677,6 +1677,7 @@ neshe:neshe NUM-ITG ;
 
 effekt:effekt N6 ; ! ""
 shadlanıw:shadlanıw N1 ; ! ""
+masshtab:masshtab N1 ; ! ""
 ekran:ekran N1 ; ! ""
 televidenie:televidenie N1 ; ! ""
 disk:disk N1 ; ! ""
