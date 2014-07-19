@@ -78,6 +78,10 @@ Archiphon = %{G%} %{N%} %{K%} %{D%} %{M%} ;
 
 Empty = %{ь%} %{❗%} %{ꙑ%} ;
 
+Abstract =  %{а%} %{с%} %{э%} %{з%} %{т%} %{й%} %{л%} %{н%} ;
+
+AbstCons = %{й%} %{с%} %{з%} %{т%} %{л%} %{н%} ;
+
 Rules
 
 "Deletion of {s} after a consonant"
@@ -111,14 +115,16 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | :0 ]* _ ;
 
 
 "{A} vowel harmony"
-%{A%}:e <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] [ :Cns* :CnsRight ]/:%' ]/[ %>: | %  | [ :0 - %{ꙑ%}: ] | %{ъ%}: ]* _ ;
+%{A%}:e <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] [ :Cns* :CnsRight ]/:%' ]/[ %>: | %  | [ :0 - [ %{ꙑ%}: | Abstract: ] ] | %{ъ%}: ]* _ ;
             [ %{ь%}: :Cns* ]/[ :0 - %{ь%}: ] _ ;
             [ k:k :Cns* ]/:0 _ ;
+            %{э%}: [ AbstCons: | :Cns | [ :0 - Abstract: ] | :%- ]* _ ;
 
 "{I} vowel harmony"
-%{I%}:i <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] [ :Cns* :CnsRight ]/:%' ]/[ %>: | %  | [ :0 - %{ꙑ%}: ] | %{ъ%}: ]* _ ;
+%{I%}:i <=> [ [ :FrontVow | [ [ :a | :o | :u ] :%' ] ] [ :Cns* :CnsRight ]/:%' ]/[ %>: | %  | [ :0 - [ %{ꙑ%}: | Abstract: ] ] | %{ъ%}: ]* _ ;
             [ %{ь%}: :Cns* ]/[ :0 - %{ь%}: ] _ ;
             [ k:k :Cns* ]/:0 _ ;
+            %{э%}: [ AbstCons: | :Cns | [ :0 - Abstract: ] | :%- ]* _ ;
         except
             [ %{n%}: %{N%}:0 ]/[ :0 - %{n%}: ]* _ .#. ; ! px3 + accusative
             :Vow/:0 _ ;
