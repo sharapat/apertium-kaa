@@ -31,3 +31,4 @@ speller/index.xml -text
 speller/strings.default.txt -text
 speller/words.default.txt -text
 tests/G.yaml -text
+tests/nums.yaml -text
