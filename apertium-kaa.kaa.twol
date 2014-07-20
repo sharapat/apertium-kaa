@@ -141,7 +141,7 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | [ :0 - Abstract:
 !%{'%}:0 <=> :k (:0)  _ ; 
 
 "Insert ' after g in the context of back vowels"
-%{ъ%}:%' <=> [ q:g | g:g ] _ :BackVow/[ :0 ]* ;
+%{ъ%}:%' <=> [ q:g | g:g | %{G%}:g ] _ :BackVow/[ :0 ]* ;
          except
              _ [ :FrontableVow :%' ]/[ :0 - %{ъ%}: ]* ;
             [ %{ь%}: :Cns* ]/[ :0 - %{ь%}: ] _ ;
