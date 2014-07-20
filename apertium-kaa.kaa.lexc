@@ -145,7 +145,7 @@ Multichar_Symbols
 %{л%}
 %{н%}
 %{з%}
-%{т%}
+!%{т%}
 %{с%}
 
 %{❗%}    ! blocks normal phon stuff, like fronting harmony
