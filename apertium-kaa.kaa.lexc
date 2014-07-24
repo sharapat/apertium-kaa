@@ -1675,6 +1675,13 @@ neshe:neshe NUM-ITG ;
  LEXICON Nouns
 !=============!
 
+internet:internet N5 ; ! "" 
+ju%'zlik:ju%'zlik N1 ; ! ""
+jumısshı:jumısshı N1 ; ! ""
+оriginаl:оriginаl N1 ; ! ""
+tiykarg%'ı% nusqa:tiykarg%'ı% nusqa N1 ; ! ""
+xabarlandırıw:xabarlandırıw N1 ; ! ""
+do%'retiwshilik:do%'retiwshilik N1 ; ! ""
 effekt:effekt N6 ; ! ""
 shadlanıw:shadlanıw N1 ; ! ""
 masshtab:masshtab N1 ; ! ""
@@ -4560,6 +4567,11 @@ Stiv:Stiv NP-ANT-M ; ! "Steve"
  LEXICON Adjectives
 !==================!
 
+do%'retiwshilik:do%'retiwshilik A1 ; ! ""
+tan%'% qalarlıq:tan%'% qalarlıq A1 ; ! ""
+ersi:ersi A1 ; ! ""
+mun%'lı:mun%'lı A1 ; ! ""
+qayg%'ılı:qayg%'ılı A1 ; ! ""
 dawlaspag%'an:dawlaspag%'an A4 ; ! ""
 elektrikalıq:elektrikalıq A1 ; ! ""
 industriyalıq:industriyalıq A1 ; ! ""
@@ -5350,6 +5362,7 @@ jergilikli:jergilikli A4 ; ! ""
  LEXICON Adverbs
 !===============!
 
+bunda:bunda ADV ; ! ""
 bolmasa:bolmasa ADV ; ! ""
 ekonomikalı:ekonomikalı ADV ; ! ""
 lekin:lekin ADV ; ! ""
@@ -5522,6 +5535,10 @@ to%'mengi:to%'mengi ADV-WITH-KI ; ! "lower"
  LEXICON Verbs
 !=============!
 
+su%'wretle:su%'wretle V-TV ; ! ""
+tu%'rlendir:tu%'rlendir V-TV ; ! ""
+jıljıt:jıljıt V-TV ; ! ""
+soran:soran V-IV ; ! ""
 jıljı:jıljı V-IV ; ! ""
 abay% bol:abay% bol V-IV ; ! ""
 albıra:albıra V-IV ; ! ""
