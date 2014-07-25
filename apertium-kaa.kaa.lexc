@@ -5531,6 +5531,49 @@ son%':son%' ADV-WITH-KI ; ! ""
 tan%'% erten%':tan%'% erten%' ADV-WITH-KI ; ! "morning"
 to%'mengi:to%'mengi ADV-WITH-KI ; ! "lower"
 
+
+! Languages
+! =========
+
+! FIXME CHECK these
+anglichansha:anglichansha ADV-LANG ; ! "English"
+amerikansha:amerikansha ADV-LANG ; ! ""
+arabsha:arabsha ADV-LANG ; ! "Arab"
+arameysha:arameysha ADV-LANG ; ! ""
+bashqurtsha:bashqurtsha ADV-LANG ; ! ""
+belorussha:belorussha ADV-LANG ; ! ""
+buryatsha:buryatsha ADV-LANG ; ! ""
+vengrshe:vengrshe ADV-LANG ; ! ""
+grekshe:grekshe ADV-LANG ; ! "Greek"
+gruzinsha:gruzinsha ADV-LANG ; ! ""
+guaranisha:guaranisha ADV-LANG ; ! ""
+italiyansha:italiyansha ADV-LANG ; ! ""
+kalmaksha:kalmaksha ADV-LANG ; ! "Kalmyk"
+karelsha:karelsha ADV-LANG ; ! ""
+qazaqsha:qazaqsha ADV-LANG ; ! "Kazakh"
+qırg%'ızsha:qırg%'ızsha ADV-LANG ; ! "Kyrgyz"
+qıtaysha:qıtaysha ADV-LANG ; ! "Chinese"
+latınsha:latınsha ADV-LANG ; ! "Latin"
+mon%'g%'olsha:mon%'g%'olsha ADV-LANG ; ! "Mongol" Dir/LR
+mordvasha:mordvasha ADV-LANG ; ! ""
+nemisshe:nemisshe ADV-LANG ; ! "German"
+orıssha:orıssha ADV-LANG ; ! "Russian"
+o%'zbekshe:o%'zbekshe ADV-LANG ; ! "Uzbek"
+parsısha:parsısha ADV-LANG ; ! "Persian"
+polyaksha:polyaksha ADV-LANG ; ! ""
+tatarsha:tatarsha ADV-LANG ; ! "Tatar"
+ta%'jikshe:ta%'jikshe ADV-LANG ; ! ""
+tu%'rkishe:tu%'rkishe ADV-LANG ; ! "Turkish"
+ukrainsha:ukrainsha ADV-LANG ; ! ""
+urdusha:urdusha ADV-LANG ; ! ""
+frantsuzsha:frantsuzsha ADV-LANG ; ! "French"
+chexshe:chexshe ADV-LANG ; ! "Czech"
+chuvashsha:chuvashsha ADV-LANG ; ! "Chuvash"
+shvedshe:shvedshe ADV-LANG ; ! ""
+yakutsha:yakutsha ADV-LANG ; ! ""
+yahudiyshe:yahudiyshe ADV-LANG ; ! "Jewish/Jew"
+
+
 !=============!
  LEXICON Verbs
 !=============!
