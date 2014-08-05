@@ -442,6 +442,7 @@ LEXICON ATTR-SUBST
 LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
 
 %<px%>:%>%{N%}iki%{n%} CASES ;
+%<px%>%<pl%>:%>%{N%}iki%>l%{A%}r CASES ;
 %<loc%>:%>%{D%}%{A%}%{G%}%{ъ%}%{I%} ATTR-SUBST ; 
 %<sim%>:%>%{D%}%{A%}y CLIT ; ! COMMON-CLITICS ;        
 
