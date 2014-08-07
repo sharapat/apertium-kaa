@@ -444,7 +444,7 @@ LEXICON GENPOSS-ETC      ! Stuff which can appear after possessives too
 %<px%>:%>%{N%}iki%{n%} CASES ;
 %<px%>%<pl%>:%>%{N%}iki%>l%{A%}r CASES ;
 %<loc%>:%>%{D%}%{A%}%{G%}%{ъ%}%{I%} ATTR-SUBST ; 
-%<sim%>:%>%{D%}%{A%}y CLIT ; ! COMMON-CLITICS ;        
+%<sim%>:%>%{D%}%{A%}y CLITICS-NO-COP ; ! COMMON-CLITICS ;        
 
 LEXICON CASES-ETC
 
@@ -1676,6 +1676,27 @@ neshe:neshe NUM-ITG ;
  LEXICON Nouns
 !=============!
 
+resurs:resurs N5 ; ! ""
+depozit:depozit N5 ; ! ""
+filial:filial N5 ; ! ""
+banknot:banknot N5 ; ! ""
+da%'ldallıq:da%'ldallıq N1 ; ! ""
+da%'ldalshılıq:da%'ldalshılıq N1 ; ! ""
+tovar%-aqsha:tovar%-aqsha N1 ; ! ""
+mu%'ta%'jlik:mu%'ta%'jlik N1 ; ! ""
+za%'ru%'rlik:za%'ru%'rlik N1 ; ! ""
+bazar:bazar N1 ; ! ""
+minnetleme:minnetleme N1 ; ! ""
+klient:klient N1 ; ! ""
+sshet:sshet N1 ; ! ""
+kassa:kassa N1 ; ! ""
+portfel:portfel N1 ; ! ""
+isenimlik:isenimlik N1 ; ! ""
+emissiya:emissiya N1 ; ! ""
+kapitalist:kapitalist N1 ; ! ""
+o%'ndirisshi:o%'ndirisshi N1 ; ! ""
+qarızdarlıq:qarızdarlıq N1 ; ! ""
+qarız:qarız N1 ; ! ""
 internet:internet N5 ; ! "" 
 ju%'zlik:ju%'zlik N1 ; ! ""
 jumısshı:jumısshı N1 ; ! ""
@@ -3921,6 +3942,8 @@ mm:mm%{э%}%{з%} N1-ABBR ; ! "km"
  LEXICON ProperNouns
 !===================!
 
+Germaniya:Germaniya NP-TOP ; ! ""
+Niderland:Niderland NP-TOP ; ! ""
 Angliya:Angliya NP-TOP ; ! ""
 Evraziya:Evraziya NP-TOP ; ! ""
 Britaniya:Britaniya NP-TOP ; ! ""
@@ -4036,6 +4059,7 @@ Xalqabad:Xalqabad NP-TOP ; ! ""
 Xamsa:Xamsa NP-TOP ; ! ""
 Ural:Ural NP-TOP ; ! ""
 
+Djona:Djona NP-ANT-M ; ! ""
 Alisher:Alisher NP-ANT-M ; ! ""
 A'jiniyaz:A'jiniyaz NP-ANT-M ; ! ""
 A'lisher:A'lisher NP-ANT-M ; ! ""
@@ -4331,6 +4355,7 @@ Yusupov:Yusupov NP-COG-OV ; ! ""
 
 ! Masculine/feminine
 
+Lo:Lo NP-COG-MF ; ! ""
 van% Gog:van% Gog NP-COG-MF ; ! ""
 da% Vinchi:da% Vinchi NP-COG-MF ; ! ""
 Djobs:Djobs NP-COG-MF ; ! "Jobs"
@@ -4568,6 +4593,19 @@ Stiv:Stiv NP-ANT-M ; ! "Steve"
  LEXICON Adjectives
 !==================!
 
+a%'piwayı:a%'piwayı A2 ; ! ""
+qarjılıq%-da%'ldallıq:qarjılıq%-da%'ldallıq A4 ; ! ""
+kassalıq:kassalıq A4 ; ! ""
+lizinglik:lizinglik A4 ; ! ""
+faktoringli:faktoringli A4 ; ! ""
+ken%'esshilik:ken%'esshilik A4 ; ! ""
+passivli:passivli A4 ; ! ""
+ustavlıq:ustavlıq A4 ; ! ""
+rezervlik:rezervlik A4 ; ! ""
+bankaralıq:bankaralıq A4 ; ! ""
+kommanditlik:kommanditlik A4 ; ! ""
+emmisiyalıq:emmisiyalıq A4 ; ! ""
+ma%'mleketaralıq:ma%'mleketaralıq A4 ; ! ""
 do%'retiwshilik:do%'retiwshilik A1 ; ! ""
 tan%'% qalarlıq:tan%'% qalarlıq A1 ; ! ""
 ersi:ersi A1 ; ! ""
@@ -5363,6 +5401,9 @@ jergilikli:jergilikli A4 ; ! ""
  LEXICON Adverbs
 !===============!
 
+keyinirek:keyinirek ADV ; ! ""
+birinshi% ret:birinshi% ret ADV ; ! ""
+birinshi% ma%'rte:birinshi% ma%'rte ADV ; ! ""
 bunda:bunda ADV ; ! ""
 bolmasa:bolmasa ADV ; ! ""
 ekonomikalı:ekonomikalı ADV ; ! ""
@@ -5579,6 +5620,7 @@ yahudiyshe:yahudiyshe ADV-LANG ; ! "Jewish/Jew"
  LEXICON Verbs
 !=============!
 
+jıynа:jıynа V-TV ; ! ""
 su%'wretle:su%'wretle V-TV ; ! ""
 tu%'rlendir:tu%'rlendir V-TV ; ! ""
 jıljıt:jıljıt V-TV ; ! ""
@@ -7138,6 +7180,8 @@ mu%'mkin:mu%'mkin INTERJ ; ! "probably"
  LEXICON Abbreviations
 !=====================!
 
+t%.s%.s%.:t%.s%.s%. ABBR ; ! ""
+aktsion%.:aktsion%. ABBR ; ! ""
 b%.t%.:b%.t%. ABBR ; ! "болып табылады"
 b%.z%.b%.:b%.z%.b%. ABBR ; ! ""
 a%'%.:a%'%. ABBR ; ! ""
