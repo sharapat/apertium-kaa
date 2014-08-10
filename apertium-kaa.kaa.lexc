@@ -1402,6 +1402,7 @@ yag%'nıy:yag%'nıy CS ; ! ""
 ! Adverbial conjunctions = "Отнoситeльныe слoвa"
 ! ==============================================
 
+pikirinshe:pikirinshe CA ; ! ""
 bolmasa:bolmasa CA ; ! ""
 ! aйтуыншa:aйтуыншa CA ; ! ""
 degen% menen:degen% menen CA ; ! "nevertheless"
@@ -1676,6 +1677,19 @@ neshe:neshe NUM-ITG ;
  LEXICON Nouns
 !=============!
 
+veksel:veksel N5 ; ! ""
+normativ:normativ N5 ; ! ""
+perspektiva:perspektiva N5 ; ! ""
+kapitalizm:kapitalizm N5 ; ! ""
+awqam:awqam N1 ; ! ""
+wa%'killik:wa%'killik N1 ; ! ""
+tolıq% erik:tolıq% erik N1 ; ! ""
+wa%'killik:wa%'killik N1 ; ! ""
+wa%'kiletlik:wa%'kiletlik N1 ; ! ""
+buyrıq:buyrıq N1 ; ! ""
+jarlıq:jarlıq N1 ; ! ""
+u%'les:u%'les N1 ; ! ""
+vznos:vznos N1 ; ! ""
 sawdager:sawdager N1 ; ! ""
 monopoliya:monopoliya N1 ; ! ""
 qısım:qısım N1 ; ! ""
@@ -3950,7 +3964,7 @@ parol:parol N1 ; ! "password"
 megapiksel:megapiksel N1 ; ! "megapixel(s)"
 arxiv:arxiv N1 ; ! "archive"
 
-
+mln:mln N1-ABBR ; ! "million"
 mlrd:mlrd%{а%}%{с%} N1-ABBR ; ! "billion"
 km:km%{э%}%{з%} N1-ABBR ; ! "km"
 mm:mm%{э%}%{з%} N1-ABBR ; ! "km"
@@ -4087,6 +4101,15 @@ Boing:Boing NP-TOP ; ! ""
 Gerkules:Gerkules NP-TOP ; ! ""
 Monsanto:Monsanto NP-TOP ; ! ""
 Oral:Oral NP-TOP ; ! ""
+Ombı:Ombı NP-TOP ; ! ""
+Petropavl:Petropavl NP-TOP ; ! ""
+Semey:Semey NP-TOP ; ! ""
+Verniy:Verniy NP-TOP ; ! ""
+Doyche:Doyche NP-TOP ; ! ""
+Interinvestbank:Interinvestbank NP-TOP ; ! ""
+Kramdsbank:Kramdsbank NP-TOP ; ! ""
+Qazkommertsbank:Qazkommertsbank NP-TOP ; ! ""
+Turana%'lembank:Turana%'lembank NP-TOP ; ! ""
 
 Djona:Djona NP-ANT-M ; ! ""
 Alisher:Alisher NP-ANT-M ; ! ""
@@ -4623,6 +4646,16 @@ Stiv:Stiv NP-ANT-M ; ! "Steve"
  LEXICON Adjectives
 !==================!
 
+burıng%'ı:burıng%'ı A1 ; ! ""
+keyingi:keyingi A1 ; ! ""
+bo%'lek:bo%'lek A2 ; ! ""
+jekke:jekke A2 ; ! ""
+o%'z:o%'z A2 ; ! ""
+ga%'rezsiz:ga%'rezsiz A2 ; ! ""
+huqıqlı:huqıqlı A4 ; ! ""
+kommertsiyalıq%-nesiyelik:kommertsiyalıq%-nesiyelik A4 ; ! ""
+nesiyelik:nesiyelik A4 ; ! ""
+perspektivalıq:perspektivalıq A4 ; ! ""
 belgili:belgili A1 ; ! ""
 mezgilli:mezgilli A1 ; ! ""
 monopoliyalıq:monopoliyalıq A1 ; ! ""
@@ -5436,6 +5469,8 @@ jergilikli:jergilikli A4 ; ! ""
  LEXICON Adverbs
 !===============!
 
+burın:burın ADV ; ! ""
+keyin:keyin ADV ; ! ""
 jaqınnan:jaqınnan ADV ; ! ""
 jay:jay ADV ; ! ""
 a%'piwayı:a%'piwayı ADV ; ! ""
@@ -5660,6 +5695,11 @@ yahudiyshe:yahudiyshe ADV-LANG ; ! "Jewish/Jew"
  LEXICON Verbs
 !=============!
 
+jıynaldır:jıynaldır V-TV ; ! ""
+toplandır:toplandır V-TV ; ! ""
+ja%'mlendir:ja%'mlendir V-TV ; ! ""
+u%'lkey:u%'lkey V-IV ; ! ""
+qısqar:qısqar V-IV ; ! ""
 monopoliyalan:monopoliyalan V-IV ; ! ""
 jıynaldır:jıynaldır V-IV ; ! ""
 toplandır:toplandır V-IV ; ! ""
@@ -7227,6 +7267,9 @@ mu%'mkin:mu%'mkin INTERJ ; ! "probably"
  LEXICON Abbreviations
 !=====================!
 
+KSRA:KSRA ABBR ; ! ""
+QR:QR ABBR ; ! ""
+to%'m%.:to%'m%. ABBR ; ! ""
 t%.s%.s%.:t%.s%.s%. ABBR ; ! ""
 aktsion%.:aktsion%. ABBR ; ! ""
 b%.t%.:b%.t%. ABBR ; ! "болып табылады"
