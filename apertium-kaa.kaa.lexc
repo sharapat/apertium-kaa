@@ -851,8 +851,8 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 %<ger_fut%>:%>%{A%}r GER-INFL ;
 %<neg%>%<ger_fut%>:%>%{M%}%{A%}%>s GER-INFL ;
 
-%<gpr_fut%>:%>%{A%}r # ;
-%<neg%>%<gpr_fut%>:%>%{M%}%{A%}%>s # ;
+%<gpr_fut%>:%>%{A%}r V-ADJ ;
+%<neg%>%<gpr_fut%>:%>%{M%}%{A%}%>s V-ADJ ;
 
 %<gpr_ppot%>:%>%{A%}r%>l%{I%}k # ;
 %<neg%>%<gpr_ppot%>:%>%{M%}%{A%}%>sl%{I%}%{K%} # ;
@@ -1677,6 +1677,35 @@ neshe:neshe NUM-ITG ;
  LEXICON Nouns
 !=============!
 
+pedinstitut:pedinstitut N1 ; ! ""
+aynalıs:aynalıs N1 ; ! ""
+metal:metal N1 ; ! ""
+metall:metall N1 ; ! ""
+artıqshılıq:artıqshılıq N1 ; ! ""
+ko%'mek:ko%'mek N1 ; ! ""
+qarız:qarız N1 ; ! ""
+feodalizm:feodalizm N1 ; ! ""
+haqıyqatlıq:haqıyqatlıq N1 ; ! ""
+ken%'islik:ken%'islik N1 ; ! ""
+aqsha:aqsha N1 ; ! ""
+pul:pul N1 ; ! ""
+ten%'ge:ten%'ge N1 ; ! ""
+moneta:moneta N1 ; ! ""
+sawda%-satıq:sawda%-satıq N1 ; ! ""
+pishin:pishin N1 ; ! ""
+sıqıl:sıqıl N1 ; ! ""
+sımbat:sımbat N1 ; ! ""
+kelbet:kelbet N1 ; ! ""
+qa%'lip:qa%'lip N1 ; ! ""
+forma:forma N1 ; ! ""
+bo%'liw:bo%'liw N1 ; ! ""
+bo%'listiriw:bo%'listiriw N1 ; ! ""
+amanat:amanat N1 ; ! ""
+bankir:bankir N1 ; ! ""
+manufaktura:manufaktura N5 ; ! ""
+institut:institut N5 ; ! ""
+jirobank:jirobank N5 ; ! ""
+moneta:moneta N5 ; ! ""
 veksel:veksel N5 ; ! ""
 normativ:normativ N5 ; ! ""
 perspektiva:perspektiva N5 ; ! ""
@@ -3973,6 +4002,12 @@ mm:mm%{э%}%{з%} N1-ABBR ; ! "km"
  LEXICON ProperNouns
 !===================!
 
+Venetsiya:Venetsiya NP-TOP ; ! ""
+Genuya:Genuya NP-TOP ; ! ""
+Milan:Milan NP-TOP ; ! ""
+Amsterdam:Amsterdam NP-TOP ; ! ""
+Gamburg:Gamburg NP-TOP ; ! ""
+Nyurnberg:Nyurnberg NP-TOP ; ! ""
 Germaniya:Germaniya NP-TOP ; ! ""
 Niderland:Niderland NP-TOP ; ! ""
 Angliya:Angliya NP-TOP ; ! ""
@@ -5469,6 +5504,7 @@ jergilikli:jergilikli A4 ; ! ""
  LEXICON Adverbs
 !===============!
 
+qolma%-qol:qolma%-qol ADV ; ! ""
 burın:burın ADV ; ! ""
 keyin:keyin ADV ; ! ""
 jaqınnan:jaqınnan ADV ; ! ""
@@ -5695,6 +5731,11 @@ yahudiyshe:yahudiyshe ADV-LANG ; ! "Jewish/Jew"
  LEXICON Verbs
 !=============!
 
+aynal:aynal V-IV ; ! ""
+aynalıs:aynalıs V-IV ; ! ""
+almastır:almastır V-TV ; ! ""
+awıstır:awıstır V-TV ; ! ""
+ayırbasla:ayırbasla V-TV ; ! ""
 jıynaldır:jıynaldır V-TV ; ! ""
 toplandır:toplandır V-TV ; ! ""
 ja%'mlendir:ja%'mlendir V-TV ; ! ""
@@ -7189,6 +7230,7 @@ o%'tin:o%'tin V-TV ; ! ""
 isle:isle V-TV ; ! ""
 
 de:de V-TV-NOPASS ; ! "speak"
+de:delin V-TV-PASS ; ! "speak"
 ko%'r:ko%'r V-TV-NOPASS ; ! "see"
 ko%'r:ko%'rin V-TV-PASS ; ! "be seen"
 
@@ -7216,50 +7258,47 @@ otır:otır Vinfl-AUX ; !
  LEXICON Interjections
 !=====================!
 
-! aу:aу INTERJ ; ! ""
-! aмин:aмин INTERJ ; ! ""
-! ә:ә INTERJ ; ! ""
-! әй:әй INTERJ ; ! ""
-! әйe:әйe INTERJ ; ! "yes"
-a%'lbette:a%'lbette INTERJ ; ! "of course"
-! әринe:әринe INTERJ ; ! "of course"
-! әттeгeн%-aй:әттeгeн%-aй INTERJ ; ! "" 
-! әттeң:әттeң INTERJ ; ! ""
-! әу:әу INTERJ ; ! ""
-! бәрeкeлді:бәрeкeлді INTERJ ; ! ""
-! бәсe:бәсe INTERJ ; ! ""
-! бoлыпты:бoлыпты INTERJ ; ! "okay / that's it"
-! дaриғa:дaриғa INTERJ ; ! ""
-! дeмeк:дeмeк INTERJ ; ! "that is"
-! дұрыс:дұрыс INTERJ ; ! "right"
-! e:e INTERJ ; ! "" 
-! eй:eй INTERJ ; ! ""
-! жaрaйды:жaрaйды INTERJ ; ! "okay / it'll do"
-joq:joq INTERJ ; ! "no"
-! иә:иә INTERJ ; ! "yes"
-! қaнe:қaнe INTERJ ; ! "where" ! interrog. interjection (question form of "вoт")
-! қoш:қoш INTERJ ; ! ""
-! Құдaй%-aй:Құдaй%-aй INTERJ ; ! ""
-! мaқұл:мaқұл INTERJ ; ! "fine/okay"
-! мә:мә INTERJ ; ! "here you go / take"
-! мeйлі:мeйлі INTERJ ; ! "okay/fine"
-! мінe:мінe INTERJ ; ! "here is, вoт"
-! мынa:мынa INTERJ ; ! "here is, вoт"
-! oйбaй:oйбaй INTERJ ; ! "" 
-! oй:oй INTERJ ; ! "hey"
-! өй:өй INTERJ ; ! ""
-! өтінeм:өтінeм INTERJ ; ! "please"
-! түсінікті:түсінікті INTERJ ; ! "understood"
-! уa:уa INTERJ ; ! ""
+aw:aw INTERJ ; ! ""
+amin:amin INTERJ ; ! ""
+a%':a%' INTERJ ; ! ""
+a%'y:a%'y INTERJ ; ! ""
+a%'ye:a%'ye INTERJ ; ! ""
+a%'lbette:a%'lbette INTERJ ; ! ""
+a%'ttegen%-ay:a%'ttegen%-ay INTERJ ; ! ""
+a%'tten%':a%'tten%' INTERJ ; ! ""
+a%'w:a%'w INTERJ ; ! ""
+ba%'rekella:ba%'rekella INTERJ ; ! ""
+solay:solay INTERJ ; ! ""
+bolıptı:bolıptı INTERJ ; ! ""
+dariyg%'a:dariyg%'a INTERJ ; ! ""
+demek:demek INTERJ ; ! ""
+durıs:durıs INTERJ ; ! ""
+e:e INTERJ ; ! ""
+jaraydı:jaraydı INTERJ ; ! ""
+awa:awa INTERJ ; ! ""
+qane:qane INTERJ ; ! ""
+xosh:xosh INTERJ ; ! ""
+Quday%-ay:Quday%-ay INTERJ ; ! ""
+maqul:maqul INTERJ ; ! ""
+ma%':ma%' INTERJ ; ! ""
+meyli:meyli INTERJ ; ! ""
+mine:mine INTERJ ; ! ""
+mına:mına INTERJ ; ! ""
+oybay:oybay INTERJ ; ! ""
+oy:oy INTERJ ; ! ""
+o%'y:o%'y INTERJ ; ! ""
+o%'tinemen:o%'tinemen INTERJ ; ! ""
+tu%'sinikli:tu%'sinikli INTERJ ; ! ""
+wa:wa INTERJ ; ! ""
 
 ! Ввoдныe слoвa
 ! =============
 
-! aйтпaқшы:aйтпaқшы INTERJ ; ! ""
-! бәлкім:бәлкім INTERJ ; ! ""
-! eсeсінe:eсeсінe INTERJ ; ! ""
-! мәсeлeн:мәсeлeн INTERJ ; ! "e.g."
-! мысaлы:мысaлы INTERJ ; ! "e.g."
+aytpaqshı:aytpaqshı INTERJ ; ! ""
+ba%'lkim:ba%'lkim INTERJ ; ! ""
+esesine:esesine INTERJ ; ! ""
+ma%'selen:ma%'selen INTERJ ; ! ""
+mısalı:mısalı INTERJ ; ! ""
 mu%'mkin:mu%'mkin INTERJ ; ! "probably"
 že:že INTERJ ; 
 
