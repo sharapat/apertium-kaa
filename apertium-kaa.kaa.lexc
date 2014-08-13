@@ -681,6 +681,12 @@ V-PERS-S1-NO3PERSON ;
 %<p3%>%<pl%>:%>d%{I%} COMMON-CLITICS ;
 %<p3%>%<pl%>: CLIT-QST-MA ;              ! Dir/LR ;
 
+LEXICON V-PERS-IFI_EVID
+
+V-PERS-S1-NO3PERSON ;
+%<p3%>%<sg%>:%>t%{I%} CLITICS-NO-COP ;
+%<p3%>%<sg%>:%>t%{I%} CLITICS-NO-COP ;
+
 LEXICON VOL-ENDINGS
 
 %<p1%>%<sg%>:%>m CLIT-GHANA-ETC ;
@@ -706,7 +712,7 @@ LEXICON KI
 
 LEXICON ADV
 
-%<adv%>:%{ъ%} CLIT ; ! COMMON-CLITICS ;
+%<adv%>: CLITICS-NO-COP ;
 
 LEXICON ADV-WITH-KI
 
@@ -780,8 +786,8 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 %<aor%>:%>%{E%}  V-PERS-AOR ;
 %<past%>:%>%{G%}%{ъ%}%{A%}n  V-PERS-S1 ;
 %<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;
-! %<ifi_evid%>:%>%{I%}p !V-PERS-IFI_EVID ;
-! %<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
+%<ifi_evid%>:%>%{I%}p V-PERS-IFI_EVID ;
+%<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
 
 LEXICON V-FINITE-IRREGULAR_NEGATIVE
 
@@ -815,6 +821,10 @@ LEXICON V-NONFINITE-REGULAR_NEGATIVE
 
 ! Imperatives
 %<imp%>%<p2%>%<sg%>: CLIT-EMPH ;
+%<imp%>%<p2%>%<pl%>:%>%{I%}n%'%>l%{A%}r CLIT-EMPH ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}n%'%{I%}z CLIT-EMPH ;
+%<imp%>%<p2%>%<frm%>%<sg%>:%>%{I%}n%' CLIT-EMPH ;                ! Dir/LR FIXME CHECK
+%<imp%>%<p2%>%<frm%>%<pl%>:%>%{I%}n%'%{I%}z%>l%{A%}r CLIT-EMPH ;
 
 ! Optative/jussive forms
 %<opt%>%<p1%>%<sg%>:%>%{A%}y%{I%}n CLITICS-NO-COP ;
@@ -848,14 +858,18 @@ LEXICON V-NONFINITE-IRREGULAR_NEGATIVE
 %<gna_after%>:%>%{G%}%{A%}л%{I%} CLITICS-NO-COP ;
 
 ! Verbal Adjectives
-%<ger_fut%>:%>%{A%}r GER-INFL ;
-%<neg%>%<ger_fut%>:%>%{M%}%{A%}%>s GER-INFL ;
-
 %<gpr_fut%>:%>%{A%}r V-ADJ ;
 %<neg%>%<gpr_fut%>:%>%{M%}%{A%}%>s V-ADJ ;
 
 %<gpr_ppot%>:%>%{A%}r%>l%{I%}k # ;
 %<neg%>%<gpr_ppot%>:%>%{M%}%{A%}%>sl%{I%}%{K%} # ;
+
+! Gerunds
+%<ger_fut%>:%>%{A%}r GER-POSSESSIVES ;
+%<neg%>%<ger_fut%>:%>%{M%}%{A%}%>s GER-POSSESSIVES ;
+
+%<ger_ppot%>:%>%{A%}r%>l%{I%}k GER-POSSESSIVES ;
+%<neg%>%<ger_ppot%>:%>%{M%}%{A%}%>sl%{I%}%{K%} GER-POSSESSIVES ;
 
 LEXICON V-COMMON
 
