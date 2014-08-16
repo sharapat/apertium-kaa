@@ -1348,6 +1348,16 @@ LEXICON QST
 
 %<qst%>: # ;
 
+LEXICON MOD-ASS
+
+%<mod_ass%>: # ;
+
+LEXICON MOD
+
+! шығар, сияқты etc.
+
+%<mod%>: # ;
+
 LEXICON INTERJ
 
 %<ij%>: # ;
@@ -1374,9 +1384,16 @@ ma% ne:ma% ne QST ; ! "" Dir/LR
 ! мa% нe:мe% нe QST ; ! "" Dir/LR
 ! шe:шe QST ; ! ""
 
-! ғoй:%~ғoй MOD-ASS ; ! "" Dir/RL
-! ғoй:ғoй MOD-ASS ; ! "" Dir/LR
-! ғoй:қoй MOD-ASS ; ! "" Dir/LR
+g%'oy:%~g%'oy MOD-ASS ; ! "" Dir/RL
+g%'oy:g%'oy MOD-ASS ; ! "" Dir/LR
+g%'oy:qoy MOD-ASS ; ! "" Dir/LR
+
+shıg%'ar:shıg%'ar MOD ; ! FIXME actually a verb, takes personal suffixes (V-PERS-S1);
+                  !   ... more like <vaux><pres> than like a full verb -JNW
+                  ! requires some transfer rules as e.g. in the following:
+                  !# (kaz) Олар мүмкiн көп кiтап оқыған шығар.
+                  !# (tat) Алар бәлки күп китап укыганнардыр.
+                  !# (kir) Алар мүмкүн көп китеп окугандыр.
 
 !====================!
  LEXICON Conjunctions
@@ -1385,6 +1402,8 @@ ma% ne:ma% ne QST ; ! "" Dir/LR
 da:%~da CC ; ! "" ! Dir/RL
 da:da CC ; ! "" ! Dir/LR
 da:de CC ; ! "" ! Dir/LR
+da:ta CC ; ! "" ! Dir/LR
+da:te CC ; ! "" ! Dir/LR
 tu%'we:tu%'we CC ; ! ""
 
 !! Прoтивитeльныe
@@ -1416,6 +1435,8 @@ yag%'nıy:yag%'nıy CS ; ! ""
 ! Adverbial conjunctions = "Отнoситeльныe слoвa"
 ! ==============================================
 
+aytıwınsha:aytıwınsha CA ; ! "" ! Use/MT
+oyınsha:oyınsha CA ; ! ""
 pikirinshe:pikirinshe CA ; ! ""
 bolmasa:bolmasa CA ; ! ""
 ! aйтуыншa:aйтуыншa CA ; ! ""
@@ -1527,6 +1548,7 @@ DemonstrativePronouns ;
 InterrogativePronouns ;
 
 basqalar:basqalar PRON-IND-PL; ! "other"
+basqa:basqa PRON-IND ; ! "something"
 birdeme:birdeme PRON-IND ; ! "something"
 bir% na%'rse:bir% na%'rse PRON-IND ; ! "something" Use/MT
 gey:gey PRON-IND ; ! "some" FIXME CHECK
@@ -1691,6 +1713,54 @@ neshe:neshe NUM-ITG ;
  LEXICON Nouns
 !=============!
 
+bilet:bilet N1 ; ! ""
+qolaylılıq:qolaylılıq N1 ; ! ""
+da%'ldalshı:da%'ldalshı N1 ; ! ""
+jen%'illetiw:jen%'illetiw N1 ; ! ""
+negiz:negiz N1 ; ! ""
+tiykar:tiykar N1 ; ! ""
+da%'slepki% sha%'rt:da%'slepki% sha%'rt N1 ; ! ""
+tapsırma:tapsırma N1 ; ! ""
+etap:etap N1 ; ! ""
+basqısh:basqısh N1 ; ! ""
+to%'lemshi:to%'lemshi N1 ; ! ""
+jetkiliksizlik:jetkiliksizlik N1 ; ! ""
+ta%'biyat:ta%'biyat N1 ; ! ""
+natura:natura N1 ; ! ""
+jaratılıs:jaratılıs N1 ; ! ""
+buwın:buwın N1 ; ! ""
+maydan:maydan N1 ; ! ""
+da%'reje:da%'reje N1 ; ! ""
+ku%'tpegenlik:ku%'tpegenlik N1 ; ! ""
+tosınnan% bolıwshılıq:tosınnan% bolıwshılıq N1 ; ! ""
+korrespondent:korrespondent N1 ; ! ""
+awdarıw:awdarıw N1 ; ! ""
+awdarma:awdarma N1 ; ! ""
+perevod:perevod N1 ; ! ""
+o%'tkeriw:o%'tkeriw N1 ; ! ""
+pozitsiya:pozitsiya N1 ; ! ""
+ko%'zqaras:ko%'zqaras N1 ; ! ""
+jiberiw:jiberiw N1 ; ! ""
+jo%'neltiw:jo%'neltiw N1 ; ! ""
+kitapsha:kitapsha N1 ; ! ""
+isenim:isenim N1 ; ! ""
+garantiya:garantiya N1 ; ! ""
+kepillik:kepillik N1 ; ! ""
+xoldey:xoldey N5 ; ! ""
+sshet:sshet N5 ; ! ""
+kumuliyar:kumuliyar N5 ; ! ""
+emitent:emitent N5 ; ! ""
+diskont:diskont N5 ; ! ""
+trast:trast N5 ; ! ""
+kliring:kliring N5 ; ! ""
+seyf:seyf N5 ; ! ""
+shkaf:shkaf N5 ; ! ""
+lombard:lombard N5 ; ! ""
+girewxana:girewxana N5 ; ! ""
+kartochka:kartochka N5 ; ! ""
+inkassatsiya:inkassatsiya N5 ; ! ""
+inkasso:inkasso N5 ; ! ""
+akkreditiv:akkreditiv N5 ; ! ""
 pedinstitut:pedinstitut N1 ; ! ""
 aynalıs:aynalıs N1 ; ! ""
 metal:metal N1 ; ! ""
@@ -4016,6 +4086,15 @@ mm:mm%{э%}%{з%} N1-ABBR ; ! "km"
  LEXICON ProperNouns
 !===================!
 
+Vavilon:Vavilon NP-TOP ; ! ""
+Gretsiya:Gretsiya NP-TOP ; ! ""
+Delfa:Delfa NP-TOP ; ! ""
+Delo:Delo NP-TOP ; ! ""
+Samo:Samo NP-TOP ; ! ""
+Efse:Efse NP-TOP ; ! ""
+Artemid:Artemid NP-TOP ; ! ""
+Rim:Rim NP-TOP ; ! ""
+Rus:Rus NP-TOP ; ! ""
 Venetsiya:Venetsiya NP-TOP ; ! ""
 Genuya:Genuya NP-TOP ; ! ""
 Milan:Milan NP-TOP ; ! ""
@@ -4484,7 +4563,7 @@ Tengiz:Tengiz NP-ORG ; ! "Tengiz" !Use/MT
 Wikipedia:Wikipedia NP-AL ; ! ""
 Pedtexnikum:Pedtexnikum NP-AL ; ! ""
 GlaxoSmithKline:GlaxoSmithKline NP-AL ; ! ""
-
+Apollon:Apollon NP-AL ; ! ""
 Bluetooth:Bluetooth NP-AL ; ! ""
 Galaxy:Galaxy NP-AL ; ! ""
 iPhone:iPhone NP-AL ; ! ""
@@ -4695,6 +4774,19 @@ Stiv:Stiv NP-ANT-M ; ! "Steve"
  LEXICON Adjectives
 !==================!
 
+passivli:passivli A4 ; ! "" ! Use/MT
+jetkiliksiz:jetkiliksiz A1 ; ! ""
+isker:isker A4 ; ! ""
+arnawlı:arnawlı A4 ; ! ""
+o%'nerka%'siplik:o%'nerka%'siplik A4 ; ! ""
+sanaatlıq:sanaatlıq A4 ; ! ""
+korrespondentlik:korrespondentlik A4 ; ! ""
+qarızdarlıq:qarızdarlıq A4 ; ! ""
+qarızlıq:qarızlıq A4 ; ! ""
+qarızlıq:qarızlıq A4 ; ! ""
+kliringlik:kliringlik A4 ; ! ""
+seyflik:seyflik A4 ; ! ""
+lombardlıq:lombardlıq A4 ; ! ""
 burıng%'ı:burıng%'ı A1 ; ! ""
 keyingi:keyingi A1 ; ! ""
 bo%'lek:bo%'lek A2 ; ! ""
@@ -5518,6 +5610,12 @@ jergilikli:jergilikli A4 ; ! ""
  LEXICON Adverbs
 !===============!
 
+so%'zsiz:so%'zsiz ADV ; ! ""
+gu%'mansız:gu%'mansız ADV ; ! ""
+a%'lbette:a%'lbette ADV ; ! ""
+jetkiliksiz:jetkiliksiz ADV ; ! ""
+qolma%-qolsız:qolma%-qolsız ADV ; ! ""
+nızamlı:nızamlı ADV ; ! ""
 qolma%-qol:qolma%-qol ADV ; ! ""
 burın:burın ADV ; ! ""
 keyin:keyin ADV ; ! ""
@@ -5745,6 +5843,34 @@ yahudiyshe:yahudiyshe ADV-LANG ; ! "Jewish/Jew"
  LEXICON Verbs
 !=============!
 
+tu%'sin:tu%'sin V-IV ; ! ""
+su%'wretle:su%'wretle V-TV ; ! ""
+ta%'riyple:ta%'riyple V-TV ; ! ""
+bayanla:bayanla V-TV ; ! ""
+a%'stelen:a%'stelen V-TV ; ! ""
+aqırınla:aqırınla V-TV ; ! ""
+jen%'illet:jen%'illet V-TV ; ! ""
+gu%'walandır:gu%'walandır V-TV ; ! ""
+hayran% qaldır:hayran% qaldır V-TV ; ! ""
+tan%'landır:tan%'landır V-TV ; ! ""
+arna:arna V-TV ; ! ""
+beyimle:beyimle V-TV ; ! ""
+qa%'nigellike% u%'yret:qa%'nigellike% u%'yret V-TV ; ! ""
+anıqla:anıqla V-TV ; ! ""
+tuwrıla:tuwrıla V-TV ; ! ""
+anıqlastır:anıqlastır V-TV ; ! ""
+konkretlestir:konkretlestir V-TV ; ! ""
+emissiyala:emissiyala V-TV ; ! ""
+usaqla:usaqla V-TV ; ! ""
+uwat:uwat V-TV ; ! ""
+unta:unta V-TV ; ! ""
+maydala:maydala V-TV ; ! ""
+sortla:sortla V-TV ; ! ""
+inkassatsiyala:inkassatsiyala V-TV ; ! ""
+jo%'nelt:jo%'nelt V-TV ; ! ""
+du%'z:du%'z V-TV ; ! ""
+sho%'lkemlestir:sho%'lkemlestir V-TV ; ! ""
+uyımlastır:uyımlastır V-TV ; ! ""
 aynal:aynal V-IV ; ! ""
 aynalıs:aynalıs V-IV ; ! ""
 almastır:almastır V-TV ; ! ""
@@ -7272,6 +7398,9 @@ otır:otır Vinfl-AUX ; !
  LEXICON Interjections
 !=====================!
 
+so%'zsiz:so%'zsiz INTERJ ; ! ""
+gu%'mansız:gu%'mansız INTERJ ; ! ""
+a%'lbette:a%'lbette INTERJ ; ! ""
 aw:aw INTERJ ; ! ""
 amin:amin INTERJ ; ! ""
 a%':a%' INTERJ ; ! ""
@@ -7320,6 +7449,7 @@ mu%'mkin:mu%'mkin INTERJ ; ! "probably"
  LEXICON Abbreviations
 !=====================!
 
+b%.e%.sh%.:b%.e%.sh%. ABBR ; ! ""
 KSRA:KSRA ABBR ; ! ""
 QR:QR ABBR ; ! ""
 to%'m%.:to%'m%. ABBR ; ! ""
