@@ -154,6 +154,7 @@ Multichar_Symbols
 
 %>
 %  
+%-
 %'
 %~
 %+
@@ -162,6 +163,7 @@ Multichar_Symbols
 
 LEXICON Root
 
+Miscellaneous ; 
 Conjunctions ; 
 Postadverbs ;
 Copula ;
@@ -1369,7 +1371,7 @@ LEXICON ABBR
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 !======================!
- LEXICON ModalParticles
+ LEXICON Miscellaneous 
 !======================!
 
 ma:%~ma QST ; ! "" Dir/RL
@@ -7428,6 +7430,7 @@ meyli:meyli INTERJ ; ! ""
 mine:mine INTERJ ; ! ""
 mına:mına INTERJ ; ! ""
 oybay:oybay INTERJ ; ! ""
+joq:joq INTERJ ; ! ""
 oy:oy INTERJ ; ! ""
 o%'y:o%'y INTERJ ; ! ""
 o%'tinemen:o%'tinemen INTERJ ; ! ""
