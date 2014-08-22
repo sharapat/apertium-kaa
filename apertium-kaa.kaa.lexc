@@ -1376,15 +1376,15 @@ LEXICON ABBR
 
 ma:%~ma QST ; ! "" Dir/RL
 ma:ma QST ; ! "" Dir/LR
-! мa:бa QST ; ! "" Dir/LR
-! мa:пa QST ; ! "" Dir/LR
-! мa:мe QST ; ! "" Dir/LR
-! мa:бe QST ; ! "" Dir/LR
-! мa:пe QST ; ! "" Dir/LR
+ma:ba QST ; ! "" Dir/LR
+ma:pa QST ; ! "" Dir/LR
+ma:me QST ; ! "" Dir/LR
+ma:be QST ; ! "" Dir/LR
+ma:pe QST ; ! "" Dir/LR
 ma% ne:%~ma% ne QST ; ! "" Dir/RL
 ma% ne:ma% ne QST ; ! "" Dir/LR
-! мa% нe:мe% нe QST ; ! "" Dir/LR
-! шe:шe QST ; ! ""
+ma% ne:me% ne QST ; ! "" Dir/LR
+she:she QST ; ! ""
 
 g%'oy:%~g%'oy MOD-ASS ; ! "" Dir/RL
 g%'oy:g%'oy MOD-ASS ; ! "" Dir/LR
@@ -7400,6 +7400,7 @@ otır:otır Vinfl-AUX ; !
  LEXICON Interjections
 !=====================!
 
+joq:joq INTERJ ; ! "" ! Use/MT
 so%'zsiz:so%'zsiz INTERJ ; ! ""
 gu%'mansız:gu%'mansız INTERJ ; ! ""
 a%'lbette:a%'lbette INTERJ ; ! ""
