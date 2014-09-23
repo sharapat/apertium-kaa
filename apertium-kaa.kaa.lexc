@@ -75,6 +75,7 @@ Multichar_Symbols
 %<aor%>       ! -{E}
 %<past%>      ! -{G}{A}н
 %<ifi%>       ! -{D}{I}
+%<evid%>      ! Evidential, a.k.a. "indirect" / non-eyewitness / hearsay 
 %<ifi_evid%>  ! -{I}пт{I}
 %<fut%>       ! -{I}р
 %<fut_plan%>  ! -{M}{A}{K}
@@ -788,7 +789,10 @@ LEXICON V-FINITE-REGULAR_NEGATIVE
 %<aor%>:%>%{E%}  V-PERS-AOR ;
 %<past%>:%>%{G%}%{ъ%}%{A%}n  V-PERS-S1 ;
 %<ifi%>:%>%{D%}%{I%} V-PERS-S2 ;
-%<ifi_evid%>:%>%{I%}p V-PERS-IFI_EVID ;
+
+%<aor%>%<evid%>:%>%{E%}d%{I%}% eken V-PERS-S1 ;    ! барады екенмін / бармайды екенмін
+%<past%>%<evid%>:%>%{G%}%{ъ%}%{A%}n% eken V-PERS-S1 ;   ! барған екенмін / бармаған екенмін
+%<ifi%>%<evid%>:%>%{I%}p V-PERS-IFI_EVID ;
 %<fut_plan%>:%>%{M%}%{A%}%{K%} V-PERS-S1 ;
 
 LEXICON V-FINITE-IRREGULAR_NEGATIVE
