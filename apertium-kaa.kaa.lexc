@@ -919,10 +919,6 @@ LEXICON V-TV
 
 !!!!!!!!!!!!!!!!!!!!!!     auxiliary verbs
 
-LEXICON Vinfl-AUX-IMPF
-
-%<vaux%>%<pres%>: V-PERS-S1 ; ! /жүр, жaтыр, тұр, oтыр/
-
 LEXICON Vinfl-AUX-IMPF-NEG
 
 %<vaux%>%<neg%>%<pres%>: V-PERS-S1 ; !USE MT /жaтқaн жoқ/
@@ -1321,10 +1317,6 @@ LEXICON NUM-COLL
 
 %<num%>%<coll%>%<subst%>: FULL-NOMINAL-INFLECTION ;
 %<num%>%<coll%>%<advl%>: # ;
-
-LEXICON DET-REF
-
-%<det%>%<ref%>: # ;
 
 LEXICON POST
 
