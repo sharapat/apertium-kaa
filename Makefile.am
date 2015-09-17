@@ -10,6 +10,7 @@ BASENAME=apertium-$(LANG1)
 TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 	$(LANG1).automorf.bin $(LANG2).autogen.bin \
 	$(LANG1).automorf.att.gz $(LANG2).autogen.att.gz \
+	$(LANG1).autopgen.bin \
         $(LANG1).rlx.bin
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
@@ -79,6 +80,12 @@ debug: .deps/$(LANG1).LR-debug.hfst .deps/$(LANG1).lexc.hfst
 	hfst-fst2fst -O -i $< -o $@
 
 ###############################################################################
+## Postgeneration
+###############################################################################
+$(LANG1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
+	lt-comp lr $< $@
+
+###############################################################################
 ## Disambiguation rules
 ###############################################################################
 
@@ -142,6 +149,7 @@ endif # HAVE_HFSTOSPELL
 apertium_kaa_DATA=$(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 		    $(LANG1).automorf.bin $(LANG1).autogen.bin \
 		    $(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
+		    $(LANG1).autopgen.bin \
 		    $(LANG1).rlx.bin $(EXTRA_TARGETS)
 
 pkgconfigdir = $(prefix)/share/pkgconfig
