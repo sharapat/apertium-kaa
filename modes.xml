@@ -59,5 +59,12 @@
     </pipeline>
   </mode>
 
+	<mode name="kaa-tokenise">
+		<pipeline>
+			<program name="hfst-proc">
+				<file name=".deps/acceptor.default.hfst"/>
+			</program>
+		</pipeline>
+	</mode>
 
 </modes>
