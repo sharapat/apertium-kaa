@@ -32,3 +32,8 @@ speller/strings.default.txt -text
 speller/words.default.txt -text
 tests/G.yaml -text
 tests/nums.yaml -text
+*.dix linguist-language=XML linguist-detectable=true
+*.lrx linguist-language=XML linguist-detectable=true
+*.lsx linguist-language=XML linguist-detectable=true
+*.tsx linguist-language=XML linguist-detectable=true
+*.t[[:digit:]]x linguist-language=XML linguist-detectable=true
