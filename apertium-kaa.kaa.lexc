@@ -4134,7 +4134,7 @@ Rossiya:Rossiya NP-TOP ; ! ""
 Kiev:Kiev NP-TOP ; ! ""
 Samarqand:Samarqand NP-TOP ; ! ""
 Qazaqstan:Qazaqstan NP-TOP ; ! ""
-ózbekstan:ózbekstan NP-TOP ; ! ""
+Ózbekstan:Ózbekstan NP-TOP ; ! ""
 Qırǵızstan:Qırǵızstan NP-TOP ; ! ""
 ózbekstan:ózbekistan NP-TOP ; ! "" ! Dir/LR ! Use/Sub
 Nókis:Nókis NP-TOP ; ! ""
@@ -4168,7 +4168,7 @@ Tuva:Tuva NP-TOP ; ! ""
 Pakistan:Pakistan NP-TOP ; ! ""
 Indiya:Indiya NP-TOP ; ! ""
 Túrkmenistan:Túrkmenistan NP-TOP ; ! ""
-ázerbayjan:ázerbayjan NP-TOP ; ! ""
+Ázerbayjan:Ázerbayjan NP-TOP ; ! ""
 Xorezm:Xorezm NP-TOP ; ! ""
 Qubla% Koreya:Qubla% Koreya NP-TOP ; ! ""
 Arqa% Koreya:Arqa% Koreya NP-TOP ; ! ""
@@ -4336,7 +4336,7 @@ Arna:Arna NP-ANT-F ; ! "Arna" (Kazakh)
 Arsen:Arsen NP-ANT-M ; ! "Arsen" (Arabic)
 Axram:Axram NP-ANT-M ; ! "Axram" (Arabic)
 Ayan:Ayan NP-ANT-M ; ! "Ayan" (Kazakh)
-ábdiraxman:ábdiraxman NP-ANT-M ; ! "Äbdiraxman" (Arabic)
+Ábdiraxman:Ábdiraxman NP-ANT-M ; ! "Äbdiraxman" (Arabic)
 ábil:ábil NP-ANT-M ; ! "Äbil" (Arabic)
 ábilqasım:ábilqasım NP-ANT-M ; ! "Äbilqasım" (Arabic)
 ábu:ábu NP-ANT-M ; ! "Äbiw" (Arabic)
@@ -4456,7 +4456,7 @@ Ela:Ela NP-ANT-F ; ! "Ela" (Latin)
 Era:Era NP-ANT-F ; ! "Era" (New word)
 İysa:İysa NP-ANT-M ; ! "Jesus"
 
-ótepov:ótepov NP-COG-OV ; ! ""
+Ótepov:Ótepov NP-COG-OV ; ! ""
 Trofimov:Trofimov NP-COG-OV ; ! ""
 Yashımov:Yashımov NP-COG-OV ; ! ""
 Begimov:Begimov NP-COG-OV ; ! ""
@@ -4468,7 +4468,7 @@ Nazarbayev:Nazarbayev NP-COG-OV ; ! ""
 Májitov:Májitov NP-COG-OV ; ! ""
 Dáwqaraev:Dáwqaraev NP-COG-OV ; ! ""
 Dáribaev:Dáribaev NP-COG-OV ; ! ""
-áwezov:áwezov NP-COG-OV ; ! ""
+Áwezov:Áwezov NP-COG-OV ; ! ""
 Mátmuratov:Mátmuratov NP-COG-OV ; ! ""
 Tájimuratov:Tájimuratov NP-COG-OV ; ! ""
 
@@ -7467,7 +7467,7 @@ máml:máml ABBR ; ! "ma'mleket"
 t%.b%.:t%.b%. ABBR ; ! "etc."
 j%.:j%. ABBR ; ! "year"
 jj%.:jj%. ABBR ; ! "year"
-JIó.:JIó ABBR ; ! "GDP"
+JIÓ.:JIÓ ABBR ; ! "GDP"
 EBRSh:EBRSh ABBR ; ! ""
 TNK:TNK ABBR ; ! ""
 XVF:XVF ABBR ; ! ""
