@@ -6,10 +6,10 @@
 
 Multichar_Symbols
 
-%<n%>         ! Noun                       ! Зaт eсім
-%<np%>        ! Proper noun                ! Жaлқы eсім
-%<adj%>       ! Adjective                  ! Сын eсім
-%<num%>       ! Numeral                    ! Сaн eсім
+%<n%>         ! Noun                       ! Atlıq
+%<np%>        ! Proper noun                ! Menshiklik atlıq
+%<adj%>       ! Adjective                  ! Kelbetlik
+%<num%>       ! Numeral                    ! Sam
 %<prn%>       ! Pronoun                    ! Есімдік
 %<det%>       ! Determiner                 ! Дeтeрминaтив
 %<v%>         ! Verb                       ! Етістік
@@ -4136,14 +4136,14 @@ Samarqand:Samarqand NP-TOP ; ! ""
 Qazaqstan:Qazaqstan NP-TOP ; ! ""
 Ózbekstan:Ózbekstan NP-TOP ; ! ""
 Qırǵızstan:Qırǵızstan NP-TOP ; ! ""
-ózbekstan:ózbekistan NP-TOP ; ! "" ! Dir/LR ! Use/Sub
+Ózbekstan:Ózbekistan NP-TOP ; ! "" ! Dir/LR ! Use/Sub
 Nókis:Nókis NP-TOP ; ! ""
 Shotlandiya:Shotlandiya NP-TOP ; ! ""
 Germaniya:Germaniya NP-TOP ; ! ""
 Evropa:Evropa NP-TOP ; ! ""
 Túrkistan:Túrkistan NP-TOP ; ! ""
 Makedoniya:Makedoniya NP-TOP ; ! ""
-Ulli% Britanya:Ulli% Britanya NP-TOP ; ! ""
+Ullı% Britanya:Ullı% Britanya NP-TOP ; ! ""
 Britanya:Britanya NP-TOP ; ! ""
 London:London NP-TOP ; ! ""
 Ukraina:Ukraina NP-TOP ; ! ""
@@ -4245,7 +4245,7 @@ Berdaq:Berdaq NP-ANT-M ; ! ""
 Xristofor:Xristofor NP-ANT-M ; ! ""
 Yosif:Yosif NP-ANT-M ; ! ""
 Aleksandr:Aleksandr NP-ANT-M ; ! ""
-ábdiraman:ábdiraman NP-ANT-M ; ! ""
+Ábdiraman:Ábdiraman NP-ANT-M ; ! ""
 Nikolay:Nikolay NP-ANT-M ; ! ""
 Qasim:Qasim NP-ANT-M ; ! ""
 Raphael:Raphael NP-ANT-M ; ! ""
@@ -4337,14 +4337,14 @@ Arsen:Arsen NP-ANT-M ; ! "Arsen" (Arabic)
 Axram:Axram NP-ANT-M ; ! "Axram" (Arabic)
 Ayan:Ayan NP-ANT-M ; ! "Ayan" (Kazakh)
 Ábdiraxman:Ábdiraxman NP-ANT-M ; ! "Äbdiraxman" (Arabic)
-ábil:ábil NP-ANT-M ; ! "Äbil" (Arabic)
-ábilqasım:ábilqasım NP-ANT-M ; ! "Äbilqasım" (Arabic)
-ábu:ábu NP-ANT-M ; ! "Äbiw" (Arabic)
-ádi:ádi NP-ANT-M ; ! "Ädiy" (Arabic)
-ádil:ádil NP-ANT-M ; ! "Ädil" (Arabic)
-ákim:ákim NP-ANT-M ; ! "Äkim" (Arabic)
-álim:álim NP-ANT-M ; ! "Älim" (Arabic)
-ámir:ámir NP-ANT-M ; ! "Ämir" (Kazakh)
+Ábil:Ábil NP-ANT-M ; ! "Äbil" (Arabic)
+Ábilqasım:Ábilqasım NP-ANT-M ; ! "Äbilqasım" (Arabic)
+Ábu:Ábu NP-ANT-M ; ! "Äbiw" (Arabic)
+Ádi:Ádi NP-ANT-M ; ! "Ädiy" (Arabic)
+Ádil:Ádil NP-ANT-M ; ! "Ädil" (Arabic)
+Ákim:Ákim NP-ANT-M ; ! "Äkim" (Arabic)
+Álim:Álim NP-ANT-M ; ! "Älim" (Arabic)
+Ámir:Ámir NP-ANT-M ; ! "Ämir" (Kazakh)
 Baba:Baba NP-ANT-M ; ! "Baba" (Persian)
 Baǵdat:Baǵdat NP-ANT-M ; ! "Bağdat" (Arabic)
 Baylı:Baylı NP-ANT-M ; ! "Baylı" (Kazakh)
@@ -4414,8 +4414,8 @@ Nájip:Nájip NP-ANT-M ; ! "Näjip" (Arabic)
 Niyaz:Niyaz NP-ANT-M ; ! "Nıyaz" (Arabic)
 Olga:Olga NP-ANT-F ; ! "OlʲGa" (Skandinavian)
 Oraz:Oraz NP-ANT-M ; ! "Oraz" (Old Turkic)
-ómir:ómir NP-ANT-M ; ! "Ömir" (Arabic)
-óndiris:óndiris NP-ANT-M ; ! "Öndiris" (Kazakh)
+Ómir:Ómir NP-ANT-M ; ! "Ömir" (Arabic)
+Óndiris:Óndiris NP-ANT-M ; ! "Öndiris" (Kazakh)
 Pana:Pana NP-ANT-F ; ! "Pana" (Persian)
 Paul:Paul NP-ANT-M ; ! "Paul" Dir/LR
 Rabiya:Rabiya NP-ANT-F ; ! "Rabıya" (Arabic)
@@ -4536,7 +4536,7 @@ Lo:Lo NP-COG-MF ; ! ""
 van% Gog:van% Gog NP-COG-MF ; ! ""
 da% Vinchi:da% Vinchi NP-COG-MF ; ! ""
 Djobs:Djobs NP-COG-MF ; ! "Jobs"
-cukerberg:cukerberg NP-COG-MF ; ! "Zuckerberg"
+Cukerberg:Cukerberg NP-COG-MF ; ! "Zuckerberg"
 Geyts:Geyts NP-COG-MF ; ! "Gates"
 Rokfeller:Rokfeller NP-COG-MF ; ! ""
 
@@ -4582,7 +4582,7 @@ iPod:iPod NP-AL ; ! ""
 
 ! ************
 Abay:Abay NP-ANT-M ; ! ""
-ábdiraman:ábdiraman NP-ANT-M ; ! ""
+Ábdiraman:Ábdiraman NP-ANT-M ; ! ""
 Abdulla:Abdulla NP-ANT-M ; ! ""
 Adam:Adam NP-ANT-M ; ! ""
 Alan:Alan NP-ANT-M ; ! ""
