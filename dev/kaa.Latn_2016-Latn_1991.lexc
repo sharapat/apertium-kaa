@@ -1,0 +1,76 @@
+Multichar_Symbols 
+
+%{'%}
+
+LEXICON Root 
+
+Alpha ; 
+Punct ; 
+Digits ;
+
+LEXICON AlphaLoop 
+
+Alpha ;
+%- Alpha ; 
+ # ;
+
+LEXICON Alpha
+
+a:a AlphaLoop "weight: 1.0" ;
+á:aʻ AlphaLoop "weight: 0.5" ;
+b:b AlphaLoop "weight: 1.0" ;
+ch:ch AlphaLoop "weight: 2.0" ;  ! FIXME
+c:ts AlphaLoop "weight: 2.0" ;   ! FIXME
+d:d AlphaLoop "weight: 2.0" ;
+e:e AlphaLoop "weight: 1.0" ;
+f:f AlphaLoop "weight: 1.0" ;
+g:g AlphaLoop "weight: 1.0" ;
+ǵ:gʻ AlphaLoop "weight: 0.5" ;
+h:h AlphaLoop "weight: 2.0" ;
+i:i AlphaLoop "weight: 1.0" ;
+ı:ı AlphaLoop "weight: 1.0" ;
+İ:İ AlphaLoop "weight: 1.0" ;
+I:I AlphaLoop "weight: 1.0" ;
+j:j AlphaLoop "weight: 2.0" ;
+k:k AlphaLoop "weight: 2.0" ;
+l:l AlphaLoop "weight: 2.0" ;
+m:m AlphaLoop "weight: 2.0" ;
+n:n AlphaLoop "weight: 2.0" ;
+ń:nʻ AlphaLoop "weight: 2.0" ;
+o:o AlphaLoop "weight: 1.0" ;
+ó:oʻ AlphaLoop "weight: 0.5" ;
+p:p AlphaLoop "weight: 2.0" ;
+q:q AlphaLoop "weight: 2.0" ;
+r:r AlphaLoop "weight: 2.0" ;
+s:s AlphaLoop "weight: 2.0" ;
+sh:sh AlphaLoop "weight: 2.0" ;
+t:t AlphaLoop "weight: 2.0" ;
+u:u AlphaLoop "weight: 1.0" ;
+ú:uʻ AlphaLoop "weight: 0.5" ;
+v:v AlphaLoop "weight: 2.0" ;
+w:w AlphaLoop "weight: 2.0" ;
+x:x AlphaLoop "weight: 2.0" ;
+y:y AlphaLoop "weight: 1.0" ;
+z:z AlphaLoop "weight: 2.0" ;
+
+LEXICON Digits
+
+<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+> # ;
+
+LEXICON Punct
+
+%.:%. # ; 
+%-:%- # ; 
+%,:%, # ; 
+%;:%; # ; 
+%::%: # ; 
+%!:%! # ; 
+%?:%? # ; 
+%“:%“ # ; 
+%”:%” # ; 
+%«:%« # ; 
+%»:%» # ; 
+%(:%( # ; 
+%):%) # ; 
+%–:%– # ; 
+
