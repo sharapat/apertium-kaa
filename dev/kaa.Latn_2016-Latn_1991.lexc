@@ -52,6 +52,7 @@ w:w AlphaLoop "weight: 2.0" ;
 x:x AlphaLoop "weight: 2.0" ;
 y:y AlphaLoop "weight: 1.0" ;
 z:z AlphaLoop "weight: 2.0" ;
+ʻ:ʻ AlphaLoop "weight: 10.0" ;
 
 LEXICON Digits
 
