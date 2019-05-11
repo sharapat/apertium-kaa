@@ -908,8 +908,8 @@ LEXICON Vinfl-AUX-IMPF
 
 LEXICON V-IV
 
-%<v%>%<iv%>:%{ъ%} V-COMMON ;
-%<v%>%<iv%>:%{ъ%} V-DER ;
+%<v%>%<iv%>: V-COMMON ;
+%<v%>%<iv%>: V-DER ;
 
 LEXICON V-TV
 
