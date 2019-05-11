@@ -1,13 +1,12 @@
 
 Alphabet
 
- A Á B V G D E J Z İ Y K Q L M N Ń O Ó P R S T U Ú W F X H I
- a á b v g d e j z i y k q l m n ń o ó p r s t u ú w f x h ı
+ A Á B V G Ǵ D E J Z İ Y K Q L M N Ń O Ó P R S T U Ú W F X H I
+ a á b v g ǵ d e j z i y k q l m n ń o ó p r s t u ú w f x h ı
 
  %{A%}:a ! %{A%}:e
  %{I%}:ı ! %{I%}:i 
-! %{G%}:g %{G%}:k %{G%}:q
- %{G%}:g
+ %{G%}:g %{G%}:ǵ %{G%}:k %{G%}:q
  %{N%}:n
  %{E%}:a
  %{K%}:q ! %{K%}:k
@@ -56,8 +55,8 @@ Cns = B V G Ǵ D J Z Y K P Q L M N Ń R S T W F X H
 VoicelessCns = b v p f d t j s g h k q x 
                B V P F D T J S G H K Q X ; 
 
-VoicedCns = z y r l m n w
-            Z Y R L M N W ;
+VoicedCns = z y r l m n ń w ǵ
+            Z Y R L M N Ń W Ǵ ;
 
 LowSonVoicedCons = m n ń z
                    M N Ń Z ;
@@ -154,6 +153,13 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | [ :0 - Abstract:
         except
              %{n%}:/[ :0 - %{n%}: ]* _ ;
 
+"{G} to ǵ after back vowel + voiced cons or just back vowel"
+%{G%}:ǵ <=> :VoicedCns/:0* _ :BackVow/[ :0 | %{ъ%}: ]* ;
+            :BackVow/:0* _ ;
+        except
+            %{n%}:/[ :0 - %{n%}: ]* _ ;
+            [ %{I%}: [ :ń | :m ] ]/:0* _ ;
+
 !"{G} to g after voiced cons or vowel"
 !%{G%}:g <=> [ :VoicedCns | :Vow | [ :n :%' ] ]/:0 _ ;
 
@@ -192,8 +198,7 @@ Cx:Cy <=> [ :VoicelessCns - Archiphon: ]/[ %>: | %  | %{ъ%}: | [ :0 - Abstract:
 
 "Delete dative {G} after {n}"
 %{G%}:0 <=> %{n%}:/[ :0 - %{n%}: ]* _ ;
-            [ %{I%}: :n :%' ]/:0* _ ;
-            [ %{I%}: :m ]/:0* _ ;
+            [ %{I%}: [ :ń | :m ] ]/:0* _ ;
 
 "Delete genitive and accusative {N} after {n}"
 %{N%}:0 <=> %{n%}:/[ :0 - %{n%}: ]* _ ;
