@@ -1175,6 +1175,16 @@ qaysı%<prn%>%<itg%>%<ins%>:qaysı% menen CLITICS-NO-COP ;
 
 qaysı%<prn%>%<itg%>:qaysı GER-POSSESSIVES ;
 
+LEXICON PRON-ITG-QAYER
+
+qayer%<prn%>%<itg%>%<nom%>:qayer CLITICS-NO-COP ;
+qayer%<prn%>%<itg%>%<gen%>:qayerin CLITICS-NO-COP ;
+qayer%<prn%>%<itg%>%<dat%>:qayerge CLITICS-NO-COP ;
+qayer%<prn%>%<itg%>%<acc%>:qayerdi CLITICS-NO-COP ;
+qayer%<prn%>%<itg%>%<abl%>:qayerden CLITICS-NO-COP ;
+qayer%<prn%>%<itg%>%<loc%>:qayerde CLITICS-NO-COP ;
+qayer%<prn%>%<itg%>%<ins%>:qayer% menen CLITICS-NO-COP ;
+
 LEXICON PRON-ITG-QANSHA
 
 qansha%<prn%>%<itg%>:qansha CASES ;
@@ -1938,7 +1948,7 @@ akustika:akustika N1 ; ! ""
 alap:alap N1 ; ! ""
 alban:alban N1 ; ! ""
 ald:ald N1 ; ! ""
-aldı:aldı N1 ; ! ""
+aldı:aldı N1 ; ! "front"
 alfavit:alfavit N1 ; ! ""
 alǵıs:alǵıs N1 ; ! ""
 aljapqısh:aljapqısh N1 ; ! ""
@@ -2267,6 +2277,7 @@ diyxanshılıq:diyxanshılıq N1 ; ! ""
 dize:dize N1 ; ! ""
 dizgin:dizgin N1 ; ! ""
 dizim:dizim N1 ; ! ""
+dıqqat:dıqqat N1 ; ! "attention"
 dógerek:dógerek N1 ; ! ""
 dóńgelek:dóńgelek N1 ; ! ""
 dóretiwshilik:dóretiwshilik N1 ; ! ""
@@ -2552,7 +2563,7 @@ Islam:Islam N1 ; ! ""
 islew:islew N1 ; ! ""
 isókirek:isókirek N1 ; ! ""
 israp:israp N1 ; ! ""
-it:it N1 ; ! ""
+iyt:iyt N1 ; ! ""
 italyan:italyan N1 ; ! ""
 itibar:itibar N1 ; ! ""
 iye:iye N1 ; ! ""
@@ -3155,6 +3166,7 @@ orda:orda N1 ; ! ""
 orden:orden N1 ; ! ""
 organ:organ N1 ; ! ""
 organizm:organizm N1 ; ! ""
+orındıq:orındıq N1 ; ! "chair"
 orta:orta N1 ; ! ""
 ortalıq:ortalıq N1 ; ! ""
 orın:or%{y%}n N1 ; ! ""
@@ -5511,6 +5523,9 @@ milliy:milliy A4 ; ! ""
 ultlıq:ultlıq A4 ; ! ""
 uwlı:uwlı A4 ; ! ""
 ullı:ullı A1 ; ! ""
+barqulla:barqulla A1 ; ! "always"
+bárha:bárha A1 ; ! "always"
+bárhama:bárhama A1 ; ! "always"
 unamlı:unamlı A1 ; ! ""
 únemi:únemi A1 ; ! ""
 úzliksiz:úzliksiz A4 ; ! ""
@@ -5746,6 +5761,7 @@ júdá:júdá ADV ; ! ""
 ! ==========================================
 ! Better classification/implementation possible
 qayda:qayda ADV-ITG ; ! "where (гдe;кудa)"
+qayer:qayer ADV-ITG ; ! "where (где)"
 ! қaйдaн:қaйдaн ADV-ITG ; ! ""
 qalay:qalay ADV-ITG ; ! "how"
 ! нeндeй:нeндeй ADV-ITG ; ! "how"
@@ -5771,6 +5787,7 @@ keyinshelik:keyinshelik ADV ; ! " after" !Use/MT
 ! сoншaлықты:сoншaлықты ADV ; ! ""
 ! сoншaмa:сoншaмa ADV ; ! ""
 búgin:búgin ADV3 ; ! "today"
+júdá:júdá ADV3 ; ! "very"
 
 ! Adverbs wich take -KI and become an attr/adj
 ! ============================================
@@ -6200,7 +6217,9 @@ irkil:irkil V-IV ; ! ""
 kir:kir V-IV ; ! ""
 sıtırla:sıtırla V-IV ; ! ""
 kúy:kúy V-IV ; ! ""
-kúl:kúl V-IV ; ! ""
+kúl:kúl V-IV ; ! "laugh"
+ırjıy:ırjıy V-IV ; ! "smile" 
+mıyıq% tart:mıyıq% tart V-IV ; ! "smile"
 payda% bol:payda% bol V-IV ; ! ""
 kúlimle:kúlimle V-IV ; ! ""
 kúlimsire:kúlimsire V-IV ; ! ""
@@ -7417,7 +7436,8 @@ demek:demek INTERJ ; ! ""
 durıs:durıs INTERJ ; ! ""
 e:e INTERJ ; ! ""
 jaraydı:jaraydı INTERJ ; ! ""
-awa:awa INTERJ ; ! ""
+awa:awa INTERJ ; ! "yes"
+yaq:yaq INTERJ ; ! "no"
 qane:qane INTERJ ; ! ""
 xosh:xosh INTERJ ; ! ""
 Quday%-ay:Quday%-ay INTERJ ; ! ""
