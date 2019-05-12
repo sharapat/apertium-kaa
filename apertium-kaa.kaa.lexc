@@ -1175,16 +1175,6 @@ qaysı%<prn%>%<itg%>%<ins%>:qaysı% menen CLITICS-NO-COP ;
 
 qaysı%<prn%>%<itg%>:qaysı GER-POSSESSIVES ;
 
-LEXICON PRON-ITG-QAYER
-
-qayer%<prn%>%<itg%>%<nom%>:qayer CLITICS-NO-COP ;
-qayer%<prn%>%<itg%>%<gen%>:qayerin CLITICS-NO-COP ;
-qayer%<prn%>%<itg%>%<dat%>:qayerge CLITICS-NO-COP ;
-qayer%<prn%>%<itg%>%<acc%>:qayerdi CLITICS-NO-COP ;
-qayer%<prn%>%<itg%>%<abl%>:qayerden CLITICS-NO-COP ;
-qayer%<prn%>%<itg%>%<loc%>:qayerde CLITICS-NO-COP ;
-qayer%<prn%>%<itg%>%<ins%>:qayer% menen CLITICS-NO-COP ;
-
 LEXICON PRON-ITG-QANSHA
 
 qansha%<prn%>%<itg%>:qansha CASES ;
